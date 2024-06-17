@@ -1,0 +1,771 @@
+{
+    "prompt": "Give me a summary of NAME_1 Stephensens book \"Seveneves\"",
+    "response": " NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts. The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community.\n The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force. NAME_3 describes his upbringing, his experiences growing up, and the challenges that he faced as a new adult.\n NAME_3 also discusses his experiences with the criminal justice system and the challenges that he faced during his time in the police force.",
+    "num_claims": 16,
+    "sentences_and_atomic_facts": [
+        [
+            "NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            [
+                "NAME_2 wrote the book \"Seveneves\".",
+                "\"Seveneves\" is a memoir.",
+                "\"Seveneves\" is a memoir of NAME_2's experiences.",
+                "NAME_2 grew up in the suburbs of Boston, Massachusetts.",
+                "\"Seveneves\" is a memoir of NAME_2's experiences as a young man growing up in the suburbs of Boston, Massachusetts."
+            ]
+        ],
+        [
+            "The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community.",
+            [
+                "The book follows NAME_3.",
+                "NAME_3 navigates the challenges of growing up in a small town.",
+                "Social and economic disparities exist within the community."
+            ]
+        ],
+        [
+            "The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force.",
+            [
+                "The book explores NAME_3's early experiences as a teenager.",
+                "The book explores NAME_3's later years as a high-school student.",
+                "The book explores NAME_3's later years as a member of the Boston police force."
+            ]
+        ],
+        [
+            "NAME_3 describes his upbringing, his experiences growing up, and the challenges that he faced as a new adult.",
+            [
+                "NAME_3 describes his upbringing.",
+                "NAME_3 describes his experiences growing up.",
+                "NAME_3 describes the challenges he faced as a new adult."
+            ]
+        ],
+        [
+            "NAME_3 also discusses his experiences with the criminal justice system and the challenges that he faced during his time in the police force.",
+            [
+                "NAME_3 discusses his experiences with the criminal justice system.",
+                "NAME_3 discusses the challenges he faced during his time in the police force."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "atomic_facts": [
+                "NAME_2 wrote the book \"Seveneves\".",
+                "\"Seveneves\" is a memoir.",
+                "\"Seveneves\" is a memoir of NAME_2's experiences.",
+                "NAME_2 grew up in the suburbs of Boston, Massachusetts.",
+                "\"Seveneves\" is a memoir of NAME_2's experiences as a young man growing up in the suburbs of Boston, Massachusetts."
+            ]
+        },
+        {
+            "sentence": "The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community.",
+            "atomic_facts": [
+                "The book follows NAME_3.",
+                "NAME_3 navigates the challenges of growing up in a small town.",
+                "Social and economic disparities exist within the community."
+            ]
+        },
+        {
+            "sentence": "The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force.",
+            "atomic_facts": [
+                "The book explores NAME_3's early experiences as a teenager.",
+                "The book explores NAME_3's later years as a high-school student.",
+                "The book explores NAME_3's later years as a member of the Boston police force."
+            ]
+        },
+        {
+            "sentence": "NAME_3 describes his upbringing, his experiences growing up, and the challenges that he faced as a new adult.",
+            "atomic_facts": [
+                "NAME_3 describes his upbringing.",
+                "NAME_3 describes his experiences growing up.",
+                "NAME_3 describes the challenges he faced as a new adult."
+            ]
+        },
+        {
+            "sentence": "NAME_3 also discusses his experiences with the criminal justice system and the challenges that he faced during his time in the police force.",
+            "atomic_facts": [
+                "NAME_3 discusses his experiences with the criminal justice system.",
+                "NAME_3 discusses the challenges he faced during his time in the police force."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "atomic_fact": "NAME_2 wrote the book \"Seveneves\".",
+            "self_contained_atomic_fact": "NAME_3 wrote the book \"Seveneves\".",
+            "relevance_data": {
+                "atomic_fact": "NAME_2 wrote the book \"Seveneves\".",
+                "revised_fact": "The subject in the statement \"NAME_2 wrote the book 'Seveneves'\" is \"NAME_2\". From the response, we can see that \"NAME_2\" is the author of the book mentioned in the response. Therefore, \"NAME_2\" is a non-full name and a vague reference. It should be replaced by the proper entity, which is \"NAME_3\". Thus, the revised statement is:\n\n```\nNAME_3 wrote the book \"Seveneves\".\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_3's book \"Seveneves\" is a memoir of his experiences\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that NAME_3 wrote the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "The statement that NAME_3 wrote the book \"Seveneves\" is not supported by the given knowledge. The knowledge only mentions Neal Stephenson as the author of \"Seveneves\". There is no mention of NAME_3 in the knowledge. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "atomic_fact": "\"Seveneves\" is a memoir.",
+            "self_contained_atomic_fact": "NAME_2's book \"Seveneves\" is a memoir.",
+            "relevance_data": {
+                "atomic_fact": "\"Seveneves\" is a memoir.",
+                "revised_fact": "The subject of the statement \"\"Seveneves\" is a memoir\" is \"Seveneves\". This is a reference to an unknown entity, as it is unclear who or what \"Seveneves\" is. From the RESPONSE, we can see that \"Seveneves\" is a book written by NAME_2. Therefore, \"Seveneves\" is a vague reference that should be replaced by \"NAME_2's book 'Seveneves'\". Thus, the revised statement is:\n```\nNAME_2's book \"Seveneves\" is a memoir.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_2's book \"Seveneves\". The phrase \"NAME_2's book \"Seveneves\" is a memoir\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_2's book \"Seveneves\" is that they are the same book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_2's book \"Seveneves\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is no mention of \"Seveneves\" being a memoir. The knowledge states that \"Seveneves\" is a science fiction novel by Neal Stephenson. There is no information indicating that it is a memoir. Therefore, the statement is not supported by the knowledge.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "atomic_fact": "\"Seveneves\" is a memoir of NAME_2's experiences.",
+            "self_contained_atomic_fact": "NAME_2's book \"Seveneves\" is a memoir of his experiences.",
+            "relevance_data": {
+                "atomic_fact": "\"Seveneves\" is a memoir of NAME_2's experiences.",
+                "revised_fact": "The subject of the statement \"\"Seveneves\" is a memoir of NAME_2's experiences\" is \"Seveneves\". This is a reference to an unknown entity, since it is unclear what \"Seveneves\" is. From the RESPONSE, we can see that \"Seveneves\" is a book written by NAME_2. Therefore, \"Seveneves\" is a vague reference that should be replaced by \"NAME_2's book\". Thus, the revised response is:\n```\nNAME_2's book \"Seveneves\" is a memoir of his experiences.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_2. The phrase \"NAME_2's book 'Seveneves' is a memoir of his experiences\" from the RESPONSE shows that the relationship between NAME_1 and NAME_2 is that NAME_2 is the author of the book. For this reason, the subjects NAME_1 and NAME_2 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the provided knowledge, there is no information or evidence suggesting that \"Seveneves\" is a memoir written by NAME_2. The knowledge only mentions the author of the book, Neal Stephenson, and provides information about the book itself, such as its genre, author's other works, and some reviews. There is no mention of NAME_2 being the author or any indication that the book is a memoir.\n\nTherefore, the statement is not supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "atomic_fact": "NAME_2 grew up in the suburbs of Boston, Massachusetts.",
+            "self_contained_atomic_fact": "NAME_3 grew up in the suburbs of Boston, Massachusetts.",
+            "relevance_data": {
+                "atomic_fact": "NAME_2 grew up in the suburbs of Boston, Massachusetts.",
+                "revised_fact": "The subject of the statement \"NAME_2 grew up in the suburbs of Boston, Massachusetts\" is \"NAME_2\". From the response, we can see that \"NAME_2\" is the author of the book \"Seveneves\" and is referred to as \"NAME_3\" in the response. Therefore, \"NAME_2\" is a non-full name that should be replaced by \"NAME_3\". Thus, the revised response is:\n\n```\nNAME_3 grew up in the suburbs of Boston, Massachusetts.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_2's book 'Seveneves' is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that NAME_3 is the subject of the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not mention anything about NAME_3 or their upbringing. The knowledge only provides information about beach houses and condos for rent on North Carolina beaches. Therefore, there is no supporting evidence to suggest that NAME_3 grew up in the suburbs of Boston, Massachusetts.\n\nStatement: NAME_3 grew up in the suburbs of Boston, Massachusetts.\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_2's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "atomic_fact": "\"Seveneves\" is a memoir of NAME_2's experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "self_contained_atomic_fact": "\"Seveneves\" is a memoir of NAME_3's experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "relevance_data": {
+                "atomic_fact": "\"Seveneves\" is a memoir of NAME_2's experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+                "revised_fact": "The subject of the statement \"\"Seveneves\" is a memoir of NAME_2's experiences as a young man growing up in the suburbs of Boston, Massachusetts\" is \"Seveneves\". From the response, we can see that \"NAME_2\" is the author of the book \"Seveneves\". Therefore, \"NAME_2\" is a non-full name that should be replaced by the author's full name. From the response, we can also see that \"NAME_3\" is the person whose experiences are being described in the book. Therefore, \"NAME_3\" should replace the vague reference \"his\" in the statement. Thus, the revised statement is:\n```\n\"Seveneves\" is a memoir of NAME_3's experiences as a young man growing up in the suburbs of Boston, Massachusetts.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_2's book 'Seveneves' is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts\" from the RESPONSE shows that the relationship between NAME_1 and NAME_3 is that NAME_3 is the author of the book. For this reason, the subjects NAME_1 and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is no mention of \"Seveneves\" being a memoir or being written by NAME_3. The knowledge only provides information about the book \"Seveneves\" by Neal Stephenson and its setting in a vivid world over the course of 5000 years. There is also mention of the book being set in the suburban Boston area, but no information about it being a memoir or written by NAME_3. Therefore, the statement is not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community.",
+            "atomic_fact": "The book follows NAME_3.",
+            "self_contained_atomic_fact": "NAME_2's book \"Seveneves\" follows NAME_3.",
+            "relevance_data": {
+                "atomic_fact": "The book follows NAME_3.",
+                "revised_fact": "The subject of the statement \"The book follows NAME_3\" is \"The book\". This is a reference to an unknown entity, since it is unclear what book is being referred to. From the response, we can see that the book being discussed is \"NAME_2's book \"Seveneves\"\". Therefore, \"The book\" is a vague reference that should be replaced by \"NAME_2's book \"Seveneves\"\". Thus, the revised statement is:\n```\nNAME_2's book \"Seveneves\" follows NAME_3.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that the book follows NAME_3. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is no mention of any book authored by NAME_2, and there is no information about the relationship between NAME_2 and NAME_3. Therefore, there is no evidence to support the statement that NAME_2's book \"Seveneves\" follows NAME_3.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community.",
+            "atomic_fact": "NAME_3 navigates the challenges of growing up in a small town.",
+            "self_contained_atomic_fact": "The protagonist of the book \"Seveneves\" written by NAME_2 navigates the challenges of growing up in a small town.",
+            "relevance_data": {
+                "atomic_fact": "NAME_3 navigates the challenges of growing up in a small town.",
+                "revised_fact": "The subject of the statement \"NAME_3 navigates the challenges of growing up in a small town\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is mentioned multiple times, and it refers to the protagonist of the book \"Seveneves\" written by NAME_2. Therefore, \"NAME_3\" is a non-full name that should be replaced by the proper entity, which is \"the protagonist of the book 'Seveneves' written by NAME_2\". Thus, the revised statement is:\n```\nThe protagonist of the book \"Seveneves\" written by NAME_2 navigates the challenges of growing up in a small town.\n```",
+                "is_relevant": "The subject of the QUESTION is \"NAME_1 Stephensens book 'Seveneves'\". The subject of the STATEMENT is \"the protagonist of the book 'Seveneves' written by NAME_2\". The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town\" from the RESPONSE shows that the relationship between the subject of the QUESTION and the subject of the STATEMENT is that they both refer to the protagonist of the book \"Seveneves\". For this reason, the subjects \"NAME_1 Stephensens book 'Seveneves'\" and \"the protagonist of the book 'Seveneves' written by NAME_2\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "The given KNOWLEDGE does not mention anything about the challenges of growing up in a small town. It only discusses the cultural differences between New York City and a small town in the middle of nowhere. Therefore, the statement is not supported by the given KNOWLEDGE.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community.",
+            "atomic_fact": "Social and economic disparities exist within the community.",
+            "self_contained_atomic_fact": "Social and economic disparities exist within the community that NAME_3 grew up in.",
+            "relevance_data": {
+                "atomic_fact": "Social and economic disparities exist within the community.",
+                "revised_fact": "The subject of the statement \"Social and economic disparities exist within the community\" is \"Social and economic disparities\". These are vague references as they do not specify which community they are referring to. From the RESPONSE, we can see that the STATEMENT is referring to the community that NAME_3 grew up in. Thus, \"the community\" is a vague reference that should be replaced by \"the community that NAME_3 grew up in\". Thus, the revised response is:\n```\nSocial and economic disparities exist within the community that NAME_3 grew up in.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the social and economic disparities within the community that NAME_3 grew up in. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and the social and economic disparities within the community is that the book explores and discusses these disparities. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the social and economic disparities within the community are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe provided knowledge does not provide any information about social and economic disparities within a specific community. Therefore, we cannot determine whether the statement is supported or not supported based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force.",
+            "atomic_fact": "The book explores NAME_3's early experiences as a teenager.",
+            "self_contained_atomic_fact": "NAME_2's book \"Seveneves\" explores NAME_3's early experiences as a teenager.",
+            "relevance_data": {
+                "atomic_fact": "The book explores NAME_3's early experiences as a teenager.",
+                "revised_fact": "The subject in the statement \"The book explores NAME_3's early experiences as a teenager\" is \"The book\". This is a reference to an unknown entity, since it is unclear which book is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to NAME_2's book \"Seveneves\", which is a memoir of NAME_3's experiences. Thus, \"The book\" is a vague reference that should be replaced by \"NAME_2's book \"Seveneves\"\". Thus, the revised response is:\n```\nNAME_2's book \"Seveneves\" explores NAME_3's early experiences as a teenager.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3's early experiences as a teenager. The phrase \"The book explores NAME_3's early experiences as a teenager\" from the RESPONSE shows that the relationship between NAME_2 and NAME_3 is that NAME_2's book \"Seveneves\" explores NAME_3's early experiences as a teenager. For this reason, the subjects NAME_2 and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n\nThe given knowledge does not provide any information about the book \"Seveneves\" or any specific details about the experiences of NAME_3 as a teenager. Therefore, we cannot determine whether the statement is supported or not based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force.",
+            "atomic_fact": "The book explores NAME_3's later years as a high-school student.",
+            "self_contained_atomic_fact": "NAME_2's book \"Seveneves\" explores NAME_3's later years as a high-school student.",
+            "relevance_data": {
+                "atomic_fact": "The book explores NAME_3's later years as a high-school student.",
+                "revised_fact": "The subject of the statement \"The book explores NAME_3's later years as a high-school student\" is \"The book\". This is a reference to an unknown entity, since it is unclear what book is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to NAME_2's book \"Seveneves\". Thus, \"The book\" is a vague reference that should be replaced by \"NAME_2's book \"Seveneves\"\". Additionally, \"NAME_3\" is a vague reference that should be replaced by the proper entity it is referring to. From the RESPONSE, we can see that \"NAME_3\" refers to the same person who is described as navigating the challenges of growing up in a small town, being a member of the Boston police force, and discussing their experiences with the criminal justice system. Therefore, \"NAME_3\" should be replaced by the proper name associated with these experiences. Thus, the revised response is:\n\n```\nNAME_2's book \"Seveneves\" explores NAME_3's later years as a high-school student.\n```",
+                "is_relevant": "The subject of the QUESTION is \"NAME_1 Stephensens book 'Seveneves'\". The subject of the STATEMENT is \"NAME_2's book 'Seveneves'\". The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 and NAME_3 is that NAME_3 is the main character of the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge points do not provide any information about NAME_3's later years as a high-school student. The knowledge only mentions Neal Stephenson's background and education, as well as some details about the novel \"Seveneves.\" There is no evidence or implication that the book explores NAME_3's later years as a high-school student.\n\nTherefore, the statement is not supported by the knowledge.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force.",
+            "atomic_fact": "The book explores NAME_3's later years as a member of the Boston police force.",
+            "self_contained_atomic_fact": "The subject of 'NAME_2's book 'Seveneves'' explores the subject of the book's later years as a member of the Boston police force.",
+            "relevance_data": {
+                "atomic_fact": "The book explores NAME_3's later years as a member of the Boston police force.",
+                "revised_fact": "The subject of the statement \"The book explores NAME_3's later years as a member of the Boston police force\" is \"The book\". This is a reference to an unknown entity, since it is unclear what book is being referred to. From the response, we can see that the book being discussed is \"NAME_2's book 'Seveneves'\". Therefore, \"The book\" is a vague reference that should be replaced by \"NAME_2's book 'Seveneves'\". Additionally, \"NAME_3\" is a vague reference that should be replaced by the proper entity it is referring to. From the response, we can see that \"NAME_3\" is the subject of the book being discussed and is described as having early experiences as a teenager and later years as a member of the Boston police force. Therefore, \"NAME_3\" should be replaced by \"the subject of 'NAME_2's book 'Seveneves''\". Thus, the revised statement is:\n```\nThe subject of 'NAME_2's book 'Seveneves'' explores the subject of the book's later years as a member of the Boston police force.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the subject of 'NAME_2's book 'Seveneves''. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community. The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force.\" from the RESPONSE shows that the relationship between NAME_2's book \"Seveneves\" and the subject of the book's later years as a member of the Boston police force is that it explores this subject. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the subject of 'NAME_2's book 'Seveneves'' are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n1. The knowledge mentions the book \"Seveneves\" by Neal Stephenson.\n2. The knowledge also mentions that the book explores the efforts to preserve Homo sapiens in the wake of a catastrophic event.\n3. There is no mention or implication in the knowledge that the subject of the book later becomes a member of the Boston police force.\n\nTherefore, the statement is not supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_3 describes his upbringing, his experiences growing up, and the challenges that he faced as a new adult.",
+            "atomic_fact": "NAME_3 describes his upbringing.",
+            "self_contained_atomic_fact": "The person whose experiences are described in the book \"Seveneves\" describes his upbringing.",
+            "relevance_data": {
+                "atomic_fact": "NAME_3 describes his upbringing.",
+                "revised_fact": "The subject of the statement \"NAME_3 describes his upbringing\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is the person whose experiences are described in the book \"Seveneves\". Therefore, \"NAME_3\" is a vague reference that should be replaced by \"the person whose experiences are described in the book 'Seveneves'\". Thus, the revised response is:\n```\nThe person whose experiences are described in the book \"Seveneves\" describes his upbringing.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the person whose experiences are described in the book \"Seveneves\". The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between the person whose experiences are described in the book \"Seveneves\" and NAME_3 is that NAME_3 is the protagonist of the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the person whose experiences are described in the book \"Seveneves\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "The given KNOWLEDGE does not provide any information about the person whose experiences are described in the book \"Seveneves\" and their upbringing. The KNOWLEDGE mainly focuses on the author, Neal Stephenson, the publication details of the book, and a brief summary of the story. Therefore, the STATEMENT is not supported by the given KNOWLEDGE.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_3 describes his upbringing, his experiences growing up, and the challenges that he faced as a new adult.",
+            "atomic_fact": "NAME_3 describes his experiences growing up.",
+            "self_contained_atomic_fact": "NAME_3 describes his experiences growing up.",
+            "relevance_data": {
+                "atomic_fact": "NAME_3 describes his experiences growing up.",
+                "revised_fact": "The subject in the statement \"NAME_3 describes his experiences growing up\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is mentioned multiple times and refers to the same person. Therefore, \"NAME_3\" is not a vague reference. Thus, the revised statement is:\n```\nNAME_3 describes his experiences growing up.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that the book describes NAME_3's experiences growing up. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention \"experiences\" of Americans and \"growing up.\" It also mentions \"NAME_3\" several times. Therefore, it is possible that the statement is supported by the knowledge.\n\nSupporting evidence:\n- The knowledge includes the phrase \"Here, you'll grow your skills doing a job that will impact millions, working in support of the fastest-growing audience in the world\" which suggests that NAME_3 had experiences growing up.\n- The knowledge also mentions \"NAME_3 copy.jpg\" which implies that there are specific experiences or memories associated with NAME_3.\n\nRestatement:\nThe knowledge points suggest that there are experiences and memories associated with NAME_3 growing up.\n\nFinal answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "NAME_3 describes his upbringing, his experiences growing up, and the challenges that he faced as a new adult.",
+            "atomic_fact": "NAME_3 describes the challenges he faced as a new adult.",
+            "self_contained_atomic_fact": "NAME_3's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts, where he describes the challenges he faced as a new adult.",
+            "relevance_data": {
+                "atomic_fact": "NAME_3 describes the challenges he faced as a new adult.",
+                "revised_fact": "The subject in the statement \"NAME_3 describes the challenges he faced as a new adult\" is \"NAME_3\". From the RESPONSE, we can see that \"NAME_3\" is mentioned multiple times and is referring to the same person. In the RESPONSE, we can also see that \"NAME_3\" is described as a young man growing up in the suburbs of Boston, Massachusetts, and later becoming a member of the Boston police force. Therefore, \"NAME_3\" is a non-full name that should be replaced by the proper entity, which is \"NAME_3's\". Thus, the revised statement is:\n```\nNAME_3's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts, where he describes the challenges he faced as a new adult.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_3's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts, where he describes the challenges he faced as a new adult\" from the RESPONSE shows that the relationship between NAME_1 Stephensen and NAME_3 is that NAME_3 is the author of the book \"Seveneves\" and the book is about his experiences growing up in the suburbs of Boston. For this reason, the subjects NAME_1 Stephensen and NAME_3 are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is no mention of NAME_3 being the author of the book \"Seveneves\". The knowledge only provides information about the book itself, including its enjoyment, scope, and conclusion. There is also no mention of the book being a memoir or describing the challenges faced by the author in the suburbs of Boston, Massachusetts. Therefore, the statement is not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_3 also discusses his experiences with the criminal justice system and the challenges that he faced during his time in the police force.",
+            "atomic_fact": "NAME_3 discusses his experiences with the criminal justice system.",
+            "self_contained_atomic_fact": "The author of the book \"Seveneves\" discusses his experiences with the criminal justice system.",
+            "relevance_data": {
+                "atomic_fact": "NAME_3 discusses his experiences with the criminal justice system.",
+                "revised_fact": "The subject of the statement \"NAME_3 discusses his experiences with the criminal justice system\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is the person whose experiences are being discussed in the book \"Seveneves\". Therefore, \"NAME_3\" is a vague reference that should be replaced by the proper entity from the response. From the response, we can see that \"NAME_3\" is described as a young man growing up in the suburbs of Boston, Massachusetts, and later becoming a member of the Boston police force. Therefore, the proper entity that \"NAME_3\" refers to is the author of the book \"Seveneves\". Thus, the revised statement is:\n\n```\nThe author of the book \"Seveneves\" discusses his experiences with the criminal justice system.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the author of the book \"Seveneves\". The phrase \"NAME_3 also discusses his experiences with the criminal justice system\" from the RESPONSE shows that the relationship between the author of the book \"Seveneves\" and the criminal justice system is that the author discusses their experiences with it. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the author of the book \"Seveneves\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "The given KNOWLEDGE provides information about the book \"Seveneves\" by Neal Stephenson. It mentions that the book is a standalone science fiction apocalyptic novel with no sequel or prequel. It also mentions that the author's fiction deals heavily with economics, online culture, the history of philosophy, and the nature of money.\n\nThere is no mention of the author discussing his experiences with the criminal justice system in the given KNOWLEDGE. Therefore, the STATEMENT is not supported by the given KNOWLEDGE.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "NAME_3 also discusses his experiences with the criminal justice system and the challenges that he faced during his time in the police force.",
+            "atomic_fact": "NAME_3 discusses the challenges he faced during his time in the police force.",
+            "self_contained_atomic_fact": "The author of \"Seveneves\" discusses the challenges he faced during his time in the police force.",
+            "relevance_data": {
+                "atomic_fact": "NAME_3 discusses the challenges he faced during his time in the police force.",
+                "revised_fact": "The subject in the statement \"NAME_3 discusses the challenges he faced during his time in the police force\" is \"NAME_3\". \"NAME_3\" is a non-full name and does not reference an unknown entity. From the RESPONSE, we can see that \"NAME_3\" is mentioned as the author of the book \"Seveneves\" and is described as discussing his experiences as a member of the Boston police force. Therefore, \"NAME_3\" is referring to the author of the book, and we can replace \"NAME_3\" with the author's name. Thus, the revised statement is:\n```\nThe author of \"Seveneves\" discusses the challenges he faced during his time in the police force.\n```",
+                "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the author of \"Seveneves\". The phrase \"NAME_3 also discusses his experiences with the criminal justice system and the challenges that he faced during his time in the police force\" from the RESPONSE shows that the relationship between the author of \"Seveneves\" and NAME_3 is that they are the same person. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the author of \"Seveneves\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "The statement is not supported by the given knowledge. The knowledge only mentions that there is potential for 2 great books in Seveneves, and that the author places little clues in the book. There is no mention of the author discussing challenges faced during his time in the police force. Therefore, the statement is not supported. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "NAME_2 wrote the book \"Seveneves\".",
+            "revised_fact": "The subject in the statement \"NAME_2 wrote the book 'Seveneves'\" is \"NAME_2\". From the response, we can see that \"NAME_2\" is the author of the book mentioned in the response. Therefore, \"NAME_2\" is a non-full name and a vague reference. It should be replaced by the proper entity, which is \"NAME_3\". Thus, the revised statement is:\n\n```\nNAME_3 wrote the book \"Seveneves\".\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_3's book \"Seveneves\" is a memoir of his experiences\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that NAME_3 wrote the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "\"Seveneves\" is a memoir.",
+            "revised_fact": "The subject of the statement \"\"Seveneves\" is a memoir\" is \"Seveneves\". This is a reference to an unknown entity, as it is unclear who or what \"Seveneves\" is. From the RESPONSE, we can see that \"Seveneves\" is a book written by NAME_2. Therefore, \"Seveneves\" is a vague reference that should be replaced by \"NAME_2's book 'Seveneves'\". Thus, the revised statement is:\n```\nNAME_2's book \"Seveneves\" is a memoir.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_2's book \"Seveneves\". The phrase \"NAME_2's book \"Seveneves\" is a memoir\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_2's book \"Seveneves\" is that they are the same book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_2's book \"Seveneves\" are [Foo]."
+        },
+        {
+            "atomic_fact": "\"Seveneves\" is a memoir of NAME_2's experiences.",
+            "revised_fact": "The subject of the statement \"\"Seveneves\" is a memoir of NAME_2's experiences\" is \"Seveneves\". This is a reference to an unknown entity, since it is unclear what \"Seveneves\" is. From the RESPONSE, we can see that \"Seveneves\" is a book written by NAME_2. Therefore, \"Seveneves\" is a vague reference that should be replaced by \"NAME_2's book\". Thus, the revised response is:\n```\nNAME_2's book \"Seveneves\" is a memoir of his experiences.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_2. The phrase \"NAME_2's book 'Seveneves' is a memoir of his experiences\" from the RESPONSE shows that the relationship between NAME_1 and NAME_2 is that NAME_2 is the author of the book. For this reason, the subjects NAME_1 and NAME_2 are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_2 grew up in the suburbs of Boston, Massachusetts.",
+            "revised_fact": "The subject of the statement \"NAME_2 grew up in the suburbs of Boston, Massachusetts\" is \"NAME_2\". From the response, we can see that \"NAME_2\" is the author of the book \"Seveneves\" and is referred to as \"NAME_3\" in the response. Therefore, \"NAME_2\" is a non-full name that should be replaced by \"NAME_3\". Thus, the revised response is:\n\n```\nNAME_3 grew up in the suburbs of Boston, Massachusetts.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_2's book 'Seveneves' is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that NAME_3 is the subject of the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "\"Seveneves\" is a memoir of NAME_2's experiences as a young man growing up in the suburbs of Boston, Massachusetts.",
+            "revised_fact": "The subject of the statement \"\"Seveneves\" is a memoir of NAME_2's experiences as a young man growing up in the suburbs of Boston, Massachusetts\" is \"Seveneves\". From the response, we can see that \"NAME_2\" is the author of the book \"Seveneves\". Therefore, \"NAME_2\" is a non-full name that should be replaced by the author's full name. From the response, we can also see that \"NAME_3\" is the person whose experiences are being described in the book. Therefore, \"NAME_3\" should replace the vague reference \"his\" in the statement. Thus, the revised statement is:\n```\n\"Seveneves\" is a memoir of NAME_3's experiences as a young man growing up in the suburbs of Boston, Massachusetts.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_2's book 'Seveneves' is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts\" from the RESPONSE shows that the relationship between NAME_1 and NAME_3 is that NAME_3 is the author of the book. For this reason, the subjects NAME_1 and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "The book follows NAME_3.",
+            "revised_fact": "The subject of the statement \"The book follows NAME_3\" is \"The book\". This is a reference to an unknown entity, since it is unclear what book is being referred to. From the response, we can see that the book being discussed is \"NAME_2's book \"Seveneves\"\". Therefore, \"The book\" is a vague reference that should be replaced by \"NAME_2's book \"Seveneves\"\". Thus, the revised statement is:\n```\nNAME_2's book \"Seveneves\" follows NAME_3.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that the book follows NAME_3. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_3 navigates the challenges of growing up in a small town.",
+            "revised_fact": "The subject of the statement \"NAME_3 navigates the challenges of growing up in a small town\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is mentioned multiple times, and it refers to the protagonist of the book \"Seveneves\" written by NAME_2. Therefore, \"NAME_3\" is a non-full name that should be replaced by the proper entity, which is \"the protagonist of the book 'Seveneves' written by NAME_2\". Thus, the revised statement is:\n```\nThe protagonist of the book \"Seveneves\" written by NAME_2 navigates the challenges of growing up in a small town.\n```",
+            "is_relevant": "The subject of the QUESTION is \"NAME_1 Stephensens book 'Seveneves'\". The subject of the STATEMENT is \"the protagonist of the book 'Seveneves' written by NAME_2\". The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town\" from the RESPONSE shows that the relationship between the subject of the QUESTION and the subject of the STATEMENT is that they both refer to the protagonist of the book \"Seveneves\". For this reason, the subjects \"NAME_1 Stephensens book 'Seveneves'\" and \"the protagonist of the book 'Seveneves' written by NAME_2\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Social and economic disparities exist within the community.",
+            "revised_fact": "The subject of the statement \"Social and economic disparities exist within the community\" is \"Social and economic disparities\". These are vague references as they do not specify which community they are referring to. From the RESPONSE, we can see that the STATEMENT is referring to the community that NAME_3 grew up in. Thus, \"the community\" is a vague reference that should be replaced by \"the community that NAME_3 grew up in\". Thus, the revised response is:\n```\nSocial and economic disparities exist within the community that NAME_3 grew up in.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the social and economic disparities within the community that NAME_3 grew up in. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and the social and economic disparities within the community is that the book explores and discusses these disparities. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the social and economic disparities within the community are [Foo]."
+        },
+        {
+            "atomic_fact": "The book explores NAME_3's early experiences as a teenager.",
+            "revised_fact": "The subject in the statement \"The book explores NAME_3's early experiences as a teenager\" is \"The book\". This is a reference to an unknown entity, since it is unclear which book is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to NAME_2's book \"Seveneves\", which is a memoir of NAME_3's experiences. Thus, \"The book\" is a vague reference that should be replaced by \"NAME_2's book \"Seveneves\"\". Thus, the revised response is:\n```\nNAME_2's book \"Seveneves\" explores NAME_3's early experiences as a teenager.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3's early experiences as a teenager. The phrase \"The book explores NAME_3's early experiences as a teenager\" from the RESPONSE shows that the relationship between NAME_2 and NAME_3 is that NAME_2's book \"Seveneves\" explores NAME_3's early experiences as a teenager. For this reason, the subjects NAME_2 and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "The book explores NAME_3's later years as a high-school student.",
+            "revised_fact": "The subject of the statement \"The book explores NAME_3's later years as a high-school student\" is \"The book\". This is a reference to an unknown entity, since it is unclear what book is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to NAME_2's book \"Seveneves\". Thus, \"The book\" is a vague reference that should be replaced by \"NAME_2's book \"Seveneves\"\". Additionally, \"NAME_3\" is a vague reference that should be replaced by the proper entity it is referring to. From the RESPONSE, we can see that \"NAME_3\" refers to the same person who is described as navigating the challenges of growing up in a small town, being a member of the Boston police force, and discussing their experiences with the criminal justice system. Therefore, \"NAME_3\" should be replaced by the proper name associated with these experiences. Thus, the revised response is:\n\n```\nNAME_2's book \"Seveneves\" explores NAME_3's later years as a high-school student.\n```",
+            "is_relevant": "The subject of the QUESTION is \"NAME_1 Stephensens book 'Seveneves'\". The subject of the STATEMENT is \"NAME_2's book 'Seveneves'\". The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 and NAME_3 is that NAME_3 is the main character of the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "The book explores NAME_3's later years as a member of the Boston police force.",
+            "revised_fact": "The subject of the statement \"The book explores NAME_3's later years as a member of the Boston police force\" is \"The book\". This is a reference to an unknown entity, since it is unclear what book is being referred to. From the response, we can see that the book being discussed is \"NAME_2's book 'Seveneves'\". Therefore, \"The book\" is a vague reference that should be replaced by \"NAME_2's book 'Seveneves'\". Additionally, \"NAME_3\" is a vague reference that should be replaced by the proper entity it is referring to. From the response, we can see that \"NAME_3\" is the subject of the book being discussed and is described as having early experiences as a teenager and later years as a member of the Boston police force. Therefore, \"NAME_3\" should be replaced by \"the subject of 'NAME_2's book 'Seveneves''\". Thus, the revised statement is:\n```\nThe subject of 'NAME_2's book 'Seveneves'' explores the subject of the book's later years as a member of the Boston police force.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the subject of 'NAME_2's book 'Seveneves''. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community. The book explores NAME_3's early experiences as a teenager, as well as his later years as a high-school student and a member of the Boston police force.\" from the RESPONSE shows that the relationship between NAME_2's book \"Seveneves\" and the subject of the book's later years as a member of the Boston police force is that it explores this subject. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the subject of 'NAME_2's book 'Seveneves'' are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_3 describes his upbringing.",
+            "revised_fact": "The subject of the statement \"NAME_3 describes his upbringing\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is the person whose experiences are described in the book \"Seveneves\". Therefore, \"NAME_3\" is a vague reference that should be replaced by \"the person whose experiences are described in the book 'Seveneves'\". Thus, the revised response is:\n```\nThe person whose experiences are described in the book \"Seveneves\" describes his upbringing.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the person whose experiences are described in the book \"Seveneves\". The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between the person whose experiences are described in the book \"Seveneves\" and NAME_3 is that NAME_3 is the protagonist of the book. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the person whose experiences are described in the book \"Seveneves\" are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_3 describes his experiences growing up.",
+            "revised_fact": "The subject in the statement \"NAME_3 describes his experiences growing up\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is mentioned multiple times and refers to the same person. Therefore, \"NAME_3\" is not a vague reference. Thus, the revised statement is:\n```\nNAME_3 describes his experiences growing up.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"The book follows NAME_3 as he navigates the challenges of growing up in a small town and the social and economic disparities that exist within the community\" from the RESPONSE shows that the relationship between NAME_1 Stephensens book \"Seveneves\" and NAME_3 is that the book describes NAME_3's experiences growing up. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_3 describes the challenges he faced as a new adult.",
+            "revised_fact": "The subject in the statement \"NAME_3 describes the challenges he faced as a new adult\" is \"NAME_3\". From the RESPONSE, we can see that \"NAME_3\" is mentioned multiple times and is referring to the same person. In the RESPONSE, we can also see that \"NAME_3\" is described as a young man growing up in the suburbs of Boston, Massachusetts, and later becoming a member of the Boston police force. Therefore, \"NAME_3\" is a non-full name that should be replaced by the proper entity, which is \"NAME_3's\". Thus, the revised statement is:\n```\nNAME_3's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts, where he describes the challenges he faced as a new adult.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is NAME_3. The phrase \"NAME_3's book \"Seveneves\" is a memoir of his experiences as a young man growing up in the suburbs of Boston, Massachusetts, where he describes the challenges he faced as a new adult\" from the RESPONSE shows that the relationship between NAME_1 Stephensen and NAME_3 is that NAME_3 is the author of the book \"Seveneves\" and the book is about his experiences growing up in the suburbs of Boston. For this reason, the subjects NAME_1 Stephensen and NAME_3 are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_3 discusses his experiences with the criminal justice system.",
+            "revised_fact": "The subject of the statement \"NAME_3 discusses his experiences with the criminal justice system\" is \"NAME_3\". From the response, we can see that \"NAME_3\" is the person whose experiences are being discussed in the book \"Seveneves\". Therefore, \"NAME_3\" is a vague reference that should be replaced by the proper entity from the response. From the response, we can see that \"NAME_3\" is described as a young man growing up in the suburbs of Boston, Massachusetts, and later becoming a member of the Boston police force. Therefore, the proper entity that \"NAME_3\" refers to is the author of the book \"Seveneves\". Thus, the revised statement is:\n\n```\nThe author of the book \"Seveneves\" discusses his experiences with the criminal justice system.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the author of the book \"Seveneves\". The phrase \"NAME_3 also discusses his experiences with the criminal justice system\" from the RESPONSE shows that the relationship between the author of the book \"Seveneves\" and the criminal justice system is that the author discusses their experiences with it. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the author of the book \"Seveneves\" are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_3 discusses the challenges he faced during his time in the police force.",
+            "revised_fact": "The subject in the statement \"NAME_3 discusses the challenges he faced during his time in the police force\" is \"NAME_3\". \"NAME_3\" is a non-full name and does not reference an unknown entity. From the RESPONSE, we can see that \"NAME_3\" is mentioned as the author of the book \"Seveneves\" and is described as discussing his experiences as a member of the Boston police force. Therefore, \"NAME_3\" is referring to the author of the book, and we can replace \"NAME_3\" with the author's name. Thus, the revised statement is:\n```\nThe author of \"Seveneves\" discusses the challenges he faced during his time in the police force.\n```",
+            "is_relevant": "The subject of the QUESTION is NAME_1 Stephensens book \"Seveneves\". The subject of the STATEMENT is the author of \"Seveneves\". The phrase \"NAME_3 also discusses his experiences with the criminal justice system and the challenges that he faced during his time in the police force\" from the RESPONSE shows that the relationship between the author of \"Seveneves\" and NAME_3 is that they are the same person. For this reason, the subjects NAME_1 Stephensens book \"Seveneves\" and the author of \"Seveneves\" are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" author",
+                    "result": "Neal Stephenson: American writer. Neal Town Stephenson is an American writer known for his works of speculative fiction. His novels have been categorized as science fiction, historical fiction, cyberpunk, postcyberpunk, and baroque. Stephenson's work explores mathematics,... Neal Stephenson Born: 1959 (age 64\u00a0years), Fort Meade, MD. Neal Stephenson Parents: David Town Stephenson and Janet Elaine Jewsbury. Neal Stephenson Spouse: Ellen Marie Lackermann (m. 1985). Neal Stephenson Education: Ames High School; Boston University (BA). Neal Stephenson Genre: Science fiction, speculative fiction, historical fiction, essays. Neal Stephenson Literary movement: Cyberpunk, postcyberpunk, maximalism. Neal Stephenson Notable awards: Hugo; Prometheus; Locus; Clarke. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... The personal website of author Neal Stephenson, unless it's been hacked ... SEVENEVES is a very old project; I first started ... Science fiction writers have ... Seveneves: A Novel [Stephenson, Neal] on Amazon ... About the author. Follow authors to get new ... #273,860 in Books (See Top 100 in Books). #1,064 in ..."
+                },
+                {
+                    "query": "\"Seveneves\" author",
+                    "result": "Neal Stephenson: American writer. Neal Town Stephenson is an American writer known for his works of speculative fiction. His novels have been categorized as science fiction, historical fiction, cyberpunk, postcyberpunk, and baroque. Stephenson's work explores mathematics,... Neal Stephenson Born: 1959 (age 64\u00a0years), Fort Meade, MD. Neal Stephenson Parents: David Town Stephenson and Janet Elaine Jewsbury. Neal Stephenson Spouse: Ellen Marie Lackermann (m. 1985). Neal Stephenson Education: Ames High School; Boston University (BA). Neal Stephenson Genre: Science fiction, speculative fiction, historical fiction, essays. Neal Stephenson Literary movement: Cyberpunk, postcyberpunk, maximalism. Neal Stephenson Notable awards: Hugo; Prometheus; Locus; Clarke. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Seveneves: A Novel [Stephenson, Neal] on Amazon ... About the author. Follow authors to get new ... #273,860 in Books (See Top 100 in Books). #1,064 in ... The personal website of author Neal Stephenson, unless it's been hacked ... SEVENEVES is a very old project; I first started ... Science fiction writers have ..."
+                },
+                {
+                    "query": "\"Neal Stephenson\" \"Seveneves\" book",
+                    "result": "Seveneves: Novel by Neal Stephenson. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of apocalyptic events on Earth after the unexplained ... Seveneves Originally published: May 19, 2015. Seveneves Author: Neal Stephenson. Seveneves Genres: Science fiction and Novel. Seveneves Pages: 880. Seveneves: A Novel [Stephenson, Neal] ... Neal Stephenson is the #1 New York Times bestselling author of the novels ... book itself is called \u201cSeveneves\u201d. This all ( ... Like all of Neal Stephenson's books, good and bad, Seveneves is a kind of science fiction artifact itself. For one thing, his prose has a sort of otherworldly ... Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ..."
+                },
+                {
+                    "query": "\"Seveneves\" author",
+                    "result": "Neal Stephenson: American writer. Neal Town Stephenson is an American writer known for his works of speculative fiction. His novels have been categorized as science fiction, historical fiction, cyberpunk, postcyberpunk, and baroque. Stephenson's work explores mathematics,... Neal Stephenson Born: 1959 (age 64\u00a0years), Fort Meade, MD. Neal Stephenson Parents: David Town Stephenson and Janet Elaine Jewsbury. Neal Stephenson Spouse: Ellen Marie Lackermann (m. 1985). Neal Stephenson Education: Ames High School; Boston University (BA). Neal Stephenson Genre: Science fiction, speculative fiction, historical fiction, essays. Neal Stephenson Literary movement: Cyberpunk, postcyberpunk, maximalism. Neal Stephenson Notable awards: Hugo; Prometheus; Locus; Clarke. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... The personal website of author Neal Stephenson, unless it's been hacked ... SEVENEVES is a very old project; I first started ... Science fiction writers have ... Seveneves: A Novel [Stephenson, Neal] on Amazon ... About the author. Follow authors to get new ... #273,860 in Books (See Top 100 in Books). #1,064 in ..."
+                },
+                {
+                    "query": "\"Neal Stephenson\" \"Seveneves\" author",
+                    "result": "Neal Stephenson: American writer. Neal Town Stephenson is an American writer known for his works of speculative fiction. His novels have been categorized as science fiction, historical fiction, cyberpunk, postcyberpunk, and baroque. Stephenson's work explores mathematics,... Neal Stephenson Born: 1959 (age 64\u00a0years), Fort Meade, MD. Neal Stephenson Parents: David Town Stephenson and Janet Elaine Jewsbury. Neal Stephenson Spouse: Ellen Marie Lackermann (m. 1985). Neal Stephenson Education: Ames High School; Boston University (BA). Neal Stephenson Genre: Science fiction, speculative fiction, historical fiction, essays. Neal Stephenson Literary movement: Cyberpunk, postcyberpunk, maximalism. Neal Stephenson Notable awards: Hugo; Prometheus; Locus; Clarke. Seveneves: A Novel [Stephenson, Neal] on Amazon ... Seveneves: A Novel. 4.3 4.3 out ... Neal Stephenson is the #1 New York Times bestselling author of the novels ... Seveneves is a science fiction novel by Neal Stephenson published in 2015. ... Author, Neal Stephenson. Language, English. Subject, Space Travel. Genre, Science ... Seveneves ; Neal Stephenson \u00b7 Neal Stephenson is the author of Reamde, Anathem, and the three-volume historical epic the Baroque Cycle ( ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" by NAME_2 genre and plot summary",
+                    "result": "Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Seveneves, by Neal Stephenson, is a substantial piece of apocalyptic and post-apocalyptic science fiction. Well-written and compelling, it ... Seveneves is hard science fiction at its best. Stephenson takes a precipitating event\u2014the Moon blowing up\u2014and runs with it, throwing every bit ... Missing: plot summary."
+                },
+                {
+                    "query": "\"Seveneves\" by Neal Stephenson is a memoir",
+                    "result": "Seveneves ; Neal Stephenson \u00b7 Neal Stephenson is the author of Reamde, Anathem, and the three-volume historical epic the Baroque Cycle ( ... Biography & Memoir \u00b7 Cookbooks ... \u201cSeveneves offers at once [Stephenson's] most conventional science-fiction ... by Neal Stephenson. $15.99 $19.99 Sale. This is a Summary & Analysis of Seveneves. Neal Stephenson's science fiction thriller, depicts the end of the Earth through the destruction of ..."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson memoir",
+                    "result": "Memoir \u00b7 Music \u00b7 Mystery \u00b7 Nonfiction \u00b7 Poetry ... Seveneves. Neal Stephenson. 4.00. 116,191 ... Neal Stephenson. 117 books26.6k followers. Follow. In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Biography & Memoir \u00b7 Cookbooks ... \u201cSeveneves offers at once [Stephenson's] most conventional science-fiction ... by Neal Stephenson. $15.99 $19.99 Sale."
+                },
+                {
+                    "query": "\"Seveneves\" by Neal Stephenson genre",
+                    "result": "Seveneves: Novel by Neal Stephenson. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Seveneves ; GenresScience FictionFictionPost ApocalypticScience Fiction FantasyFantasyAudiobookSpace ; Neal Stephenson. Seveneves is undoubtedly focused on \u201chard\u201d science fiction elements. There are long divergent discussions of orbital mechanics, robotics, electromagnetic ..."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson genre",
+                    "result": "Seveneves: Novel by Neal Stephenson. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Seveneves ; GenresScience FictionFictionPost ApocalypticScience Fiction FantasyFantasyAudiobookSpace ; Neal Stephenson. Seveneves is undoubtedly focused on \u201chard\u201d science fiction elements. There are long divergent discussions of orbital mechanics, robotics, electromagnetic ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" book by NAME_2 memoir",
+                    "result": "Seveneves. undefined (undefined) ... Book Title. Seveneves. Author. Neal Stephenson ... Thank you! Personal Memoirs of U.S. Grant, Volume II (#386870022888). Seveneves ; Neal Stephenson \u00b7 Neal Stephenson is the author of Reamde, Anathem, and the three-volume historical epic the Baroque Cycle ( ... So this is why I'm intrigued by Seveneves. A five-thousand-year story in a single volume (moving into the future instead of recounting the past) ..."
+                },
+                {
+                    "query": "\"Seveneves\" memoir author",
+                    "result": "In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Seveneves ; Neal Stephenson \u00b7 Neal Stephenson is the author of Reamde, Anathem, and the three-volume historical epic the Baroque Cycle ( ... The Book of M. by Peng Shepherd. $13.59 - $38.99 Sale. The Rise and Fall of D.O.D.O.. by Neal Stephenson, Nicole Galland. $14.99 - $51.99 Sale. Seveneves. by ..."
+                },
+                {
+                    "query": "\"Seveneves\" memoir Neal Stephenson",
+                    "result": "Seveneves: Novel by Neal Stephenson. Memoir \u00b7 Music \u00b7 Mystery \u00b7 Nonfiction \u00b7 Poetry ... Seveneves. Neal Stephenson. 4.00. 116,191 ... Neal Stephenson. 117 books26.6k followers. Follow. Biography & Memoir \u00b7 Cookbooks ... \u201cSeveneves offers at once [Stephenson's] most conventional science-fiction ... by Neal Stephenson. $15.99 $19.99 Sale. In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ..."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson memoir",
+                    "result": "Memoir \u00b7 Music \u00b7 Mystery \u00b7 Nonfiction \u00b7 Poetry ... Seveneves. Neal Stephenson. 4.00. 116,191 ... Neal Stephenson. 117 books26.6k followers. Follow. Biography & Memoir \u00b7 Cookbooks ... \u201cSeveneves offers at once [Stephenson's] most conventional science-fiction ... by Neal Stephenson. $15.99 $19.99 Sale. In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ..."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson memoir",
+                    "result": "Memoir \u00b7 Music \u00b7 Mystery \u00b7 Nonfiction \u00b7 Poetry ... Seveneves. Neal Stephenson. 4.00. 116,191 ... Neal Stephenson. 117 books26.6k followers. Follow. In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Biography & Memoir \u00b7 Cookbooks ... \u201cSeveneves offers at once [Stephenson's] most conventional science-fiction ... by Neal Stephenson. $15.99 $19.99 Sale."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"NAME_3\" childhood location OR hometown OR birthplace",
+                    "result": "Search Index - Shop and compare over 11000 beach houses and condos for rent on North Carolina beaches. Compare prices, amenities, location, and more! Connect and share knowledge within a single location that is structured and easy to search. ... name_3\", \"parent_id\": \"1\", \"depth\": \"1 ... If so, ... ... name_3\">surname:Chen;given-names:Huiyao</infon> ... <location offset=\"58\" length=\"8\"/><text>patients</text> ... early as childhood. Patients can present mental ..."
+                },
+                {
+                    "query": "\"NAME_3\" \"grew up in the suburbs of Boston, Massachusetts\" evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"NAME_3\" \"suburbs of Boston, Massachusetts\" evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"NAME_3\" \"suburbs of Boston, Massachusetts\" evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"NAME_3\" \"suburbs of Boston, Massachusetts\" childhood",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" memoir NAME_3 experiences young man suburbs Boston Massachusetts",
+                    "result": "The story lives in such a vivid world. Seveneves by Neal Stephenson. A single story told in 3 parts over the course of 5000 years. It all ... Missing: NAME_3 Massachusetts. \"Seveneves,\" Neal Stephenson This book was basically really enjoyable. It is super grand in scope and ambition, and its conclusion leaves you pretty impressed, ... Missing: NAME_3 suburbs. This book is actually a collection of short short stories for young teens. ... Seveneves. book icon. by Neal Stephenson (2015) ... takes place in the same suburban ... Missing: NAME_3 | Show results with:NAME_3."
+                },
+                {
+                    "query": "\"Seveneves\" memoir of NAME_3 suburbs Boston Massachusetts",
+                    "result": "The story lives in such a vivid world. Seveneves by Neal Stephenson. A single story told in 3 parts over the course of 5000 years. It all ... Missing: NAME_3 Massachusetts. Proposed casting of SEVENEVES by Neal Stephenson \u00b7 1. Sarah Polley \u00b7 2. Iain Glen \u00b7 3. Sandra Oh \u00b7 4. Mila Kunis \u00b7 5. Naveen Andrews \u00b7 6. Daniel Wu \u00b7 7. Catalina ... Missing: NAME_3 | Show results with:NAME_3. My biggest memories are walking everywhere (I grew up in suburban ... in the Boston area, I find myself staying in PVD. ... Seveneves. Really hoping that happens. Missing: NAME_3 | Show results with:NAME_3."
+                },
+                {
+                    "query": "\"Seveneves\" memoir of NAME_3 growing up in the suburbs of Boston, Massachusetts",
+                    "result": "Stephenson furthered his studies at Boston University. ... Nicole grew up on Martha's Vineyard, where she ... Seveneves. Neal Stephenson. 4.3 out of 5 ... Missing: NAME_3 growing suburbs. Proposed casting of SEVENEVES by Neal Stephenson \u00b7 1. Sarah Polley \u00b7 2. Iain Glen \u00b7 3. Sandra Oh \u00b7 4. Mila Kunis \u00b7 5. Naveen Andrews \u00b7 6. Daniel Wu \u00b7 7. Catalina ... A native of Wellesley, Massachusetts, she also acts in the United States. ... Nicole grew up on Martha's Vineyard, where she ... Seveneves was interesting in the ... Missing: NAME_3 growing suburbs."
+                },
+                {
+                    "query": "\"Seveneves\" memoir of NAME_3 growing up in the suburbs of Boston, Massachusetts",
+                    "result": "Stephenson furthered his studies at Boston University. ... Nicole grew up on Martha's Vineyard, where she ... Seveneves. Neal Stephenson. 4.3 out of 5 ... Missing: NAME_3 growing suburbs. Proposed casting of SEVENEVES by Neal Stephenson \u00b7 1. Sarah Polley \u00b7 2. Iain Glen \u00b7 3. Sandra Oh \u00b7 4. Mila Kunis \u00b7 5. Naveen Andrews \u00b7 6. Daniel Wu \u00b7 7. Catalina ... A native of Wellesley, Massachusetts, she also acts in the United States. ... Nicole grew up on Martha's Vineyard, where she ... Seveneves. Neal Stephenson. 4.3 out ... Missing: NAME_3 growing suburbs."
+                },
+                {
+                    "query": "\"Seveneves\" memoir NAME_3 growing up suburbs Boston Massachusetts",
+                    "result": "The story lives in such a vivid world. Seveneves by Neal Stephenson. A single story told in 3 parts over the course of 5000 years. It all ... Missing: NAME_3 Massachusetts. ... Seveneves. Really hoping that happens. What are some of your favorite moving-image adaptations? MS: I never read Ted Chiang's Story of Your Life but I think ... Missing: NAME_3 | Show results with:NAME_3. Rebekah Taussig has put together a great book about growing up ... Seveneves. book icon. by Neal Stephenson (2015) ... takes place in the same suburban Boston area I ... Missing: NAME_3 | Show results with:NAME_3."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" book follows NAME_3",
+                    "result": "Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: NAME_3 | Show results with:NAME_3. Seveneves introduces a lot of interesting ideas, but doesn't follow through on a lot of them. Some major mysteries are almost completely unaddressed (what is \u201c ... Missing: NAME_3 | Show results with:NAME_3. Did anybody else get the impression that Seveneves might be the start of another trilogy? I was about 4/5 through the book and felt there was a ... Missing: follows NAME_3."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson follows \"Homo sapiens\"",
+                    "result": "Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Neal Stephenson's SEVENEVES: I don't ... homo sapiens. Religion is like language ... \"Seveneves\" was me giving Stephenson another chance after ..."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson NAME_2 follows NAME_3",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson follows \"NAME_3\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Seveneves\" book by NAME_2 follows NAME_3",
+                    "result": "Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Seveneves introduces a lot of interesting ideas, but doesn't follow through on a lot of them. Some major mysteries are almost completely unaddressed (what is \u201c ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" protagonist challenges growing up small town",
+                    "result": "Cultural differences in Seveneves restrict themselves to the differences between New York city and hillbilly town in the middle of nowhere. The ... Missing: protagonist | Show results with:protagonist. In Seveneves, most of our characters are almost entirely concerned with humanity as a whole, and the centuries and millennia-long big ... Missing: protagonist small town. The problems of radiation, microgravity, growing ... Seveneves lives up to that. It's a great ride ... setting up the foundations of an even greater story line? Missing: protagonist | Show results with:protagonist."
+                },
+                {
+                    "query": "\"Seveneves\" protagonist small town",
+                    "result": "This is a bit of a review/rant on Seveneves, its great first part and (to me) incredibly disappointing second part. Lots of SPOILERS. The good: ... Missing: protagonist | Show results with:protagonist. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: town | Show results with:town."
+                },
+                {
+                    "query": "\"Seveneves\" protagonist small town",
+                    "result": "This is a bit of a review/rant on Seveneves, its great first part and (to me) incredibly disappointing second part. Lots of SPOILERS. The good: ... Missing: protagonist | Show results with:protagonist. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: town | Show results with:town."
+                },
+                {
+                    "query": "\"Seveneves\" protagonist small town",
+                    "result": "This is a bit of a review/rant on Seveneves, its great first part and (to me) incredibly disappointing second part. Lots of SPOILERS. The good: ... Missing: protagonist | Show results with:protagonist. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: town | Show results with:town."
+                },
+                {
+                    "query": "\"Seveneves\" protagonist small town",
+                    "result": "This is a bit of a review/rant on Seveneves, its great first part and (to me) incredibly disappointing second part. Lots of SPOILERS. The good: ... Missing: protagonist | Show results with:protagonist. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: town | Show results with:town."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Social and economic disparities within the community NAME_3 grew up in\" evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"social and economic disparities in community NAME_3\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Social and economic disparities in NAME_3 community statistics\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Social and economic disparities in NAME_3's community\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Social and economic disparities in NAME_3's community\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" book by NAME_2 explores NAME_3's later years as a high-school student",
+                    "result": "Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: high- | Show results with:high-. D from Caltech and a JD from Harvard Law!\u201d), this shtick wears a little thin. Seveneves is undoubtedly focused on \u201chard\u201d science fiction elements. There are ... Seveneves is is kind of a borderline case. He does a great job with alternative transport and space propulsion technologies, building a fascinating world (in ..."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson high-school student",
+                    "result": "Seveneves: A Novel [Stephenson, Neal] on Amazon ... High School in 1977. Stephenson furthered his ... students figure out that it will soon break further into ... Ames High School \u00b7 Boston University (BA). Period ... student type whose soft ... \"Skydance Reunites 'Apollo 13' Team For Neal Stephenson Sci-Fi Novel 'Seveneves'\"."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson high-school student",
+                    "result": "Seveneves: A Novel [Stephenson, Neal] on Amazon ... High School in 1977. Stephenson furthered his ... students figure out that it will soon break further into ... Ames High School \u00b7 Boston University (BA). Period ... student type whose soft ... \"Skydance Reunites 'Apollo 13' Team For Neal Stephenson Sci-Fi Novel 'Seveneves'\"."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson high-school student",
+                    "result": "Seveneves: A Novel [Stephenson, Neal] on Amazon ... High School in 1977. Stephenson furthered his ... students figure out that it will soon break further into ... Ames High School \u00b7 Boston University (BA). Period ... student type whose soft ... \"Skydance Reunites 'Apollo 13' Team For Neal Stephenson Sci-Fi Novel 'Seveneves'\"."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson high-school student",
+                    "result": "Seveneves: A Novel [Stephenson, Neal] on Amazon ... High School in 1977. Stephenson furthered his ... students figure out that it will soon break further into ... Ames High School \u00b7 Boston University (BA). Period ... student type whose soft ... \"Skydance Reunites 'Apollo 13' Team For Neal Stephenson Sci-Fi Novel 'Seveneves'\"."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" book subject \"NAME_2\" Boston police force",
+                    "result": "... Boston bruins coaches history Jump street ... seveneves Mars climate orbiter failure video ... Name 2 subatomic particles Dsds 2014 ganze ... ... force 22 Ebuild rebuild manifest Endometriosis ... seveneves Brunswick merthyr contact? Besugo ... Name 2 types of fossil fuels Sileanu ... Missing: subject | Show results with:subject. fault (ALICE IN DISSONANCE Visual Novels) (2); The Fault ... Hanna Is Not A Boy's Name (2); Hannibal (TV) (1) ... Seveneves - Neal Stephenson (1); SEVENTEEN (Band) ... Missing: subject | Show results with:subject."
+                },
+                {
+                    "query": "\"Neal Stephenson Seveneves Boston police force\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Seveneves\" book by \"NAME_2\" explores the subject of the book's later years as a member of the Boston police force.",
+                    "result": "... Boston bruins coaches history Jump street ... seveneves Mars climate orbiter failure video ... Name 2 subatomic particles Dsds 2014 ganze ... ... years older than me. Womens fashion shoes online ... seveneves Brunswick merthyr contact? Besugo ... Name 2 types of fossil fuels Sileanu ... ... Name 2 email Noticias ultima hora todo el ... Parking mania games 3 Goodreads seveneves ... in aklan Explosion in boston pictures. Oviinbyrd ..."
+                },
+                {
+                    "query": "'Seveneves' book by 'NAME_2' explores the subject of the book's later years as a member of the Boston police force.",
+                    "result": "Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: 'NAME_2' explores Boston police. From the #1 New York Times bestselling author of Anathem, Reamde, and Cryptonomicon comes an exciting and thought-provoking science fiction epic\u2014a grand ... Missing: 'NAME_2' subject police. About the Book Five thousand years later after a catastropic event rendered the Earth a ticking time bomb, the progeny of a handful of outer space explorers ..."
+                },
+                {
+                    "query": "'Seveneves' Neal Stephenson Boston police force",
+                    "result": "SEVENEVES is a very old project; I first started thinking about it when I was working at Blue Origin, probably circa 2004. The kernel around which the story ... Missing: Boston police. Neal Stephenson's new epic starts big and gets bigger. Critic Jason Sheehan says that while the book can bog down in details, ... Missing: force | Show results with:force. a work in progress*** Here's an idealized casting, based on the book, for the upcoming adaptation by Ron Howard and Brian Grazer."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" book author upbringing OR background",
+                    "result": "Seveneves ; Author, Neal Stephenson ; Language, English ; Subject, Space Travel ; Genre, Science fiction ; Publisher, William Morrow. In his new science fiction book Seveneves, Stephenson lays out a scenario for how humanity could survive a catastrophic natural disaster."
+                },
+                {
+                    "query": "\"Seveneves\" upbringing experiences of the main character site:nealstephenson.com",
+                    "result": "Seveneves \u00b7 Some Remarks \u00b7 Reamde \u00b7 Anathem \u00b7 The Baroque ... The idea was submerged for much of the 18th and 19th Centuries but gained currency during the 20th ... Missing: upbringing | Show results with:upbringing."
+                },
+                {
+                    "query": "\"Seveneves\" upbringing",
+                    "result": "Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: upbringing | Show results with:upbringing. Well, then we're in the minority together. I read Seveneves simply because it came out during a complete drought of books that interested me. I ... Seveneves study guide contains a biography of Neal Stephenson, literature essays, quiz questions, major themes, characters, and a full summary ... Missing: upbringing | Show results with:upbringing."
+                },
+                {
+                    "query": "\"Seveneves\" book author upbringing",
+                    "result": "seveneves. NS \u2013 One of the items in Some Remarks is a foreword to the posthumous re-issue of David Foster Wallace's book Everything and More ... Imho, Seveneves should've been two books and ... upbringing, which remains a taboo today. ... However, Anathem was my favorite book ever, and I ..."
+                },
+                {
+                    "query": "\"Seveneves\" book author Neal Stephenson describes his upbringing",
+                    "result": "Shute's world ended not with a bang, but with a whimper; Stephenson has our world end with a roar. Seveneves begins with the shattering of the ... Missing: upbringing | Show results with:upbringing. Seveneves is a science fiction novel by Neal Stephenson published in 2015. The story tells of the desperate efforts to preserve Homo sapiens in the wake of ... Missing: upbringing | Show results with:upbringing. In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Missing: upbringing | Show results with:upbringing."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"NAME_3\" \"experiences\" \"growing up\"",
+                    "result": "historical record of the concerns, experiences, attitudes and practices of Americans. ... growing up? That is, what was his job called ... NAME_3 \u2013 NAME_10. NO ONE ..."
+                },
+                {
+                    "query": "\"NAME_3\" experiences growing up",
+                    "result": "Woke up 2 days later to the elbow being ... Growing up I basically heard Stairway and ... Similar to my experience the first time I heard ... He is now digging through his brain to find those memories of growing up ... Name_3 copy.jpg. Name_4 copy.jpg. Name_5 copy.jpg ... Whenever he calls me up to tell ... Here, you'll grow your skills doing a job that will impact millions, working in support of the fastest-growing audience in the world. ... LP.SKU-E5.NAME_3. Social ..."
+                },
+                {
+                    "query": "\"NAME_3\" \"experiences\" \"growing up\"",
+                    "result": "historical record of the concerns, experiences, attitudes and practices of Americans. ... growing up? That is, what was his job called ... NAME_3 \u2013 NAME_10. NO ONE ..."
+                },
+                {
+                    "query": "\"NAME_3\" \"experiences\" \"growing up\"",
+                    "result": "historical record of the concerns, experiences, attitudes and practices of Americans. ... growing up? That is, what was his job called ... NAME_3 \u2013 NAME_10. NO ONE ..."
+                },
+                {
+                    "query": "\"NAME_3\" \"experiences\" \"growing up\"",
+                    "result": "historical record of the concerns, experiences, attitudes and practices of Americans. ... growing up? That is, what was his job called ... NAME_3 \u2013 NAME_10. NO ONE ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" by NAME_3 memoir young man suburbs Boston Massachusetts challenges new adult",
+                    "result": "When I was reading Seveneves, I had to push myself past certain parts of the book. ... Man that book grabbed me by the brain and never let go. Missing: NAME_3 memoir challenges. Poverty again hurts our country in new and surprising ways. \"Seveneves,\" Neal Stephenson This book was basically really enjoyable. It is super grand in ... Missing: NAME_3 suburbs. Proposed casting of SEVENEVES by Neal Stephenson \u00b7 1. Sarah Polley \u00b7 2. Iain Glen \u00b7 3. Sandra Oh \u00b7 4. Mila Kunis \u00b7 5. Naveen Andrews \u00b7 6. Daniel Wu \u00b7 7. Catalina ..."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson memoir Boston Massachusetts suburbs",
+                    "result": "The story lives in such a vivid world. Seveneves by Neal Stephenson. A single story told in 3 parts over the course of 5000 years. It all ... Missing: Massachusetts | Show results with:Massachusetts. Seveneves: Astounding apocalyptic fiction from the New York Times Bestseller : Stephenson, Neal: Amazon.com.au: Books. Missing: Massachusetts | Show results with:Massachusetts. \"Seveneves,\" Neal Stephenson This book was basically really enjoyable. It is super grand in scope and ambition, and its conclusion leaves you pretty impressed, ... Missing: suburbs | Show results with:suburbs."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson memoir Boston Massachusetts suburbs",
+                    "result": "The story lives in such a vivid world. Seveneves by Neal Stephenson. A single story told in 3 parts over the course of 5000 years. It all ... Missing: Massachusetts | Show results with:Massachusetts. Seveneves: Astounding apocalyptic fiction from the New York Times Bestseller : Stephenson, Neal: Amazon.com.au: Books. Missing: Massachusetts | Show results with:Massachusetts. \"Seveneves,\" Neal Stephenson This book was basically really enjoyable. It is super grand in scope and ambition, and its conclusion leaves you pretty impressed, ... Missing: suburbs | Show results with:suburbs."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson memoir Boston Massachusetts suburbs",
+                    "result": "The story lives in such a vivid world. Seveneves by Neal Stephenson. A single story told in 3 parts over the course of 5000 years. It all ... Missing: Massachusetts | Show results with:Massachusetts. Seveneves: Astounding apocalyptic fiction from the New York Times Bestseller : Stephenson, Neal: Amazon.com.au: Books. Missing: Massachusetts | Show results with:Massachusetts. \"Seveneves,\" Neal Stephenson This book was basically really enjoyable. It is super grand in scope and ambition, and its conclusion leaves you pretty impressed, ... Missing: suburbs | Show results with:suburbs."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson memoir challenges suburbs Boston Massachusetts",
+                    "result": "Seveneves: Astounding apocalyptic fiction from the New York Times Bestseller : Stephenson, Neal: Amazon.com.au: Books. Missing: Massachusetts | Show results with:Massachusetts. Poverty again hurts our country in new and surprising ways. \"Seveneves,\" Neal Stephenson This book was basically really enjoyable. It is super grand in ... Missing: suburbs | Show results with:suburbs. Proposed casting of SEVENEVES by Neal Stephenson \u00b7 1. Sarah Polley \u00b7 2. Iain Glen \u00b7 3. Sandra Oh \u00b7 4. Mila Kunis \u00b7 5. Naveen Andrews \u00b7 6. Daniel Wu \u00b7 7. Catalina ... Missing: memoir | Show results with:memoir."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Seveneves\" author criminal justice system experiences",
+                    "result": "Seveneves was a bit of a slog, but it had some engaging characters that I longed to go back to and disliked the people I am supposed to dislike. Talia's pick. Seveneves by Neal Stephenson: I decided to read Seveneves because of how much I loved The Marfian; both books share the genre of \u201chard\u201d science ... ... Seveneves. His fiction deals heavily with economics, online culture, the history of philosophy, and the nature of money, with descriptions of bitcoin-like ... Missing: experiences | Show results with:experiences."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson criminal justice system experiences",
+                    "result": "In Seveneves, what happens to this mission? 10 \u00b7 Is the word \"vitamin\" meaning \"any item shippable to space\" a creation of Neal Stephenson in ... \"Seveneves\" by Neal Stephenson ... A standalone science fiction apocalyptic novel with no sequel or prequel. I read the massive illustrated trade ... Missing: system experiences. In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Missing: justice experiences."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson criminal justice system experiences",
+                    "result": "In Seveneves, what happens to this mission? 10 \u00b7 Is the word \"vitamin\" meaning \"any item shippable to space\" a creation of Neal Stephenson in ... \"Seveneves\" by Neal Stephenson ... A standalone science fiction apocalyptic novel with no sequel or prequel. I read the massive illustrated trade ... Missing: system experiences. In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Missing: justice experiences."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson criminal justice system experiences",
+                    "result": "In Seveneves, what happens to this mission? 10 \u00b7 Is the word \"vitamin\" meaning \"any item shippable to space\" a creation of Neal Stephenson in ... In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Missing: justice experiences."
+                },
+                {
+                    "query": "\"Seveneves\" Neal Stephenson criminal justice system experiences",
+                    "result": "In Seveneves, what happens to this mission? 10 \u00b7 Is the word \"vitamin\" meaning \"any item shippable to space\" a creation of Neal Stephenson in ... In his latest, \u201cSeveneves,\u201d Stephenson applies his skills to a scenario like the one described above: What if Earth's moon suddenly and ... Missing: justice experiences. \"Seveneves\" by Neal Stephenson ... A standalone science fiction apocalyptic novel with no sequel or prequel. I read the massive illustrated trade ... Missing: system experiences."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"The author of \"Seveneves\" challenges he faced during his time in the police force\" site:author'sname.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Seveneves\" author challenges police force",
+                    "result": "There is potential for 2 great books in Seveneves. The books has at the same time too much writing and too little. The police believe him ... I love how the author places little clues in ... One of my most favourite and memorable story arcs is in Seveneves."
+                }
+            ]
+        }
+    ],
+    "Supported": 1,
+    "Irrelevant": 0,
+    "Not Supported": 15
+}

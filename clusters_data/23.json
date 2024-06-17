@@ -1,0 +1,663 @@
+{
+    "prompt": "#include <unistd.h>\n\nchar\tg_seq[11];\nint\t\tg_row[10];\nint\t\tg_diag1[19];\nint\t\tg_diag2[19];\nint\t\tg_cnt;\n\nvoid\tset_chk_var(int r, int c, int val)\n{\n\tg_row[r] = val;\n\tg_diag1[c - r + 9] = val;\n\tg_diag2[r + c] = val;\n}\n\nvoid\trec(int c)\n{\n\tint r;\n\n\tif (c == 10)\n\t{\n\t\twrite(1, g_seq, 11);\n\t\t++g_cnt;\n\t}\n\tr = 0;\n\twhile (r < 10)\n\t{\n\t\tif (!g_row[r] && !g_diag1[c - r + 9] && !g_diag2[r + c])\n\t\t{\n\t\t\tset_chk_var(r, c, 1);\n\t\t\tg_seq[c] = '0' + r;\n\t\t\trec(c + 1);\n\t\t\tset_chk_var(r, c, 0);\n\t\t}\n\t\t++r;\n\t}\n}\n\nvoid\tinit(void)\n{\n\tint i;\n\n\tg_seq[10] = '\\n';\n\tg_cnt = 0;\n\ti = 0;\n\twhile (i < 10)\n\t{\n\t\tg_row[i] = 0;\n\t\tg_diag1[i] = 0;\n\t\tg_diag2[i] = 0;\n\t\t++i;\n\t}\n\twhile (i < 19)\n\t{\n\t\tg_diag1[i] = 0;\n\t\tg_diag2[i] = 0;\n\t\t++i;\n\t}\n}\n\nint\t\tft_ten_queens_puzzle(void)\n{\n\tinit();\n\trec(0);\n\treturn (g_cnt);\n}",
+    "response": " This code implements the \"Ten-Queens Puzzle\" problem. The problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal. The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.\n\n The `ft_ten_queens_puzzle` function is the entry point of the program. It first calls the `init` function to initialize the board with all zeros.",
+    "num_claims": 14,
+    "sentences_and_atomic_facts": [
+        [
+            "This code implements the \"Ten-Queens Puzzle\" problem.",
+            [
+                "This code implements the \"Ten-Queens Puzzle\" problem."
+            ]
+        ],
+        [
+            "The problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal.",
+            [
+                "The problem is to place 10 queens on a chessboard.",
+                "No two queens can be in the same row.",
+                "No two queens can be in the same column.",
+                "No two queens can be in the same diagonal."
+            ]
+        ],
+        [
+            "The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.",
+            [
+                "The queens are placed on the second rank.",
+                "The goal is to put the queens on the board.",
+                "No two queens are in the same row.",
+                "No two queens are in the same column.",
+                "No two queens are in the same diagonal."
+            ]
+        ],
+        [
+            "The `ft_ten_queens_puzzle` function is the entry point of the program.",
+            [
+                "The `ft_ten_queens_puzzle` function is the entry point of the program."
+            ]
+        ],
+        [
+            "It first calls the `init` function to initialize the board with all zeros.",
+            [
+                "It calls the `init` function.",
+                "The `init` function initializes the board.",
+                "The board is initialized with all zeros."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "This code implements the \"Ten-Queens Puzzle\" problem.",
+            "atomic_facts": [
+                "This code implements the \"Ten-Queens Puzzle\" problem."
+            ]
+        },
+        {
+            "sentence": "The problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal.",
+            "atomic_facts": [
+                "The problem is to place 10 queens on a chessboard.",
+                "No two queens can be in the same row.",
+                "No two queens can be in the same column.",
+                "No two queens can be in the same diagonal."
+            ]
+        },
+        {
+            "sentence": "The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.",
+            "atomic_facts": [
+                "The queens are placed on the second rank.",
+                "The goal is to put the queens on the board.",
+                "No two queens are in the same row.",
+                "No two queens are in the same column.",
+                "No two queens are in the same diagonal."
+            ]
+        },
+        {
+            "sentence": "The `ft_ten_queens_puzzle` function is the entry point of the program.",
+            "atomic_facts": [
+                "The `ft_ten_queens_puzzle` function is the entry point of the program."
+            ]
+        },
+        {
+            "sentence": "It first calls the `init` function to initialize the board with all zeros.",
+            "atomic_facts": [
+                "It calls the `init` function.",
+                "The `init` function initializes the board.",
+                "The board is initialized with all zeros."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "This code implements the \"Ten-Queens Puzzle\" problem.",
+            "atomic_fact": "This code implements the \"Ten-Queens Puzzle\" problem.",
+            "self_contained_atomic_fact": "The code that implements the 'Ten-Queens Puzzle' problem implements the \"Ten-Queens Puzzle\" problem.",
+            "relevance_data": {
+                "atomic_fact": "This code implements the \"Ten-Queens Puzzle\" problem.",
+                "revised_fact": "The subject in the statement \"This code implements the 'Ten-Queens Puzzle' problem\" is \"This code\". \"This code\" is a vague reference because it does not specify what code it is referring to. From the response, we can see that the code being referred to is the code that implements the \"Ten-Queens Puzzle\" problem. Therefore, \"This code\" should be replaced by \"The code that implements the 'Ten-Queens Puzzle' problem\". Thus, the revised statement is:\n\n```\nThe code that implements the 'Ten-Queens Puzzle' problem implements the \"Ten-Queens Puzzle\" problem.\n```",
+                "is_relevant": "The subject of the QUESTION is the code that implements the 'Ten-Queens Puzzle' problem. The subject of the STATEMENT is the 'Ten-Queens Puzzle' problem. The phrase \"This code implements the 'Ten-Queens Puzzle' problem\" from the RESPONSE shows that the relationship between the code and the 'Ten-Queens Puzzle' problem is that the code implements the problem. For this reason, the subjects code and 'Ten-Queens Puzzle' problem are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given KNOWLEDGE mentions the \"Ten Queens puzzle\" multiple times and discusses its implementation using recursion. It also mentions guidelines for solving the puzzle. Therefore, it can be inferred that the code mentioned in the STATEMENT does implement the \"Ten-Queens Puzzle\" problem.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "The problem is to place 10 queens on a chessboard.",
+            "self_contained_atomic_fact": "The Ten-Queens Puzzle problem is to place 10 queens on a chessboard.",
+            "relevance_data": {
+                "atomic_fact": "The problem is to place 10 queens on a chessboard.",
+                "revised_fact": "The subject in the statement \"The problem is to place 10 queens on a chessboard\" is \"The problem\". This is a reference to an unknown entity, since it is unclear what problem is being referred to. From the response, we can see that the STATEMENT is referring to the \"Ten-Queens Puzzle\" problem. Thus, \"The problem\" is a vague reference that should be replaced by \"The Ten-Queens Puzzle problem\". Thus, the revised response is:\n```\nThe Ten-Queens Puzzle problem is to place 10 queens on a chessboard.\n```",
+                "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the Ten-Queens Puzzle problem. The RESPONSE provides information that explains what the Ten-Queens Puzzle problem is. Since the RESPONSE contains information that directly relates to the subject of the QUESTION, the subjects of the QUESTION and the STATEMENT should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given KNOWLEDGE does not mention anything about the Ten-Queens Puzzle problem specifically. It only talks about the original eight queens problem and the n-queens problem. Therefore, we cannot determine whether the given STATEMENT is supported by the given KNOWLEDGE.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "No two queens can be in the same row.",
+            "self_contained_atomic_fact": "No two queens in the Ten-Queens Puzzle problem can be in the same row.",
+            "relevance_data": {
+                "atomic_fact": "No two queens can be in the same row.",
+                "revised_fact": "The subject of the statement \"No two queens can be in the same row\" is \"queens\". This is a vague reference because it does not specify which queens it is referring to. From the response, we can see that the statement is referring to the queens in the \"Ten-Queens Puzzle\" problem. Therefore, \"queens\" is a vague reference that should be replaced by \"queens in the Ten-Queens Puzzle problem\". Thus, the revised statement is:\n\n```\nNo two queens in the Ten-Queens Puzzle problem can be in the same row.\n```",
+                "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the same row. The RESPONSE explains the problem and mentions that the goal is to place the queens on the board so that no two queens are in the same row, column, or diagonal. Since the STATEMENT aligns with the information provided in the RESPONSE, the subjects Ten-Queens Puzzle problem and the same row should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "The Ten-Queens Puzzle problem involves placing 10 queens on a 10x10 chessboard such that no two queens are attacking each other. \n\nTo determine whether the given statement is supported by the knowledge, we need to consider the rules and constraints of the Ten-Queens Puzzle problem. \n\nIn the problem, each queen must be placed in a different row. This means that no two queens can be in the same row. \n\nTherefore, the statement that \"No two queens in the Ten-Queens Puzzle problem can be in the same row\" is supported by the knowledge. \n\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "No two queens can be in the same column.",
+            "self_contained_atomic_fact": "No two queens in the Ten-Queens Puzzle problem can be in the same column.",
+            "relevance_data": {
+                "atomic_fact": "No two queens can be in the same column.",
+                "revised_fact": "The subject of the statement \"No two queens can be in the same column\" is \"queens\". This is a reference to an unknown entity, since it is unclear what queens are being referred to. From the response, we can see that the STATEMENT is referring to the queens in the \"Ten-Queens Puzzle\" problem. Thus, \"queens\" is a vague reference that should be replaced by \"queens in the Ten-Queens Puzzle problem\". Thus, the revised response is:\n\n```\nNo two queens in the Ten-Queens Puzzle problem can be in the same column.\n```",
+                "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the placement of queens in the same column. The RESPONSE explains the problem and the goal of the Ten-Queens Puzzle, stating that the queens should not be in the same row, column, or diagonal. Since the STATEMENT aligns with the information provided in the RESPONSE, the subjects Ten-Queens Puzzle problem and placement of queens in the same column are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge mentions the \"Results for eight, nine, and ten queens puzzle.\" Since the statement is about the \"Ten-Queens Puzzle problem,\" we can conclude that the knowledge is specifically referring to the Ten-Queens Puzzle problem. Additionally, the knowledge mentions that the puzzle results are shown \"below,\" indicating that there is more information provided that supports the statement.\n\nThe knowledge does not explicitly state that no two queens in the Ten-Queens Puzzle problem can be in the same column. However, since the knowledge specifically mentions the puzzle results and does not mention any instances where two queens are in the same column, it can be strongly implied that no two queens in the Ten-Queens Puzzle problem can be in the same column.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "No two queens can be in the same diagonal.",
+            "self_contained_atomic_fact": "No two queens can be in the same diagonal.",
+            "relevance_data": {
+                "atomic_fact": "No two queens can be in the same diagonal.",
+                "revised_fact": "The subject of the statement \"No two queens can be in the same diagonal\" is \"queens\". \"queens\" is not a pronoun and does not reference an unknown entity. Furthermore, \"queens\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"queens\" is not a vague reference. Thus, the revised statement is:\n```\nNo two queens can be in the same diagonal.\n```",
+                "is_relevant": "The subject of the QUESTION is the \"Ten-Queens Puzzle\". The subject of the STATEMENT is \"No two queens\". The RESPONSE explains that the goal of the puzzle is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal. The phrase \"No two queens can be in the same diagonal\" from the STATEMENT is directly mentioned in the RESPONSE. For this reason, the subjects \"No two queens\" and the \"Ten-Queens Puzzle\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about queens or diagonals. Therefore, we cannot directly determine whether the statement is supported or not supported by the given knowledge.\n\nHowever, based on general knowledge about chess, it is true that no two queens can be in the same diagonal. In chess, queens have the ability to move in any direction (horizontally, vertically, or diagonally) and can attack any piece that is in their path. Since diagonals are one of the possible directions for queens to move, it is a fundamental rule of chess that no two queens can be in the same diagonal.\n\nTherefore, based on general knowledge about chess, the statement that \"No two queens can be in the same diagonal\" is supported.\n\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "The queens are placed on the second rank.",
+            "self_contained_atomic_fact": "The queens are placed on the second rank.",
+            "relevance_data": {
+                "atomic_fact": "The queens are placed on the second rank.",
+                "revised_fact": "The subject in the statement \"The queens are placed on the second rank\" is \"the queens\". \"The queens\" is not a pronoun and does not reference an unknown entity. Furthermore, \"the queens\" is further specified in the RESPONSE, where it states \"The queens are placed on the second rank\". Therefore, \"the queens\" is not a vague reference. Thus, the revised statement is:\n```\nThe queens are placed on the second rank.\n```",
+                "is_relevant": "The subject of the QUESTION is the queens. The subject of the STATEMENT is the second rank. The phrase \"The queens are placed on the second rank\" from the RESPONSE shows that the relationship between the queens and the second rank is that the queens are placed on the second rank. For this reason, the subjects queens and the second rank are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about the placement of queens on a chessboard. Therefore, we cannot determine whether the statement is supported or not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "The goal is to put the queens on the board.",
+            "self_contained_atomic_fact": "The goal of the Ten-Queens Puzzle problem is to put the queens on the board.",
+            "relevance_data": {
+                "atomic_fact": "The goal is to put the queens on the board.",
+                "revised_fact": "The subject of the statement \"The goal is to put the queens on the board\" is \"The goal\". This is a vague reference to an unknown entity. From the response, we can see that the goal being referred to is the goal of the \"Ten-Queens Puzzle\" problem, which is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal. Therefore, \"The goal\" should be replaced by \"The goal of the Ten-Queens Puzzle problem\". Thus, the revised statement is:\n\n```\nThe goal of the Ten-Queens Puzzle problem is to put the queens on the board.\n```",
+                "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the goal of the Ten-Queens Puzzle problem. The RESPONSE provides information about the problem and the goal, stating that the goal is to put the queens on the board so that no two queens are in the same row, column, or diagonal. The STATEMENT and the RESPONSE both refer to the goal of the Ten-Queens Puzzle problem, so the subjects should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not explicitly state the goal of the Ten-Queens Puzzle problem. However, it does mention that the problem is about placing queens on a chessboard so that no two queens directly threaten each other. This implies that the goal of the problem is indeed to put the queens on the board without any threats.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "No two queens are in the same row.",
+            "self_contained_atomic_fact": "No two queens in the 'Ten-Queens Puzzle' problem are in the same row.",
+            "relevance_data": {
+                "atomic_fact": "No two queens are in the same row.",
+                "revised_fact": "The subject of the statement \"No two queens are in the same row\" is \"queens\". This is a vague reference because it does not specify which queens it is referring to. From the response, we can see that the statement is referring to the queens in the \"Ten-Queens Puzzle\" problem. Thus, \"queens\" is a vague reference that should be replaced by \"queens in the 'Ten-Queens Puzzle' problem\". Thus, the revised response is:\n```\nNo two queens in the 'Ten-Queens Puzzle' problem are in the same row.\n```",
+                "is_relevant": "The subject of the QUESTION is the 'Ten-Queens Puzzle' problem. The subject of the STATEMENT is the same. The RESPONSE explains that the goal of the 'Ten-Queens Puzzle' problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal. Since the STATEMENT confirms that no two queens in the problem are in the same row, the subjects 'Ten-Queens Puzzle' problem and the statement 'No two queens in the 'Ten-Queens Puzzle' problem are in the same row' are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention the 'Ten-Queens Puzzle' problem and provide some code related to it. However, there is no specific mention of whether or not the queens in the puzzle can be in the same row. Therefore, we cannot determine whether the statement is supported or not.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "No two queens are in the same column.",
+            "self_contained_atomic_fact": "No two queens in the 'Ten-Queens Puzzle' problem are in the same column.",
+            "relevance_data": {
+                "atomic_fact": "No two queens are in the same column.",
+                "revised_fact": "The subject of the statement \"No two queens are in the same column\" is \"queens\". This is a reference to an unknown entity, since it is unclear what queens are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the queens in the \"Ten-Queens Puzzle\" problem. Thus, \"queens\" is a vague reference that should be replaced by \"queens in the 'Ten-Queens Puzzle' problem\". Thus, the revised response is:\n```\nNo two queens in the 'Ten-Queens Puzzle' problem are in the same column.\n```",
+                "is_relevant": "The subject of the QUESTION is the 'Ten-Queens Puzzle' problem. The subject of the STATEMENT is the column placement of the queens in the 'Ten-Queens Puzzle' problem. The phrase \"no two queens are in the same column\" from the RESPONSE shows that the relationship between the two subjects is that the queens in the 'Ten-Queens Puzzle' problem are not in the same column. For this reason, the subjects are [Foo]."
+            },
+            "rate_data": {
+                "response": "To determine if the statement is supported by the knowledge, we need to analyze the information provided.\n\nThe knowledge mentions the \"ten queens puzzle\" and provides guidelines for solving the puzzle. It states that the puzzle requires placing ten chess queens on a 10x10 chessboard so that no two queens attach or check each other. It also mentions that the queens cannot be in the same row, column, or diagonal.\n\nBased on this information, we can conclude that in the \"Ten-Queens Puzzle\" problem, no two queens can be in the same column. This is because if two queens were in the same column, they would be in the same vertical line and would therefore be able to attack each other.\n\nTherefore, the statement is supported by the knowledge.\n\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal.",
+            "atomic_fact": "No two queens are in the same diagonal.",
+            "self_contained_atomic_fact": "No two queens in the \"Ten-Queens Puzzle\" problem are in the same diagonal.",
+            "relevance_data": {
+                "atomic_fact": "No two queens are in the same diagonal.",
+                "revised_fact": "The subject in the statement \"No two queens are in the same diagonal\" is \"queens\". \"Queens\" is not a pronoun and does not reference an unknown entity. Furthermore, \"queens\" is not further specified in the RESPONSE, so we can assume that it is a general term referring to the queens in the \"Ten-Queens Puzzle\" problem. Therefore \"queens\" is not a vague reference. Thus, the revised statement is:\n```\nNo two queens in the \"Ten-Queens Puzzle\" problem are in the same diagonal.\n```",
+                "is_relevant": "The subject of the QUESTION is the \"Ten-Queens Puzzle\" problem. The subject of the STATEMENT is the \"Ten-Queens Puzzle\" problem. The phrase \"The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal\" from the RESPONSE explains that in the \"Ten-Queens Puzzle\" problem, no two queens are in the same diagonal. For this reason, the subjects \"Ten-Queens Puzzle\" problem in both the QUESTION and STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n\nThe given knowledge mentions the \"eight, nine, and ten queens puzzle\" and shows the results for this puzzle. It does not provide any specific information about the arrangement of the queens or whether they are in the same diagonal.\n\nTherefore, the given knowledge does not support or imply anything about the arrangement of queens in the \"Ten-Queens Puzzle\" problem.\n\nRestated Statement:\nNo two queens in the \"Ten-Queens Puzzle\" problem are in the same diagonal.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The `ft_ten_queens_puzzle` function is the entry point of the program.",
+            "atomic_fact": "The `ft_ten_queens_puzzle` function is the entry point of the program.",
+            "self_contained_atomic_fact": "The `ft_ten_queens_puzzle` function is the entry point of the program.",
+            "relevance_data": {
+                "atomic_fact": "The `ft_ten_queens_puzzle` function is the entry point of the program.",
+                "revised_fact": "The subject of the statement \"The `ft_ten_queens_puzzle` function is the entry point of the program\" is \"`ft_ten_queens_puzzle` function\". This is a non-full name and should be replaced by the proper entity from the response. From the response, we can see that the `ft_ten_queens_puzzle` function is mentioned and described as the entry point of the program. Therefore, the proper entity that the statement is referring to is the `ft_ten_queens_puzzle` function. Thus, the revised statement is:\n```\nThe `ft_ten_queens_puzzle` function is the entry point of the program.\n```",
+                "is_relevant": "The subject of the QUESTION is the `ft_ten_queens_puzzle` function. The subject of the STATEMENT is also the `ft_ten_queens_puzzle` function. The RESPONSE provides information that explains the role of the `ft_ten_queens_puzzle` function as the entry point of the program. Therefore, the subjects of the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given KNOWLEDGE, there is no explicit mention of the `ft_ten_queens_puzzle` function being the entry point of the program. The KNOWLEDGE only provides information about the reference repository for the 42 C Piscine projects and some code files related to the `ft_ten_queens_puzzle` function. Therefore, we cannot determine whether the `ft_ten_queens_puzzle` function is the entry point of the program based on the given information.\n\nThe statement is not supported by the given knowledge.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "It first calls the `init` function to initialize the board with all zeros.",
+            "atomic_fact": "It calls the `init` function.",
+            "self_contained_atomic_fact": "The `ft_ten_queens_puzzle` function calls the `init` function.",
+            "relevance_data": {
+                "atomic_fact": "It calls the `init` function.",
+                "revised_fact": "The subject of the statement \"It calls the `init` function\" is \"It\". \"It\" is a pronoun and does not reference a specific entity. From the response, we can see that \"It\" refers to the `ft_ten_queens_puzzle` function. Therefore, \"It\" is a vague reference that should be replaced by \"`ft_ten_queens_puzzle` function\". Thus, the revised response is:\n```\nThe `ft_ten_queens_puzzle` function calls the `init` function.\n```",
+                "is_relevant": "The subject of the QUESTION is the `ft_ten_queens_puzzle` function. The subject of the STATEMENT is the `init` function. The phrase \"It first calls the `init` function to initialize the board with all zeros\" from the RESPONSE shows that the relationship between the `ft_ten_queens_puzzle` function and the `init` function is that the former calls the latter. For this reason, the subjects `ft_ten_queens_puzzle` function and `init` function are [Foo]."
+            },
+            "rate_data": {
+                "response": "Based on the given KNOWLEDGE, there is no information provided about any functions or their relationships. Therefore, we cannot determine whether the `ft_ten_queens_puzzle` function calls the `init` function or not. \n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "It first calls the `init` function to initialize the board with all zeros.",
+            "atomic_fact": "The `init` function initializes the board.",
+            "self_contained_atomic_fact": "The `init` function called in the `ft_ten_queens_puzzle` function initializes the board.",
+            "relevance_data": {
+                "atomic_fact": "The `init` function initializes the board.",
+                "revised_fact": "The subject of the statement \"The `init` function initializes the board\" is \"`init` function\". \"`init` function\" is not a pronoun or a non-full name, but it is a vague reference because it refers to an unknown entity. From the RESPONSE, we can see that the STATEMENT is referring to the `init` function that is called in the `ft_ten_queens_puzzle` function. Therefore, the vague reference \"`init` function\" should be replaced by \"`init` function called in the `ft_ten_queens_puzzle` function\". Thus, the revised statement is:\n```\nThe `init` function called in the `ft_ten_queens_puzzle` function initializes the board.\n```",
+                "is_relevant": "The subject of the QUESTION is the `init` function. The subject of the STATEMENT is the board. The phrase \"It first calls the `init` function to initialize the board with all zeros\" from the RESPONSE shows that the relationship between the `init` function and the board is that the function initializes the board. For this reason, the subjects `init` function and the board are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given KNOWLEDGE, we can see that the `init` function is called in the `ft_ten_queens_puzzle` function. The purpose of the `init` function is not explicitly stated, but it can be inferred that it is used to initialize the board. Therefore, the statement is supported by the given KNOWLEDGE.\n\nThe `init` function called in the `ft_ten_queens_puzzle` function initializes the board. [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "It first calls the `init` function to initialize the board with all zeros.",
+            "atomic_fact": "The board is initialized with all zeros.",
+            "self_contained_atomic_fact": "The chessboard for the Ten-Queens Puzzle problem is initialized with all zeros.",
+            "relevance_data": {
+                "atomic_fact": "The board is initialized with all zeros.",
+                "revised_fact": "The subject of the statement \"The board is initialized with all zeros\" is \"The board\". This is a reference to an unknown entity, since it is unclear what board is being referred to. From the RESPONSE, we can see that the code implements the \"Ten-Queens Puzzle\" problem and initializes the board with all zeros. Therefore, \"The board\" is a vague reference that should be replaced by \"The chessboard for the Ten-Queens Puzzle problem\". Thus, the revised response is:\n```\nThe chessboard for the Ten-Queens Puzzle problem is initialized with all zeros.\n```",
+                "is_relevant": "The subject of the QUESTION is the chessboard for the Ten-Queens Puzzle problem. The subject of the STATEMENT is the initialization of the chessboard with all zeros. The phrase \"It first calls the `init` function to initialize the board with all zeros\" from the RESPONSE shows that the relationship between the chessboard and the initialization with all zeros is that the initialization is done using the `init` function. For this reason, the subjects the chessboard and the initialization with all zeros are [Foo]."
+            },
+            "rate_data": {
+                "response": "The given KNOWLEDGE does not provide any information about the initialization of the chessboard for the Ten-Queens Puzzle problem. Therefore, we cannot determine whether the given STATEMENT is supported by the given KNOWLEDGE.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "This code implements the \"Ten-Queens Puzzle\" problem.",
+            "revised_fact": "The subject in the statement \"This code implements the 'Ten-Queens Puzzle' problem\" is \"This code\". \"This code\" is a vague reference because it does not specify what code it is referring to. From the response, we can see that the code being referred to is the code that implements the \"Ten-Queens Puzzle\" problem. Therefore, \"This code\" should be replaced by \"The code that implements the 'Ten-Queens Puzzle' problem\". Thus, the revised statement is:\n\n```\nThe code that implements the 'Ten-Queens Puzzle' problem implements the \"Ten-Queens Puzzle\" problem.\n```",
+            "is_relevant": "The subject of the QUESTION is the code that implements the 'Ten-Queens Puzzle' problem. The subject of the STATEMENT is the 'Ten-Queens Puzzle' problem. The phrase \"This code implements the 'Ten-Queens Puzzle' problem\" from the RESPONSE shows that the relationship between the code and the 'Ten-Queens Puzzle' problem is that the code implements the problem. For this reason, the subjects code and 'Ten-Queens Puzzle' problem are [Foo]."
+        },
+        {
+            "atomic_fact": "The problem is to place 10 queens on a chessboard.",
+            "revised_fact": "The subject in the statement \"The problem is to place 10 queens on a chessboard\" is \"The problem\". This is a reference to an unknown entity, since it is unclear what problem is being referred to. From the response, we can see that the STATEMENT is referring to the \"Ten-Queens Puzzle\" problem. Thus, \"The problem\" is a vague reference that should be replaced by \"The Ten-Queens Puzzle problem\". Thus, the revised response is:\n```\nThe Ten-Queens Puzzle problem is to place 10 queens on a chessboard.\n```",
+            "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the Ten-Queens Puzzle problem. The RESPONSE provides information that explains what the Ten-Queens Puzzle problem is. Since the RESPONSE contains information that directly relates to the subject of the QUESTION, the subjects of the QUESTION and the STATEMENT should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "No two queens can be in the same row.",
+            "revised_fact": "The subject of the statement \"No two queens can be in the same row\" is \"queens\". This is a vague reference because it does not specify which queens it is referring to. From the response, we can see that the statement is referring to the queens in the \"Ten-Queens Puzzle\" problem. Therefore, \"queens\" is a vague reference that should be replaced by \"queens in the Ten-Queens Puzzle problem\". Thus, the revised statement is:\n\n```\nNo two queens in the Ten-Queens Puzzle problem can be in the same row.\n```",
+            "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the same row. The RESPONSE explains the problem and mentions that the goal is to place the queens on the board so that no two queens are in the same row, column, or diagonal. Since the STATEMENT aligns with the information provided in the RESPONSE, the subjects Ten-Queens Puzzle problem and the same row should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "No two queens can be in the same column.",
+            "revised_fact": "The subject of the statement \"No two queens can be in the same column\" is \"queens\". This is a reference to an unknown entity, since it is unclear what queens are being referred to. From the response, we can see that the STATEMENT is referring to the queens in the \"Ten-Queens Puzzle\" problem. Thus, \"queens\" is a vague reference that should be replaced by \"queens in the Ten-Queens Puzzle problem\". Thus, the revised response is:\n\n```\nNo two queens in the Ten-Queens Puzzle problem can be in the same column.\n```",
+            "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the placement of queens in the same column. The RESPONSE explains the problem and the goal of the Ten-Queens Puzzle, stating that the queens should not be in the same row, column, or diagonal. Since the STATEMENT aligns with the information provided in the RESPONSE, the subjects Ten-Queens Puzzle problem and placement of queens in the same column are [Foo]."
+        },
+        {
+            "atomic_fact": "No two queens can be in the same diagonal.",
+            "revised_fact": "The subject of the statement \"No two queens can be in the same diagonal\" is \"queens\". \"queens\" is not a pronoun and does not reference an unknown entity. Furthermore, \"queens\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"queens\" is not a vague reference. Thus, the revised statement is:\n```\nNo two queens can be in the same diagonal.\n```",
+            "is_relevant": "The subject of the QUESTION is the \"Ten-Queens Puzzle\". The subject of the STATEMENT is \"No two queens\". The RESPONSE explains that the goal of the puzzle is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal. The phrase \"No two queens can be in the same diagonal\" from the STATEMENT is directly mentioned in the RESPONSE. For this reason, the subjects \"No two queens\" and the \"Ten-Queens Puzzle\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The queens are placed on the second rank.",
+            "revised_fact": "The subject in the statement \"The queens are placed on the second rank\" is \"the queens\". \"The queens\" is not a pronoun and does not reference an unknown entity. Furthermore, \"the queens\" is further specified in the RESPONSE, where it states \"The queens are placed on the second rank\". Therefore, \"the queens\" is not a vague reference. Thus, the revised statement is:\n```\nThe queens are placed on the second rank.\n```",
+            "is_relevant": "The subject of the QUESTION is the queens. The subject of the STATEMENT is the second rank. The phrase \"The queens are placed on the second rank\" from the RESPONSE shows that the relationship between the queens and the second rank is that the queens are placed on the second rank. For this reason, the subjects queens and the second rank are [Foo]."
+        },
+        {
+            "atomic_fact": "The goal is to put the queens on the board.",
+            "revised_fact": "The subject of the statement \"The goal is to put the queens on the board\" is \"The goal\". This is a vague reference to an unknown entity. From the response, we can see that the goal being referred to is the goal of the \"Ten-Queens Puzzle\" problem, which is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal. Therefore, \"The goal\" should be replaced by \"The goal of the Ten-Queens Puzzle problem\". Thus, the revised statement is:\n\n```\nThe goal of the Ten-Queens Puzzle problem is to put the queens on the board.\n```",
+            "is_relevant": "The subject of the QUESTION is the Ten-Queens Puzzle problem. The subject of the STATEMENT is the goal of the Ten-Queens Puzzle problem. The RESPONSE provides information about the problem and the goal, stating that the goal is to put the queens on the board so that no two queens are in the same row, column, or diagonal. The STATEMENT and the RESPONSE both refer to the goal of the Ten-Queens Puzzle problem, so the subjects should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "No two queens are in the same row.",
+            "revised_fact": "The subject of the statement \"No two queens are in the same row\" is \"queens\". This is a vague reference because it does not specify which queens it is referring to. From the response, we can see that the statement is referring to the queens in the \"Ten-Queens Puzzle\" problem. Thus, \"queens\" is a vague reference that should be replaced by \"queens in the 'Ten-Queens Puzzle' problem\". Thus, the revised response is:\n```\nNo two queens in the 'Ten-Queens Puzzle' problem are in the same row.\n```",
+            "is_relevant": "The subject of the QUESTION is the 'Ten-Queens Puzzle' problem. The subject of the STATEMENT is the same. The RESPONSE explains that the goal of the 'Ten-Queens Puzzle' problem is to place 10 queens on a chessboard so that no two queens are in the same row, column, or diagonal. Since the STATEMENT confirms that no two queens in the problem are in the same row, the subjects 'Ten-Queens Puzzle' problem and the statement 'No two queens in the 'Ten-Queens Puzzle' problem are in the same row' are [Foo]."
+        },
+        {
+            "atomic_fact": "No two queens are in the same column.",
+            "revised_fact": "The subject of the statement \"No two queens are in the same column\" is \"queens\". This is a reference to an unknown entity, since it is unclear what queens are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the queens in the \"Ten-Queens Puzzle\" problem. Thus, \"queens\" is a vague reference that should be replaced by \"queens in the 'Ten-Queens Puzzle' problem\". Thus, the revised response is:\n```\nNo two queens in the 'Ten-Queens Puzzle' problem are in the same column.\n```",
+            "is_relevant": "The subject of the QUESTION is the 'Ten-Queens Puzzle' problem. The subject of the STATEMENT is the column placement of the queens in the 'Ten-Queens Puzzle' problem. The phrase \"no two queens are in the same column\" from the RESPONSE shows that the relationship between the two subjects is that the queens in the 'Ten-Queens Puzzle' problem are not in the same column. For this reason, the subjects are [Foo]."
+        },
+        {
+            "atomic_fact": "No two queens are in the same diagonal.",
+            "revised_fact": "The subject in the statement \"No two queens are in the same diagonal\" is \"queens\". \"Queens\" is not a pronoun and does not reference an unknown entity. Furthermore, \"queens\" is not further specified in the RESPONSE, so we can assume that it is a general term referring to the queens in the \"Ten-Queens Puzzle\" problem. Therefore \"queens\" is not a vague reference. Thus, the revised statement is:\n```\nNo two queens in the \"Ten-Queens Puzzle\" problem are in the same diagonal.\n```",
+            "is_relevant": "The subject of the QUESTION is the \"Ten-Queens Puzzle\" problem. The subject of the STATEMENT is the \"Ten-Queens Puzzle\" problem. The phrase \"The queens are placed on the second rank, and the goal is to put them on the board so that no two queens are in the same row, column, or diagonal\" from the RESPONSE explains that in the \"Ten-Queens Puzzle\" problem, no two queens are in the same diagonal. For this reason, the subjects \"Ten-Queens Puzzle\" problem in both the QUESTION and STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "The `ft_ten_queens_puzzle` function is the entry point of the program.",
+            "revised_fact": "The subject of the statement \"The `ft_ten_queens_puzzle` function is the entry point of the program\" is \"`ft_ten_queens_puzzle` function\". This is a non-full name and should be replaced by the proper entity from the response. From the response, we can see that the `ft_ten_queens_puzzle` function is mentioned and described as the entry point of the program. Therefore, the proper entity that the statement is referring to is the `ft_ten_queens_puzzle` function. Thus, the revised statement is:\n```\nThe `ft_ten_queens_puzzle` function is the entry point of the program.\n```",
+            "is_relevant": "The subject of the QUESTION is the `ft_ten_queens_puzzle` function. The subject of the STATEMENT is also the `ft_ten_queens_puzzle` function. The RESPONSE provides information that explains the role of the `ft_ten_queens_puzzle` function as the entry point of the program. Therefore, the subjects of the QUESTION and the STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "It calls the `init` function.",
+            "revised_fact": "The subject of the statement \"It calls the `init` function\" is \"It\". \"It\" is a pronoun and does not reference a specific entity. From the response, we can see that \"It\" refers to the `ft_ten_queens_puzzle` function. Therefore, \"It\" is a vague reference that should be replaced by \"`ft_ten_queens_puzzle` function\". Thus, the revised response is:\n```\nThe `ft_ten_queens_puzzle` function calls the `init` function.\n```",
+            "is_relevant": "The subject of the QUESTION is the `ft_ten_queens_puzzle` function. The subject of the STATEMENT is the `init` function. The phrase \"It first calls the `init` function to initialize the board with all zeros\" from the RESPONSE shows that the relationship between the `ft_ten_queens_puzzle` function and the `init` function is that the former calls the latter. For this reason, the subjects `ft_ten_queens_puzzle` function and `init` function are [Foo]."
+        },
+        {
+            "atomic_fact": "The `init` function initializes the board.",
+            "revised_fact": "The subject of the statement \"The `init` function initializes the board\" is \"`init` function\". \"`init` function\" is not a pronoun or a non-full name, but it is a vague reference because it refers to an unknown entity. From the RESPONSE, we can see that the STATEMENT is referring to the `init` function that is called in the `ft_ten_queens_puzzle` function. Therefore, the vague reference \"`init` function\" should be replaced by \"`init` function called in the `ft_ten_queens_puzzle` function\". Thus, the revised statement is:\n```\nThe `init` function called in the `ft_ten_queens_puzzle` function initializes the board.\n```",
+            "is_relevant": "The subject of the QUESTION is the `init` function. The subject of the STATEMENT is the board. The phrase \"It first calls the `init` function to initialize the board with all zeros\" from the RESPONSE shows that the relationship between the `init` function and the board is that the function initializes the board. For this reason, the subjects `init` function and the board are [Foo]."
+        },
+        {
+            "atomic_fact": "The board is initialized with all zeros.",
+            "revised_fact": "The subject of the statement \"The board is initialized with all zeros\" is \"The board\". This is a reference to an unknown entity, since it is unclear what board is being referred to. From the RESPONSE, we can see that the code implements the \"Ten-Queens Puzzle\" problem and initializes the board with all zeros. Therefore, \"The board\" is a vague reference that should be replaced by \"The chessboard for the Ten-Queens Puzzle problem\". Thus, the revised response is:\n```\nThe chessboard for the Ten-Queens Puzzle problem is initialized with all zeros.\n```",
+            "is_relevant": "The subject of the QUESTION is the chessboard for the Ten-Queens Puzzle problem. The subject of the STATEMENT is the initialization of the chessboard with all zeros. The phrase \"It first calls the `init` function to initialize the board with all zeros\" from the RESPONSE shows that the relationship between the chessboard and the initialization with all zeros is that the initialization is done using the `init` function. For this reason, the subjects the chessboard and the initialization with all zeros are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "\"Ten-Queens Puzzle\" code implementation",
+                    "result": "C Basic : Recursives and Ten Queens puzzle, 2020.08.19, 100/100. C Piscine C 06, C Basic : Command Line Parameters, 2020.08.12, 100/100. C Piscine C 07, C Basic ... ... number checking, finding the next prime number, and solving the ten queens puzzle placement problem. Guidelines are provided for each exercise regarding ... More from As Manjaka Josvah \u00b7 Ten Queens puzzle using recursivity in C language. #c #programming \u00b7 profile. AWS. Promoted. What's a billboard ..."
+                },
+                {
+                    "query": "Ten-Queens Puzzle code implementation",
+                    "result": "The idea is to place queens one by one in different columns, starting from the leftmost column. When we place a queen in a column, we check for ... 1) Start in the leftmost column \u00b7 2) If all queens are placed return true \u00b7 3) Try all rows in the current column. Do following for every tried ... This is a promising implementation of the n-Queens problem in C. It uses a recursive backtracking algorithm to find all solutions to the n-Queens problem. It is ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" code implementation",
+                    "result": "C Basic : Recursives and Ten Queens puzzle, 2020.08.19, 100/100. C Piscine C 06, C Basic : Command Line Parameters, 2020.08.12, 100/100. C Piscine C 07, C Basic ... ... number checking, finding the next prime number, and solving the ten queens puzzle placement problem. Guidelines are provided for each exercise regarding ... More from As Manjaka Josvah \u00b7 Ten Queens puzzle using recursivity in C language. #c #programming \u00b7 profile. AWS. Promoted. What's a billboard ..."
+                },
+                {
+                    "query": "\"The code that implements the 'Ten-Queens Puzzle' problem implements the \"Ten-Queens Puzzle\" problem.\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The code that implements the 'Ten-Queens Puzzle' problem implements the \"Ten-Queens Puzzle\" problem.\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Ten-Queens Puzzle problem solution",
+                    "result": "It has long been known that there are 92 solutions to the problem. Of these 92, there are 12 distinct patterns. All of the 92 solutions can be transformed into ... 1) Start in the leftmost column \u00b7 2) If all queens are placed return true \u00b7 3) Try all rows in the current column. Do following for every tried ... One way to solve the puzzle is to work across the board, placing a queen in each column. Once we have placed k - 1 queens, we must place the kth ... Missing: Ten- | Show results with:Ten-."
+                },
+                {
+                    "query": "Ten-Queens Puzzle problem",
+                    "result": "The original eight queens problem consisted of trying to find a way to place eight queens on a chessboard so that no queen would attack any other queen. An ... The idea is to place queens one by one in different columns, starting from the leftmost column. When we place a queen in a column, we check for ... The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n , return all ..."
+                },
+                {
+                    "query": "Ten-Queens Puzzle problem solutions",
+                    "result": "It has long been known that there are 92 solutions to the problem. Of these 92, there are 12 distinct patterns. All of the 92 solutions can be transformed into ... 1) Start in the leftmost column \u00b7 2) If all queens are placed return true \u00b7 3) Try all rows in the current column. Do following for every tried ... This page lists the first possible solutions to the n Queens problem ... The first chessboard size to require more than one million Queen placements to find its ... Missing: Ten- | Show results with:Ten-."
+                },
+                {
+                    "query": "Ten-Queens Puzzle problem solution",
+                    "result": "It has long been known that there are 92 solutions to the problem. Of these 92, there are 12 distinct patterns. All of the 92 solutions can be transformed into ... 1) Start in the leftmost column \u00b7 2) If all queens are placed return true \u00b7 3) Try all rows in the current column. Do following for every tried ... One way to solve the puzzle is to work across the board, placing a queen in each column. Once we have placed k - 1 queens, we must place the kth ... Missing: Ten- | Show results with:Ten-."
+                },
+                {
+                    "query": "Ten-Queens Puzzle problem solutions",
+                    "result": "It has long been known that there are 92 solutions to the problem. Of these 92, there are 12 distinct patterns. All of the 92 solutions can be transformed into ... 1) Start in the leftmost column \u00b7 2) If all queens are placed return true \u00b7 3) Try all rows in the current column. Do following for every tried ... This page lists the first possible solutions to the n Queens problem ... The first chessboard size to require more than one million Queen placements to find its ... Missing: Ten- | Show results with:Ten-."
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Ten-Queens Puzzle\" column constraint",
+                    "result": "... column (column starts counting from 1) of the matrix. ... Results for eight, nine, and ten queens puzzle are shown below. >> ... G53CLP Constraint ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle problem\" same column queens",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle problem\" \"same column\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" \"same column\" evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle problem\" same column constraint",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Can two queens be in the same diagonal?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"placement of queens in chess\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"placement of queens in chess\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The placement of queens in chess\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Placement of queens in chess\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"placement of queens in chess\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Ten-Queens Puzzle problem goal",
+                    "result": "The idea is to place queens one by one in different columns, starting from the leftmost column. When we place a queen in a column, we check for ... , plunges us into the captivating world of chess. Our mission? To conquer the N-Queens puzzle \u2014 a classic problem in combinatorial optimization. Missing: Ten- | Show results with:Ten-. The main idea behind using graph theory in solving the Queens Puzzle is to represent the problem as a graph, where each vertex corresponds to a ... Missing: Ten- goal."
+                },
+                {
+                    "query": "Ten-Queens Puzzle problem solution",
+                    "result": "It has long been known that there are 92 solutions to the problem. Of these 92, there are 12 distinct patterns. All of the 92 solutions can be transformed into ... 1) Start in the leftmost column \u00b7 2) If all queens are placed return true \u00b7 3) Try all rows in the current column. Do following for every tried ... One way to solve the puzzle is to work across the board, placing a queen in each column. Once we have placed k - 1 queens, we must place the kth ... Missing: Ten- | Show results with:Ten-."
+                },
+                {
+                    "query": "Ten-Queens Puzzle problem evidence",
+                    "result": "The problem is NP-Complete, which means that the Queens Completion Puzzle is one of these problems that takes exponentially more time for a ... Missing: Ten- evidence. In this paper a new method for solving the problem of placing n queens on a n\u00d7n chessboard such that no two queens directly threaten one another and considering ... Missing: Ten- evidence. A rook is a chess piece that can only move vertically and horizontally. So it is like a queen, except it cannot move along the diagonals. Missing: evidence | Show results with:evidence."
+                },
+                {
+                    "query": "Ten-Queens Puzzle problem solution",
+                    "result": "It has long been known that there are 92 solutions to the problem. Of these 92, there are 12 distinct patterns. All of the 92 solutions can be transformed into ... 1) Start in the leftmost column \u00b7 2) If all queens are placed return true \u00b7 3) Try all rows in the current column. Do following for every tried ... One way to solve the puzzle is to work across the board, placing a queen in each column. Once we have placed k - 1 queens, we must place the kth ... Missing: Ten- | Show results with:Ten-."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" goal",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. Missing: goal | Show results with:goal. Contribute to khooinguyeen/Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... solution: %d\\n\", ft_ten_queens_puzzle ... Missing: goal | Show results with:goal."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Ten-Queens Puzzle\" solution",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. Contribute to khooinguyeen/Ten-Queens-Puzzle-Solver development by creating an account on GitHub. Search code, repositories, users, issues, pull requests... \u00b7 Provide feedback \u00b7 Saved searches \u00b7 Releases: khooinguyeen/Ten-Queens-Puzzle-Solver."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem queens same row",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... row; int col; col = 0; while (col < 10) { ft_putnbr(board[col]); ... Missing: problem | Show results with:problem."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem same row queens",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... row; int col; col = 0; while (col < 10) { ft_putnbr(board[col]); ... Missing: problem | Show results with:problem."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem same row queens",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... row; int col; col = 0; while (col < 10) { ft_putnbr(board[col]); ... Missing: problem | Show results with:problem."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem queens same row",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... row; int col; col = 0; while (col < 10) { ft_putnbr(board[col]); ... Missing: problem | Show results with:problem."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Ten-Queens Puzzle\" same column",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... row; int col; col = 0; while (col < 10) { ft_putnbr(board[col]); ... Missing: column | Show results with:column. ... ten queens puzzle placement problem. Guidelines ... one is not perfectly functional. \u2022 Using a ... column (the index starting from 0). The Nth digit represents"
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem queens same column",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... solving the ten queens puzzle placement problem. Guidelines are provided for each exercise regarding function prototypes and requirements. ... same row, column, or diagonal. Nowadays, the ... (row, column and diagonal of queen). The ... Results for eight, nine, and ten queens puzzle are shown below. >> ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" same column queens placement",
+                    "result": "... ten queens puzzle placement problem. Guidelines ... one is not perfectly functional. \u2022 Using a forbidden ... the Nth Queen's position in the Nth column. \u2022 The ... ... ten queens puzzle are shown below. >> queenpuzzle(8) ans = >> queenpuzzle(9) ans = >> queenpuzzle(10) ans = Similar documents. In the game of Chess a queen ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem same column queens",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... row; int col; col = 0; while (col < 10) { ft_putnbr(board[col]); ... Missing: problem column. ... solving the ten queens puzzle placement problem. Guidelines are provided for each exercise regarding function prototypes and requirements."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem same column",
+                    "result": "Question: The ten queens puzzle requires a placing of ten chess queens on an 10\u00d710 chessboard so that no two queens attach/check each other. ... Ten-Queens-Puzzle-Solver development by creating an account on GitHub ... row; int col; col = 0; while (col < 10) { ft_putnbr(board[col]); ... Missing: problem column. ... solving the ten queens puzzle placement problem. Guidelines are provided for each exercise regarding function prototypes and requirements."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem diagonal constraint",
+                    "result": "... diagonal. Nowadays, the eight ... Results for eight, nine, and ten queens puzzle are shown below. >> ... Spring 06 Assignment 2: Constraint Satisfaction Problems ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem diagonal constraints",
+                    "result": "... diagonal. Nowadays, the eight ... Results for eight, nine, and ten queens puzzle are shown below. >> ... Spring 06 Assignment 2: Constraint Satisfaction Problems ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem diagonal constraints",
+                    "result": "... diagonal. Nowadays, the eight ... Results for eight, nine, and ten queens puzzle are shown below. >> ... Spring 06 Assignment 2: Constraint Satisfaction Problems ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem diagonal constraints",
+                    "result": "... diagonal. Nowadays, the eight ... Results for eight, nine, and ten queens puzzle are shown below. >> ... Spring 06 Assignment 2: Constraint Satisfaction Problems ..."
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" problem diagonal constraint",
+                    "result": "... diagonal. Nowadays, the eight ... Results for eight, nine, and ten queens puzzle are shown below. >> ... Spring 06 Assignment 2: Constraint Satisfaction Problems ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "QUERY:\n\"ft_ten_queens_puzzle\" function entry point program",
+                    "result": "Please post a, This is all my code , I don't have missing part , except for the main that should look like int main() { ft_ten_queens_puzzle();}, thanks you ..."
+                },
+                {
+                    "query": "ft_ten_queens_puzzle",
+                    "result": "Reference repository for all the 42 C Piscine projects. - 42piscine/c05/ex08/ft_ten_queens_puzzle.c at main \u00b7 mlrcbsousa/42piscine. ... Copy HTTPS clone URLhttps://git.hexanyn.fr/42/piscine/c05.git. Name, Last commit, Last update .. ft_ten_queens_puzzle.c \u00b7 init. 4 years ago. main.c \u00b7 init. 4 ... Search code, repositories, users, issues, pull requests... \u00b7 Provide feedback \u00b7 Saved searches \u00b7 ft_ten_queens_puzzle.c \u00b7 ft_ten_queens_puzzle.c."
+                },
+                {
+                    "query": "ft_ten_queens_puzzle.c int main() { ft_ten_queens_puzzle(); }",
+                    "result": "Reference repository for all the 42 C Piscine projects. - 42piscine/c05/ex08/ft_ten_queens_puzzle.c at main \u00b7 mlrcbsousa/42piscine. Search code, repositories, users, issues, pull requests... \u00b7 Provide feedback \u00b7 Saved searches \u00b7 ft_ten_queens_puzzle.c \u00b7 ft_ten_queens_puzzle.c. Open in Web IDE Quickly and easily edit multiple files in your project. Edit single file Edit this file only. Missing: main | Show results with:main."
+                },
+                {
+                    "query": "ft_ten_queens_puzzle.c main function",
+                    "result": "Reference repository for all the 42 C Piscine projects. - 42piscine/c05/ex08/ft_ten_queens_puzzle.c at main \u00b7 mlrcbsousa/42piscine. Missing: function | Show results with:function. I try to solve the problem of N queens solution and manage to create an algorithm that gives me all possibilities and prints it (I try to ... Search code, repositories, users, issues, pull requests... \u00b7 Provide feedback \u00b7 Saved searches \u00b7 ft_ten_queens_puzzle.c \u00b7 ft_ten_queens_puzzle.c. Missing: function | Show results with:function."
+                },
+                {
+                    "query": "\"ft_ten_queens_puzzle\" function entry point",
+                    "result": "1 \u00b7 1 \u00b7 yeah it for the exercise i can only use write function only @Arkku, you can just put ft_ten_queens_puzzle in a main to test it , it don t ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "QUERY: \"ft_ten_queens_puzzle\" function calls \"init\" function",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "QUERY: \"ft_ten_queens_puzzle\" function calls \"init\" function",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The `ft_ten_queens_puzzle` function calls the `init` function\" site:https://stackoverflow.com/",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"ft_ten_queens_puzzle\" function calls \"init\" function",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "query: \"ft_ten_queens_puzzle function init function\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Query: \"ft_ten_queens_puzzle init function board initialization\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "# Query\n\"The init function in ft_ten_queens_puzzle initializes the board\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"ft_ten_queens_puzzle\" \"init\" function usage",
+                    "result": "int ft_ten_queens_puzzle( void ). {. int count;. char queens[10];. count = 0;. init(queens);. while (count < 724). {. if (ft_check_all(queens))."
+                },
+                {
+                    "query": "\"init\" function called in \"ft_ten_queens_puzzle\" function",
+                    "result": "int ft_ten_queens_puzzle( void ). {. int count;. char queens[10];. count = 0;. init(queens);. while (count < 724). {. if (ft_check_all(queens)). Missing: called | Show results with:called."
+                },
+                {
+                    "query": "\"init\" function called in \"ft_ten_queens_puzzle\" function initializes the board.",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Ten-Queens Puzzle\" initialization chessboard",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Ten-Queens Puzzle\" chessboard initialization",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        }
+    ],
+    "Supported": 7,
+    "Irrelevant": 0,
+    "Not Supported": 7
+}

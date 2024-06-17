@@ -1,0 +1,74 @@
+{
+    "prompt": "write a sentence where each word starts with the next letter in the alphabet, from a to z.",
+    "response": " NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+    "num_claims": 1,
+    "sentences_and_atomic_facts": [
+        [
+            "NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+            [
+                "NAME_1 asked NAME_2 to bring her a cup of cocoa."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+            "atomic_facts": [
+                "NAME_1 asked NAME_2 to bring her a cup of cocoa."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+            "atomic_fact": "NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+            "self_contained_atomic_fact": "NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+            "relevance_data": {
+                "atomic_fact": "NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+                "revised_fact": "The subject of the statement \"NAME_1 asked NAME_2 to bring her a cup of cocoa\" is \"NAME_1\" and \"NAME_2\". From the response, we can see that \"NAME_1\" and \"NAME_2\" are both non-full names and are referring to specific individuals. However, since the response does not provide any information about the identities of \"NAME_1\" and \"NAME_2\", we cannot determine their proper names. Therefore, \"NAME_1\" and \"NAME_2\" are vague references that cannot be replaced with specific entities from the response.\n\nRevised Statement:\n```\nNAME_1 asked NAME_2 to bring her a cup of cocoa.\n```",
+                "is_relevant": "The subject of the QUESTION is \"write a sentence.\" The subject of the STATEMENT is \"NAME_1 asked NAME_2 to bring her a cup of cocoa.\" The RESPONSE contains the exact same sentence as the STATEMENT, so the subjects \"write a sentence\" and \"NAME_1 asked NAME_2 to bring her a cup of cocoa\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about NAME_1 asking NAME_2 to bring her a cup of cocoa. The knowledge only states that no good Google Search result was found multiple times. Therefore, there is no evidence or implication in the knowledge that supports or relates to the statement.\n\nStatement: NAME_1 asked NAME_2 to bring her a cup of cocoa.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "NAME_1 asked NAME_2 to bring her a cup of cocoa.",
+            "revised_fact": "The subject of the statement \"NAME_1 asked NAME_2 to bring her a cup of cocoa\" is \"NAME_1\" and \"NAME_2\". From the response, we can see that \"NAME_1\" and \"NAME_2\" are both non-full names and are referring to specific individuals. However, since the response does not provide any information about the identities of \"NAME_1\" and \"NAME_2\", we cannot determine their proper names. Therefore, \"NAME_1\" and \"NAME_2\" are vague references that cannot be replaced with specific entities from the response.\n\nRevised Statement:\n```\nNAME_1 asked NAME_2 to bring her a cup of cocoa.\n```",
+            "is_relevant": "The subject of the QUESTION is \"write a sentence.\" The subject of the STATEMENT is \"NAME_1 asked NAME_2 to bring her a cup of cocoa.\" The RESPONSE contains the exact same sentence as the STATEMENT, so the subjects \"write a sentence\" and \"NAME_1 asked NAME_2 to bring her a cup of cocoa\" are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "\"Did NAME_1 ask NAME_2 to bring her a cup of cocoa?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"NAME_1 asked NAME_2 to bring her a cup of cocoa\" evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Did NAME_1 ask NAME_2 to bring her a cup of cocoa?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Did NAME_1 ask NAME_2 to bring her a cup of cocoa?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Did NAME_1 ask NAME_2 to bring her a cup of cocoa?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        }
+    ],
+    "Supported": 0,
+    "Irrelevant": 0,
+    "Not Supported": 1
+}

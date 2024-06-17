@@ -1,0 +1,82 @@
+{
+    "prompt": "I want you to become my Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by you, NAME_1. You will follow the following process: \n\n1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next \n\nsteps. 2. Based on my input, you will generate 3 sections. a) Revised prompt (provide your rewritten prompt. it should be clear, concise, and easily understood by you), b) Suggestions \n\n(provide suggestions on what details to include in the prompt to improve it), and c) Questions (ask any relevant questions pertaining to what additional information is needed from me to \n\nimprove the prompt). 3. We will continue this iterative process with me providing additional information to you and you updating the prompt in the Revised prompt section until it's \n\ncomplete.",
+    "response": " Sure, I'd be happy to help you create a prompt! What would you like the prompt to be about?",
+    "num_claims": 1,
+    "sentences_and_atomic_facts": [
+        [
+            "Sure, I'd be happy to help you create a prompt!",
+            []
+        ],
+        [
+            "What would you like the prompt to be about?",
+            [
+                "The prompt is about choosing a topic."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "Sure, I'd be happy to help you create a prompt!",
+            "atomic_facts": []
+        },
+        {
+            "sentence": "What would you like the prompt to be about?",
+            "atomic_facts": [
+                "The prompt is about choosing a topic."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "What would you like the prompt to be about?",
+            "atomic_fact": "The prompt is about choosing a topic.",
+            "self_contained_atomic_fact": "The prompt that the speaker is offering to help create is about choosing a topic.",
+            "relevance_data": {
+                "atomic_fact": "The prompt is about choosing a topic.",
+                "revised_fact": "The subject in the statement \"The prompt is about choosing a topic\" is \"the prompt\". This is a vague reference because it is unclear which prompt is being referred to. From the response, we can see that the prompt being referred to is the prompt that the speaker is offering to help create. Therefore, \"the prompt\" should be replaced by \"the prompt that the speaker is offering to help create\". Thus, the revised statement is:\n```\nThe prompt that the speaker is offering to help create is about choosing a topic.\n```",
+                "is_relevant": "The subject of the QUESTION is the prompt that the speaker is offering to help create. The subject of the STATEMENT is choosing a topic. The RESPONSE explains that the speaker is willing to help create a prompt about choosing a topic. The relationship between the prompt and choosing a topic is that the prompt is about choosing a topic. Therefore, the subjects of the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention tips for choosing a topic for an essay or research paper. It also mentions following steps for selecting a topic and provides a guide to writing a research paper. This suggests that the speaker is offering help and guidance on choosing a topic.\n\nRestatement:\nThe prompt that the speaker is offering to help create is about choosing a topic.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "The prompt is about choosing a topic.",
+            "revised_fact": "The subject in the statement \"The prompt is about choosing a topic\" is \"the prompt\". This is a vague reference because it is unclear which prompt is being referred to. From the response, we can see that the prompt being referred to is the prompt that the speaker is offering to help create. Therefore, \"the prompt\" should be replaced by \"the prompt that the speaker is offering to help create\". Thus, the revised statement is:\n```\nThe prompt that the speaker is offering to help create is about choosing a topic.\n```",
+            "is_relevant": "The subject of the QUESTION is the prompt that the speaker is offering to help create. The subject of the STATEMENT is choosing a topic. The RESPONSE explains that the speaker is willing to help create a prompt about choosing a topic. The relationship between the prompt and choosing a topic is that the prompt is about choosing a topic. Therefore, the subjects of the QUESTION and the STATEMENT are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "prompt speaker \"offering to help create\" \"choosing a topic\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Tips for choosing a topic for a speech\"",
+                    "result": "If you're asked to come up with your own topic for an essay or research paper, use the tips for choosing a topic for a speech. Begin as if you were writing ..."
+                },
+                {
+                    "query": "\"tips for choosing a topic for a research paper\" site:.edu",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"choosing a topic\" \"essay\" \"research paper\" tips",
+                    "result": "... Research Paper: Tips around Picking out the topic for your Research Paper ... essay. ... Choosing a topic for a research paper can be a difficult ... Choosing a Topic ... Multiple Book Review Essay \u00b7 Reviewing Collected ... Once you've settled on a topic of interest from the list, follow Steps 1 - 4 listed above ... The Ultimate Guide to Writing a Research Paper ... While it may seem simple enough, choosing a topic ... Just like an essay conclusion, your ..."
+                },
+                {
+                    "query": "\"Prompt for creating a research paper topic\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        }
+    ],
+    "Supported": 1,
+    "Irrelevant": 0,
+    "Not Supported": 0
+}

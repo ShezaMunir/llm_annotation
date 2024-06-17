@@ -1,0 +1,533 @@
+{
+    "prompt": "which one is not bigger than the other? an elephant or a cat?",
+    "response": " It depends on the specific elephant and cat being compared. In general, elephants are larger than cats in terms of size, weight, and height. However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+    "num_claims": 11,
+    "sentences_and_atomic_facts": [
+        [
+            "It depends on the specific elephant and cat being compared.",
+            [
+                "It depends on the specific elephant.",
+                "It depends on the specific cat.",
+                "The comparison depends on the specific elephant and cat being compared."
+            ]
+        ],
+        [
+            "In general, elephants are larger than cats in terms of size, weight, and height.",
+            [
+                "Elephants are larger than cats.",
+                "Elephants are larger than cats in terms of size.",
+                "Elephants are larger than cats in terms of weight.",
+                "Elephants are larger than cats in terms of height."
+            ]
+        ],
+        [
+            "However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+            [
+                "There may be exceptionally large cats.",
+                "Lions are exceptionally large cats.",
+                "Tigers are exceptionally large cats.",
+                "Some exceptionally large cats could potentially be larger than some smaller elephants."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "It depends on the specific elephant and cat being compared.",
+            "atomic_facts": [
+                "It depends on the specific elephant.",
+                "It depends on the specific cat.",
+                "The comparison depends on the specific elephant and cat being compared."
+            ]
+        },
+        {
+            "sentence": "In general, elephants are larger than cats in terms of size, weight, and height.",
+            "atomic_facts": [
+                "Elephants are larger than cats.",
+                "Elephants are larger than cats in terms of size.",
+                "Elephants are larger than cats in terms of weight.",
+                "Elephants are larger than cats in terms of height."
+            ]
+        },
+        {
+            "sentence": "However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+            "atomic_facts": [
+                "There may be exceptionally large cats.",
+                "Lions are exceptionally large cats.",
+                "Tigers are exceptionally large cats.",
+                "Some exceptionally large cats could potentially be larger than some smaller elephants."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "It depends on the specific elephant and cat being compared.",
+            "atomic_fact": "It depends on the specific elephant.",
+            "self_contained_atomic_fact": "The size comparison between elephants and cats depends on the specific elephant and cat being compared.",
+            "relevance_data": {
+                "atomic_fact": "It depends on the specific elephant.",
+                "revised_fact": "The subject of the statement \"It depends on the specific elephant\" is \"It\". \"It\" is a pronoun and does not reference a specific entity. From the response, we can see that \"It\" is referring to the size comparison between elephants and cats. Therefore, \"It\" is a vague reference that should be replaced by \"The size comparison between elephants and cats\". Thus, the revised statement is:\n```\nThe size comparison between elephants and cats depends on the specific elephant and cat being compared.\n```",
+                "is_relevant": "The subject of the QUESTION is the size comparison between an elephant and a cat. The subject of the STATEMENT is the size comparison between elephants and cats. The phrase \"It depends on the specific elephant and cat being compared\" from the RESPONSE shows that the relationship between the size comparison in the QUESTION and the STATEMENT is that they both depend on the specific elephant and cat being compared. For this reason, the subjects in the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided states that an average elephant weighs nearly 1000 times more than a cat. It also mentions that an elephant-sized cat would be a huge lion. However, it does not provide any information about the specific size comparison between elephants and cats. Therefore, it cannot be determined whether the size comparison between elephants and cats depends on the specific elephant and cat being compared.\n\nRestatement of Statement:\nThe size comparison between elephants and cats depends on the specific elephant and cat being compared.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "It depends on the specific elephant and cat being compared.",
+            "atomic_fact": "It depends on the specific cat.",
+            "self_contained_atomic_fact": "The size comparison between elephants and cats depends on the specific elephant and cat being compared. In general, elephants are larger than cats in terms of size, weight, and height. However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+            "relevance_data": {
+                "atomic_fact": "It depends on the specific cat.",
+                "revised_fact": "The subject of the statement \"It depends on the specific cat\" is \"It\". \"It\" is a pronoun and does not reference a specific entity. From the response, we can see that the statement is referring to the size comparison between elephants and cats. Therefore, \"It\" is a vague reference that should be replaced by \"The size comparison between elephants and cats\". Thus, the revised response is:\n\n```\nThe size comparison between elephants and cats depends on the specific elephant and cat being compared. In general, elephants are larger than cats in terms of size, weight, and height. However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.\n```",
+                "is_relevant": "The subject of the QUESTION is the comparison between an elephant and a cat. The subject of the STATEMENT is the size comparison between elephants and cats. The RESPONSE provides information that explains how the two subjects are related by stating that \"In general, elephants are larger than cats in terms of size, weight, and height. However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.\" This shows that the subjects of the QUESTION and the STATEMENT are related by explaining the size comparison between elephants and cats. Therefore, the subjects are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided states that the largest domestic cat breeds are around the size of a bobcat, with the largest type of domesticated feline being the Savannah cat, which can weigh up to 25 pounds and reach heights of up to 18 inches. It also mentions that an average elephant weighs nearly 1000 times more than a cat. Therefore, based on this information, it can be inferred that elephants are generally larger than cats in terms of size, weight, and height.\n\nThe statement acknowledges that there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants. However, this does not contradict the knowledge provided, as it does not state that all cats are larger than all elephants. It simply acknowledges the possibility of exceptions.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "It depends on the specific elephant and cat being compared.",
+            "atomic_fact": "The comparison depends on the specific elephant and cat being compared.",
+            "self_contained_atomic_fact": "The comparison of size between elephants and cats depends on the specific elephant and cat being compared.",
+            "relevance_data": {
+                "atomic_fact": "The comparison depends on the specific elephant and cat being compared.",
+                "revised_fact": "The subject of the statement \"The comparison depends on the specific elephant and cat being compared\" is \"The comparison\". This is a vague reference because it does not specify what comparison is being referred to. From the response, we can see that the comparison being referred to is the comparison of size between elephants and cats. Therefore, \"The comparison\" should be replaced by \"The comparison of size between elephants and cats\". Thus, the revised response is:\n\n```\nThe comparison of size between elephants and cats depends on the specific elephant and cat being compared.\n```",
+                "is_relevant": "The subject of the QUESTION is the comparison of size between an elephant and a cat. The subject of the STATEMENT is the comparison of size between elephants and cats. The phrase \"It depends on the specific elephant and cat being compared\" from the RESPONSE shows that the relationship between the comparison of size in the QUESTION and the STATEMENT is that they both discuss the same concept of comparing the size of elephants and cats. For this reason, the subjects of the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n- The knowledge points mention that an average elephant weighs nearly 1000 times more than a cat.\n- The knowledge also mentions that a large elephant is 2000 times the size of a cat.\n- There is no mention of specific elephants or cats being compared in the knowledge.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "In general, elephants are larger than cats in terms of size, weight, and height.",
+            "atomic_fact": "Elephants are larger than cats.",
+            "self_contained_atomic_fact": "Elephants are larger than cats.",
+            "relevance_data": {
+                "atomic_fact": "Elephants are larger than cats.",
+                "revised_fact": "The subject of the statement \"Elephants are larger than cats\" is \"Elephants\". This is not a vague reference as it is a specific noun and does not refer to an unknown entity. Therefore, there is no need to revise the statement.\n\n```\nElephants are larger than cats.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants\". The RESPONSE explains that in general, elephants are larger than cats, but there may be some exceptions with exceptionally large cats. The RESPONSE provides information that directly relates the size of elephants to the size of cats, showing that they are being compared. Therefore, the subjects \"an elephant or a cat\" and \"Elephants\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points state that African elephants can weigh between 5,000 pounds to more than 14,000 pounds, while cats can only pull up to 5 pounds. This indicates that elephants are indeed larger than cats.\n\nSupporting evidence:\n- African elephants can weigh between 5,000 pounds to more than 14,000 pounds.\n- Cats can only pull up to 5 pounds.\n\nRestatement:\nThe knowledge points provide evidence that elephants are larger than cats.\n\nFinal answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "In general, elephants are larger than cats in terms of size, weight, and height.",
+            "atomic_fact": "Elephants are larger than cats in terms of size.",
+            "self_contained_atomic_fact": "Elephants are larger than cats in terms of size.",
+            "relevance_data": {
+                "atomic_fact": "Elephants are larger than cats in terms of size.",
+                "revised_fact": "The subject of the statement \"Elephants are larger than cats in terms of size\" is \"Elephants\" and \"cats\". These are not pronouns or unknown entities, but rather general terms. The response confirms that in general, elephants are larger than cats in terms of size, weight, and height. Therefore, there is no need to replace the subjects in the revised statement. Thus, the revised statement is:\n\n```\nElephants are larger than cats in terms of size.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants are larger than cats in terms of size\". The RESPONSE contains the phrase \"In general, elephants are larger than cats in terms of size, weight, and height,\" which explains the relationship between elephants and cats in terms of size. Therefore, the subjects \"an elephant or a cat\" and \"Elephants are larger than cats in terms of size\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge states that an average elephant weighs nearly 1000 times more than a cat. While it does not explicitly mention the size of elephants and cats, it strongly implies that elephants are larger than cats in terms of size.\n\nTherefore, the statement is supported by the given knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "In general, elephants are larger than cats in terms of size, weight, and height.",
+            "atomic_fact": "Elephants are larger than cats in terms of weight.",
+            "self_contained_atomic_fact": "Elephants are larger than cats in terms of weight.",
+            "relevance_data": {
+                "atomic_fact": "Elephants are larger than cats in terms of weight.",
+                "revised_fact": "The subject of the statement \"Elephants are larger than cats in terms of weight\" is \"Elephants\". \"Elephants\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Elephants\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Elephants\" is not a vague reference. Thus, the revised statement is:\n```\nElephants are larger than cats in terms of weight.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants\". The phrase \"In general, elephants are larger than cats in terms of size, weight, and height\" from the RESPONSE shows that the relationship between elephants and cats is that elephants are generally larger than cats. For this reason, the subjects \"an elephant or a cat\" and \"Elephants\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the knowledge provided, it is stated that the weight of an elephant is 1000 times the weight of a cat. It is also mentioned that elephants can pull up to 18,000 pounds, while cats can only pull up to 5 pounds. This implies that elephants are indeed larger than cats in terms of weight.\n\nSupporting Evidence:\n- \"The weight of an elephant is 1000 times the weight of a cat.\"\n- \"Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds.\"\n\nRestatement:\nElephants are larger than cats in terms of weight.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "In general, elephants are larger than cats in terms of size, weight, and height.",
+            "atomic_fact": "Elephants are larger than cats in terms of height.",
+            "self_contained_atomic_fact": "Elephants are larger than cats in terms of height.",
+            "relevance_data": {
+                "atomic_fact": "Elephants are larger than cats in terms of height.",
+                "revised_fact": "The subject of the statement \"Elephants are larger than cats in terms of height\" is \"Elephants\". This is not a vague reference as it is a specific entity mentioned in the statement. Therefore, there is no need to revise the statement. Thus, the revised response is:\n```\nElephants are larger than cats in terms of height.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants\". The phrase \"In general, elephants are larger than cats in terms of size, weight, and height\" from the RESPONSE shows that the relationship between elephants and cats is that elephants are generally larger than cats. For this reason, the subjects \"an elephant or a cat\" and \"Elephants\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "To determine whether the statement \"Elephants are larger than cats in terms of height\" is supported by the given knowledge, we need to examine the information provided.\n\n1. The knowledge states that elephants are approximately 20 times heavier than lions and 2 times longer. It does not explicitly mention the height of elephants in comparison to cats.\n\n2. The knowledge also mentions that African forest elephants have a shoulder height of 209-231 cm (6 ft 10 in - 7 ft 7 in) and a weight of 1.7-2.3 tons. However, it does not provide specific information about the height of cats.\n\nBased on the provided knowledge, there is no direct information about the height of cats in comparison to elephants. Therefore, we cannot conclude that elephants are larger than cats in terms of height.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+            "atomic_fact": "There may be exceptionally large cats.",
+            "self_contained_atomic_fact": "There may be exceptionally large cats, such as lions or tigers.",
+            "relevance_data": {
+                "atomic_fact": "There may be exceptionally large cats.",
+                "revised_fact": "The subject of the statement \"There may be exceptionally large cats\" is \"cats\". This is a vague reference because it does not specify what cats are being referred to. From the response, we can see that the statement is discussing the comparison between elephants and cats, and it mentions lions and tigers as examples of large cats. Therefore, \"cats\" should be replaced by \"lions or tigers\" to specify the type of cats being referred to. Thus, the revised statement is:\n\n```\nThere may be exceptionally large cats, such as lions or tigers.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"There may be exceptionally large cats, such as lions or tigers\". The phrase \"there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants\" from the RESPONSE shows that the relationship between an elephant and exceptionally large cats is that exceptionally large cats could potentially be larger than some smaller elephants. For this reason, the subjects \"an elephant or a cat\" and \"There may be exceptionally large cats, such as lions or tigers\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points state that the term \"big cat\" is typically used to refer to tigers, lions, jaguars, leopards, and snow leopards. It also mentions documented cases of large cats being friendly with humans. Additionally, there is a mention of exceptionally large cats in one of the sources. Based on this information, it can be inferred that exceptionally large cats, such as lions or tigers, may exist.\n\nRestatement:\nThere may be exceptionally large cats, such as lions or tigers.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+            "atomic_fact": "Lions are exceptionally large cats.",
+            "self_contained_atomic_fact": "Lions are exceptionally large cats.",
+            "relevance_data": {
+                "atomic_fact": "Lions are exceptionally large cats.",
+                "revised_fact": "The subject of the statement \"Lions are exceptionally large cats\" is \"Lions\". \"Lions\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Lions\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Lions\" is not a vague reference. Thus, the revised statement is:\n```\nLions are exceptionally large cats.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Lions\". The phrase \"there may be some exceptionally large cats, such as lions or tigers\" from the RESPONSE shows that lions are considered exceptionally large cats. Since the subjects \"an elephant or a cat\" and \"Lions\" are both mentioned in the RESPONSE and are related as lions being exceptionally large cats, the subjects should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge does not explicitly mention anything about the size of lions. To determine if the statement is supported, we need to consider general knowledge about lions. Lions are commonly known to be larger than domestic cats and other wild cat species. They have a distinct size difference, with male lions being particularly larger than females. Therefore, it can be inferred that lions are exceptionally large cats.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+            "atomic_fact": "Tigers are exceptionally large cats.",
+            "self_contained_atomic_fact": "Tigers are exceptionally large cats.",
+            "relevance_data": {
+                "atomic_fact": "Tigers are exceptionally large cats.",
+                "revised_fact": "The subject of the statement \"Tigers are exceptionally large cats\" is \"Tigers\". \"Tigers\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Tigers\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Tigers\" is not a vague reference. Thus, the revised statement is:\n```\nTigers are exceptionally large cats.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Tigers\". The phrase \"there may be some exceptionally large cats, such as lions or tigers\" from the RESPONSE shows that tigers are considered exceptionally large cats. Since the STATEMENT confirms this relationship, the subjects \"an elephant or a cat\" and \"Tigers\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n- The knowledge states that tigers are the largest cats in the world.\n- It also mentions that exceptionally heavy male lions and tigers can exceed 306 kg (675 pounds) in the wilderness and weigh around 1,000 pounds (450 kg).\n- There is no evidence or information provided that suggests tigers are exceptionally large compared to other big cats.\n\nConclusion:\nBased on the given knowledge, the statement that \"Tigers are exceptionally large cats\" is not supported. The knowledge only states that tigers are the largest cats in the world, but it does not provide any evidence or comparison to suggest that they are exceptionally large. \n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.",
+            "atomic_fact": "Some exceptionally large cats could potentially be larger than some smaller elephants.",
+            "self_contained_atomic_fact": "Lions or tigers could potentially be larger than some smaller elephants.",
+            "relevance_data": {
+                "atomic_fact": "Some exceptionally large cats could potentially be larger than some smaller elephants.",
+                "revised_fact": "The subject of the statement \"Some exceptionally large cats could potentially be larger than some smaller elephants\" is \"Some exceptionally large cats\" and \"some smaller elephants\". Both of these subjects are vague references as they do not specify which specific cats and elephants are being referred to. From the response, we can see that it mentions \"lions or tigers\" as examples of exceptionally large cats. We can also see that it mentions \"some smaller elephants\" as a possibility. Therefore, we can replace the vague references with the specific examples mentioned in the response. Thus, the revised statement is:\n\n```\nLions or tigers could potentially be larger than some smaller elephants.\n```",
+                "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Lions or tigers\". The phrase \"there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants\" from the RESPONSE shows that the relationship between lions or tigers and some smaller elephants is that they could potentially be larger. For this reason, the subjects \"an elephant or a cat\" and \"Lions or tigers\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Based on the given knowledge, there is no information or evidence provided about the size of lions or tigers compared to smaller elephants. The knowledge only provides information about the size of different elephant species and the size of tigers compared to lions. Therefore, the statement is not supported by the given knowledge. \n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "It depends on the specific elephant.",
+            "revised_fact": "The subject of the statement \"It depends on the specific elephant\" is \"It\". \"It\" is a pronoun and does not reference a specific entity. From the response, we can see that \"It\" is referring to the size comparison between elephants and cats. Therefore, \"It\" is a vague reference that should be replaced by \"The size comparison between elephants and cats\". Thus, the revised statement is:\n```\nThe size comparison between elephants and cats depends on the specific elephant and cat being compared.\n```",
+            "is_relevant": "The subject of the QUESTION is the size comparison between an elephant and a cat. The subject of the STATEMENT is the size comparison between elephants and cats. The phrase \"It depends on the specific elephant and cat being compared\" from the RESPONSE shows that the relationship between the size comparison in the QUESTION and the STATEMENT is that they both depend on the specific elephant and cat being compared. For this reason, the subjects in the QUESTION and the STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "It depends on the specific cat.",
+            "revised_fact": "The subject of the statement \"It depends on the specific cat\" is \"It\". \"It\" is a pronoun and does not reference a specific entity. From the response, we can see that the statement is referring to the size comparison between elephants and cats. Therefore, \"It\" is a vague reference that should be replaced by \"The size comparison between elephants and cats\". Thus, the revised response is:\n\n```\nThe size comparison between elephants and cats depends on the specific elephant and cat being compared. In general, elephants are larger than cats in terms of size, weight, and height. However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.\n```",
+            "is_relevant": "The subject of the QUESTION is the comparison between an elephant and a cat. The subject of the STATEMENT is the size comparison between elephants and cats. The RESPONSE provides information that explains how the two subjects are related by stating that \"In general, elephants are larger than cats in terms of size, weight, and height. However, there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants.\" This shows that the subjects of the QUESTION and the STATEMENT are related by explaining the size comparison between elephants and cats. Therefore, the subjects are [Foo]."
+        },
+        {
+            "atomic_fact": "The comparison depends on the specific elephant and cat being compared.",
+            "revised_fact": "The subject of the statement \"The comparison depends on the specific elephant and cat being compared\" is \"The comparison\". This is a vague reference because it does not specify what comparison is being referred to. From the response, we can see that the comparison being referred to is the comparison of size between elephants and cats. Therefore, \"The comparison\" should be replaced by \"The comparison of size between elephants and cats\". Thus, the revised response is:\n\n```\nThe comparison of size between elephants and cats depends on the specific elephant and cat being compared.\n```",
+            "is_relevant": "The subject of the QUESTION is the comparison of size between an elephant and a cat. The subject of the STATEMENT is the comparison of size between elephants and cats. The phrase \"It depends on the specific elephant and cat being compared\" from the RESPONSE shows that the relationship between the comparison of size in the QUESTION and the STATEMENT is that they both discuss the same concept of comparing the size of elephants and cats. For this reason, the subjects of the QUESTION and the STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "Elephants are larger than cats.",
+            "revised_fact": "The subject of the statement \"Elephants are larger than cats\" is \"Elephants\". This is not a vague reference as it is a specific noun and does not refer to an unknown entity. Therefore, there is no need to revise the statement.\n\n```\nElephants are larger than cats.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants\". The RESPONSE explains that in general, elephants are larger than cats, but there may be some exceptions with exceptionally large cats. The RESPONSE provides information that directly relates the size of elephants to the size of cats, showing that they are being compared. Therefore, the subjects \"an elephant or a cat\" and \"Elephants\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Elephants are larger than cats in terms of size.",
+            "revised_fact": "The subject of the statement \"Elephants are larger than cats in terms of size\" is \"Elephants\" and \"cats\". These are not pronouns or unknown entities, but rather general terms. The response confirms that in general, elephants are larger than cats in terms of size, weight, and height. Therefore, there is no need to replace the subjects in the revised statement. Thus, the revised statement is:\n\n```\nElephants are larger than cats in terms of size.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants are larger than cats in terms of size\". The RESPONSE contains the phrase \"In general, elephants are larger than cats in terms of size, weight, and height,\" which explains the relationship between elephants and cats in terms of size. Therefore, the subjects \"an elephant or a cat\" and \"Elephants are larger than cats in terms of size\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Elephants are larger than cats in terms of weight.",
+            "revised_fact": "The subject of the statement \"Elephants are larger than cats in terms of weight\" is \"Elephants\". \"Elephants\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Elephants\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Elephants\" is not a vague reference. Thus, the revised statement is:\n```\nElephants are larger than cats in terms of weight.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants\". The phrase \"In general, elephants are larger than cats in terms of size, weight, and height\" from the RESPONSE shows that the relationship between elephants and cats is that elephants are generally larger than cats. For this reason, the subjects \"an elephant or a cat\" and \"Elephants\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Elephants are larger than cats in terms of height.",
+            "revised_fact": "The subject of the statement \"Elephants are larger than cats in terms of height\" is \"Elephants\". This is not a vague reference as it is a specific entity mentioned in the statement. Therefore, there is no need to revise the statement. Thus, the revised response is:\n```\nElephants are larger than cats in terms of height.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Elephants\". The phrase \"In general, elephants are larger than cats in terms of size, weight, and height\" from the RESPONSE shows that the relationship between elephants and cats is that elephants are generally larger than cats. For this reason, the subjects \"an elephant or a cat\" and \"Elephants\" are [Foo]."
+        },
+        {
+            "atomic_fact": "There may be exceptionally large cats.",
+            "revised_fact": "The subject of the statement \"There may be exceptionally large cats\" is \"cats\". This is a vague reference because it does not specify what cats are being referred to. From the response, we can see that the statement is discussing the comparison between elephants and cats, and it mentions lions and tigers as examples of large cats. Therefore, \"cats\" should be replaced by \"lions or tigers\" to specify the type of cats being referred to. Thus, the revised statement is:\n\n```\nThere may be exceptionally large cats, such as lions or tigers.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"There may be exceptionally large cats, such as lions or tigers\". The phrase \"there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants\" from the RESPONSE shows that the relationship between an elephant and exceptionally large cats is that exceptionally large cats could potentially be larger than some smaller elephants. For this reason, the subjects \"an elephant or a cat\" and \"There may be exceptionally large cats, such as lions or tigers\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Lions are exceptionally large cats.",
+            "revised_fact": "The subject of the statement \"Lions are exceptionally large cats\" is \"Lions\". \"Lions\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Lions\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Lions\" is not a vague reference. Thus, the revised statement is:\n```\nLions are exceptionally large cats.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Lions\". The phrase \"there may be some exceptionally large cats, such as lions or tigers\" from the RESPONSE shows that lions are considered exceptionally large cats. Since the subjects \"an elephant or a cat\" and \"Lions\" are both mentioned in the RESPONSE and are related as lions being exceptionally large cats, the subjects should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "Tigers are exceptionally large cats.",
+            "revised_fact": "The subject of the statement \"Tigers are exceptionally large cats\" is \"Tigers\". \"Tigers\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Tigers\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Tigers\" is not a vague reference. Thus, the revised statement is:\n```\nTigers are exceptionally large cats.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Tigers\". The phrase \"there may be some exceptionally large cats, such as lions or tigers\" from the RESPONSE shows that tigers are considered exceptionally large cats. Since the STATEMENT confirms this relationship, the subjects \"an elephant or a cat\" and \"Tigers\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Some exceptionally large cats could potentially be larger than some smaller elephants.",
+            "revised_fact": "The subject of the statement \"Some exceptionally large cats could potentially be larger than some smaller elephants\" is \"Some exceptionally large cats\" and \"some smaller elephants\". Both of these subjects are vague references as they do not specify which specific cats and elephants are being referred to. From the response, we can see that it mentions \"lions or tigers\" as examples of exceptionally large cats. We can also see that it mentions \"some smaller elephants\" as a possibility. Therefore, we can replace the vague references with the specific examples mentioned in the response. Thus, the revised statement is:\n\n```\nLions or tigers could potentially be larger than some smaller elephants.\n```",
+            "is_relevant": "The subject of the QUESTION is \"an elephant or a cat\". The subject of the STATEMENT is \"Lions or tigers\". The phrase \"there may be some exceptionally large cats, such as lions or tigers, that could potentially be larger than some smaller elephants\" from the RESPONSE shows that the relationship between lions or tigers and some smaller elephants is that they could potentially be larger. For this reason, the subjects \"an elephant or a cat\" and \"Lions or tigers\" are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "elephant size comparison with cat",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. An elephant-sized cat would be a huge lion."
+                },
+                {
+                    "query": "elephant and cat size comparison by weight and height",
+                    "result": "Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ... As an elephant villager, Big Top also has a significant weight and height advantage. ... size, weight ... Average guy vs 20 cat-sized Silverback ..."
+                },
+                {
+                    "query": "elephant size comparison with cat",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. An elephant-sized cat would be a huge lion."
+                },
+                {
+                    "query": "elephant size comparison with cat",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. An elephant-sized cat would be a huge lion."
+                },
+                {
+                    "query": "elephant size comparison with cat",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. An elephant-sized cat would be a huge lion."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Are there any exceptionally large cats that are larger than some smaller elephants?",
+                    "result": "No. The largest domestic cat breeds are around the size of a bobcat. they are just like other cats except in size unless they are a hybrid ... #6: Savannah. This big household cat resembles an even bigger cat\u2014the leopard\u2014with its spotted pattern. Adding to their wild intrigue, the Savannah is a ... Missing: exceptionally elephants?."
+                },
+                {
+                    "query": "elephants and cats size comparison",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. Explore the World of Elephants! Welcome to our latest video where we embark on an exciting ... Duration: 7:11. Posted: Mar 1, 2024."
+                },
+                {
+                    "query": "elephant size comparison with largest domestic cat breeds",
+                    "result": "The largest type of domesticated feline is the Savannah cat , which can weigh up to 25 pounds and reach heights of up to 18 inches . 1. Maine Coon ... Main Coons are considered some of the biggest domestic cats. Weighing up to 20 pounds, measuring up to 40 inches in length and with big, fluffy ... Missing: elephant | Show results with:elephant. This is the first video when none a single breed is extinct . 9:12 \u00b7 Go to channel \u00b7 The BIGGEST ... Duration: 10:11. Posted: Jul 9, 2021."
+                },
+                {
+                    "query": "elephant size comparison with largest domestic cat breed",
+                    "result": "Elephants are approximately 20x heavier than lions and 2x longer. [1] That's a beast that could bring down absolutely anything that it wants, ... 1. Maine Coon. Main Coons are considered some of the biggest domestic cats. Weighing up to 20 pounds, measuring up to 40 inches in length and with big, fluffy ... Missing: elephant | Show results with:elephant. walter santi\u202215M views \u00b7 10:01. Go to channel \u00b7 Top 10 BIGGEST Domestic Cat Breeds. The ... Duration: 2:08. Posted: Mar 16, 2024."
+                },
+                {
+                    "query": "elephants and cats size comparison",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. Explore the World of Elephants! Welcome to our latest video where we embark on an exciting ... Duration: 7:11. Posted: Mar 1, 2024."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "elephant size comparison with cat",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. An elephant-sized cat would be a huge lion."
+                },
+                {
+                    "query": "elephant size comparison with cat",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. An elephant-sized cat would be a huge lion."
+                },
+                {
+                    "query": "elephant size comparison to cat",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. They're already terrifying."
+                },
+                {
+                    "query": "elephant and cat size comparison variability",
+                    "result": "The math of cat vs elephant winds up very easy, then: a large elephant is 2,000 times the size of a cat. ... variation within any elephant ... Missing: variability | Show results with:variability. But you're saying it's the sameness of cat species, their lack of variation, that indicates that they're evolutionarily successful or \u201cperfect.\u201d. Missing: comparison variability."
+                },
+                {
+                    "query": "\"Variability in size between elephants and cats\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Elephants are larger than cats evidence",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. Missing: evidence | Show results with:evidence. Humans are Just Bigger Cats (or Smaller Elephants). Home Content ... Larger animals are more efficient in their use of energy than smaller ones, ... Missing: evidence | Show results with:evidence."
+                },
+                {
+                    "query": "Are elephants larger than cats in terms of size and weight?",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. As with elephants, big-cat body condition is usually scored on a five-point scale. A score of 3 is ideal, 1 is very thin, and 5 is obese. The scores can be ... African elephants can range from 5,000 pounds to more than 14,000 pounds (6,350 kilograms). According to the World Wildlife Fund, an average African elephant ..."
+                },
+                {
+                    "query": "Do elephants weigh more than cats?",
+                    "result": "African elephants can range from 5,000 pounds to more than 14,000 pounds (6,350 kilograms). According to the World Wildlife Fund, an average African elephant ... Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ... Tusks can weigh over 200 pounds ... Elephants purr like cats do, as a means of communication. Elephants have been known to learn more than 60 ..."
+                },
+                {
+                    "query": "Do elephants weigh more than cats?",
+                    "result": "African elephants can range from 5,000 pounds to more than 14,000 pounds (6,350 kilograms). According to the World Wildlife Fund, an average African elephant ... Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ... Tusks can weigh over 200 pounds ... Elephants purr like cats do, as a means of communication. Elephants have been known to learn more than 60 ..."
+                },
+                {
+                    "query": "Do elephants weigh more than cats?",
+                    "result": "African elephants can range from 5,000 pounds to more than 14,000 pounds (6,350 kilograms). According to the World Wildlife Fund, an average African elephant ... Tusks can weigh over 200 pounds ... Elephants purr like cats do, as a means of communication. Elephants have been known to learn more than 60 ... Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Are elephants larger than cats in terms of size?",
+                    "result": "An average elephant weighs nearly 1000 times more than a cat. So by this logic, your super cat will eat 1000 times more food than a regular cat. Humans are Just Bigger Cats (or Smaller Elephants) ... Your heart is going to beat 1.5 billion times. OK, I can't tell you that exactly, but ... Missing: terms | Show results with:terms. A cat the size of a St. Bernard is called a leopard and will eat you. I understand they prefer to eat faces. The rest of you should be fine. :+ ..."
+                },
+                {
+                    "query": "\"average size of elephants compared to cats\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Size comparison between elephants and cats\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Average size of elephants compared to cats\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Average size of elephants compared to cats\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Are cats larger than elephants in terms of weight?",
+                    "result": "This list of largest cats shows the 10 largest extant Felidae species, ordered by maximum reported weight and size of wild individuals on record. Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ... Just like captive elephants, captive big cats tend to be overweight, which can cause liver problems, arthritis, respiratory and heart issues, and ..."
+                },
+                {
+                    "query": "Elephants vs. cats weight comparison",
+                    "result": "Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ... This list of largest cats shows the 10 largest extant Felidae species, ordered by maximum reported weight and size of wild individuals on record."
+                },
+                {
+                    "query": "elephant weight compared to cat weight",
+                    "result": "Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ... The weight of an elephant is 1000 times the weight of a cat. If the elephant weighs 14,000 pounds how many pounds does the cat weigh. Did you know that captive elephants and big cats actually tend to be obese? Use this guide to learn about body condition scoring to determine if an elephant or ..."
+                },
+                {
+                    "query": "\"Average weight of elephants vs cats\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Average weight of elephants and cats\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Are elephants taller than cats?",
+                    "result": "Humans are Just Bigger Cats (or Smaller Elephants) ... Your heart is going to beat 1.5 billion times. OK, I can't tell you that exactly, but ... Missing: taller | Show results with:taller. Elephants are approximately 20x heavier than lions and 2x longer. [1] That's a beast that could bring down absolutely anything that it wants, ... Elephants are plenty tall even before they stand on their hind legs. ... than giraffes. Lions attempt to hunt younger ... Instead, they choose bushes and taller ... Missing: cats? | Show results with:cats?."
+                },
+                {
+                    "query": "elephants height compared to cats site:wikipedia.org",
+                    "result": "African forest elephant (Loxodonta cyclotis), 209\u2013231 cm (6 ft 10 in \u2013 7 ft 7 in) (shoulder height), 1.7\u20132.3 t (1.9\u20132.5 short tons) (weight). \u00b7 Similar to the ... The following is a list of largest mammals by family. Contents. 1 Tenrecs and allies (Afrosoricida); 2 Even-toed ungulates (Artiodactyla)."
+                },
+                {
+                    "query": "elephant height vs cat height",
+                    "result": "Elephants can pull up to 18,000 pounds! Cats however, can only pull up to 5 pounds. That is 3,600 cats in the power category. Now all of this ... I came here to say this. Cats 1/4 the size of elephants are called lions and they're terrifying. Upvote 6. Downvote Award 0 awards Missing: height. Humans are Just Bigger Cats (or Smaller Elephants) ... And an elephant. And a shrew. And a ... size no matter how big or small your community is. Missing: height."
+                },
+                {
+                    "query": "elephants height compared to cats",
+                    "result": "Elephants are approximately 20x heavier than lions and 2x longer. [1] That's a beast that could bring down absolutely anything that it wants, ... Missing: height | Show results with:height. i just did the math keeping me awake, there are 2727 cats for every elephant on earth. Battle."
+                },
+                {
+                    "query": "Elephants are taller than cats",
+                    "result": "Humans are Just Bigger Cats (or Smaller Elephants) ... Your heart is going to beat 1.5 billion times. OK, I can't tell you that exactly, but ... Missing: taller | Show results with:taller. Elephants are approximately 20x heavier than lions and 2x longer. [1] That's a beast that could bring down absolutely anything that it wants, ... I came here to say this. Cats 1/4 the size of elephants are called lions and they're terrifying. Missing: taller | Show results with:taller."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Are there any documented cases of exceptionally large cats, such as lions or tigers?",
+                    "result": "NO it's not. Tigers are wild animals, and unlike domesticated animals such as dogs or cats, they have not undergone a process of selective ... Missing: documented | Show results with:documented. In theory yes and there have been documented cases where large cats were very friendly with humans they knew from birth, but it is very ... Missing: exceptionally | Show results with:exceptionally. The term \"big cat\" is typically used to refer to any of the five living members of the genus Panthera, namely the tiger, lion, jaguar, leopard, and snow ... Missing: cases | Show results with:cases."
+                },
+                {
+                    "query": "\"Are there exceptionally large cats, such as lions or tigers?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Are there exceptionally large cats, such as lions or tigers, documented?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Exceptionally large cats\" documented cases",
+                    "result": "... exceptionally large cats ( Kauhala et al., 2015) . ... cases of AC-poisoning. The diagnosis was confirmed by ... documented depredating mockingbird nests in ... ... exceptionally large cats (Kauhala et al., 2015). Experimental. release of 20 native long-haired rats (Rattus villosissimus) in. Australia led ... A better question is where can you save a cat's life? Maine Coon cats are delightful companions, but are also exceptionally large cats, ..."
+                },
+                {
+                    "query": "\"Are there documented cases of exceptionally large cats?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Tigers are exceptionally large cats evidence",
+                    "result": "Tigers aren't \u201cconsidered\u201d the largest big cat, they are the biggest. Lions are marginally taller, but tigers are longer and bulkier. An average ... Missing: evidence | Show results with:evidence. Tigers are the largest cats in the world, but these iconic striped predators face extinction across their native range of Asia. Missing: exceptionally | Show results with:exceptionally. The tiger and snow leopard diverged from the ancestral big cats approximately 3.9 Ma. ... Exceptionally heavy male lions and tigers have ... The Guinness Book of ... Missing: evidence | Show results with:evidence."
+                },
+                {
+                    "query": "Tigers are exceptionally large cats. evidence",
+                    "result": "Tigers are the largest cats in the world, but these iconic striped predators face extinction across their native range of Asia. Missing: exceptionally | Show results with:exceptionally. Tigers aren't \u201cconsidered\u201d the largest big cat, they are the biggest. Lions are marginally taller, but tigers are longer and bulkier. An average ... Missing: evidence | Show results with:evidence. Big cats are carnivores that can be found in Africa (lion, leopard), Asia (lion, tiger, leopard, snow leopard) and the Americas (jaguar)."
+                },
+                {
+                    "query": "Tigers are exceptionally large cats. evidence",
+                    "result": "Tigers are the largest cats in the world, but these iconic striped predators face extinction across their native range of Asia. Missing: exceptionally | Show results with:exceptionally. Tigers aren't \u201cconsidered\u201d the largest big cat, they are the biggest. Lions are marginally taller, but tigers are longer and bulkier. An average ... Missing: evidence | Show results with:evidence. As seen in Tiger King, big cats have been illegally sold to facilities around the country. There is no way to know exactly where all of these animals end up, ..."
+                },
+                {
+                    "query": "Tigers are exceptionally large cats.",
+                    "result": "Tigers aren't \u201cconsidered\u201d the largest big cat, they are the biggest. Lions are marginally taller, but tigers are longer and bulkier. An average ... Tigers are the largest cats in the world, but these iconic striped predators face extinction across their native range of Asia. Missing: exceptionally | Show results with:exceptionally. Exceptionally heavy male lions and tigers have been recorded to exceed 306 kg (675 pounds) in the wilderness, and weigh around 1,000 pounds (450 kg) in ..."
+                },
+                {
+                    "query": "Tigers are exceptionally large cats.",
+                    "result": "Tigers aren't \u201cconsidered\u201d the largest big cat, they are the biggest. Lions are marginally taller, but tigers are longer and bulkier. An average ... Tigers are the largest cats in the world, but these iconic striped predators face extinction across their native range of Asia. Missing: exceptionally | Show results with:exceptionally. Exceptionally heavy male lions and tigers have been recorded to exceed 306 kg (675 pounds) in the wilderness, and weigh around 1,000 pounds (450 kg) in ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Largest elephant species\"",
+                    "result": "The African savanna elephant is the largest elephant species, while the Asian forest elephant and the African forest elephant are of a comparable, smaller size. African savannah elephants are the largest elephant species. The biggest male African savannah elephants can weigh up to 6,800 kilograms ..."
+                },
+                {
+                    "query": "Lions or tigers larger than some smaller elephants",
+                    "result": "In reality, tigers are generally larger than lions - the Siberian tiger, for instance, can weigh up to 700 pounds and reach lengths of 11 feet, ... And in general its a huge misconception that tigers are waaay larger than lions, however the truth is that both cat species are almost always ... Missing: elephants | Show results with:elephants. This is the reason lions are a trifle larger at the level of species, whereas tigers have the smallest and largest subspecies. WEIGHT Wild ... Missing: elephants | Show results with:elephants."
+                },
+                {
+                    "query": "\"Size comparison between lions/tigers and elephants\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Lions or tigers larger than smaller elephants\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Comparison of sizes between lions/tigers and elephants\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        }
+    ],
+    "Supported": 7,
+    "Irrelevant": 0,
+    "Not Supported": 4
+}

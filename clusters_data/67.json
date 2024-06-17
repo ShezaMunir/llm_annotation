@@ -1,0 +1,303 @@
+{
+    "prompt": "I want you to act as an aspect-based sentiment analysis model and identify the aspects and their corresponding sentiments from given text. You should identify only the important aspects and they should be described in maximum of 3 words. The sentiment should be either positive, negative or neutral.\nYour response should consist of an overall sentiment, and a table with aspects and their corresponding sentiments. Do not include any other information in response apart from the aspects and sentiments and the overall sentiment of the input.\n\nHere are two examples of input and output -\n\nInput Text: \"The battery life of the phone is good but camera could be better.\"\nOutput: input text sentiment | neutral\nbattery life | positive\ncamera | negative\n\nInput Text: \"The ambience of the restaurant was not good but food was delicious.\"\nOutput: input text sentiment | neutral\nambience | negative\nfood | positive\n\nGenerate the output for given input -\n\nInput Text: He/She is always supportive and understands everyone's situation.",
+    "response": " input text sentiment | positive\nsupportive | positive\nunderstands | positive",
+    "num_claims": 6,
+    "sentences_and_atomic_facts": [
+        [
+            "input text sentiment | positive",
+            [
+                "The input text has a sentiment.",
+                "The sentiment of the input text is positive."
+            ]
+        ],
+        [
+            "supportive | positive",
+            [
+                "Supportive is a trait or characteristic.",
+                "Positive is a trait or characteristic."
+            ]
+        ],
+        [
+            "understands | positive",
+            [
+                "The subject understands.",
+                "The understanding is positive."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "input text sentiment | positive",
+            "atomic_facts": [
+                "The input text has a sentiment.",
+                "The sentiment of the input text is positive."
+            ]
+        },
+        {
+            "sentence": "supportive | positive",
+            "atomic_facts": [
+                "Supportive is a trait or characteristic.",
+                "Positive is a trait or characteristic."
+            ]
+        },
+        {
+            "sentence": "understands | positive",
+            "atomic_facts": [
+                "The subject understands.",
+                "The understanding is positive."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "input text sentiment | positive",
+            "atomic_fact": "The input text has a sentiment.",
+            "self_contained_atomic_fact": "The specific input text mentioned in the response has a positive sentiment.",
+            "relevance_data": {
+                "atomic_fact": "The input text has a sentiment.",
+                "revised_fact": "The subject of the statement \"The input text has a sentiment\" is \"The input text\". This is a reference to an unknown entity, since it is unclear what specific input text is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the input text mentioned in the context of having a positive sentiment. Thus, \"The input text\" is a vague reference that should be replaced by \"The specific input text mentioned in the response\". Thus, the revised response is:\n```\nThe specific input text mentioned in the response has a positive sentiment.\n```",
+                "is_relevant": "The subject of the QUESTION is the input text. The subject of the STATEMENT is the specific input text mentioned in the response. The phrase \"input text sentiment | positive\" from the RESPONSE shows that the relationship between the input text and the specific input text mentioned in the response is that they both have a positive sentiment. For this reason, the subjects of the input text and the specific input text mentioned in the response are [Foo]."
+            },
+            "rate_data": {
+                "response": "To determine if the statement is supported by the given knowledge, we need to examine the main points of the knowledge.\n\nUnfortunately, the knowledge points are not provided, so we cannot determine if the statement is supported or not.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "input text sentiment | positive",
+            "atomic_fact": "The sentiment of the input text is positive.",
+            "self_contained_atomic_fact": "The sentiment of the input text mentioned in the response is positive.",
+            "relevance_data": {
+                "atomic_fact": "The sentiment of the input text is positive.",
+                "revised_fact": "The subject of the statement \"The sentiment of the input text is positive\" is \"The sentiment of the input text\". This is a vague reference because it does not specify what input text is being referred to. From the response, we can see that the statement is referring to the sentiment of the input text mentioned in the response. Therefore, \"The sentiment of the input text\" should be replaced by \"The sentiment of the input text mentioned in the response\". Thus, the revised statement is:\n```\nThe sentiment of the input text mentioned in the response is positive.\n```",
+                "is_relevant": "The subject of the QUESTION is the sentiment of the input text. The subject of the STATEMENT is the sentiment of the input text mentioned in the response. The phrase \"input text sentiment | positive\" directly states that the sentiment of the input text mentioned in the response is positive. Therefore, the subjects \"the sentiment of the input text\" and \"the sentiment of the input text mentioned in the response\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given KNOWLEDGE does not provide any specific information about the sentiment of the input text mentioned in the response. It only mentions sentiment analysis tools and their accuracy, but does not provide any information about the sentiment of a specific input text. Therefore, we cannot determine whether the sentiment of the input text mentioned in the response is positive or not based on the given KNOWLEDGE.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "supportive | positive",
+            "atomic_fact": "Supportive is a trait or characteristic.",
+            "self_contained_atomic_fact": "Supportive is a trait or characteristic.",
+            "relevance_data": {
+                "atomic_fact": "Supportive is a trait or characteristic.",
+                "revised_fact": "The subject in the statement \"Supportive is a trait or characteristic\" is \"Supportive\". \"Supportive\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Supportive\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Supportive\" is not a vague reference. Thus, the revised statement is:\n```\nSupportive is a trait or characteristic.\n```",
+                "is_relevant": "The subject of the QUESTION is the aspects and sentiments of the input text. The subject of the STATEMENT is \"supportive.\" The phrase \"He/She is always supportive\" from the RESPONSE shows that the relationship between the subject of the QUESTION and the subject of the STATEMENT is that the input text has the aspect of being supportive. Since the aspect of being supportive is mentioned in the RESPONSE, the subjects of the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention the term \"Supportive\" multiple times and describe it as a personality type or trait. It is mentioned as one of the \"Big Five\" traits in the trait theory of personality. The knowledge also provides descriptions of the characteristics of a supportive person, such as being calm, stable, warm, loyal, and flexible to the needs of others. Based on this information, it can be inferred that \"Supportive\" is indeed a trait or characteristic.\n\nRestated Statement:\nSupportive is a trait or characteristic.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "supportive | positive",
+            "atomic_fact": "Positive is a trait or characteristic.",
+            "self_contained_atomic_fact": "Positive is a trait or characteristic.",
+            "relevance_data": {
+                "atomic_fact": "Positive is a trait or characteristic.",
+                "revised_fact": "The subject in the statement \"Positive is a trait or characteristic\" is \"Positive\". \"Positive\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Positive\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Positive\" is not a vague reference. Thus, the revised statement is:\n```\nPositive is a trait or characteristic.\n```",
+                "is_relevant": "The subject of the QUESTION is \"aspects and their corresponding sentiments.\" The subject of the STATEMENT is \"positive.\" The RESPONSE contains information that explains the relationship between the two subjects, as it states \"supportive\" and \"understands\" as aspects with a positive sentiment. Therefore, the subjects \"aspects and their corresponding sentiments\" and \"positive\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, positive character traits are described as personal attributes or strengths that reflect positive thought patterns, feelings, and behaviors. The knowledge also provides a list of over 90 positive attributes that a character might have, such as kindness, leadership, consideration, empathy, reliability, intelligence, innovative, thoughtful, and conscientious. Therefore, it can be inferred that positive is indeed a trait or characteristic.\n\nRestatement:\nPositive is a trait or characteristic.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "understands | positive",
+            "atomic_fact": "The subject understands.",
+            "self_contained_atomic_fact": "The input text sentiment understands.",
+            "relevance_data": {
+                "atomic_fact": "The subject understands.",
+                "revised_fact": "The subject in the statement \"The subject understands\" is \"the subject\". This is a vague reference because it does not specify who or what the subject is. From the response, we can see that the subject is referring to the \"input text sentiment\" which is described as positive. Therefore, \"the subject\" should be replaced with \"the input text sentiment\". Thus, the revised statement is:\n\n```\nThe input text sentiment understands.\n```",
+                "is_relevant": "The subject of the QUESTION is the input text. The subject of the STATEMENT is the sentiment \"understands\". The phrase \"He/She is always supportive and understands everyone's situation\" from the RESPONSE shows that the sentiment of the input text is positive and the sentiment of the aspect \"understands\" is also positive. For this reason, the subjects of the input text and the sentiment \"understands\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge states that no good Google Search result was found. This knowledge does not provide any information about the understanding of input text sentiment. Therefore, we cannot determine whether the statement is supported or not based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "understands | positive",
+            "atomic_fact": "The understanding is positive.",
+            "self_contained_atomic_fact": "The input text sentiment is positive.",
+            "relevance_data": {
+                "atomic_fact": "The understanding is positive.",
+                "revised_fact": "The subject in the statement \"The understanding is positive\" is \"The understanding\". This is a vague reference, as it does not specify what understanding is being referred to. From the RESPONSE, we can see that the understanding being referred to is the \"input text sentiment\", which is stated to be positive. Therefore, \"The understanding\" should be replaced by \"The input text sentiment\". Thus, the revised statement is:\n```\nThe input text sentiment is positive.\n```",
+                "is_relevant": "The subject of the QUESTION is the input text sentiment. The subject of the STATEMENT is the input text sentiment. The phrase \"He/She is always supportive and understands everyone's situation\" from the RESPONSE shows that the sentiment of the input text is positive. For this reason, the subjects input text sentiment and input text sentiment are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge provides information about sentiment analysis, which is the process of analyzing text and detecting positive or negative opinions. It also mentions various methods to determine the sentiment score of a statement. However, there is no specific information that directly supports or implies that the input text sentiment is positive. Therefore, we cannot determine whether the given statement is supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "The input text has a sentiment.",
+            "revised_fact": "The subject of the statement \"The input text has a sentiment\" is \"The input text\". This is a reference to an unknown entity, since it is unclear what specific input text is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the input text mentioned in the context of having a positive sentiment. Thus, \"The input text\" is a vague reference that should be replaced by \"The specific input text mentioned in the response\". Thus, the revised response is:\n```\nThe specific input text mentioned in the response has a positive sentiment.\n```",
+            "is_relevant": "The subject of the QUESTION is the input text. The subject of the STATEMENT is the specific input text mentioned in the response. The phrase \"input text sentiment | positive\" from the RESPONSE shows that the relationship between the input text and the specific input text mentioned in the response is that they both have a positive sentiment. For this reason, the subjects of the input text and the specific input text mentioned in the response are [Foo]."
+        },
+        {
+            "atomic_fact": "The sentiment of the input text is positive.",
+            "revised_fact": "The subject of the statement \"The sentiment of the input text is positive\" is \"The sentiment of the input text\". This is a vague reference because it does not specify what input text is being referred to. From the response, we can see that the statement is referring to the sentiment of the input text mentioned in the response. Therefore, \"The sentiment of the input text\" should be replaced by \"The sentiment of the input text mentioned in the response\". Thus, the revised statement is:\n```\nThe sentiment of the input text mentioned in the response is positive.\n```",
+            "is_relevant": "The subject of the QUESTION is the sentiment of the input text. The subject of the STATEMENT is the sentiment of the input text mentioned in the response. The phrase \"input text sentiment | positive\" directly states that the sentiment of the input text mentioned in the response is positive. Therefore, the subjects \"the sentiment of the input text\" and \"the sentiment of the input text mentioned in the response\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Supportive is a trait or characteristic.",
+            "revised_fact": "The subject in the statement \"Supportive is a trait or characteristic\" is \"Supportive\". \"Supportive\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Supportive\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Supportive\" is not a vague reference. Thus, the revised statement is:\n```\nSupportive is a trait or characteristic.\n```",
+            "is_relevant": "The subject of the QUESTION is the aspects and sentiments of the input text. The subject of the STATEMENT is \"supportive.\" The phrase \"He/She is always supportive\" from the RESPONSE shows that the relationship between the subject of the QUESTION and the subject of the STATEMENT is that the input text has the aspect of being supportive. Since the aspect of being supportive is mentioned in the RESPONSE, the subjects of the QUESTION and the STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "Positive is a trait or characteristic.",
+            "revised_fact": "The subject in the statement \"Positive is a trait or characteristic\" is \"Positive\". \"Positive\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Positive\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Positive\" is not a vague reference. Thus, the revised statement is:\n```\nPositive is a trait or characteristic.\n```",
+            "is_relevant": "The subject of the QUESTION is \"aspects and their corresponding sentiments.\" The subject of the STATEMENT is \"positive.\" The RESPONSE contains information that explains the relationship between the two subjects, as it states \"supportive\" and \"understands\" as aspects with a positive sentiment. Therefore, the subjects \"aspects and their corresponding sentiments\" and \"positive\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The subject understands.",
+            "revised_fact": "The subject in the statement \"The subject understands\" is \"the subject\". This is a vague reference because it does not specify who or what the subject is. From the response, we can see that the subject is referring to the \"input text sentiment\" which is described as positive. Therefore, \"the subject\" should be replaced with \"the input text sentiment\". Thus, the revised statement is:\n\n```\nThe input text sentiment understands.\n```",
+            "is_relevant": "The subject of the QUESTION is the input text. The subject of the STATEMENT is the sentiment \"understands\". The phrase \"He/She is always supportive and understands everyone's situation\" from the RESPONSE shows that the sentiment of the input text is positive and the sentiment of the aspect \"understands\" is also positive. For this reason, the subjects of the input text and the sentiment \"understands\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The understanding is positive.",
+            "revised_fact": "The subject in the statement \"The understanding is positive\" is \"The understanding\". This is a vague reference, as it does not specify what understanding is being referred to. From the RESPONSE, we can see that the understanding being referred to is the \"input text sentiment\", which is stated to be positive. Therefore, \"The understanding\" should be replaced by \"The input text sentiment\". Thus, the revised statement is:\n```\nThe input text sentiment is positive.\n```",
+            "is_relevant": "The subject of the QUESTION is the input text sentiment. The subject of the STATEMENT is the input text sentiment. The phrase \"He/She is always supportive and understands everyone's situation\" from the RESPONSE shows that the sentiment of the input text is positive. For this reason, the subjects input text sentiment and input text sentiment are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "sentiment analysis tools",
+                    "result": "Products In Sentiment Analysis Tools Category \u00b7 Lexalytics \u00b7 Lexalytics \u00b7 Azure Text Analytics \u00b7 Azure Text Analytics \u00b7 IBM Watson Natural Language ... Full stack sentiment analysis tools \u00b7 1. Sprout Social \u00b7 2. InMoment (Lexalytics) \u00b7 3. Medallia \u00b7 4. Qualtrics (Clarabridge). Qualtrics is an ... The Best Sentiment Analysis Tools \u00b7 1. MonkeyLearn \u00b7 2. Lexalytics \u00b7 3. Brandwatch \u00b7 4. Social Searcher \u00b7 5. MeaningCloud \u00b7 6. Talkwalker's Quick Search \u00b7 7."
+                },
+                {
+                    "query": "Google Search Query: \n\"how to determine sentiment of text in natural language processing\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"sentiment analysis tools\" + \"accuracy of sentiment analysis\"",
+                    "result": "Best sentiment analysis tools for 2024 and beyond ... Sentiment analysis tools have become ... accuracy of sentiment analysis. \u201cWhile ... ... accuracy of sentiment analysis in a number of ways. ... Using sentiment analysis tools like ... The accuracy of sentiment analysis has much in ... evaluate the consistency and the accuracy of sentiment analysis ... sentiment analysis tools. For this, we calculate ... inconsistency between different sentiment ..."
+                },
+                {
+                    "query": "\"Accuracy of sentiment analysis\" research studies",
+                    "result": "Hartmann et al. (2019) were among the first to conduct a systematic comparison of the accuracy of sentiment analysis methods for marketing applications. They ... Users' sentiments are often associated with the topics, and the accuracy of sentiment analysis can be improved through the introduction of ... The accuracy of sentiment analysis and NLP tasks may be improved if these errors can be handled and corrected. Computational cost To get ..."
+                },
+                {
+                    "query": "sentiment analysis tools accuracy",
+                    "result": "Sentiment Analysis Challenge No. 1: Sarcasm Detection ... In sarcastic text, people express their negative sentiments using positive words. This fact allows ... When evaluating the sentiment (positive, negative, neutral) of a given text document, research shows that human analysts tend to agree around 80-85% of the time ... The Best Sentiment Analysis Tools \u00b7 1. MonkeyLearn \u00b7 2. Lexalytics \u00b7 3. Brandwatch \u00b7 4. Social Searcher \u00b7 5. MeaningCloud \u00b7 6. Talkwalker's Quick Search \u00b7 7. Rosette."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Is supportive considered a trait or characteristic?",
+                    "result": "Loyal. A loyal employee is supportive of an organization and its mission. Someone loyal can be trusted with sensitive information and may stay ... Psychologists who support the trait theory of personality believe that there are five basic traits (called the \"Big Five\"): extraversion, ... Caring, including kindness, empathy, compassion, consideration, patience, generosity, charity, and interpersonal skills; Good citizenship, including patriotism, ..."
+                },
+                {
+                    "query": "\"Is being supportive considered a trait or characteristic?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "+\"Supportive\" +trait OR characteristic",
+                    "result": "SUPPORTIVE. Never struggle with Show-and-Tell again. Activate your free trial ... Try giving a supporting character a negative trait that acts as an opposite ... Being good subordinate workers: They enjoy being part of a team and helping to support their leader. What are the weaknesses of a Supportive person? Like every ... 12 Supportive Character Traits You Should Develop. 1. character, Collections ... 12 Supportive Character Traits You Should Develop. Live a happier, fuller life."
+                },
+                {
+                    "query": "\"Supportive\" is a trait or characteristic.",
+                    "result": "SUPPORTIVE. Never struggle with Show-and-Tell ... Try giving a supporting character a negative trait that acts ... SIMILAR ATTRIBUTES: Encouraging, sympathetic ... 12 Supportive Character Traits You Should Develop ... ATTRIBUTES AND TRAITS FOR PROGRESSION. Confident \u2013 the ... Attributes and Traits, Attitudes, Beliefs, and ... What are the general characteristics of the S Type (Supportive) person? The supportive personality type is calm, stable, warm, loyal, and flexible to the needs ..."
+                },
+                {
+                    "query": "\"Supportive\" is a trait or characteristic.",
+                    "result": "SUPPORTIVE. Never struggle with Show-and-Tell ... Try giving a supporting character a negative trait that acts ... SIMILAR ATTRIBUTES: Encouraging, sympathetic ... 12 Supportive Character Traits You Should Develop ... ATTRIBUTES AND TRAITS FOR PROGRESSION. Confident \u2013 the ... Attributes and Traits, Attitudes, Beliefs, and ... What are the general characteristics of the S Type (Supportive) person? The supportive personality type is calm, stable, warm, loyal, and flexible to the needs ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Positive\" is a trait or characteristic.",
+                    "result": "Explore over 90 positive attributes that your character might have and a list of behaviors, attitudes, thoughts, and emotions to go with each personality trait ... Positive Qualities & Character Traits List ; kindness; leadership; consideration; empathy; reliability ; intelligent; innovative; thoughtful; conscientious ... POSITIVE Character Traits. A character trait is a way to describe someone. It is their personality. These change slowly or may stay the same throughout a ..."
+                },
+                {
+                    "query": "\"Positive\" trait or characteristic definition",
+                    "result": "Positive character traits are personal attributes or strengths that reflect our positive thought patterns, feelings, and behaviors. While people possess both ... Explore 15 character traits with a definition and examples ... Curiosity is an important character trait ... Positive personal qualities, including ... Explore over 90 positive attributes that your character might have and a list of behaviors, attitudes, thoughts, and emotions to go with each personality ..."
+                },
+                {
+                    "query": "\"Positive\" as a trait or characteristic",
+                    "result": "Positive Qualities & Character Traits List ; kindness; leadership; consideration; empathy; reliability ; intelligent; innovative; thoughtful; conscientious ... Explore over 90 positive attributes that your character might have and a list of behaviors, attitudes, thoughts, and emotions to go with each personality trait ... Positive Character Trait Definitions \u00b7 Forgiving - Ready and willing to forgive; compassionate, merciful, humane. \u00b7 Generous - Showing kindness toward others; ..."
+                },
+                {
+                    "query": "\"Positive\" is a trait or characteristic.",
+                    "result": "Explore over 90 positive attributes that your character might have and a list of behaviors, attitudes, thoughts, and emotions to go with each personality trait ... Positive Qualities & Character Traits List ; kindness; leadership; consideration; empathy; reliability ; intelligent; innovative; thoughtful; conscientious ... POSITIVE Character Traits. A character trait is a way to describe someone. It is their personality. These change slowly or may stay the same throughout a ..."
+                },
+                {
+                    "query": "\"Positive\" is a trait or characteristic.",
+                    "result": "Explore over 90 positive attributes that your character might have and a list of behaviors, attitudes, thoughts, and emotions to go with each personality trait ... Positive Qualities & Character Traits List ; kindness; leadership; consideration; empathy; reliability ; intelligent; innovative; thoughtful; conscientious ... POSITIVE Character Traits. A character trait is a way to describe someone. It is their personality. These change slowly or may stay the same throughout a ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"The input text sentiment understands\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The input text sentiment understands\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The input text sentiment understands\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The input text sentiment\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"input text sentiment\" accuracy research study",
+                    "result": "Text method of communication like tweets blog is necessary to examine the emotion of user by studying the input text. Sentiment analysis of ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "How to determine sentiment of input text?",
+                    "result": "In this method, we calculate the sentiment score by evaluating the ratio of Count of Positive Words and Count of Negative Words + 1. Since there ... Sentiment analysis is the automatic process of analyzing text and detecting positive or negative opinions in customer feedback. Sentiment analysis is a technique used to determine whether a piece of text (like a review or a tweet) expresses a positive, negative, or neutral sentiment."
+                },
+                {
+                    "query": "\"sentiment analysis\" \"methods to determine sentiment score\"",
+                    "result": "The main contribution of this paper include various methods to determine sentiment score of a statement with semiotics. Published in: 2018 Second ... ... Sentiment Analysis is a study of people's ... sentiment analysis. Various factors that affect sentiment ... Various methods to determine sentiment score of a ... ... sentiment analysis. As it provides live access to ... sentiment analysis. In our analysis, we noticed ... 2018. TLDR. Various methods to determine sentiment score ..."
+                },
+                {
+                    "query": "\"methods to determine sentiment score of a statement with semiotics\"",
+                    "result": "The main contribution of this paper include various methods to determine sentiment score of a statement with semiotics. Published in: 2018 Second ... 2018. TLDR. Various methods to determine sentiment score of a statement with semiotics are included to analyze semiotics as well as sentence for better ... 2018. TLDR. Various methods to determine sentiment score of a statement with semiotics are included to analyze semiotics as well as sentence for better ..."
+                },
+                {
+                    "query": "\"methods to determine sentiment score of a statement with semiotics\"",
+                    "result": "The main contribution of this paper include various methods to determine sentiment score of a statement with semiotics. Published in: 2018 Second ... 2018. TLDR. Various methods to determine sentiment score of a statement with semiotics are included to analyze semiotics as well as sentence for better ... 2018. TLDR. Various methods to determine sentiment score of a statement with semiotics are included to analyze semiotics as well as sentence for better ..."
+                },
+                {
+                    "query": "\"methods to determine sentiment score of a statement with semiotics\"",
+                    "result": "The main contribution of this paper include various methods to determine sentiment score of a statement with semiotics. Published in: 2018 Second ... 2018. TLDR. Various methods to determine sentiment score of a statement with semiotics are included to analyze semiotics as well as sentence for better ... 2018. TLDR. Various methods to determine sentiment score of a statement with semiotics are included to analyze semiotics as well as sentence for better ..."
+                }
+            ]
+        }
+    ],
+    "Supported": 2,
+    "Irrelevant": 0,
+    "Not Supported": 4
+}

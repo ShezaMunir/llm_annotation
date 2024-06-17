@@ -1,0 +1,975 @@
+{
+    "prompt": "Give me an introduction over 200 words for pdchemicals, a chemical company in China",
+    "response": " PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries. The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world. With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.\n\n One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer. With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition.",
+    "num_claims": 22,
+    "sentences_and_atomic_facts": [
+        [
+            "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            [
+                "PD Chemicals is a chemical company.",
+                "PD Chemicals is based in China.",
+                "PD Chemicals is a leading chemical company.",
+                "PD Chemicals focuses on the development and production of chemical products.",
+                "PD Chemicals develops and produces a wide range of chemical products.",
+                "PD Chemicals develops and produces chemical products for various industries."
+            ]
+        ],
+        [
+            "The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world.",
+            [
+                "The company was founded in 2010.",
+                "The company's goal is to provide high-quality chemical products and services.",
+                "The company provides products and services to customers around the world."
+            ]
+        ],
+        [
+            "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            [
+                "PD Chemicals has state-of-the-art production facilities.",
+                "PD Chemicals has an experienced team of chemists.",
+                "PD Chemicals is a trusted partner for businesses.",
+                "PD Chemicals is a trusted partner for businesses in the pharmaceutical sector.",
+                "PD Chemicals is a trusted partner for businesses in the cosmetics sector.",
+                "PD Chemicals is a trusted partner for businesses in the textile manufacturing sector."
+            ]
+        ],
+        [
+            "One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer.",
+            [
+                "PD Chemicals is a company.",
+                "PD Chemicals' key strength is its ability to provide customized solutions.",
+                "PD Chemicals' customized solutions meet the unique needs of each customer."
+            ]
+        ],
+        [
+            "With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition.",
+            [
+                "The company has a focus on innovation.",
+                "The company has a focus on continuous improvement.",
+                "The company is always looking for new ways to better serve its customers.",
+                "The company is always looking for new ways to stay ahead of the competition."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            "atomic_facts": [
+                "PD Chemicals is a chemical company.",
+                "PD Chemicals is based in China.",
+                "PD Chemicals is a leading chemical company.",
+                "PD Chemicals focuses on the development and production of chemical products.",
+                "PD Chemicals develops and produces a wide range of chemical products.",
+                "PD Chemicals develops and produces chemical products for various industries."
+            ]
+        },
+        {
+            "sentence": "The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world.",
+            "atomic_facts": [
+                "The company was founded in 2010.",
+                "The company's goal is to provide high-quality chemical products and services.",
+                "The company provides products and services to customers around the world."
+            ]
+        },
+        {
+            "sentence": "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            "atomic_facts": [
+                "PD Chemicals has state-of-the-art production facilities.",
+                "PD Chemicals has an experienced team of chemists.",
+                "PD Chemicals is a trusted partner for businesses.",
+                "PD Chemicals is a trusted partner for businesses in the pharmaceutical sector.",
+                "PD Chemicals is a trusted partner for businesses in the cosmetics sector.",
+                "PD Chemicals is a trusted partner for businesses in the textile manufacturing sector."
+            ]
+        },
+        {
+            "sentence": "One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer.",
+            "atomic_facts": [
+                "PD Chemicals is a company.",
+                "PD Chemicals' key strength is its ability to provide customized solutions.",
+                "PD Chemicals' customized solutions meet the unique needs of each customer."
+            ]
+        },
+        {
+            "sentence": "With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition.",
+            "atomic_facts": [
+                "The company has a focus on innovation.",
+                "The company has a focus on continuous improvement.",
+                "The company is always looking for new ways to better serve its customers.",
+                "The company is always looking for new ways to stay ahead of the competition."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            "atomic_fact": "PD Chemicals is a chemical company.",
+            "self_contained_atomic_fact": "PD Chemicals is a chemical company.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is a chemical company.",
+                "revised_fact": "The subject of the statement \"PD Chemicals is a chemical company\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a chemical company.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is also PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China\" from the RESPONSE directly states that PD Chemicals is a chemical company. Therefore, the subjects PD Chemicals in both the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not explicitly mention PD Chemicals. Therefore, we need to determine if the statement is strongly implied by the knowledge.\n\nThe knowledge points do not provide any information about PD Chemicals or any other specific chemical company. It is possible that PD Chemicals is a chemical company, but without any supporting evidence, we cannot conclude that the statement is supported.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            "atomic_fact": "PD Chemicals is based in China.",
+            "self_contained_atomic_fact": "PD Chemicals is based in China.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is based in China.",
+                "revised_fact": "The subject in the statement \"PD Chemicals is based in China\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is based in China.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is China. The phrase \"PD Chemicals is a leading chemical company based in China\" from the RESPONSE shows that the relationship between PD Chemicals and China is that PD Chemicals is based in China. For this reason, the subjects PD Chemicals and China are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is no explicit mention or evidence that PD Chemicals is based in China. The knowledge mentions that PD Chemicals is located in Amritsar, Punjab, India. There is also a mention of a shopping itinerary in Thai P.D. Chemicals Co.,LTD, but it does not provide any information about the location of PD Chemicals. Therefore, it cannot be strongly implied or supported that PD Chemicals is based in China.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            "atomic_fact": "PD Chemicals is a leading chemical company.",
+            "self_contained_atomic_fact": "PD Chemicals is a leading chemical company.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is a leading chemical company.",
+                "revised_fact": "The subject of the statement \"PD Chemicals is a leading chemical company\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a leading chemical company.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China\" from the RESPONSE shows that the subject of the STATEMENT is directly related to the subject of the QUESTION. For this reason, the subjects PD Chemicals and PD Chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "There is no specific knowledge given to support or refute the statement that PD Chemicals is a leading chemical company. Therefore, we cannot determine whether the statement is supported or not supported based on the given knowledge. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            "atomic_fact": "PD Chemicals focuses on the development and production of chemical products.",
+            "self_contained_atomic_fact": "PD Chemicals focuses on the development and production of chemical products.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals focuses on the development and production of chemical products.",
+                "revised_fact": "The subject of the statement \"PD Chemicals focuses on the development and production of chemical products\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals focuses on the development and production of chemical products.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries\" from the RESPONSE shows that the relationship between PD Chemicals and the development and production of chemical products is that PD Chemicals focuses on this area. For this reason, the subjects PD Chemicals and the development and production of chemical products are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given statement is that PD Chemicals focuses on the development and production of chemical products. To determine if this statement is supported by the given knowledge, we need to analyze the main points of the knowledge.\n\nThe knowledge does not explicitly mention PD Chemicals or their focus on chemical products. However, the knowledge does mention that PD Chemicals is a company, and it is reasonable to assume that a company named PD Chemicals would be involved in the development and production of chemical products. \n\nTherefore, based on the assumption that a company named PD Chemicals would be involved in the development and production of chemical products, the statement is supported.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            "atomic_fact": "PD Chemicals develops and produces a wide range of chemical products.",
+            "self_contained_atomic_fact": "PD Chemicals develops and produces a wide range of chemical products.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals develops and produces a wide range of chemical products.",
+                "revised_fact": "The subject of the statement \"PD Chemicals develops and produces a wide range of chemical products\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is further specified in the RESPONSE as a leading chemical company based in China with a focus on the development and production of a wide range of chemical products for various industries. Therefore, \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals develops and produces a wide range of chemical products.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries\" from the RESPONSE shows that the relationship between PD Chemicals and the development and production of a wide range of chemical products is that PD Chemicals is involved in developing and producing those products. For this reason, the subjects PD Chemicals and the development and production of a wide range of chemical products are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, PD Chemicals is described as a leading manufacturer and exporter of Ultramarine Blue, Prussian Blue, and Chinese Blue in India. They are also described as the leading manufacturer and wholesaler of a wide range of Blue Pigment, Methyl Violet Gye, etc. This suggests that PD Chemicals develops and produces a wide range of chemical products.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries.",
+            "atomic_fact": "PD Chemicals develops and produces chemical products for various industries.",
+            "self_contained_atomic_fact": "PD Chemicals develops and produces chemical products for various industries.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals develops and produces chemical products for various industries.",
+                "revised_fact": "The subject of the statement \"PD Chemicals develops and produces chemical products for various industries\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals develops and produces chemical products for various industries.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is chemical products for various industries. The phrase \"PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries\" from the RESPONSE shows that the relationship between PD Chemicals and the development and production of chemical products for various industries is that PD Chemicals is the company responsible for this development and production. For this reason, the subjects PD Chemicals and the development and production of chemical products for various industries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the knowledge provided, there are several pieces of information that support the statement:\n1. The company \"P D Chemicals\" is described as a leading manufacturer and wholesaler of a wide range of chemical products.\n2. The knowledge mentions the owner of P D Chemicals and their experience in the chemical industry.\n3. The knowledge also mentions the presence of the company in Amritsar, India.\n4. The knowledge includes references to the company's product list and chemical compatibility chart.\n\nTherefore, based on the information provided, it can be inferred that PD Chemicals develops and produces chemical products for various industries.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world.",
+            "atomic_fact": "The company was founded in 2010.",
+            "self_contained_atomic_fact": "PD Chemicals was founded in 2010.",
+            "relevance_data": {
+                "atomic_fact": "The company was founded in 2010.",
+                "revised_fact": "The subject of the statement \"The company was founded in 2010\" is \"The company\". From the response, we can see that \"The company\" is referring to \"PD Chemicals\". Therefore, \"The company\" is a vague reference that should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals was founded in 2010.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is the founding year of PD Chemicals, which is 2010. The phrase \"The company was founded in 2010\" from the RESPONSE directly states that PD Chemicals was founded in 2010. Therefore, the subjects PD Chemicals and the founding year of PD Chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is no information that directly supports or implies that PD Chemicals was founded in 2010. The knowledge only provides information about the incorporation date of PD Chemicals, which is stated as 22 Feb 1979. Therefore, the statement is not supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world.",
+            "atomic_fact": "The company's goal is to provide high-quality chemical products and services.",
+            "self_contained_atomic_fact": "PD Chemicals' goal is to provide high-quality chemical products and services.",
+            "relevance_data": {
+                "atomic_fact": "The company's goal is to provide high-quality chemical products and services.",
+                "revised_fact": "The subject of the statement \"The company's goal is to provide high-quality chemical products and services\" is \"The company\". From the response, we can see that \"The company\" is referring to \"PD Chemicals\". Therefore, \"The company\" is a non-full name that should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals' goal is to provide high-quality chemical products and services.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals' goal. The phrase \"The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world\" from the RESPONSE shows that the relationship between PD Chemicals and its goal is that the goal of PD Chemicals is to provide high-quality chemical products and services. For this reason, the subjects PD Chemicals and PD Chemicals' goal are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the knowledge provided, there is no direct mention of PD Chemicals' goal. The knowledge only mentions the company's name and its involvement in the chemical industry. Therefore, we cannot determine whether PD Chemicals' goal is to provide high-quality chemical products and services.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world.",
+            "atomic_fact": "The company provides products and services to customers around the world.",
+            "self_contained_atomic_fact": "PD Chemicals provides products and services to customers around the world.",
+            "relevance_data": {
+                "atomic_fact": "The company provides products and services to customers around the world.",
+                "revised_fact": "The subject of the statement \"The company provides products and services to customers around the world\" is \"The company\". This is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals provides products and services to customers around the world.\n```",
+                "is_relevant": "The subject of the QUESTION is pdchemicals. The subject of the STATEMENT is customers around the world. The phrase \"The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world\" from the RESPONSE shows that the relationship between pdchemicals and customers around the world is that pdchemicals provides products and services to them. For this reason, the subjects pdchemicals and customers around the world are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about PD Chemicals and its operations. Therefore, we cannot determine whether the statement is supported or not.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            "atomic_fact": "PD Chemicals has state-of-the-art production facilities.",
+            "self_contained_atomic_fact": "PD Chemicals has state-of-the-art production facilities.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals has state-of-the-art production facilities.",
+                "revised_fact": "The subject in the statement \"PD Chemicals has state-of-the-art production facilities\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals has state-of-the-art production facilities.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is production facilities. The phrase \"With its state-of-the-art production facilities\" from the RESPONSE shows that PD Chemicals has state-of-the-art production facilities. This indicates that the relationship between PD Chemicals and production facilities is that PD Chemicals owns or operates the production facilities. For this reason, the subjects PD Chemicals and production facilities are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, PD Chemicals is described as a leading manufacturer and exporter of organic and inorganic pigments. They are also engaged in the production and manufacturing of basic dyes, acid dyes, and ultramarine blue. The knowledge does not explicitly mention the state-of-the-art production facilities, but it does mention that they have facilities at every stage. \n\nTherefore, it can be inferred that PD Chemicals has state-of-the-art production facilities.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            "atomic_fact": "PD Chemicals has an experienced team of chemists.",
+            "self_contained_atomic_fact": "PD Chemicals has an experienced team of chemists.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals has an experienced team of chemists.",
+                "revised_fact": "The subject of the statement \"PD Chemicals has an experienced team of chemists\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals has an experienced team of chemists.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is an experienced team of chemists. The phrase \"With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors\" from the RESPONSE shows that PD Chemicals has an experienced team of chemists. For this reason, the subjects PD Chemicals and an experienced team of chemists are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the provided knowledge, there is mention of a \"Process Development Chemist\" named Max Critchlow on the Drug Substance team at the Alnwick site. This suggests that PD Chemicals has at least one experienced chemist on their team.\n\nSupporting evidence:\n- In the knowledge, it is mentioned that Max Critchlow is a Process Development Chemist on the Drug Substance team at the Alnwick site.\n\nRestated statement:\nPD Chemicals has at least one experienced chemist on their team.\n\nFinal answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses.",
+            "self_contained_atomic_fact": "PD Chemicals is a trusted partner for businesses.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is a trusted partner for businesses.",
+                "revised_fact": "The subject in the statement \"PD Chemicals is a trusted partner for businesses\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is further specified in the RESPONSE as a leading chemical company based in China. Therefore, \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses.\n```",
+                "is_relevant": "The subject of the QUESTION is pdchemicals, a chemical company in China. The subject of the STATEMENT is businesses. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing\" from the RESPONSE shows that the relationship between pdchemicals and businesses is that pdchemicals is a trusted partner for businesses. For this reason, the subjects pdchemicals and businesses are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided mentions PD Chemicals as a leading manufacturer and exporter of Ultramarine Blue. It also states that PD Chemicals reliably delivers best-in-class product performance and chemical safety as the foundation of their business success. However, there is no explicit mention of PD Chemicals being a trusted partner for businesses.\n\nTherefore, the statement is not explicitly supported by the knowledge provided.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses in the pharmaceutical sector.",
+            "self_contained_atomic_fact": "PD Chemicals is a trusted partner for businesses in the pharmaceutical sector.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is a trusted partner for businesses in the pharmaceutical sector.",
+                "revised_fact": "The subject in the statement \"PD Chemicals is a trusted partner for businesses in the pharmaceutical sector\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses in the pharmaceutical sector.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is businesses in the pharmaceutical sector. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical\" from the RESPONSE shows that the relationship between PD Chemicals and businesses in the pharmaceutical sector is that PD Chemicals is a trusted partner for them. For this reason, the subjects PD Chemicals and businesses in the pharmaceutical sector are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is a mention of PD Chemicals in the pharmaceutical sector. However, there is no specific information or evidence provided to support the statement that PD Chemicals is a trusted partner for businesses in the pharmaceutical sector.\n\nTherefore, the statement is not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses in the cosmetics sector.",
+            "self_contained_atomic_fact": "PD Chemicals is a trusted partner for businesses in the cosmetics sector.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is a trusted partner for businesses in the cosmetics sector.",
+                "revised_fact": "The subject in the statement \"PD Chemicals is a trusted partner for businesses in the cosmetics sector\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses in the cosmetics sector.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is businesses in the cosmetics sector. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing\" from the RESPONSE shows that PD Chemicals is a trusted partner for businesses in the cosmetics sector. For this reason, the subjects PD Chemicals and businesses in the cosmetics sector are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about PD Chemicals being a trusted partner for businesses in the cosmetics sector. The knowledge only mentions the Cosmetic Ingredient Review (CIR) studying individual chemical compounds used in cosmetic products and the expansion of EPA authority to review chemicals in consumer products. There is no direct or implied support for the statement in the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing.",
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses in the textile manufacturing sector.",
+            "self_contained_atomic_fact": "PD Chemicals is a trusted partner for businesses in the textile manufacturing sector.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is a trusted partner for businesses in the textile manufacturing sector.",
+                "revised_fact": "The subject of the statement \"PD Chemicals is a trusted partner for businesses in the textile manufacturing sector\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses in the textile manufacturing sector.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is the businesses in the textile manufacturing sector. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing\" from the RESPONSE shows that the relationship between PD Chemicals and businesses in the textile manufacturing sector is that PD Chemicals is a trusted partner for them. For this reason, the subjects PD Chemicals and businesses in the textile manufacturing sector are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the provided knowledge, there is a mention of P.D. Chemicals in relation to the textile sector. However, there is no specific information given about P.D. Chemicals being a trusted partner for businesses in the textile manufacturing sector. Therefore, we cannot conclude that the statement is supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer.",
+            "atomic_fact": "PD Chemicals is a company.",
+            "self_contained_atomic_fact": "PD Chemicals is a company.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals is a company.",
+                "revised_fact": "The subject in the statement \"PD Chemicals is a company\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a company.\n```",
+                "is_relevant": "The subject of the QUESTION is \"pdchemicals, a chemical company in China\". The subject of the STATEMENT is \"PD Chemicals\". The RESPONSE states that \"PD Chemicals is a leading chemical company based in China\". The STATEMENT and RESPONSE both refer to PD Chemicals as a company, which shows that the subject of the STATEMENT and the subject of the QUESTION are related and should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not mention anything about PD Chemicals being a company. Therefore, there is no evidence to support the statement that PD Chemicals is a company.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer.",
+            "atomic_fact": "PD Chemicals' key strength is its ability to provide customized solutions.",
+            "self_contained_atomic_fact": "PD Chemicals' key strength is its ability to provide customized solutions.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals' key strength is its ability to provide customized solutions.",
+                "revised_fact": "The subject in the statement \"PD Chemicals' key strength is its ability to provide customized solutions\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals' key strength is its ability to provide customized solutions.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer\" from the RESPONSE shows that the key strength of PD Chemicals is its ability to provide customized solutions. This directly relates to the subject of the QUESTION, which is PD Chemicals. Therefore, the subjects PD Chemicals and PD Chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not mention anything about PD Chemicals or its ability to provide customized solutions. The knowledge only talks about Pd-based nanomaterials and the ability to create neurons or other cell types from an individual with PD. Therefore, there is no evidence to support the statement that PD Chemicals' key strength is its ability to provide customized solutions.\n\nStatement: PD Chemicals' key strength is its ability to provide customized solutions.\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer.",
+            "atomic_fact": "PD Chemicals' customized solutions meet the unique needs of each customer.",
+            "self_contained_atomic_fact": "The customized solutions provided by PD Chemicals meet the unique needs of each customer.",
+            "relevance_data": {
+                "atomic_fact": "PD Chemicals' customized solutions meet the unique needs of each customer.",
+                "revised_fact": "The subject in the statement \"PD Chemicals' customized solutions meet the unique needs of each customer\" is \"PD Chemicals' customized solutions\". This is a reference to an unknown entity, since it is unclear what customized solutions are being referred to. From the RESPONSE, we can see that the statement is referring to the customized solutions provided by PD Chemicals. Therefore, \"PD Chemicals' customized solutions\" is a vague reference that should be replaced by \"the customized solutions provided by PD Chemicals\". Thus, the revised statement is:\n```\nThe customized solutions provided by PD Chemicals meet the unique needs of each customer.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is the customized solutions provided by PD Chemicals. The phrase \"One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer\" from the RESPONSE shows that the relationship between PD Chemicals and the customized solutions is that PD Chemicals provides these solutions. For this reason, the subjects PD Chemicals and the customized solutions are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about PD Chemicals or its customized solutions. Therefore, we cannot determine whether the statement is supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition.",
+            "atomic_fact": "The company has a focus on innovation.",
+            "self_contained_atomic_fact": "PD Chemicals has a focus on innovation.",
+            "relevance_data": {
+                "atomic_fact": "The company has a focus on innovation.",
+                "revised_fact": "The subject in the statement \"The company has a focus on innovation\" is \"The company\". \"The company\" is a vague reference because it does not specify which company it is referring to. From the RESPONSE, we can see that the company being referred to is \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals has a focus on innovation.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition\" from the RESPONSE shows that PD Chemicals has a focus on innovation. For this reason, the subjects PD Chemicals and PD Chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge points do not provide any direct information about PD Chemicals' focus on innovation. The knowledge points mainly mention PD Chemicals in relation to its service and the satisfaction of its customers. There is no specific mention of innovation or any indication that PD Chemicals prioritizes innovation in its operations.\n\nTherefore, the statement is not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition.",
+            "atomic_fact": "The company has a focus on continuous improvement.",
+            "self_contained_atomic_fact": "PD Chemicals has a focus on continuous improvement.",
+            "relevance_data": {
+                "atomic_fact": "The company has a focus on continuous improvement.",
+                "revised_fact": "The subject of the statement \"The company has a focus on continuous improvement\" is \"The company\". This is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised response is:\n```\nPD Chemicals has a focus on continuous improvement.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is continuous improvement. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition\" from the RESPONSE shows that PD Chemicals has a focus on continuous improvement. For this reason, the subjects PD Chemicals and continuous improvement are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe KNOWLEDGE points provided do not mention anything about PD Chemicals or its focus on continuous improvement. Therefore, there is no direct evidence to support or refute the statement.\n\nStatement: PD Chemicals has a focus on continuous improvement.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition.",
+            "atomic_fact": "The company is always looking for new ways to better serve its customers.",
+            "self_contained_atomic_fact": "PD Chemicals is always looking for new ways to better serve its customers.",
+            "relevance_data": {
+                "atomic_fact": "The company is always looking for new ways to better serve its customers.",
+                "revised_fact": "The subject of the statement \"The company is always looking for new ways to better serve its customers\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals is always looking for new ways to better serve its customers.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers\" from the RESPONSE shows that PD Chemicals is actively seeking ways to improve its customer service. This indicates that the subject of the STATEMENT and the subject of the QUESTION are related in that PD Chemicals is constantly striving to enhance its customer service. For this reason, the subjects PD Chemicals and PD Chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about PD Chemicals or its actions. It only states that no good Google search result was found. Therefore, we cannot determine whether the statement is supported or not supported based on the given knowledge.\n\nRestated statement: PD Chemicals is always looking for new ways to better serve its customers.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition.",
+            "atomic_fact": "The company is always looking for new ways to stay ahead of the competition.",
+            "self_contained_atomic_fact": "PD Chemicals is always looking for new ways to stay ahead of the competition.",
+            "relevance_data": {
+                "atomic_fact": "The company is always looking for new ways to stay ahead of the competition.",
+                "revised_fact": "The subject of the statement \"The company is always looking for new ways to stay ahead of the competition\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals is always looking for new ways to stay ahead of the competition.\n```",
+                "is_relevant": "The subject of the QUESTION is PD Chemicals, a chemical company in China. The subject of the STATEMENT is PD Chemicals. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition\" from the RESPONSE shows that PD Chemicals is actively seeking new ways to stay ahead of the competition. This indicates that PD Chemicals is proactive in its approach to maintaining a competitive edge. Therefore, the subjects PD Chemicals and PD Chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any specific information about PD Chemicals and their strategies for staying ahead of the competition. The knowledge mainly discusses the importance of customer loyalty, market expansion, and innovation in the chemical industry. There is no mention of PD Chemicals' specific efforts or strategies for staying ahead of the competition.\n\nTherefore, the statement is not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "PD Chemicals is a chemical company.",
+            "revised_fact": "The subject of the statement \"PD Chemicals is a chemical company\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a chemical company.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is also PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China\" from the RESPONSE directly states that PD Chemicals is a chemical company. Therefore, the subjects PD Chemicals in both the QUESTION and the STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals is based in China.",
+            "revised_fact": "The subject in the statement \"PD Chemicals is based in China\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is based in China.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is China. The phrase \"PD Chemicals is a leading chemical company based in China\" from the RESPONSE shows that the relationship between PD Chemicals and China is that PD Chemicals is based in China. For this reason, the subjects PD Chemicals and China are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals is a leading chemical company.",
+            "revised_fact": "The subject of the statement \"PD Chemicals is a leading chemical company\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a leading chemical company.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China\" from the RESPONSE shows that the subject of the STATEMENT is directly related to the subject of the QUESTION. For this reason, the subjects PD Chemicals and PD Chemicals are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals focuses on the development and production of chemical products.",
+            "revised_fact": "The subject of the statement \"PD Chemicals focuses on the development and production of chemical products\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals focuses on the development and production of chemical products.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries\" from the RESPONSE shows that the relationship between PD Chemicals and the development and production of chemical products is that PD Chemicals focuses on this area. For this reason, the subjects PD Chemicals and the development and production of chemical products are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals develops and produces a wide range of chemical products.",
+            "revised_fact": "The subject of the statement \"PD Chemicals develops and produces a wide range of chemical products\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is further specified in the RESPONSE as a leading chemical company based in China with a focus on the development and production of a wide range of chemical products for various industries. Therefore, \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals develops and produces a wide range of chemical products.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries\" from the RESPONSE shows that the relationship between PD Chemicals and the development and production of a wide range of chemical products is that PD Chemicals is involved in developing and producing those products. For this reason, the subjects PD Chemicals and the development and production of a wide range of chemical products are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals develops and produces chemical products for various industries.",
+            "revised_fact": "The subject of the statement \"PD Chemicals develops and produces chemical products for various industries\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals develops and produces chemical products for various industries.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is chemical products for various industries. The phrase \"PD Chemicals is a leading chemical company based in China, with a focus on the development and production of a wide range of chemical products for various industries\" from the RESPONSE shows that the relationship between PD Chemicals and the development and production of chemical products for various industries is that PD Chemicals is the company responsible for this development and production. For this reason, the subjects PD Chemicals and the development and production of chemical products for various industries are [Foo]."
+        },
+        {
+            "atomic_fact": "The company was founded in 2010.",
+            "revised_fact": "The subject of the statement \"The company was founded in 2010\" is \"The company\". From the response, we can see that \"The company\" is referring to \"PD Chemicals\". Therefore, \"The company\" is a vague reference that should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals was founded in 2010.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is the founding year of PD Chemicals, which is 2010. The phrase \"The company was founded in 2010\" from the RESPONSE directly states that PD Chemicals was founded in 2010. Therefore, the subjects PD Chemicals and the founding year of PD Chemicals are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's goal is to provide high-quality chemical products and services.",
+            "revised_fact": "The subject of the statement \"The company's goal is to provide high-quality chemical products and services\" is \"The company\". From the response, we can see that \"The company\" is referring to \"PD Chemicals\". Therefore, \"The company\" is a non-full name that should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals' goal is to provide high-quality chemical products and services.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals' goal. The phrase \"The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world\" from the RESPONSE shows that the relationship between PD Chemicals and its goal is that the goal of PD Chemicals is to provide high-quality chemical products and services. For this reason, the subjects PD Chemicals and PD Chemicals' goal are [Foo]."
+        },
+        {
+            "atomic_fact": "The company provides products and services to customers around the world.",
+            "revised_fact": "The subject of the statement \"The company provides products and services to customers around the world\" is \"The company\". This is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals provides products and services to customers around the world.\n```",
+            "is_relevant": "The subject of the QUESTION is pdchemicals. The subject of the STATEMENT is customers around the world. The phrase \"The company was founded in 2010 with the goal of providing high-quality chemical products and services to customers around the world\" from the RESPONSE shows that the relationship between pdchemicals and customers around the world is that pdchemicals provides products and services to them. For this reason, the subjects pdchemicals and customers around the world are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals has state-of-the-art production facilities.",
+            "revised_fact": "The subject in the statement \"PD Chemicals has state-of-the-art production facilities\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals has state-of-the-art production facilities.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is production facilities. The phrase \"With its state-of-the-art production facilities\" from the RESPONSE shows that PD Chemicals has state-of-the-art production facilities. This indicates that the relationship between PD Chemicals and production facilities is that PD Chemicals owns or operates the production facilities. For this reason, the subjects PD Chemicals and production facilities are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals has an experienced team of chemists.",
+            "revised_fact": "The subject of the statement \"PD Chemicals has an experienced team of chemists\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals has an experienced team of chemists.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is an experienced team of chemists. The phrase \"With its state-of-the-art production facilities and experienced team of chemists, PD Chemicals has become a trusted partner for businesses in many different sectors\" from the RESPONSE shows that PD Chemicals has an experienced team of chemists. For this reason, the subjects PD Chemicals and an experienced team of chemists are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses.",
+            "revised_fact": "The subject in the statement \"PD Chemicals is a trusted partner for businesses\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is further specified in the RESPONSE as a leading chemical company based in China. Therefore, \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses.\n```",
+            "is_relevant": "The subject of the QUESTION is pdchemicals, a chemical company in China. The subject of the STATEMENT is businesses. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing\" from the RESPONSE shows that the relationship between pdchemicals and businesses is that pdchemicals is a trusted partner for businesses. For this reason, the subjects pdchemicals and businesses are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses in the pharmaceutical sector.",
+            "revised_fact": "The subject in the statement \"PD Chemicals is a trusted partner for businesses in the pharmaceutical sector\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses in the pharmaceutical sector.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is businesses in the pharmaceutical sector. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical\" from the RESPONSE shows that the relationship between PD Chemicals and businesses in the pharmaceutical sector is that PD Chemicals is a trusted partner for them. For this reason, the subjects PD Chemicals and businesses in the pharmaceutical sector are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses in the cosmetics sector.",
+            "revised_fact": "The subject in the statement \"PD Chemicals is a trusted partner for businesses in the cosmetics sector\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses in the cosmetics sector.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is businesses in the cosmetics sector. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing\" from the RESPONSE shows that PD Chemicals is a trusted partner for businesses in the cosmetics sector. For this reason, the subjects PD Chemicals and businesses in the cosmetics sector are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals is a trusted partner for businesses in the textile manufacturing sector.",
+            "revised_fact": "The subject of the statement \"PD Chemicals is a trusted partner for businesses in the textile manufacturing sector\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a trusted partner for businesses in the textile manufacturing sector.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is the businesses in the textile manufacturing sector. The phrase \"PD Chemicals has become a trusted partner for businesses in many different sectors, including pharmaceutical, cosmetics, and textile manufacturing\" from the RESPONSE shows that the relationship between PD Chemicals and businesses in the textile manufacturing sector is that PD Chemicals is a trusted partner for them. For this reason, the subjects PD Chemicals and businesses in the textile manufacturing sector are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals is a company.",
+            "revised_fact": "The subject in the statement \"PD Chemicals is a company\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals is a company.\n```",
+            "is_relevant": "The subject of the QUESTION is \"pdchemicals, a chemical company in China\". The subject of the STATEMENT is \"PD Chemicals\". The RESPONSE states that \"PD Chemicals is a leading chemical company based in China\". The STATEMENT and RESPONSE both refer to PD Chemicals as a company, which shows that the subject of the STATEMENT and the subject of the QUESTION are related and should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals' key strength is its ability to provide customized solutions.",
+            "revised_fact": "The subject in the statement \"PD Chemicals' key strength is its ability to provide customized solutions\" is \"PD Chemicals\". \"PD Chemicals\" is not a pronoun and does not reference an unknown entity. Furthermore, \"PD Chemicals\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"PD Chemicals\" is not a vague reference. Thus, the revised statement is:\n```\nPD Chemicals' key strength is its ability to provide customized solutions.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer\" from the RESPONSE shows that the key strength of PD Chemicals is its ability to provide customized solutions. This directly relates to the subject of the QUESTION, which is PD Chemicals. Therefore, the subjects PD Chemicals and PD Chemicals are [Foo]."
+        },
+        {
+            "atomic_fact": "PD Chemicals' customized solutions meet the unique needs of each customer.",
+            "revised_fact": "The subject in the statement \"PD Chemicals' customized solutions meet the unique needs of each customer\" is \"PD Chemicals' customized solutions\". This is a reference to an unknown entity, since it is unclear what customized solutions are being referred to. From the RESPONSE, we can see that the statement is referring to the customized solutions provided by PD Chemicals. Therefore, \"PD Chemicals' customized solutions\" is a vague reference that should be replaced by \"the customized solutions provided by PD Chemicals\". Thus, the revised statement is:\n```\nThe customized solutions provided by PD Chemicals meet the unique needs of each customer.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is the customized solutions provided by PD Chemicals. The phrase \"One of PD Chemicals' key strengths is its ability to provide customized solutions to meet the unique needs of each customer\" from the RESPONSE shows that the relationship between PD Chemicals and the customized solutions is that PD Chemicals provides these solutions. For this reason, the subjects PD Chemicals and the customized solutions are [Foo]."
+        },
+        {
+            "atomic_fact": "The company has a focus on innovation.",
+            "revised_fact": "The subject in the statement \"The company has a focus on innovation\" is \"The company\". \"The company\" is a vague reference because it does not specify which company it is referring to. From the RESPONSE, we can see that the company being referred to is \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals has a focus on innovation.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition\" from the RESPONSE shows that PD Chemicals has a focus on innovation. For this reason, the subjects PD Chemicals and PD Chemicals are [Foo]."
+        },
+        {
+            "atomic_fact": "The company has a focus on continuous improvement.",
+            "revised_fact": "The subject of the statement \"The company has a focus on continuous improvement\" is \"The company\". This is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised response is:\n```\nPD Chemicals has a focus on continuous improvement.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is continuous improvement. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition\" from the RESPONSE shows that PD Chemicals has a focus on continuous improvement. For this reason, the subjects PD Chemicals and continuous improvement are [Foo]."
+        },
+        {
+            "atomic_fact": "The company is always looking for new ways to better serve its customers.",
+            "revised_fact": "The subject of the statement \"The company is always looking for new ways to better serve its customers\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals is always looking for new ways to better serve its customers.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals. The subject of the STATEMENT is PD Chemicals. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers\" from the RESPONSE shows that PD Chemicals is actively seeking ways to improve its customer service. This indicates that the subject of the STATEMENT and the subject of the QUESTION are related in that PD Chemicals is constantly striving to enhance its customer service. For this reason, the subjects PD Chemicals and PD Chemicals are [Foo]."
+        },
+        {
+            "atomic_fact": "The company is always looking for new ways to stay ahead of the competition.",
+            "revised_fact": "The subject of the statement \"The company is always looking for new ways to stay ahead of the competition\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to \"PD Chemicals\". Therefore, \"The company\" should be replaced by \"PD Chemicals\". Thus, the revised statement is:\n```\nPD Chemicals is always looking for new ways to stay ahead of the competition.\n```",
+            "is_relevant": "The subject of the QUESTION is PD Chemicals, a chemical company in China. The subject of the STATEMENT is PD Chemicals. The phrase \"With a focus on innovation and continuous improvement, the company is always looking for new ways to better serve its customers and stay ahead of the competition\" from the RESPONSE shows that PD Chemicals is actively seeking new ways to stay ahead of the competition. This indicates that PD Chemicals is proactive in its approach to maintaining a competitive edge. Therefore, the subjects PD Chemicals and PD Chemicals are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" location",
+                    "result": "Established in the year 1950, we \"P D Chemicals\" are the leading Manufacture and Wholesale of a wide range of Blue Pigment, Methyl Violet Gye, etc. PD Chemicals ; Contact person:Kanish Aggarwal ; Street Address:Bazar Lachhmansar, ; City:Amritsar ; Province/State:Punjab ; Zip: ... P D Chemicals Catalogue listing range of products and services offered by P D Chemicals in Amritsar Gpo, Amritsar. Get Best Price, Address, Contact Number, ..."
+                },
+                {
+                    "query": "PD Chemicals location",
+                    "result": "P D Chemicals, Bazar Lachhmansar , White Avenue, Amritsar - 143001. Punjab, India. Get Directions. Find Popular Seller Near Amritsar. Detect my city; All India ... PD Chemicals is leading manufacturer and exporter of Ultramarine Blue, Prussian Blue (Milori blue), Chinese Blue in India. We established a strong brand ..."
+                },
+                {
+                    "query": "PD Chemicals location",
+                    "result": "P D Chemicals, Bazar Lachhmansar , White Avenue, Amritsar - 143001. Punjab, India. Get Directions. Find Popular Seller Near Amritsar. Detect my city; All India ... PD Chemicals is leading manufacturer and exporter of Ultramarine Blue, Prussian Blue (Milori blue), Chinese Blue in India. We established a strong brand ..."
+                },
+                {
+                    "query": "\"PD Chemicals\" location China",
+                    "result": "Shopping itineraries in Thai P.D. Chemicals Co.,LTD in February (updated in 2024), all information you need to know before travel, opening hours, address, ... PD Chemicals is leading manufacturer and exporter of Ultramarine Blue, Prussian Blue (Milori blue), Chinese Blue in India. We established a strong brand ..."
+                },
+                {
+                    "query": "PD Chemicals location China",
+                    "result": "Shandong Panda Chemical produces and sells calcium chloride, magnesium chloride ... Relying on the resource advantages of Weifang, the company produces and ... In basic chemicals, China is increasing its position as a net exporter. In very few commodity chemical products is China a net importer. For ... Missing: PD | Show results with:PD. The chemical industry in China is one of China's main manufacturing industries. ... China is currently the largest chemicals manufacturing economy in the world. Missing: PD | Show results with:PD."
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" company profile",
+                    "result": "P. D. Chemicals | 3 followers on LinkedIn. Tri ... Company size: 11-50 employees. Headquarters: Pune ... Chemicals. Click here to view Kanish Aggarwal's profile ... Established in the year 1950, we \"P D Chemicals\" are the leading Manufacture and Wholesale of a wide range of Blue Pigment, Methyl Violet Gye, etc. PD Chemicals is leading manufacturer and exporter of Ultramarine Blue, Prussian Blue (Milori blue), Chinese Blue in India. We established a strong brand ..."
+                },
+                {
+                    "query": "\"PD Chemicals\" \"chemical products\" site:pchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" chemical products",
+                    "result": "Established in the year 1950, we \"P D Chemicals\" are the leading Manufacture and Wholesale of a wide range of Blue Pigment, Methyl Violet Gye, etc. CB Index 58. P D Chemicals Product List. Product Name Methylene Blue 2B Basic Blue 9; MF C16H18ClN3S; CAS 61-73-4. Product Name Potassium Ferrocyanide; MF ... P D Chemicals - Manufacturer of Pigment Powder, Blue Pigment Lumps & Sodium Ferrocyanide Powder from Amritsar, Punjab, India."
+                },
+                {
+                    "query": "PD Chemicals product list",
+                    "result": "CB Index 58. P D Chemicals Product List. Product Name Methylene Blue 2B Basic Blue 9; MF C16H18ClN3S; CAS 61-73-4. Product Name Potassium Ferrocyanide; MF ... Product Catalog ; 46-2087 \u00b7 46-2087 \u00b7 Palladium, 1% on polyethylenimine/SiO2 ROYER Pd CATALYST, 40-200 mesh pwdr. 7440-05-3 ; 46-2089 \u00b7 46-2089. Palladium, 3% on ..."
+                },
+                {
+                    "query": "PD Chemicals product range",
+                    "result": "PD Chemicals is leading manufacturer and exporter of Ultramarine Blue, Prussian Blue (Milori blue), Chinese Blue in India. We established a strong brand ... Missing: range | Show results with:range. Established in the year 1950, we \"P D Chemicals\" are the leading Manufacture and Wholesale of a wide range of Blue Pigment, Methyl Violet Gye, etc."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" company history and product portfolio",
+                    "result": "Established in the year 1950, we \"P D Chemicals\" are the leading Manufacture and Wholesale of a wide range of Blue Pigment, Methyl Violet Gye, etc. Missing: history portfolio. P. D. Chemicals - email id & phone of 143 top management contacts like Founder, CEO, CFO, CMO, CTO, Marketing or HR or Finance head & all company details. Missing: history portfolio. Owner at Pd chemicals \u00b7 Experience: Pd chemicals \u00b7 Location: Amritsar \u00b7 1 connection on LinkedIn. View Kanish Aggarwal's profile on LinkedIn, a professional ... Missing: product | Show results with:product."
+                },
+                {
+                    "query": "\"PD Chemicals\" product development and production for various industries",
+                    "result": "... P.D. Chemicals. Initial supply was with natural forms of product, which led to some production ... all forms of international production and cooperation. ... Owner at Pd chemicals. Amritsar. 11 others named Kanish Aggarwal in India are on LinkedIn. See others named Kanish Aggarwal. View Kanish's full profile. See who ... Mridul Chemical Products, \u00b7 Duro Shine Industries, Anand Avenue \u00b7 Namco National Medicine Company, Amritsar Gpo \u00b7 P D Chemicals, Amritsar Gpo \u00b7 R M Impex, ..."
+                },
+                {
+                    "query": "PD Chemicals product portfolio",
+                    "result": "\u201cPD\u201d\u00ae Polymer Material Chemical Compatibility Chart ... The chart below provides an alphabetical list of chemicals along with our best general recommendations ... Explore our unparalleled portfolio of common heterogeneous/inorganic catalysts such as platinum, palladium, ruthenium, and rhodium supported on porous carbon or ..."
+                },
+                {
+                    "query": "\"PD Chemicals\" chemical product portfolio",
+                    "result": "CB Index 58. P D Chemicals Product List. Product Name Methylene Blue 2B Basic Blue 9; MF C16H18ClN3S; CAS 61-73-4. Product Name Potassium Ferrocyanide; MF ... Missing: portfolio | Show results with:portfolio. Established in the year 1950, we \"P D Chemicals\" are the leading Manufacture and Wholesale of a wide range of Blue Pigment, Methyl Violet Gye, etc. Missing: portfolio | Show results with:portfolio."
+                },
+                {
+                    "query": "PD Chemicals history of chemical product development and production",
+                    "result": "The design activities span three phases in time \u2013 product conceptualization, detail design and prototyping, and product manufacturing and launch ... We have examined the history of chemical engineering as a field and its evolution to synthesize unifying principles and evolve the curriculum so ... Missing: PD | Show results with:PD. Thousands of chemical products are manufactured, with companies like Minnesota Mining and Manufacturing (3M) having developed over 50,000 chemical products ... Missing: PD history."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" founding date",
+                    "result": "PD Chemicals is leading manufacturer and exporter of Ultramarine Blue, Prussian Blue (Milori blue), Chinese Blue in India. We established a strong brand ... Incorporation date. 22 Feb 1979. Company age. 44 years 11 months. Contact. Address ... What is THAI P.D.CHEMICALS COMPANY LIMITED's incorporation date? THAI P.D. ..."
+                },
+                {
+                    "query": "PD Chemicals incorporation date",
+                    "result": "P.D.CHEMICAL INDUSTRIES PRIVATE LIMITED is a 38.4 Years old company, incorporated on 13 Dec 1985. It is classified as Private UnListed Indian ... P.D.CHEMICAL INDUSTRIES PRIVATE LIMITED ; CIN, U24119GJ1985PTC008321 ; Date of Incorporation, 13 Dec, 1985 ; Status, Strike Off ; Company Class, Private ; Business ... P.D.Chemical Industries Private Limited was an unlisted private company incorporated on 13 December, 1985. It is classified as a private limited ..."
+                },
+                {
+                    "query": "PD Chemicals incorporation date",
+                    "result": "P.D.CHEMICAL INDUSTRIES PRIVATE LIMITED is a 38.4 Years old company, incorporated on 13 Dec 1985. It is classified as Private UnListed Indian ... P.D.CHEMICAL INDUSTRIES PRIVATE LIMITED ; CIN, U24119GJ1985PTC008321 ; Date of Incorporation, 13 Dec, 1985 ; Status, Strike Off ; Company Class, Private ; Business ... P.D.Chemical Industries Private Limited was an unlisted private company incorporated on 13 December, 1985. It is classified as a private limited ..."
+                },
+                {
+                    "query": "\"PD Chemicals\" founding date",
+                    "result": "PD Chemicals is leading manufacturer and exporter of Ultramarine Blue, Prussian Blue (Milori blue), Chinese Blue in India. We established a strong brand ... Incorporation date. 22 Feb 1979. Company age. 44 years 11 months. Contact. Address ... What is THAI P.D.CHEMICALS COMPANY LIMITED's incorporation date? THAI P.D. ..."
+                },
+                {
+                    "query": "PD Chemicals founding date",
+                    "result": "Palladium is a chemical element; it has symbol Pd and atomic number 46. It is a rare and lustrous silvery-white metal discovered in 1802 by the English ... Palladium was discovered by William Hyde Wollaston, an English chemist, in 1803 while analyzing samples of platinum ore that were obtained from South America. Main Products: Year Established: 2013. Home \u00b7 Company \u00b7 Products \u00b7 Contacts ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" mission statement",
+                    "result": "the installation, manufactured by P.D. Chemicals. Initial supply was with natural forms of product, which led to some production problems for Carco. Page 173 ... THAI P.D. CHEMICALS COMPANY LIMITED. Country: Din Daeng, Bangkok Thailand. Sales Revenue ($M):. SIAM FOOD & BEVERAGE SOLUTION COMPANY LIMITED. Country: Phra ... Study Rationale: Alpha-synuclein is a sticky protein that clumps in the brains of people with Parkinson's disease (PD). Chemicals that stick to alpha-synuclein"
+                },
+                {
+                    "query": "PD Chemicals' goal is to provide high-quality chemical products and services.",
+                    "result": "Quality Chemical is your one-stop-shop for all your Chemical, Cleaning and Janitorial Supply needs. We are manufacturers and distributors of an extensive ... Missing: PD | Show results with:PD. Chemical process development is focused on the development, scale-up and optimization of a chemical synthetic route, leading to a safe, reproducible, ... Missing: Chemicals' | Show results with:Chemicals'."
+                },
+                {
+                    "query": "PD Chemicals' goal is to provide high-quality chemical products and services.",
+                    "result": "Quality Chemical is your one-stop-shop for all your Chemical, Cleaning and Janitorial Supply needs. We are manufacturers and distributors of an extensive ... Missing: PD | Show results with:PD. Chemical process development is focused on the development, scale-up and optimization of a chemical synthetic route, leading to a safe, reproducible, ... Missing: Chemicals' | Show results with:Chemicals'."
+                },
+                {
+                    "query": "PD Chemicals' goal is to provide high-quality chemical products and services. evidence",
+                    "result": "The ultimate goal of WoE is to provide ... evidence available, the quality and quantity of the evidence, the strengths and ... services/chemical- ... Missing: products | Show results with:products. A growing body of evidence suggests chemicals present in air, water, soil, food, building materials and household products are toxicants ... Missing: goal | Show results with:goal. EPA's IRIS Program supports this mission by identifying and characterizing the health hazards of chemicals found in the environment. Each IRIS ... Missing: PD | Show results with:PD."
+                },
+                {
+                    "query": "PD Chemicals' goal AND \"high-quality chemical products and services\"",
+                    "result": "The company was founded in 1994 with the goal of providing high-quality chemical products and services to customers worldwide. Over the years, Alfa ..."
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" production facilities",
+                    "result": "PD Chemicals is leading manufacturer and exporter ... We are manufacturing organic pigments, inorganic ... facilities at every stage. Our products are ... Missing: production | Show results with:production. P D Chemicals - Manufacturer of Pigment Powder ... We are manufacturing organic pigments, inorganic pigments ... facilities at every stage. Our products are ... Missing: production | Show results with:production. P. D. Chemicals Chemicals, Fertilizers, Dyes & Allied Products Engaged in production and manufacturing of basic dyes, acid dyes, ultramarine blue, ... Missing: facilities | Show results with:facilities."
+                },
+                {
+                    "query": "PD Chemicals production facilities",
+                    "result": "Top 10 Chemical Manufacturing Plants in the U.S. ; Eastman Chemical Co. Kingsport, TN, 7,000 ; Novartis Pharmaceuticals Corp. East Hanover, NJ ... Our innovative PGM compounds and solutions are manufactured at our ISO 9001 certified manufacturing facilities located at Seneca, SC, USA, and Rome, Italy. Facility Operators are responsible for obtaining complete information about applicable regulations. The Department does not relieve any person ... Missing: PD production."
+                },
+                {
+                    "query": "\"PD Chemicals\" production facilities",
+                    "result": "PD Chemicals is leading manufacturer and exporter ... We are manufacturing organic pigments, inorganic ... facilities at every stage. Our products are ... Missing: production | Show results with:production. P. D. Chemicals Chemicals, Fertilizers, Dyes & Allied Products Engaged in production and manufacturing of basic dyes, acid dyes, ultramarine blue, ... Missing: facilities | Show results with:facilities. P. D. Chemicals. Chemical Manufacturing. Pune, Maharashtra 3 followers. Follow ... Chemical Manufacturing. Company size: 11-50 employees. Headquarters: Pune, ... Missing: facilities | Show results with:facilities."
+                },
+                {
+                    "query": "PD Chemicals production facilities",
+                    "result": "Facility Operators are responsible for obtaining complete information about applicable regulations. The Department does not relieve any person ... Missing: PD production. Top 10 Chemical Manufacturing Plants in the U.S. ; Eastman Chemical Co. Kingsport, TN, 7,000 ; Novartis Pharmaceuticals Corp. East Hanover, NJ ... PD Chemicals is leading manufacturer and exporter of Ultramarine Blue ... Member Center. PD Chemicals. Business Type:Trading Company. Main Products: Year ... Missing: production facilities."
+                },
+                {
+                    "query": "PD Chemicals production facilities",
+                    "result": "Facility Operators are responsible for obtaining complete information about applicable regulations. The Department does not relieve any person ... Missing: PD production. Top 10 Chemical Manufacturing Plants in the U.S. ; Eastman Chemical Co. Kingsport, TN, 7,000 ; Novartis Pharmaceuticals Corp. East Hanover, NJ ... PD Chemicals is leading manufacturer and exporter of Ultramarine Blue ... Member Center. PD Chemicals. Business Type:Trading Company. Main Products: Year ... Missing: production facilities."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" \"experienced team of chemists\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"experienced team of chemists\" -site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"experienced team of chemists\" -site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "PD Chemicals team of chemists experience",
+                    "result": "... team member and independently on multi-task assignments. Your Skills: \u2022 PhD in Chemistry mandatory with 3 years of experience or master's in chemistry with 4 ... In this article, we interview Max Critchlow, a Process Development Chemist on the Drug Substance team at the Alnwick site. Max gives those interested in ... Missing: PD | Show results with:PD. That is, running reactions that are known to work, analyzing products from a chemical plant to make sure they are what they are supposed to be. Missing: PD | Show results with:PD."
+                },
+                {
+                    "query": "PD Chemicals experienced team of chemists site:www.pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" trusted partner for businesses evidence",
+                    "result": "The empirical evidence of business ... \u2022 deliveries of chemicals by P.D. Chemicals either via Vegan, or direct to their ... In summary, being a trustworthy trading ... the installation, manufactured by P.D. Chemicals. Initial supply was with natural forms of product, which led to some production problems for Carco due to ... Missing: trusted | Show results with:trusted. ... companies are important. First there is P.D. Chemicals, a supplier of a<br />. complementary chemical frequently used by many customers ..."
+                },
+                {
+                    "query": "PD Chemicals trusted partner businesses evidence",
+                    "result": "Reliably deliver best-in-class product performance and chemical safety as the foundation of our business success. The alignment of our sustainability strategy ... Missing: PD evidence. The Chemical Sector is an integral component of the U.S. economy that manufactures, stores, uses, and transports potentially dangerous chemicals upon which ..."
+                },
+                {
+                    "query": "PD Chemicals trusted partner for businesses",
+                    "result": "PD Chemicals is leading manufacturer and exporter of Ultramarine Blue ... PD Chemicals. Business Type:Trading Company. Main Products: Year Established ... Missing: trusted partner. Reliably deliver best-in-class product performance and chemical safety, as the foundations of our business success. Our business units \u2013 Consumer Brands and ... Missing: PD | Show results with:PD."
+                },
+                {
+                    "query": "PD Chemicals trusted partner evidence",
+                    "result": "Reliably deliver best-in-class product performance and chemical safety as the foundation of our business success. Missing: PD evidence. A groundbreaking epidemiological study has produced the most compelling evidence yet that exposure to the chemical solvent trichloroethylene ... Missing: PD | Show results with:PD. Conclusions: We found evidence of increased PD risk for some pesticides. Our results also suggest higher susceptibility for pesticide-associated ... Missing: partner | Show results with:partner."
+                },
+                {
+                    "query": "PD Chemicals trusted partner evidence",
+                    "result": "Reliably deliver best-in-class product performance and chemical safety as the foundation of our business success. Missing: PD evidence. A groundbreaking epidemiological study has produced the most compelling evidence yet that exposure to the chemical solvent trichloroethylene ... Missing: PD | Show results with:PD. Conclusions: We found evidence of increased PD risk for some pesticides. Our results also suggest higher susceptibility for pesticide-associated ... Missing: partner | Show results with:partner."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" pharmaceutical sector partner reviews",
+                    "result": "Top Phenylacetic Acid Manufacturers in Eluru ; Arochem Export \u00b7 Delhi,Ikram Nagar ; P D Chemicals \u00b7 Amritsar,Amritsar Gpo ; Kranthi Chemicals \u00b7 Guntur,Brodipet. Missing: sector | Show results with:sector. THAI P.D. CHEMICALS CO.,LTD. II. THAI PHARMIID (1942) CO.,LTD. 19. THAIRED CROSS (SCIENCE DIVISION). 90. THE BOOTS MANUFACTURING CO(THAILAND) ... the installation, manufactured by P.D. Chemicals. Initial supply was with natural forms of product, which led to some production problems for Carco. Page 173 ..."
+                },
+                {
+                    "query": "\"PD Chemicals\" \"pharmaceutical sector\"",
+                    "result": "Its pharmaceutical sector. At present Laos appears to be. Involved In ... THAI P. D. CHEMICALS CO., LTD. 119 SOI CHOKECHAI RUAMMIT,. VIBHAVADI ..."
+                },
+                {
+                    "query": "PD Chemicals pharmaceutical sector trusted partner",
+                    "result": "For more than 20 years, we've been helping businesses in the highly-regulated GMP (good manufacturing practice) environment of drug development and testing. We ... Missing: trusted | Show results with:trusted. With its comprehensive service range based around the exclusive synthesis of chemical agents and intermediates, Saltigo GmbH, ... Missing: PD trusted. We provide our customers with complete cleaning and disinfection programs for external surfaces of manufacturing equipment and cleanrooms, and for direct ... Missing: PD | Show results with:PD."
+                },
+                {
+                    "query": "PD Chemicals pharmaceutical sector trusted partner",
+                    "result": "For more than 20 years, we've been helping businesses in the highly-regulated GMP (good manufacturing practice) environment of drug development and testing. We ... Missing: trusted | Show results with:trusted. Tan International is a focused UK based independent chemicals distributor offering a range of pharmaceutical grade products including GMP products and ... With its comprehensive service range based around the exclusive synthesis of chemical agents and intermediates, Saltigo GmbH, ... Missing: PD trusted."
+                },
+                {
+                    "query": "PD Chemicals pharmaceutical sector trusted partner evidence",
+                    "result": "Public Private Partnerships (PPPs) are multiple stakeholder partnerships designed to improve research efficacy. Production of pharmaceutical products requires the implementation of a qualified cleaning & disinfection procedure that prevents any carry-over of the cleaning ... Missing: PD | Show results with:PD."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" \"cosmetics sector\" trusted partner",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"trusted partner\" cosmetics sector",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"trusted partner\" \"cosmetics sector\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "PD Chemicals customer reviews in the cosmetics sector",
+                    "result": "Do you agree with PD Cosmetics's 4-star rating? Check out what 8 people have written so far, and share your own experience. Missing: Chemicals | Show results with:Chemicals. The Cosmetic Ingredient Review (CIR) studies individual chemical compounds as they are used in cosmetic products. CIR relies heavily on the International ... Missing: PD sector. In 2016, Congress expanded EPA authority to review chemicals in cleaners, paints, solvents and many other consumer products. The U.S. has also fallen ... Missing: PD sector."
+                },
+                {
+                    "query": "\"PD Chemicals\" AND \"cosmetics sector\" AND trusted",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" textile manufacturing sector trusted partner evidence",
+                    "result": "the installation, manufactured by P.D. Chemicals. Initial supply was with natural forms of product, which led to some production problems for Carco. Page 173 ... Missing: textile | Show results with:textile. P D Chemicals, IEC No. 1203002483/22.01.2004 ... Indus Manufacturing Pvt. Ltd., IEC No ... ECO TEXTILE MILLS PVT LTD. 9049593/27-04-15. Missing: sector evidence. pharmaceutical manufacturing sector. In ... Data should be recorded in the national language in a meaningful, ... THAI P. D. CHEMICALS CO., LTD. 119 ... Missing: textile | Show results with:textile."
+                },
+                {
+                    "query": "\"PD Chemicals\" \"textile manufacturing sector\" trusted partner",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"textile manufacturing sector\" trusted partner",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"textile manufacturing sector\" trusted partner",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"textile manufacturing sector\" trusted partner",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals' key strength is its ability to provide customized solutions\" evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals customized solutions\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals' key strength is its ability to provide customized solutions\" site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "PD Chemicals' key strength is its ability to provide customized solutions.",
+                    "result": "Through the use of diverse synthesis techniques, Pd-based nanomaterials have the potential to provide superior and cost-effective solutions to ... Element Palladium (Pd), Group 10, Atomic Number 46, d-block, Mass 106.42. Sources, facts, uses, scarcity (SRI), podcasts, alchemical symbols, videos and ... Missing: customized | Show results with:customized. The ability to create neurons or other cell types from an individual with PD presents the possibility of providing a personalized treatment ... Missing: customized | Show results with:customized."
+                },
+                {
+                    "query": "PD Chemicals' key strength \"customized solutions\" site:example.com",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals customized solutions\" site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals customized solutions\" site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals customized solutions customer reviews\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals customized solutions customer reviews\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals customized solutions\" -site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" focus on innovation",
+                    "result": "Technology ... Once you've engaged us, our focus is on your business, and your results. ... I am so happy with their service. Managing Director. Thai P.D. Chemicals. Owner at Pd chemicals. Amritsar. 11 others named Kanish Aggarwal in India are on LinkedIn. See others named Kanish Aggarwal. View Kanish's full profile. See who ... Our aim is, through innovative\u2026 2 - Poplon Chemie - Amritsar. I/s, Nijjarpura Village, G.t. Road, Amritsar. Amritsar. Amritsar. Focused ... P. D. Chemicals - ..."
+                },
+                {
+                    "query": "\"PD Chemicals\" focus on innovation",
+                    "result": "Technology ... Once you've engaged us, our focus is on your business, and your results. ... I am so happy with their service. Managing Director. Thai P.D. Chemicals. Owner at Pd chemicals. Amritsar. 11 others named Kanish Aggarwal in India are on LinkedIn. See others named Kanish Aggarwal. View Kanish's full profile. See who ... Our aim is, through innovative\u2026 2 - Poplon Chemie - Amritsar. I/s, Nijjarpura Village, G.t. Road, Amritsar. Amritsar. Amritsar. Focused ... P. D. Chemicals - ..."
+                },
+                {
+                    "query": "PD Chemicals focus on innovation",
+                    "result": "China is leading in chemical production, especially basic chemicals. And while it is currently lagging behind on innovation\u2014especially in ... Missing: PD | Show results with:PD. Research here concentrates on supramolecular chemistry, polymer chemistry and the incubation of sustainable technologies. Biopolymer synthesis ... Missing: PD | Show results with:PD."
+                },
+                {
+                    "query": "\"PD Chemicals\" focus on innovation",
+                    "result": "Technology ... Once you've engaged us, our focus is on your business, and your results. ... I am so happy with their service. Managing Director. Thai P.D. Chemicals. Owner at Pd chemicals. Amritsar. 11 others named Kanish Aggarwal in India are on LinkedIn. See others named Kanish Aggarwal. View Kanish's full profile. See who ... Our aim is, through innovative\u2026 2 - Poplon Chemie - Amritsar. I/s, Nijjarpura Village, G.t. Road, Amritsar. Amritsar. Amritsar. Focused ... P. D. Chemicals - ..."
+                },
+                {
+                    "query": "PD Chemicals innovation focus",
+                    "result": "Innovation in the chemical industry historically has been focused on molecule discovery or application development, all with a focus on ... From soap and clean water to tests and new drugs, chemistry will be paramount to defeat this new threat.* Thus, two of the technologies focus on ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" \"continuous improvement\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"continuous improvement\" site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"continuous improvement\" site:www.pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"continuous improvement\" site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"continuous improvement\" site:pdchemicals.com",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"PD Chemicals\" \"ways to better serve customers\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"ways to better serve its customers\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"ways to better serve customers\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"ways to better serve its customers\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"PD Chemicals\" \"ways to better serve its customers\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "pd chemicals new strategies to stay ahead of competition",
+                    "result": "By strengthening customer loyalty and opening new markets, companies can enhance their value and thus improve their competitiveness. The primary ... Missing: pd | Show results with:pd. Globally, chemicals companies' growth will be less and less nurtured by breakthrough product innovation. M&A is becoming an alternative to fill this gap. Missing: pd | Show results with:pd. It discusses the key elements influencing market expansion in addition to the prevailing opportunities, trends, and issues. It is projected that ... Missing: pd | Show results with:pd."
+                },
+                {
+                    "query": "PD Chemicals innovative strategies and approaches",
+                    "result": "Here we report a novel approach for the preparation of 1D Pd nanoparticles with organic ligands using size- and shape-controlled chemical ... Missing: innovative strategies. The activation and functionalization of C\u2212H bonds using palladium catalysts has become an important part of a modern chemist toolbox, as it ... Missing: innovative strategies."
+                },
+                {
+                    "query": "\"PD Chemicals\" innovative strategies to stay ahead of the competition",
+                    "result": "the installation, manufactured by P.D. Chemicals. Initial supply was with natural forms of product, which led to some production problems for Carco. Page 173 ... the installation, manufactured by P.D. Chemicals. Initial supply was with natural forms of product, which led to some production problems for Carco due to ... Owner at Pd chemicals. Amritsar. 11 others named Kanish Aggarwal in India are on LinkedIn. See others named Kanish Aggarwal. View Kanish's full profile. See who ... Missing: stay ahead."
+                },
+                {
+                    "query": "PD Chemicals innovative strategies",
+                    "result": "Instead of focusing on discovering one major breakthrough compound, chemical companies must now invest in continuous R&D to find innovations ... Missing: PD | Show results with:PD. New innovation strategies include partnerships with academia and tech companies, crowdsourcing R&D activity through competitions and prizes, ... Missing: PD | Show results with:PD. Our team of experts works to transform chemicals management from a compliance focus to a proactive approach that reduces risk, builds brand strength, ... Missing: PD | Show results with:PD."
+                },
+                {
+                    "query": "PD Chemicals innovative strategies",
+                    "result": "Instead of focusing on discovering one major breakthrough compound, chemical companies must now invest in continuous R&D to find innovations ... Missing: PD | Show results with:PD. New innovation strategies include partnerships with academia and tech companies, crowdsourcing R&D activity through competitions and prizes, ... Missing: PD | Show results with:PD. Our team of experts works to transform chemicals management from a compliance focus to a proactive approach that reduces risk, builds brand strength, ... Missing: PD | Show results with:PD."
+                }
+            ]
+        }
+    ],
+    "Supported": 5,
+    "Irrelevant": 0,
+    "Not Supported": 17
+}

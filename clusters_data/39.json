@@ -1,0 +1,988 @@
+{
+    "prompt": "Give me an introduction over 200 words for fmclithium, a chemical company in United States",
+    "response": " FMCLithium is a chemical company based in the United States that specializes in producing lithium-based products for a variety of industries. The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.\n\n One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles. The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications.\n\n In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+    "num_claims": 20,
+    "sentences_and_atomic_facts": [
+        [
+            "FMCLithium is a chemical company based in the United States that specializes in producing lithium-based products for a variety of industries.",
+            [
+                "FMCLithium is a chemical company.",
+                "FMCLithium is based in the United States.",
+                "FMCLithium specializes in producing lithium-based products.",
+                "FMCLithium produces lithium-based products for a variety of industries."
+            ]
+        ],
+        [
+            "The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.",
+            [
+                "The company was founded in 2012.",
+                "The company has become a leading producer.",
+                "The company produces lithium-ion batteries.",
+                "The company produces lithium salts.",
+                "The company produces other lithium-based products."
+            ]
+        ],
+        [
+            "One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.",
+            [
+                "FMCLithium produces lithium-ion batteries.",
+                "Lithium-ion batteries are used in electronic devices.",
+                "Electronic devices include smartphones, laptops, and electric vehicles."
+            ]
+        ],
+        [
+            "The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications.",
+            [
+                "The company's batteries have high energy density.",
+                "The company's batteries have a long lifespan.",
+                "The company's batteries are an ideal choice for many applications."
+            ]
+        ],
+        [
+            "In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+            [
+                "FMCLithium produces lithium-ion batteries.",
+                "FMCLithium produces lithium salts.",
+                "Lithium salts are used in the production of lubricants.",
+                "Lithium salts are used in the production of inks.",
+                "Lithium salts are used in the production of other industrial products."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "FMCLithium is a chemical company based in the United States that specializes in producing lithium-based products for a variety of industries.",
+            "atomic_facts": [
+                "FMCLithium is a chemical company.",
+                "FMCLithium is based in the United States.",
+                "FMCLithium specializes in producing lithium-based products.",
+                "FMCLithium produces lithium-based products for a variety of industries."
+            ]
+        },
+        {
+            "sentence": "The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.",
+            "atomic_facts": [
+                "The company was founded in 2012.",
+                "The company has become a leading producer.",
+                "The company produces lithium-ion batteries.",
+                "The company produces lithium salts.",
+                "The company produces other lithium-based products."
+            ]
+        },
+        {
+            "sentence": "One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.",
+            "atomic_facts": [
+                "FMCLithium produces lithium-ion batteries.",
+                "Lithium-ion batteries are used in electronic devices.",
+                "Electronic devices include smartphones, laptops, and electric vehicles."
+            ]
+        },
+        {
+            "sentence": "The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications.",
+            "atomic_facts": [
+                "The company's batteries have high energy density.",
+                "The company's batteries have a long lifespan.",
+                "The company's batteries are an ideal choice for many applications."
+            ]
+        },
+        {
+            "sentence": "In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+            "atomic_facts": [
+                "FMCLithium produces lithium-ion batteries.",
+                "FMCLithium produces lithium salts.",
+                "Lithium salts are used in the production of lubricants.",
+                "Lithium salts are used in the production of inks.",
+                "Lithium salts are used in the production of other industrial products."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "FMCLithium is a chemical company based in the United States that specializes in producing lithium-based products for a variety of industries.",
+            "atomic_fact": "FMCLithium is a chemical company.",
+            "self_contained_atomic_fact": "FMCLithium is a chemical company.",
+            "relevance_data": {
+                "atomic_fact": "FMCLithium is a chemical company.",
+                "revised_fact": "The subject in the statement \"FMCLithium is a chemical company\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium is a chemical company.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is also FMCLithium. The STATEMENT directly states that FMCLithium is a chemical company, which aligns with the subject of the QUESTION. Therefore, the subjects FMCLithium and FMCLithium are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, FMC Lithium is a division of FMC Corporation, which is described as a chemical company. Additionally, FMC Lithium's deep understanding of cathode and anode technologies further supports the idea that they are involved in chemical processes. Therefore, the statement \"FMC Lithium is a chemical company\" is supported by the given knowledge.\n\nFinal answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "FMCLithium is a chemical company based in the United States that specializes in producing lithium-based products for a variety of industries.",
+            "atomic_fact": "FMCLithium is based in the United States.",
+            "self_contained_atomic_fact": "FMCLithium is based in the United States.",
+            "relevance_data": {
+                "atomic_fact": "FMCLithium is based in the United States.",
+                "revised_fact": "The subject in the statement \"FMCLithium is based in the United States\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium is based in the United States.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is the location of FMCLithium, which is the United States. The phrase \"FMCLithium is a chemical company based in the United States\" from the RESPONSE shows that the relationship between FMCLithium and the United States is that FMCLithium is based in the United States. For this reason, the subjects FMCLithium and the United States are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n- The given knowledge mentions FMC Lithium and its location in Salar del Hombre Muerto, Argentina.\n- However, there is no explicit mention of FMC Lithium being based in the United States.\n\nMain points of the knowledge:\n- FMC Lithium is located in Salar del Hombre Muerto, Argentina.\n- FMC Corporation has a corporate headquarters in Philadelphia, PA, USA.\n\nBased on the given knowledge, there is no direct evidence to support the statement that FMC Lithium is based in the United States. The knowledge only provides information about the location of FMC Lithium in Argentina and the corporate headquarters of FMC Corporation in the United States.\n\nTherefore, the statement is not supported by the given knowledge. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "FMCLithium is a chemical company based in the United States that specializes in producing lithium-based products for a variety of industries.",
+            "atomic_fact": "FMCLithium specializes in producing lithium-based products.",
+            "self_contained_atomic_fact": "FMCLithium specializes in producing lithium-based products.",
+            "relevance_data": {
+                "atomic_fact": "FMCLithium specializes in producing lithium-based products.",
+                "revised_fact": "The subject of the statement \"FMCLithium specializes in producing lithium-based products\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium specializes in producing lithium-based products.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-based products. The RESPONSE states that FMCLithium specializes in producing lithium-based products, which directly matches the subject of the STATEMENT. Therefore, the subjects FMCLithium and lithium-based products are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided mentions FMC Lithium and its capability to engineer the production of lithium chemicals. It also mentions Livent Corp, which is a specialization in the production of various lithium products. However, there is no direct statement that explicitly states that FMC Lithium specializes in producing lithium-based products.\n\nTherefore, the statement is not directly supported by the knowledge provided.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "FMCLithium is a chemical company based in the United States that specializes in producing lithium-based products for a variety of industries.",
+            "atomic_fact": "FMCLithium produces lithium-based products for a variety of industries.",
+            "self_contained_atomic_fact": "FMCLithium produces lithium-based products for a variety of industries.",
+            "relevance_data": {
+                "atomic_fact": "FMCLithium produces lithium-based products for a variety of industries.",
+                "revised_fact": "The subject in the statement \"FMCLithium produces lithium-based products for a variety of industries\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium-based products for a variety of industries.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-based products for a variety of industries. The RESPONSE states that FMCLithium specializes in producing lithium-based products for a variety of industries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" shows that the relationship between FMCLithium and lithium-based products is that FMCLithium produces these products. For this reason, the subjects FMCLithium and lithium-based products are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge mentions that FMC Lithium is a leading producer of lithium compounds and has a manufacturing network that partners with leading manufacturers of lithium-ion products. It also states that FMC Lithium has diverse brine technology capability and produces lithium from spodumene. Based on this information, it can be inferred that FMC Lithium produces lithium-based products for various industries.\n\nRestatement:\nFMC Lithium produces lithium-based products for a variety of industries.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.",
+            "atomic_fact": "The company was founded in 2012.",
+            "self_contained_atomic_fact": "FMCLithium was founded in 2012.",
+            "relevance_data": {
+                "atomic_fact": "The company was founded in 2012.",
+                "revised_fact": "The subject of the statement \"The company was founded in 2012\" is \"The company\". From the response, we can see that \"The company\" is referring to \"FMCLithium\". Therefore, \"The company\" is a vague reference that should be replaced by \"FMCLithium\". Thus, the revised response is:\n\n```\nFMCLithium was founded in 2012.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is the founding year of FMCLithium, which is 2012. The RESPONSE contains the phrase \"The company was founded in 2012,\" which directly states that FMCLithium was founded in 2012. Therefore, the subjects FMCLithium and the founding year of FMCLithium are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n- The knowledge points mention FMC Lithium multiple times, but there is no specific information about its founding year.\n- The knowledge points mention various historical events and developments related to FMC Lithium, but none of them mention the year 2012.\n- There is no direct evidence or strong implication in the knowledge that FMCLithium was founded in 2012.\n\nTherefore, the statement is Not Supported.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.",
+            "atomic_fact": "The company has become a leading producer.",
+            "self_contained_atomic_fact": "FMCLithium has become a leading producer.",
+            "relevance_data": {
+                "atomic_fact": "The company has become a leading producer.",
+                "revised_fact": "The subject of the statement \"The company has become a leading producer\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to FMCLithium, which is a chemical company specializing in producing lithium-based products. Therefore, \"The company\" should be replaced by \"FMCLithium\". Thus, the revised statement is:\n\n```\nFMCLithium has become a leading producer.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is FMCLithium. The phrase \"The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products\" from the RESPONSE shows that FMCLithium has become a leading producer. For this reason, the subjects FMCLithium and FMCLithium are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge points, we can conclude that FMC Corporation has been a leading producer of lithium compounds for more than 40 years. This is supported by the statement made by Paul Graves, the CEO of Livent Corporation, which states that \"FMC has been a leading producer of lithium compounds for more than 40 years.\" Therefore, the statement that FMCLithium has become a leading producer is supported.\n\nFinal answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.",
+            "atomic_fact": "The company produces lithium-ion batteries.",
+            "self_contained_atomic_fact": "FMCLithium produces lithium-ion batteries.",
+            "relevance_data": {
+                "atomic_fact": "The company produces lithium-ion batteries.",
+                "revised_fact": "The subject of the statement \"The company produces lithium-ion batteries\" is \"The company\". \"The company\" is a vague reference that should be replaced by \"FMCLithium\" since it is the specific company mentioned in the response. Thus, the revised statement is:\n\n```\nFMCLithium produces lithium-ion batteries.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge mentions FMCLithium several times and discusses their involvement in the production of lithium chemicals and supplying lithium raw materials for lithium-ion batteries. However, there is no explicit mention of FMCLithium producing lithium-ion batteries. Therefore, we cannot conclude that FMCLithium produces lithium-ion batteries based on the given knowledge.\n\nStatement: FMCLithium produces lithium-ion batteries.\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.",
+            "atomic_fact": "The company produces lithium salts.",
+            "self_contained_atomic_fact": "FMCLithium produces lithium salts.",
+            "relevance_data": {
+                "atomic_fact": "The company produces lithium salts.",
+                "revised_fact": "The subject in the statement \"The company produces lithium salts\" is \"The company\". From the response, we can see that \"The company\" refers to \"FMCLithium\". Therefore, \"The company\" is a non-full name that should be replaced by \"FMCLithium\". Thus, the revised statement is:\n```\nFMCLithium produces lithium salts.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts\" from the RESPONSE shows that FMCLithium is the producer of lithium salts. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given KNOWLEDGE mentions lithium salts multiple times, such as lithium hydroxide and lithium carbonate. It also mentions that FMCLithium produces lithium hydroxide for various applications. Therefore, it can be inferred that FMCLithium also produces other lithium salts.\n\nStatement: FMCLithium produces lithium salts.\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products.",
+            "atomic_fact": "The company produces other lithium-based products.",
+            "self_contained_atomic_fact": "FMCLithium produces other lithium-based products.",
+            "relevance_data": {
+                "atomic_fact": "The company produces other lithium-based products.",
+                "revised_fact": "The subject in the statement \"The company produces other lithium-based products\" is \"The company\". From the response, we can see that \"The company\" refers to \"FMCLithium\". Therefore, \"The company\" is a vague reference that should be replaced by \"FMCLithium\". Thus, the revised statement is:\n```\nFMCLithium produces other lithium-based products.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is other lithium-based products. The phrase \"The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products\" from the RESPONSE shows that FMCLithium produces other lithium-based products. For this reason, the subjects FMCLithium and other lithium-based products are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, it is mentioned that FMC Lithium produces lithium compounds that are helping meet the growing demand for lithium. It is also stated that FMC Lithium partners closely with leading manufacturers of lithium-ion products. However, there is no specific mention of FMC Lithium producing other lithium-based products.\n\nTherefore, the statement is not explicitly supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.",
+            "atomic_fact": "FMCLithium produces lithium-ion batteries.",
+            "self_contained_atomic_fact": "FMCLithium produces lithium-ion batteries.",
+            "relevance_data": {
+                "atomic_fact": "FMCLithium produces lithium-ion batteries.",
+                "revised_fact": "The subject of the statement \"FMCLithium produces lithium-ion batteries\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium-ion batteries.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is information about FMCLithium's involvement in lithium-ion batteries. The knowledge mentions that FMCLithium is involved in manufacturing, engineering, refining, and purification of lithium-ion batteries. Additionally, there are references to FMCLithium's website, which likely provides more information about their involvement in lithium-ion batteries. \n\nTherefore, it can be inferred that FMCLithium produces lithium-ion batteries.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.",
+            "atomic_fact": "Lithium-ion batteries are used in electronic devices.",
+            "self_contained_atomic_fact": "Lithium-ion batteries are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.",
+            "relevance_data": {
+                "atomic_fact": "Lithium-ion batteries are used in electronic devices.",
+                "revised_fact": "The subject of the statement \"Lithium-ion batteries are used in electronic devices\" is \"Lithium-ion batteries\". This is not a vague reference as it directly refers to a specific entity mentioned in the response. Therefore, the revised statement is:\n```\nLithium-ion batteries are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention that lithium-ion batteries are used in a wide range of electronic devices, including smartphones and laptops. It also mentions that they are used in portable electronic devices, electric vehicles, and renewable energy. Therefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.",
+            "atomic_fact": "Electronic devices include smartphones, laptops, and electric vehicles.",
+            "self_contained_atomic_fact": "Lithium-ion batteries produced by FMCLithium include smartphones, laptops, and electric vehicles.",
+            "relevance_data": {
+                "atomic_fact": "Electronic devices include smartphones, laptops, and electric vehicles.",
+                "revised_fact": "The subject in the statement \"Electronic devices include smartphones, laptops, and electric vehicles\" is \"Electronic devices\". This is a reference to a category of devices and does not specify any particular entity. From the RESPONSE, we can see that the statement is referring to the products produced by FMCLithium, specifically lithium-ion batteries. Therefore, \"Electronic devices\" is a vague reference that should be replaced by \"Lithium-ion batteries produced by FMCLithium.\" Thus, the revised statement is:\n```\nLithium-ion batteries produced by FMCLithium include smartphones, laptops, and electric vehicles.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries produced by FMCLithium. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries that are used in smartphones, laptops, and electric vehicles. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given KNOWLEDGE mentions the ubiquity and versatility of lithium-ion batteries, stating that they power a wide array of devices including smartphones, laptops, and electric vehicles. However, there is no specific mention of FMCLithium producing these batteries.\n\nSupporting Evidence:\n- The KNOWLEDGE states that lithium-ion batteries power smartphones and laptops.\n- The KNOWLEDGE also mentions that these batteries power electric vehicles.\n\nRestatement:\nThe KNOWLEDGE mentions that lithium-ion batteries power smartphones, laptops, and electric vehicles.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications.",
+            "atomic_fact": "The company's batteries have high energy density.",
+            "self_contained_atomic_fact": "FMCLithium's batteries have high energy density.",
+            "relevance_data": {
+                "atomic_fact": "The company's batteries have high energy density.",
+                "revised_fact": "The subject of the statement \"The company's batteries have high energy density\" is \"the company's batteries\". This is a reference to an unknown entity, since it is unclear which company's batteries are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to FMCLithium's batteries. Thus, \"the company's batteries\" is a vague reference that should be replaced by \"FMCLithium's batteries\". Thus, the revised response is:\n```\nFMCLithium's batteries have high energy density.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is FMCLithium's batteries. The phrase \"The company's batteries are known for their high energy density\" from the RESPONSE shows that the relationship between FMCLithium and FMCLithium's batteries is that FMCLithium's batteries have high energy density. For this reason, the subjects FMCLithium and FMCLithium's batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n- The knowledge mentions that lithium cobalt oxide batteries have a high energy density of 150-200 Wh/kg.\n- The knowledge also mentions that FMC Lithium is all about energy.\n- However, there is no direct statement in the knowledge that explicitly states that FMCLithium's batteries have high energy density.\n\nTherefore, the statement is not explicitly supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications.",
+            "atomic_fact": "The company's batteries have a long lifespan.",
+            "self_contained_atomic_fact": "FMCLithium's batteries have a long lifespan.",
+            "relevance_data": {
+                "atomic_fact": "The company's batteries have a long lifespan.",
+                "revised_fact": "The subject of the statement \"The company's batteries have a long lifespan\" is \"The company's batteries\". This is a reference to an unknown entity, since it is unclear which company's batteries are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to FMCLithium's batteries. Thus, \"The company's batteries\" is a vague reference that should be replaced by \"FMCLithium's batteries\". Thus, the revised response is:\n```\nFMCLithium's batteries have a long lifespan.\n```",
+                "is_relevant": "The subject of the QUESTION is fmclithium. The subject of the STATEMENT is FMCLithium's batteries. The phrase \"The company's batteries are known for their high energy density and long lifespan\" from the RESPONSE explains the relationship between FMCLithium and the long lifespan of their batteries. For this reason, the subjects fmclithium and FMCLithium's batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given KNOWLEDGE states that lithium batteries currently have the longest lifespan of all available deep-cycle batteries. It also mentions that the typical lifespan of a lithium-ion battery is around two to three years or 300 to 500 charge cycles. However, it does not mention anything about FMCLithium's batteries specifically. Therefore, we cannot conclude that FMCLithium's batteries have a long lifespan based on the given KNOWLEDGE.\n\nStatement: FMCLithium's batteries have a long lifespan.\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications.",
+            "atomic_fact": "The company's batteries are an ideal choice for many applications.",
+            "self_contained_atomic_fact": "FMCLithium's batteries are an ideal choice for many applications.",
+            "relevance_data": {
+                "atomic_fact": "The company's batteries are an ideal choice for many applications.",
+                "revised_fact": "The subject in the statement \"The company's batteries are an ideal choice for many applications\" is \"the company's batteries\". This is a reference to an unknown entity, since it is unclear which company's batteries are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to FMCLithium's batteries. Thus, \"the company's batteries\" is a vague reference that should be replaced by \"FMCLithium's batteries\". Thus, the revised response is:\n```\nFMCLithium's batteries are an ideal choice for many applications.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is FMCLithium's batteries. The phrase \"The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications\" from the RESPONSE shows that the relationship between FMCLithium and its batteries is that the batteries are an ideal choice for many applications. For this reason, the subjects FMCLithium and FMCLithium's batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge points do not provide any information about FMCLithium's batteries or their suitability for various applications. Therefore, we cannot determine whether the statement is supported or not supported based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+            "atomic_fact": "FMCLithium produces lithium-ion batteries.",
+            "self_contained_atomic_fact": "FMCLithium produces lithium-ion batteries.",
+            "relevance_data": {
+                "atomic_fact": "FMCLithium produces lithium-ion batteries.",
+                "revised_fact": "The subject of the statement \"FMCLithium produces lithium-ion batteries\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium-ion batteries.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge mentions TRU Group Inc's capability to engineer the production of battery grade lithium chemicals from brines or minerals. It also mentions their collaboration with major research institutes and universities. However, there is no explicit mention of FMCLithium producing lithium-ion batteries in the given knowledge. Therefore, we cannot conclude that FMCLithium produces lithium-ion batteries based on the given knowledge.\n\nStatement: FMCLithium produces lithium-ion batteries.\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+            "atomic_fact": "FMCLithium produces lithium salts.",
+            "self_contained_atomic_fact": "FMCLithium produces lithium salts.",
+            "relevance_data": {
+                "atomic_fact": "FMCLithium produces lithium salts.",
+                "revised_fact": "The subject in the statement \"FMCLithium produces lithium salts\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium salts.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts\" from the RESPONSE shows that the relationship between FMCLithium and lithium salts is that FMCLithium produces lithium salts. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided includes information about FMC Lithium's involvement in the production and refining of lithium resources. It mentions their production capacity of lithium carbonate and lithium chloride, as well as their acquisition of a lithium business. However, there is no explicit mention of FMC Lithium producing lithium salts. \n\nTherefore, the statement is not directly supported by the knowledge provided.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+            "atomic_fact": "Lithium salts are used in the production of lubricants.",
+            "self_contained_atomic_fact": "Lithium salts are used in the production of lubricants.",
+            "relevance_data": {
+                "atomic_fact": "Lithium salts are used in the production of lubricants.",
+                "revised_fact": "The subject in the statement \"Lithium salts are used in the production of lubricants\" is \"Lithium salts\". \"Lithium salts\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Lithium salts\" is not further specified in the RESPONSE, so we can assume that it is a specific entity. Therefore \"Lithium salts\" is not a vague reference. Thus, the revised statement is:\n```\nLithium salts are used in the production of lubricants.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products\" from the RESPONSE shows that the relationship between FMCLithium and lithium salts is that FMCLithium produces lithium salts. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge repeatedly mentions the use of lithium salts in the production of lubricants. It states that suitable oils can be treated with lithium salts to produce lubricants, and that lithium soaps are used as lubricant components. It also mentions patents and references to support this information. Based on this information, it can be concluded that lithium salts are indeed used in the production of lubricants.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+            "atomic_fact": "Lithium salts are used in the production of inks.",
+            "self_contained_atomic_fact": "The lithium salts produced by FMCLithium are used in the production of inks.",
+            "relevance_data": {
+                "atomic_fact": "Lithium salts are used in the production of inks.",
+                "revised_fact": "The subject in the statement \"Lithium salts are used in the production of inks\" is \"Lithium salts\". This is a reference to an unknown entity, since it is unclear what specific lithium salts are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the lithium salts produced by FMCLithium. Thus, \"Lithium salts\" is a vague reference that should be replaced by \"the lithium salts produced by FMCLithium\". Thus, the revised response is:\n```\nThe lithium salts produced by FMCLithium are used in the production of inks.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products\" from the RESPONSE shows that the relationship between FMCLithium and lithium salts is that FMCLithium produces lithium salts, and these salts are used in the production of inks. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about FMCLithium or its production of lithium salts. Therefore, we cannot determine whether the statement is supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products.",
+            "atomic_fact": "Lithium salts are used in the production of other industrial products.",
+            "self_contained_atomic_fact": "FMCLithium produces lithium salts, which are used in the production of other industrial products.",
+            "relevance_data": {
+                "atomic_fact": "Lithium salts are used in the production of other industrial products.",
+                "revised_fact": "The subject of the statement \"Lithium salts are used in the production of other industrial products\" is \"Lithium salts\". This is a vague reference since it is not specified in the response what \"Lithium salts\" is referring to. From the response, we can see that \"FMCLithium\" is a chemical company that produces lithium salts. Therefore, \"Lithium salts\" should be replaced by \"FMCLithium\". Thus, the revised statement is:\n\n```\nFMCLithium produces lithium salts, which are used in the production of other industrial products.\n```",
+                "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products\" from the RESPONSE shows that FMCLithium produces lithium salts, which are used in the production of other industrial products. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge states that FMC Lithium has a lithium extraction plant and produces lithium salts. It also mentions that FMC Corporation is a diversified chemical company serving industrial purposes. Based on this information, it can be inferred that FMC Lithium produces lithium salts for industrial use.\n\nSupporting Evidence:\n- The knowledge mentions that FMC Lithium has a production capacity of 75,000 t/year Li2CO3 and 10,500 t/year LiCl, which indicates that they produce lithium salts.\n- The knowledge also states that FMC Corporation is a diversified chemical company serving industrial purposes.\n\nRestated Statement:\nFMC Lithium produces lithium salts for industrial use.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "FMCLithium is a chemical company.",
+            "revised_fact": "The subject in the statement \"FMCLithium is a chemical company\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium is a chemical company.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is also FMCLithium. The STATEMENT directly states that FMCLithium is a chemical company, which aligns with the subject of the QUESTION. Therefore, the subjects FMCLithium and FMCLithium are [Foo]."
+        },
+        {
+            "atomic_fact": "FMCLithium is based in the United States.",
+            "revised_fact": "The subject in the statement \"FMCLithium is based in the United States\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium is based in the United States.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is the location of FMCLithium, which is the United States. The phrase \"FMCLithium is a chemical company based in the United States\" from the RESPONSE shows that the relationship between FMCLithium and the United States is that FMCLithium is based in the United States. For this reason, the subjects FMCLithium and the United States are [Foo]."
+        },
+        {
+            "atomic_fact": "FMCLithium specializes in producing lithium-based products.",
+            "revised_fact": "The subject of the statement \"FMCLithium specializes in producing lithium-based products\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium specializes in producing lithium-based products.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-based products. The RESPONSE states that FMCLithium specializes in producing lithium-based products, which directly matches the subject of the STATEMENT. Therefore, the subjects FMCLithium and lithium-based products are [Foo]."
+        },
+        {
+            "atomic_fact": "FMCLithium produces lithium-based products for a variety of industries.",
+            "revised_fact": "The subject in the statement \"FMCLithium produces lithium-based products for a variety of industries\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium-based products for a variety of industries.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-based products for a variety of industries. The RESPONSE states that FMCLithium specializes in producing lithium-based products for a variety of industries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" shows that the relationship between FMCLithium and lithium-based products is that FMCLithium produces these products. For this reason, the subjects FMCLithium and lithium-based products are [Foo]."
+        },
+        {
+            "atomic_fact": "The company was founded in 2012.",
+            "revised_fact": "The subject of the statement \"The company was founded in 2012\" is \"The company\". From the response, we can see that \"The company\" is referring to \"FMCLithium\". Therefore, \"The company\" is a vague reference that should be replaced by \"FMCLithium\". Thus, the revised response is:\n\n```\nFMCLithium was founded in 2012.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is the founding year of FMCLithium, which is 2012. The RESPONSE contains the phrase \"The company was founded in 2012,\" which directly states that FMCLithium was founded in 2012. Therefore, the subjects FMCLithium and the founding year of FMCLithium are [Foo]."
+        },
+        {
+            "atomic_fact": "The company has become a leading producer.",
+            "revised_fact": "The subject of the statement \"The company has become a leading producer\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to FMCLithium, which is a chemical company specializing in producing lithium-based products. Therefore, \"The company\" should be replaced by \"FMCLithium\". Thus, the revised statement is:\n\n```\nFMCLithium has become a leading producer.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is FMCLithium. The phrase \"The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products\" from the RESPONSE shows that FMCLithium has become a leading producer. For this reason, the subjects FMCLithium and FMCLithium are [Foo]."
+        },
+        {
+            "atomic_fact": "The company produces lithium-ion batteries.",
+            "revised_fact": "The subject of the statement \"The company produces lithium-ion batteries\" is \"The company\". \"The company\" is a vague reference that should be replaced by \"FMCLithium\" since it is the specific company mentioned in the response. Thus, the revised statement is:\n\n```\nFMCLithium produces lithium-ion batteries.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "The company produces lithium salts.",
+            "revised_fact": "The subject in the statement \"The company produces lithium salts\" is \"The company\". From the response, we can see that \"The company\" refers to \"FMCLithium\". Therefore, \"The company\" is a non-full name that should be replaced by \"FMCLithium\". Thus, the revised statement is:\n```\nFMCLithium produces lithium salts.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts\" from the RESPONSE shows that FMCLithium is the producer of lithium salts. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+        },
+        {
+            "atomic_fact": "The company produces other lithium-based products.",
+            "revised_fact": "The subject in the statement \"The company produces other lithium-based products\" is \"The company\". From the response, we can see that \"The company\" refers to \"FMCLithium\". Therefore, \"The company\" is a vague reference that should be replaced by \"FMCLithium\". Thus, the revised statement is:\n```\nFMCLithium produces other lithium-based products.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is other lithium-based products. The phrase \"The company was founded in 2012 and has since become a leading producer of lithium-ion batteries, lithium salts, and other lithium-based products\" from the RESPONSE shows that FMCLithium produces other lithium-based products. For this reason, the subjects FMCLithium and other lithium-based products are [Foo]."
+        },
+        {
+            "atomic_fact": "FMCLithium produces lithium-ion batteries.",
+            "revised_fact": "The subject of the statement \"FMCLithium produces lithium-ion batteries\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium-ion batteries.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "Lithium-ion batteries are used in electronic devices.",
+            "revised_fact": "The subject of the statement \"Lithium-ion batteries are used in electronic devices\" is \"Lithium-ion batteries\". This is not a vague reference as it directly refers to a specific entity mentioned in the response. Therefore, the revised statement is:\n```\nLithium-ion batteries are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "Electronic devices include smartphones, laptops, and electric vehicles.",
+            "revised_fact": "The subject in the statement \"Electronic devices include smartphones, laptops, and electric vehicles\" is \"Electronic devices\". This is a reference to a category of devices and does not specify any particular entity. From the RESPONSE, we can see that the statement is referring to the products produced by FMCLithium, specifically lithium-ion batteries. Therefore, \"Electronic devices\" is a vague reference that should be replaced by \"Lithium-ion batteries produced by FMCLithium.\" Thus, the revised statement is:\n```\nLithium-ion batteries produced by FMCLithium include smartphones, laptops, and electric vehicles.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries produced by FMCLithium. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries, which are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries that are used in smartphones, laptops, and electric vehicles. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's batteries have high energy density.",
+            "revised_fact": "The subject of the statement \"The company's batteries have high energy density\" is \"the company's batteries\". This is a reference to an unknown entity, since it is unclear which company's batteries are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to FMCLithium's batteries. Thus, \"the company's batteries\" is a vague reference that should be replaced by \"FMCLithium's batteries\". Thus, the revised response is:\n```\nFMCLithium's batteries have high energy density.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is FMCLithium's batteries. The phrase \"The company's batteries are known for their high energy density\" from the RESPONSE shows that the relationship between FMCLithium and FMCLithium's batteries is that FMCLithium's batteries have high energy density. For this reason, the subjects FMCLithium and FMCLithium's batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's batteries have a long lifespan.",
+            "revised_fact": "The subject of the statement \"The company's batteries have a long lifespan\" is \"The company's batteries\". This is a reference to an unknown entity, since it is unclear which company's batteries are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to FMCLithium's batteries. Thus, \"The company's batteries\" is a vague reference that should be replaced by \"FMCLithium's batteries\". Thus, the revised response is:\n```\nFMCLithium's batteries have a long lifespan.\n```",
+            "is_relevant": "The subject of the QUESTION is fmclithium. The subject of the STATEMENT is FMCLithium's batteries. The phrase \"The company's batteries are known for their high energy density and long lifespan\" from the RESPONSE explains the relationship between FMCLithium and the long lifespan of their batteries. For this reason, the subjects fmclithium and FMCLithium's batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's batteries are an ideal choice for many applications.",
+            "revised_fact": "The subject in the statement \"The company's batteries are an ideal choice for many applications\" is \"the company's batteries\". This is a reference to an unknown entity, since it is unclear which company's batteries are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to FMCLithium's batteries. Thus, \"the company's batteries\" is a vague reference that should be replaced by \"FMCLithium's batteries\". Thus, the revised response is:\n```\nFMCLithium's batteries are an ideal choice for many applications.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is FMCLithium's batteries. The phrase \"The company's batteries are known for their high energy density and long lifespan, making them an ideal choice for many applications\" from the RESPONSE shows that the relationship between FMCLithium and its batteries is that the batteries are an ideal choice for many applications. For this reason, the subjects FMCLithium and FMCLithium's batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "FMCLithium produces lithium-ion batteries.",
+            "revised_fact": "The subject of the statement \"FMCLithium produces lithium-ion batteries\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium-ion batteries.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium-ion batteries. The phrase \"One of the key products produced by FMCLithium is lithium-ion batteries\" from the RESPONSE shows that the relationship between FMCLithium and lithium-ion batteries is that FMCLithium produces lithium-ion batteries. For this reason, the subjects FMCLithium and lithium-ion batteries are [Foo]."
+        },
+        {
+            "atomic_fact": "FMCLithium produces lithium salts.",
+            "revised_fact": "The subject in the statement \"FMCLithium produces lithium salts\" is \"FMCLithium\". \"FMCLithium\" is not a pronoun and does not reference an unknown entity. Furthermore, \"FMCLithium\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"FMCLithium\" is not a vague reference. Thus, the revised statement is:\n```\nFMCLithium produces lithium salts.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts\" from the RESPONSE shows that the relationship between FMCLithium and lithium salts is that FMCLithium produces lithium salts. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+        },
+        {
+            "atomic_fact": "Lithium salts are used in the production of lubricants.",
+            "revised_fact": "The subject in the statement \"Lithium salts are used in the production of lubricants\" is \"Lithium salts\". \"Lithium salts\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Lithium salts\" is not further specified in the RESPONSE, so we can assume that it is a specific entity. Therefore \"Lithium salts\" is not a vague reference. Thus, the revised statement is:\n```\nLithium salts are used in the production of lubricants.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products\" from the RESPONSE shows that the relationship between FMCLithium and lithium salts is that FMCLithium produces lithium salts. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+        },
+        {
+            "atomic_fact": "Lithium salts are used in the production of inks.",
+            "revised_fact": "The subject in the statement \"Lithium salts are used in the production of inks\" is \"Lithium salts\". This is a reference to an unknown entity, since it is unclear what specific lithium salts are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the lithium salts produced by FMCLithium. Thus, \"Lithium salts\" is a vague reference that should be replaced by \"the lithium salts produced by FMCLithium\". Thus, the revised response is:\n```\nThe lithium salts produced by FMCLithium are used in the production of inks.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products\" from the RESPONSE shows that the relationship between FMCLithium and lithium salts is that FMCLithium produces lithium salts, and these salts are used in the production of inks. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+        },
+        {
+            "atomic_fact": "Lithium salts are used in the production of other industrial products.",
+            "revised_fact": "The subject of the statement \"Lithium salts are used in the production of other industrial products\" is \"Lithium salts\". This is a vague reference since it is not specified in the response what \"Lithium salts\" is referring to. From the response, we can see that \"FMCLithium\" is a chemical company that produces lithium salts. Therefore, \"Lithium salts\" should be replaced by \"FMCLithium\". Thus, the revised statement is:\n\n```\nFMCLithium produces lithium salts, which are used in the production of other industrial products.\n```",
+            "is_relevant": "The subject of the QUESTION is FMCLithium. The subject of the STATEMENT is lithium salts. The phrase \"In addition to lithium-ion batteries, FMCLithium also produces lithium salts, which are used in the production of lubricants, inks, and other industrial products\" from the RESPONSE shows that FMCLithium produces lithium salts, which are used in the production of other industrial products. For this reason, the subjects FMCLithium and lithium salts are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" AND \"chemical company\"",
+                    "result": "... FMC Lithium. About FMC FMC Corporation is a diversified chemical company serving agricultural, industrial, environmental, and consumer ... ... FMC's lithium business in the second half of 2018 ... FMC Lithium, has been named ... Chemical Company , Rohm and Haas Company and the Boston Consulting Group . FMC Lithium, a division of FMC Corporation, a $3.3 billion chemical company ... FMC Lithium's deep understanding of both the cathode and anode technologies ..."
+                },
+                {
+                    "query": "FMCLithium is a chemical company.",
+                    "result": "TRU Group Lithium & Brine Team members 2022, with over 150 person-years of experience at all the lithium Big-3 brine majors - SQM, FMC, Chemetall and China ... FMC Corporation (NYSE: FMC) today announced that it will rebrand its lithium materials business as Livent Corporation (pronounced lye - vent ) ... The company acquires Lithium Corp. of America, world's largest producer of lithium, used in batteries, pharmaceuticals, lubricants, high-strength plastics and ..."
+                },
+                {
+                    "query": "FMCLithium is a chemical company.",
+                    "result": "TRU Group Lithium & Brine Team members 2022, with over 150 person-years of experience at all the lithium Big-3 brine majors - SQM, FMC, Chemetall and China ... FMC Corporation (NYSE: FMC) today announced that it will rebrand its lithium materials business as Livent Corporation (pronounced lye - vent ) ... The company acquires Lithium Corp. of America, world's largest producer of lithium, used in batteries, pharmaceuticals, lubricants, high-strength plastics and ..."
+                },
+                {
+                    "query": "FMC Lithium is a chemical company",
+                    "result": "TRU Group Lithium & Brine Team members 2022, with over 150 person-years of experience at all the lithium Big-3 brine majors - SQM, FMC, Chemetall and China ... FMC Corporation (NYSE: FMC) today announced that it will rebrand its lithium materials business as Livent Corporation (pronounced lye - vent ) ... The company acquires Lithium Corp. of America, world's largest producer of lithium, used in batteries, pharmaceuticals, lubricants, high-strength plastics and ..."
+                },
+                {
+                    "query": "Is FMC Lithium a chemical company?",
+                    "result": "TRU Group Lithium & Brine Team members 2022, with over 150 person-years of experience at all the lithium Big-3 brine majors - SQM, FMC, Chemetall and China ... The company acquires Lithium Corp. of America, world's largest producer of lithium, used in batteries, pharmaceuticals, lubricants, high-strength plastics and ... FMC Corporation (NYSE: FMC) today announced that it will rebrand its lithium materials business as Livent Corporation (pronounced lye - vent ) ... Missing: chemical | Show results with:chemical."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium location\"",
+                    "result": "... FMC Lithium Location: Salar del Hombre Muerto, Salta, Argentina Read more \u2192 \u00b7 \u00b7 Tecpetrol Location: - Read more \u2192 \u00b7 \u00b7 Goldrock Mines Corp. Location ..."
+                },
+                {
+                    "query": "FMCLithium headquarters location",
+                    "result": "Philadelphia: City in Pennsylvania. Philadelphia, Pennsylvania\u2019s largest city, is notable for its rich history, on display at the Liberty Bell, Independence Hall (where the Declaration of Independence and Constitution were signed) and other American Revolutionary sites. Also iconic are the steps of the Philadelphia Museum of Art, immortalized by Sylvester Stallone\u2019s triumphant run in the film \"Rocky.\" APAC Regional Headquarters. 10 Marina Boulevard, #40-01 Marina Bay Financial Centre Tower 2 ; Corporate Headquarters. FMC Tower at Cira Centre South 2929 Walnut ... FMC Corporate Headquarters. 2929 Walnut Street Philadelphia, PA 19104. USA +1 215 299-6000 ; Media contact. Amie Leopold +1 215 299- ; Media contact (EMEA). Headquarters: Charlotte, North Carolina. Locations. 2801Yorkmont Rd. Charlotte, North Carolina 28208, US. Get directions. Employees at FMC Lithium Corp. Click ..."
+                },
+                {
+                    "query": "FMCLithium is based in the United States.",
+                    "result": "FMC Corporation (NYSE: FMC) today announced that it will rebrand its lithium materials business as Livent Corporation (pronounced lye - vent ) ... FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. Lithium Corporation of America was a mining company which mined lithium-bearing spodumene and pegmatite ores near Bessemer City, Gaston County, ..."
+                },
+                {
+                    "query": "FMC Lithium location",
+                    "result": "Contact An FMC Office \u00b7 APAC Regional Headquarters \u00b7 Corporate Headquarters \u00b7 EMEA Regional Headquarters \u00b7 LATAM Regional Headquarters. Avenida Dr. Jos\u00e9 ... FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers."
+                },
+                {
+                    "query": "FMC Lithium location",
+                    "result": "Contact An FMC Office \u00b7 APAC Regional Headquarters \u00b7 Corporate Headquarters \u00b7 EMEA Regional Headquarters \u00b7 LATAM Regional Headquarters. Avenida Dr. Jos\u00e9 ... FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" lithium-based products company",
+                    "result": "FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. ... business as Livent Corporation (pronounced lye-vent) following the previously announced plan to separate FMC Lithium into a publicly traded ... ... , vice president and global business director, FMC Lithium. \"Our manufacturing network is highly flexible, which allows us to increase."
+                },
+                {
+                    "query": "FMC Lithium specializes in producing lithium-based products.",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ... Missing: specializes | Show results with:specializes. Livent Corp ; Specialization, Production of various lithium products ; Foundation Year, Founded in the 1940s as Lithium Corporation of America."
+                },
+                {
+                    "query": "\"FMCLithium\" + \"specializes in producing lithium-based products\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium\" specializes in producing lithium-based products.",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... If stored energy is your business, talk to us \u2014 because in so many ways, the future of our world depends on it. Website: www.fmclithium.com \u00b7 SAEInternational ..."
+                },
+                {
+                    "query": "\"FMCLithium\" \"specializes in producing lithium-based products\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" lithium-based products for a variety of industries",
+                    "result": "... FMC Lithium. TRU Group has diverse BRINE TECHNOLOGY capability. Our brine projects and expertise encompass salars, salt-flats, salt-lakes, evaporated lakes ... To strengthen our position as a market-leading innovator, Livent opened a battery research lab in 2008 as part of FMC Lithium, allowing the lithium-ion battery ... Missing: based | Show results with:based. ... Lithium. Manufacturing of FMC Lithium products requires higher consumption of energy and results in higher generation of waste compared to other FMC products."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-based products industries",
+                    "result": "FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. ... FMC Lithium into a publicly traded company ... industrial and consumer markets with innovative solutions, applications and quality products. ... FMC Lithium. \"Our manufacturing network is ... \"We partner closely with leading manufacturers of lithium ion ... products. FMC acquired Cheminova ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-based products industries",
+                    "result": "FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. ... FMC Lithium into a publicly traded company ... industrial and consumer markets with innovative solutions, applications and quality products. ... FMC Lithium. \"Our manufacturing network is ... \"We partner closely with leading manufacturers of lithium ion ... products. FMC acquired Cheminova ..."
+                },
+                {
+                    "query": "FMCLithium produces lithium-based products for a variety of industries.",
+                    "result": "Importantly our team includes strong potash, boron / borates, iodine, bromine, magnesium and fertilizer capability usually lithium production coproducts. TRU ... \"FMC has been a leading producer of lithium compounds for more than 40 years,\" said Paul Graves , chief executive officer, Livent Corporation . FMC Corporation acquired the lithium business in 1985. ... Our 80 years of experience producing superior quality lithium products ... ion battery industry to test ... Missing: based | Show results with:based."
+                },
+                {
+                    "query": "lithium-based products FMCLithium",
+                    "result": "TRU Group has in depth state-of-the art engineering capability in extracting valuable brine-based chemicals such as lithium, magnesium, potassium, bromine, ... FMC Corporation (NYSE: FMC) today announced that it will rebrand its lithium materials business as Livent Corporation (pronounced lye - vent ) ... FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" founded in 2012",
+                    "result": "We supply various grades of lithium carbonate, hydroxide and various forms of metal for our customers' needs. In addition, FMC Lithium is the only lithium ... PRNewswire/ -- FMC Lithium announced today that effective November 1, 2012, or as contracts permit, it will increase global pricing for n-butyllithium and. it was initially designed to produce about 12,000 t/yr of lithium carbonate and about 5,500 t/yr of lithium chloride. in. 2012, FmC's lithium carbonate ..."
+                },
+                {
+                    "query": "\"FMCLithium\" founding date",
+                    "result": "History. Discovery \u00b7 Johan August Arfwedson (1817) ... History. Johan August Arfwedson is credited with the ... www.fmclithium.com. Archived from the original ... Missing: date | Show results with:date. The Registrant hereby amends this registration statement on such date or dates ... history as of the termination date). For purposes ... fmclithium.com to a website ... The Registrant hereby amends this registration statement on such date or dates ... history as of the termination date). For purposes ... fmclithium.com (among ..."
+                },
+                {
+                    "query": "FMCLithium was founded in 2012.",
+                    "result": "FMC develops new lithium resource in Argentina. The company forms agricultural products joint venture in China, and energy equipment joint ventures in Russia ... Missing: 2012. | Show results with:2012.. With respect to raw materials, we have the longest history in supplying into the lithium-ion battery industry. We supply various grades of lithium carbonate ... Founded in 1883 as the Bean Spray Pump Company in Los Gatos, California ; FMC was awarded a contract to design and build amphibious tracked landing vehicles ; In ..."
+                },
+                {
+                    "query": "FMCLithium was founded in 2012.",
+                    "result": "FMC develops new lithium resource in Argentina. The company forms agricultural products joint venture in China, and energy equipment joint ventures in Russia ... Missing: 2012. | Show results with:2012.. FMC Lithium, a division of FMC Corporation ... With respect to raw materials, we have the longest history in supplying into the lithium-ion ... The company was incorporated under Delaware law in 1928 under the name John Bean Manufacturing Company. What are most recent splits in the FMC stock?"
+                },
+                {
+                    "query": "FMCLithium was founded in 2012.",
+                    "result": "FMC develops new lithium resource in Argentina. The company forms agricultural products joint venture in China, and energy equipment joint ventures in Russia ... Missing: 2012. | Show results with:2012.. FMC Lithium, a division of FMC Corporation ... With respect to raw materials, we have the longest history in supplying into the lithium-ion ... The company was incorporated under Delaware law in 1928 under the name John Bean Manufacturing Company. What are most recent splits in the FMC stock?"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "FMCLithium \"leading producer\"",
+                    "result": "FMC Corporation (NYSE: FMC) today announced that it will rebrand its lithium ... \"FMC has been a leading producer of lithium compounds for more ... Established in 2000, Ganfeng is the third-largest lithium compound producer in the world and the leading producer in China. The company is ... \"FMC has been a leading producer of lithium compounds for more than 40 years,\" said Paul Graves, chief executive officer, Livent Corporation."
+                },
+                {
+                    "query": "\"FMCLithium\" leading producer of lithium compounds",
+                    "result": "Our lithium expertise covers production and refining of lithium resources such as evaporation ponds, brines, spodumene mining: lithium basic chemicals - ... http://www.fmclithium.com. GENERAL SOURCES OF INFORMATION. U.S. Geological Survey Publications. Lithium. Ch. in mineral Commodity Summaries, annual. Lithium. Chile has been the world's leading producer of lithium ... producing downstream lithium compounds in Kings Mountain, ... http://www.fmclithium.com. GENERAL SOURCES ..."
+                },
+                {
+                    "query": "\"FMCLithium\" leading producer lithium compounds",
+                    "result": "Our lithium expertise covers production and refining of lithium resources such as evaporation ponds, brines, spodumene mining: lithium basic chemicals - ... http://www.fmclithium.com. GENERAL SOURCES OF INFORMATION. U.S. Geological Survey Publications. Lithium. Ch. in mineral Commodity Summaries, annual. Lithium. Chile has been the world's leading producer of lithium ... producing downstream lithium compounds in Kings Mountain, ... http://www.fmclithium.com. GENERAL SOURCES ..."
+                },
+                {
+                    "query": "FMCLithium leading producer lithium compounds",
+                    "result": "Our lithium expertise covers production and refining of lithium resources such as evaporation ponds, brines, spodumene mining: lithium basic chemicals - ... \"FMC has been a leading producer of lithium compounds for more than 40 years,\" said Paul Graves , chief executive officer, Livent Corporation . \"FMC has been a leading producer of lithium compounds for more than 40 years,\" said Paul Graves, chief executive officer, Livent Corporation."
+                },
+                {
+                    "query": "\"FMCLithium\" leading producer of lithium compounds",
+                    "result": "Our lithium expertise covers production and refining of lithium resources such as evaporation ponds, brines, spodumene mining: lithium basic chemicals - ... http://www.fmclithium.com. GENERAL SOURCES OF INFORMATION. U.S. Geological Survey Publications. Lithium. Ch. in mineral Commodity Summaries, annual. Lithium. Chile has been the world's leading producer of lithium ... producing downstream lithium compounds in Kings Mountain, ... http://www.fmclithium.com. GENERAL SOURCES ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" AND \"lithium-ion batteries\" site:wikipedia.org",
+                    "result": "... lithium-ion batteries, which are very important in renewable energy ... As part of the \"Proyecto F\u00e9nix\", the company Arcadium Lithium (before 2018 FMC Lithium ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-ion batteries production",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... \u2022 Educating industry in safe handling of SLMP (http://fmclithium.com). \u2022 Collaborating with major research institutes and universities. If stored energy is your business, talk to us \u2014 because in so many ways, the future of our world depends on it. Website: www.fmclithium.com \u00b7 SAEInternational ..."
+                },
+                {
+                    "query": "\"FMCLithium\" AND \"lithium-ion batteries\" -site:fmclithium.com",
+                    "result": "Among various secondary batteries, lithium-ion batteries ... However, the present lithium ion batteries are ... Website: www.fmclithium.com \u00b7 SAEInternational-Web ... Worldwide, rechargeable lithium batteries power more than 60% of cellular telephones and 90% of laptop computers (FmC Corp., 2005\u00a7). Lithium-ion batteries were ... ... lithium ion batteries (CALIB). The CALIB ... 30 g of stabilized lithium metal powder (SLMP\u00ae, FMCLithium Corp.) ... Method of producing prelithiated anodes for ..."
+                },
+                {
+                    "query": "FMCLithium produces lithium-ion batteries.",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ... FMC Corporation acquired the lithium business in 1985. In 1991, we began supplying Sony Electronics the lithium raw material for its first lithium-ion batteries ..."
+                },
+                {
+                    "query": "FMCLithium produces lithium-ion batteries.",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ... FMC Corporation acquired the lithium business in 1985. In 1991, we began supplying Sony Electronics the lithium raw material for its first lithium-ion batteries ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" AND \"lithium salts\" production site",
+                    "result": "... lithium salts including lithium hydroxide ... Information is available at fmclithium.com. ... We use cookies to help give you the best experience on ... Missing: production | Show results with:production. ... lithium salts give a bright red color to flame. ... Production. See also: List of countries by lithium production. Lithium mine production ... www.fmclithium.com. the lithium hydroxide facility expanded an existing Rockwood site that produced lithium salts and lithium metal for primary. (nonrechargeable) batteries ..."
+                },
+                {
+                    "query": "\"FMCLithium lithium salts production\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "site:fmclithium.com lithium salts production",
+                    "result": "Our lithium expertise covers production and refining of lithium resources such as evaporation ponds, brines, spodumene mining: lithium basic chemicals - lithium ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium salts production site",
+                    "result": "FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. Client: FMC Lithium Location: Salar del Hombre Muerto, Salta, Argentina Industry: Lithium. Complete conceptual and basic engineering for low ... FMC's lithium extraction plant efforts began when they purchased Lithium Corporation of America (LITHCOA) in the early 1980s. LITHCOA's ..."
+                },
+                {
+                    "query": "FMCLithium lithium salts production",
+                    "result": "Our lithium expertise covers production and refining of lithium resources such as evaporation ponds, brines, spodumene mining: lithium basic chemicals - lithium ... We produce lithium hydroxide for the manufacture of lithium greases, dyes, resins and many specialty applications. Our products are also key to the production ... Missing: salts | Show results with:salts. The plant was finished and started up in 1998, consistently producing 99.5% pure lithium carbonate from the beginning. In 1998, FMC's plant at ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" lithium-based products",
+                    "result": "FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. ... FMC Lithium into a publicly traded company ... lithium compounds that are helping meet the growing demand for lithium. ... based on information ... ... FMC Lithium. \"Our manufacturing network is ... \"We partner closely with leading manufacturers of lithium ion ... products. FMC acquired Cheminova ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-based products -\"FMC Lithium\" -\"FMC Lithium Salar del Hombre Muerto\"",
+                    "result": "http://www.fmclithium.com. GENERAL SOURCES OF INFORMATION. U.S. Geological Survey Publications. Lithium. Ch. in mineral Commodity Summaries, annual. Lithium. ^ \"Fmclithium.com\" (PDF). www.fmclithium.com. Archived from the original (PDF) on 7 September 2014. ^ Clark, Jim (2005). \"Some Compounds of the Group 1 ..."
+                },
+                {
+                    "query": "site:fmclithium.com other lithium-based products",
+                    "result": "Importantly our team includes strong potash, boron / borates, iodine, bromine, magnesium and fertilizer capability usually lithium production coproducts. TRU ..."
+                },
+                {
+                    "query": "\"FMCLithium produces other lithium-based products\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium produces other lithium-based products.\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" AND \"lithium-ion batteries\"",
+                    "result": "... lithium-ion batteries - like li-ion cells, lithium batteries, compounds ... LITHIUM-ION BATTERIES Battery Design \u2022 Materials \u2022 Parts \u2022 Components \u2022 Plants ... Among various secondary batteries, lithium-ion batteries ... However, the present lithium ion batteries are ... Website: www.fmclithium.com \u00b7 SAEInternational-Web ..."
+                },
+                {
+                    "query": "FMCLithium lithium-ion batteries production",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... A single cell lithium ion battery pouch was produced from the SLMP imbedded anode. A baseline cell without SLMP was produced from the same lot of graphite / Cu ... FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ..."
+                },
+                {
+                    "query": "\"FMCLithium\" AND \"lithium-ion batteries\" production site OR facility OR plant",
+                    "result": "... manufacturing, engineering, refining and purification. We have worked extensively in lithium-ion batteries - like li-ion cells, lithium batteries, compounds ... Worldwide, rechargeable lithium batteries power more than 60% of cellular telephones and 90% of laptop computers (FmC Corp., 2005\u00a7). Lithium-ion batteries were ... Lithium-ion batteries gained new momentum in recent years, and lithium production expanded during the past decade. The battery and extractive industries ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-ion batteries production",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... \u2022 Educating industry in safe handling of SLMP (http://fmclithium.com). \u2022 Collaborating with major research institutes and universities. If stored energy is your business, talk to us \u2014 because in so many ways, the future of our world depends on it. Website: www.fmclithium.com \u00b7 SAEInternational ..."
+                },
+                {
+                    "query": "FMCLithium produces lithium-ion batteries.",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ... FMC Corporation acquired the lithium business in 1985. In 1991, we began supplying Sony Electronics the lithium raw material for its first lithium-ion batteries ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "query: \"types of batteries used in smartphones, laptops, and electric vehicles\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Lithium-ion batteries\" usage in \"electronic devices\" statistics or trends",
+                    "result": "... electronic devices is driving the demand for lithium-ion batteries. Consumers are demanding devices with longer battery life and faster ... Additionally, the growing popularity of portable electronic devices ... These companies use Lithium-Ion Batteries in ... Lithium-ion Battery Pack ... Lithium-ion batteries have emerged as the preferred choice for portable electronic devices, electric vehicles (EVs), and renewable energy ..."
+                },
+                {
+                    "query": "Lithium-ion batteries usage in electronic devices",
+                    "result": "#1 \u2013 Bluetooth Headsets and Headphones. Many brands of Bluetooth headsets and headphones use lithium-ion batteries. \u00b7 #2 \u2013 Cell Phones \u00b7 #3 \u2013 ... One notable example is lithium-ion batteries, which are used in a wide range of electronic devices, from smartphones to laptops. Another type, ... Lithium-Ion batteries are rechargeable and are used in vaping devices, many personal electronics such as cell phones, tablets, and laptops, E-Bikes, electric ..."
+                },
+                {
+                    "query": "\"lithium-ion batteries\" usage in electronic devices",
+                    "result": "#1 \u2013 Bluetooth Headsets and Headphones. Many brands of Bluetooth headsets and headphones use lithium-ion batteries. \u00b7 #2 \u2013 Cell Phones \u00b7 #3 \u2013 ... One notable example is lithium-ion batteries, which are used in a wide range of electronic devices, from smartphones to laptops. Another type, ... ... devices and security systems. Lithium-Ion batteries are rechargeable and are used in vaping devices, many personal electronics such as cell phones, tablets ..."
+                },
+                {
+                    "query": "Lithium-ion batteries are used in a wide range of electronic devices, including smartphones, laptops, and electric vehicles.",
+                    "result": "Lithium-ion batteries are currently used in most portable consumer electronics such as cell phones and laptops because of their high energy per unit mass and ... One notable example is lithium-ion batteries, which are used in a wide range of electronic devices, from smartphones to laptops. Another ... Lithium-ion batteries have an unprecedented range. They can be used in electronics, toys, wireless headphones, handheld power tools, small and large appliances, ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "`\n\"FMCLithium\" AND \"lithium-ion batteries\" AND \"smartphones\" AND \"laptops\" AND \"electric vehicles\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "Lithium-ion batteries produced by FMCLithium smartphones, laptops, and electric vehicles",
+                    "result": "The ubiquity of smartphones, laptops, and other portable electronic devices relies heavily on lithium-ion batteries. As the global population ... Lithium is witnessing an increase in demand from the production of electric vehicles (EVs). The production of EVs is gaining momentum globally ... These batteries power a wide array of devices, from smartphones and laptops to electric vehicles (EVs), showcasing lithium's versatility and ..."
+                },
+                {
+                    "query": "Lithium-ion batteries produced by FMCLithium",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ... Background. SLMP Technology was developed by FMC Lithium and provides an independent source of lithium for increasing the energy density of lithium ion ..."
+                },
+                {
+                    "query": "Lithium-ion batteries produced by FMCLithium include smartphones, laptops, and electric vehicles.",
+                    "result": "Lithium-ion batteries power the lives of millions of people each day. From laptops and cell phones to hybrids and electric cars, ... Missing: FMCLithium | Show results with:FMCLithium. Amnesty International and Afrewatch are calling on multinational companies who use lithium-ion batteries in their products to conduct human ... Missing: FMCLithium laptops,. Today, lithium-ion batteries can be found in everything from electric vehicles to the cell phone in your pocket. These rechargeable batteries can store ... Missing: FMCLithium | Show results with:FMCLithium."
+                },
+                {
+                    "query": "Lithium-ion batteries produced by FMCLithium include smartphones, laptops, and electric vehicles.",
+                    "result": "Lithium-ion batteries power the lives of millions of people each day. From laptops and cell phones to hybrids and electric cars, ... Missing: FMCLithium | Show results with:FMCLithium. Amnesty International and Afrewatch are calling on multinational companies who use lithium-ion batteries in their products to conduct human ... Missing: FMCLithium laptops,. Today, lithium-ion batteries can be found in everything from electric vehicles to the cell phone in your pocket. These rechargeable batteries can store ... Missing: FMCLithium | Show results with:FMCLithium."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium batteries\" energy density",
+                    "result": "... electric vehicles [PHEV]. According to FMC, Lithium batteries are preferred worldwide for their unique properties and performance. Over 60 ..."
+                },
+                {
+                    "query": "FMCLithium batteries energy density",
+                    "result": "SLMP can be used with current battery chemistries to compensate for anode first cycle inefficiencies resulting in improvements in energy density of up to 30%. Lithium cobalt oxide batteries have a high energy density of 150-200 Wh/kg. Their cathode is made up of cobalt oxide with the typical carbon ... Missing: FMC | Show results with:FMC. Six manufacturing facilities in six countries. FMC Lithium is all about energy. ... energy density by 10% to 50%, improving calendar life ... Li-ion ..."
+                },
+                {
+                    "query": "FMCLithium's batteries energy density",
+                    "result": "SLMP can be used with current battery chemistries to compensate for anode first cycle inefficiencies resulting in improvements in energy density of up to 30%. Lithium cobalt oxide batteries have a high energy density of 150-200 Wh/kg. Their cathode is made up of cobalt oxide with the typical carbon ... Missing: FMC | Show results with:FMC. NiMH batteries offer proven performance, reasonable energy density, and thermal stability. They are also large, heavy, and expensive and require a long time to."
+                },
+                {
+                    "query": "FMCLithium batteries energy density",
+                    "result": "SLMP can be used with current battery chemistries to compensate for anode first cycle inefficiencies resulting in improvements in energy density of up to 30%. Lithium cobalt oxide batteries have a high energy density of 150-200 Wh/kg. Their cathode is made up of cobalt oxide with the typical carbon ... Missing: FMC | Show results with:FMC. Six manufacturing facilities in six countries. FMC Lithium is all about energy. ... energy density by 10% to 50%, improving calendar life ... Li-ion ..."
+                },
+                {
+                    "query": "\"FMCLithium batteries\" energy density",
+                    "result": "... electric vehicles [PHEV]. According to FMC, Lithium batteries are preferred worldwide for their unique properties and performance. Over 60 ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "+\"FMCLithium batteries\" lifespan",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium batteries lifespan\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "FMCLithium batteries lifespan research",
+                    "result": "Recent independent degradation tests of commercial lithium batteries prove - LFP chemistry is safer and has a longer life-span than NMC. Missing: FMC | Show results with:FMC. The as-fabricated Li-S battery exhibited a specific capacity of 1377 mAh g\u22121 at 0.5 C with retention of 49.7% after 200 cycles. Following this idea, Kaisar et ... However, Li metal foil is plagued with limited cycle life and safety concerns due to poor Coulombic efficiency and uncontrollable growth of Li dendrites. To ..."
+                },
+                {
+                    "query": "\"FMCLithium batteries\" lifespan",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "FMCLithium's batteries have a long lifespan.",
+                    "result": "Recent independent degradation tests of commercial lithium batteries prove - LFP chemistry is safer and has a longer life-span than NMC. Missing: FMC | Show results with:FMC. Like lead-acid batteries, for example. Lithium batteries currently have the longest lifespan of all available deep-cycle batteries. Many can last between 3,000 ... Missing: FMC | Show results with:FMC. The typical lifespan of a lithium-ion battery is around two to three years or 300 to 500 charge cycles. However, factors such as charging ... Missing: FMC | Show results with:FMC."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium batteries\" advantages and disadvantages",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium batteries\" + reviews and ratings",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Advantages of FMCLithium batteries for various applications\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium batteries\" advantages and disadvantages",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium batteries\" reliability OR performance OR applications",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" lithium-ion batteries production",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... \u2022 Educating industry in safe handling of SLMP (http://fmclithium.com). \u2022 Collaborating with major research institutes and universities. If stored energy is your business, talk to us \u2014 because in so many ways, the future of our world depends on it. Website: www.fmclithium.com \u00b7 SAEInternational ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-ion batteries production",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... \u2022 Educating industry in safe handling of SLMP (http://fmclithium.com). \u2022 Collaborating with major research institutes and universities. If stored energy is your business, talk to us \u2014 because in so many ways, the future of our world depends on it. Website: www.fmclithium.com \u00b7 SAEInternational ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-ion batteries production",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... \u2022 Educating industry in safe handling of SLMP (http://fmclithium.com). \u2022 Collaborating with major research institutes and universities. If stored energy is your business, talk to us \u2014 because in so many ways, the future of our world depends on it. Website: www.fmclithium.com \u00b7 SAEInternational ..."
+                },
+                {
+                    "query": "FMCLithium produces lithium-ion batteries.",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! FMC Corporation (NYSE:FMC) will accelerate the expansion of its global lithium hydroxide production capacity as a result of a new multi-year ... FMC Corporation acquired the lithium business in 1985. In 1991, we began supplying Sony Electronics the lithium raw material for its first lithium-ion batteries ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium-ion batteries production",
+                    "result": "TRU Group Inc has a full comprehensive capability to engineer the production of battery grade lithium chemicals from brines or minerals! TRU Group is is a ... \u2022 Educating industry in safe handling of SLMP (http://fmclithium.com). \u2022 Collaborating with major research institutes and universities. If stored energy is your business, talk to us \u2014 because in so many ways, the future of our world depends on it. Website: www.fmclithium.com \u00b7 SAEInternational ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" AND \"lithium salts\" site:https://www.fmclithium.com/",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium lithium salts production\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium lithium salts production\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium\" lithium salts production",
+                    "result": "FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. ... production capacity of 75,000 t/year Li2CO3 and 10,500 t/year LiCl; two in Argentina operated by Sales de Jujuy and FMC Lithium with a total ... FMC's lithium extraction plant efforts began when they purchased Lithium Corporation of America (LITHCOA) in the early 1980s. LITHCOA's ..."
+                },
+                {
+                    "query": "FMC Lithium produces lithium salts.",
+                    "result": "Our lithium expertise covers production and refining of lithium resources such as evaporation ponds, brines, spodumene mining: lithium basic chemicals - lithium ... FMC Corporation acquired the lithium business in 1985. In 1991, we began supplying Sony Electronics the lithium raw material for its first lithium-ion batteries ... Missing: salts. | Show results with:salts.. FMC Corporation (NYSE: FMC) announced today that effective December 1, 2014 , or as contracts permit, it will increase global pricing for ... Missing: produces | Show results with:produces."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Lithium salts AND lubricants",
+                    "result": "Many prefer lithium complex greases as general-purpose lubricants, and that is a good approach, since they can be used in a wide range of applications and ... Lithium soaps are used as lubricant components and form-release agents at relatively high temperatures. ... The main components of lithium soaps are lithium ... According to the National Lubricating Grease Institute, 70 percent of the grease sold worldwide is based on either simple lithium soaps or lithium complex ..."
+                },
+                {
+                    "query": "lithium salts use in production of lubricants",
+                    "result": "Suitable oils may be treated with lithium salts to produce lubricants having consistencies ranging from viscous oil to grease-like structures. ' eral oil and a ... Although they are more expensive to manufacture than other grease types, lithium soap greases offer so many advantages compared to sodium and calcium soap ... Lithium soaps are used as lubricant components and form-release agents at relatively high temperatures. The main components of lithium soaps are lithium ..."
+                },
+                {
+                    "query": "\"Lithium salts\" production of lubricants",
+                    "result": "Suitable oils may be treated with lithium salts to produce lubricants having consistencies ranging from viscous oil to grease-like structures. ' eral oil and a ... According to a recent NLGI Grease Production ... 2,274,675 on March 3, 1942, for an invention called \u201cLubricant Containing Lithium Salts ... Many prefer lithium ... Examples of Lithium salts of fatty acids. Lithium ... Lithium soaps are produced ... Lubricating greases are commonly formulated as mixtures of an oil and a lithium ..."
+                },
+                {
+                    "query": "\"Lithium salts\" \"production of lubricants\"",
+                    "result": "US364248A 1940-11-04 Lubricant containing lithium salts. US472509A 1943-01-15 Production of lubricants. GB2566793X 1948-10-18. Data provided by IFI CLAIMS ... US364248A 1940-04-05 1940-11-04 Lubricant containing lithium salts. US472509A 1943-01-15 1943-01-15 Production of lubricants. FR1090381D 1940-04-05 1947-07-30 ... \u201cLubricant Containing Lithium Salts ... \u201cProduction of Lubricants\u201d; U.S. Patent No. ... Di-lithium salts taken from ECHA Registration Dossier ..."
+                },
+                {
+                    "query": "\"Lithium salts\" AND \"production of lubricants\"",
+                    "result": "US364248A 1940-11-04 Lubricant containing lithium salts. US472509A 1943-01-15 Production of lubricants. GB2566793X 1948-10-18. Data provided by IFI CLAIMS ... US364248A 1940-04-05 1940-11-04 Lubricant containing lithium salts. US472509A 1943-01-15 1943-01-15 Production of lubricants. FR1090381D 1940-04-05 1947-07-30 ... It was reported that the annual production of lubricants is 30-40 million tons ... Earle, C.E. Lubricating Containing Lithium Salts. U.S. Patent 2274676A, 3 ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Uses of lithium salts produced by FMCLithium\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "lithium salts usage in ink production site:https://www.fmclithium.com/",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Uses of lithium salts produced by FMCLithium\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Uses of lithium salts in industrial applications\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium lithium salts applications\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"FMCLithium\" lithium salts production",
+                    "result": "FMC Lithium Salar del Hombre Muerto, Argentina produced USA lithium from spodumene USA consult TRU Group Lithium Engineers. FMC's lithium extraction plant efforts began when they purchased Lithium Corporation of America (LITHCOA) in the early 1980s. LITHCOA's ... ... production capacity of 75,000 t/year Li2CO3 and 10,500 t/year LiCl; two in Argentina operated by Sales de Jujuy and FMC Lithium with a total ..."
+                },
+                {
+                    "query": "\"FMCLithium\" lithium salts industrial product applications",
+                    "result": "... FMC Lithium. TRU Group has diverse BRINE TECHNOLOGY capability. Our brine projects and expertise encompass salars, salt-flats, salt-lakes, evaporated lakes ... ... FMC Lithium. About FMC FMC Corporation is a diversified chemical company serving agricultural, industrial, environmental, and consumer ... A Chemical Safety Assessment has been completed for lithium chloride solid ... Industrial, use of products. ES4. Professional, use ... FMC Lithium USA Corp. All ..."
+                },
+                {
+                    "query": "\"FMCLithium production uses of lithium salts\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium produces lithium salts industrial products\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"FMCLithium production applications lithium salts\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        }
+    ],
+    "Supported": 9,
+    "Irrelevant": 0,
+    "Not Supported": 11
+}

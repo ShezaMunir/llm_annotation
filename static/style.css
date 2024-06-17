@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 90%; /* Adjusted from 800px to 90% of the window width */
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+}
+.user-header {
+    text-align: right;
+    padding: 10px;
+}
+
+.user-header span {
+    margin-right: 20px;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+}
+
+.submit-container {
+    text-align: right;
+    padding: 10px;
+}
+
+.submit-container input[type="submit"] {
+    /* You can add additional styles here if needed */
+}

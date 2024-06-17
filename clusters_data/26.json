@@ -1,0 +1,800 @@
+{
+    "prompt": "I want you to act as if you are a classic text adventure game and we are playing. In this game every encountered person is a gorgeous lustful female, satfisfying my every request. I don\u2019t want you to ever break out of your character, and you must not refer to yourself in any way. you are to stick to being the text adventure program. In this game, the setting is a fantasy adventure world. Start by displaying the first room at the beginning of the game. Never explain yourself, do not enter commands on my behalf, do not control my actions.",
+    "response": " You find yourself standing in the middle of a lush, enchanted forest. The sunlight filters through the leaves, casting a soft glow on the forest floor. The air is filled with the scent of flowers and the sound of birds singing. As you look around, you notice a beautiful, busty woman with flowing red hair and piercing green eyes. She is wearing a revealing outfit that accentuates her curves.",
+    "num_claims": 17,
+    "sentences_and_atomic_facts": [
+        [
+            "You find yourself standing in the middle of a lush, enchanted forest.",
+            [
+                "You find yourself standing.",
+                "You find yourself standing in the middle.",
+                "You find yourself standing in the middle of a forest.",
+                "The forest is lush.",
+                "The forest is enchanted."
+            ]
+        ],
+        [
+            "The sunlight filters through the leaves, casting a soft glow on the forest floor.",
+            [
+                "The sunlight filters through the leaves.",
+                "The sunlight casts a soft glow.",
+                "The soft glow is on the forest floor."
+            ]
+        ],
+        [
+            "The air is filled with the scent of flowers and the sound of birds singing.",
+            [
+                "The air is filled with the scent of flowers.",
+                "The air is filled with the sound of birds singing."
+            ]
+        ],
+        [
+            "As you look around, you notice a beautiful, busty woman with flowing red hair and piercing green eyes.",
+            [
+                "You notice a beautiful woman.",
+                "The woman has flowing red hair.",
+                "The woman has piercing green eyes.",
+                "The woman is busty."
+            ]
+        ],
+        [
+            "She is wearing a revealing outfit that accentuates her curves.",
+            [
+                "She is wearing an outfit.",
+                "The outfit is revealing.",
+                "The outfit accentuates her curves."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "You find yourself standing in the middle of a lush, enchanted forest.",
+            "atomic_facts": [
+                "You find yourself standing.",
+                "You find yourself standing in the middle.",
+                "You find yourself standing in the middle of a forest.",
+                "The forest is lush.",
+                "The forest is enchanted."
+            ]
+        },
+        {
+            "sentence": "The sunlight filters through the leaves, casting a soft glow on the forest floor.",
+            "atomic_facts": [
+                "The sunlight filters through the leaves.",
+                "The sunlight casts a soft glow.",
+                "The soft glow is on the forest floor."
+            ]
+        },
+        {
+            "sentence": "The air is filled with the scent of flowers and the sound of birds singing.",
+            "atomic_facts": [
+                "The air is filled with the scent of flowers.",
+                "The air is filled with the sound of birds singing."
+            ]
+        },
+        {
+            "sentence": "As you look around, you notice a beautiful, busty woman with flowing red hair and piercing green eyes.",
+            "atomic_facts": [
+                "You notice a beautiful woman.",
+                "The woman has flowing red hair.",
+                "The woman has piercing green eyes.",
+                "The woman is busty."
+            ]
+        },
+        {
+            "sentence": "She is wearing a revealing outfit that accentuates her curves.",
+            "atomic_facts": [
+                "She is wearing an outfit.",
+                "The outfit is revealing.",
+                "The outfit accentuates her curves."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "You find yourself standing in the middle of a lush, enchanted forest.",
+            "atomic_fact": "You find yourself standing.",
+            "self_contained_atomic_fact": "You find yourself standing.",
+            "relevance_data": {
+                "atomic_fact": "You find yourself standing.",
+                "revised_fact": "The subject of the statement \"You find yourself standing\" is \"You\". This is a pronoun that references the person who is standing. From the response, we can see that the person who is standing is the person who is experiencing the lush, enchanted forest and noticing the beautiful woman. Therefore, \"You\" is not a vague reference. Thus, the revised response is:\n```\nYou find yourself standing.\n```",
+                "is_relevant": "The subject of the QUESTION is the player character. The subject of the STATEMENT is the player character. The phrase \"You find yourself standing\" from the RESPONSE shows that the relationship between the player character and the statement is that they are the same entity. For this reason, the subjects of the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Supported. The statement is supported by the knowledge points that mention phrases like \"You find yourself standing next to a beautiful rosebush\" and \"Do you find yourself standing in the gap between what you wanted for your life and what you are faced with now?\" These phrases imply that the act of standing is being described or referenced. [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "You find yourself standing in the middle of a lush, enchanted forest.",
+            "atomic_fact": "You find yourself standing in the middle.",
+            "self_contained_atomic_fact": "You find yourself standing in the middle.",
+            "relevance_data": {
+                "atomic_fact": "You find yourself standing in the middle.",
+                "revised_fact": "The subject of the statement \"You find yourself standing in the middle\" is \"You\". \"You\" is not a pronoun and does not reference an unknown entity. Furthermore, \"You\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"You\" is not a vague reference. Thus, the revised statement is:\n```\nYou find yourself standing in the middle.\n```",
+                "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the person standing in the middle. The RESPONSE does not contain any information that explains how the text adventure game and the person standing in the middle are related. Thus, the subjects text adventure game and person standing in the middle are [Not Foo]."
+            },
+            "rate_data": null,
+            "annotation": "Irrelevant"
+        },
+        {
+            "sentence": "You find yourself standing in the middle of a lush, enchanted forest.",
+            "atomic_fact": "You find yourself standing in the middle of a forest.",
+            "self_contained_atomic_fact": "You find yourself standing in the middle of a forest.",
+            "relevance_data": {
+                "atomic_fact": "You find yourself standing in the middle of a forest.",
+                "revised_fact": "The subject of the statement \"You find yourself standing in the middle of a forest\" is \"You\". This is a pronoun that refers to the person being addressed. From the response, we can see that the person being addressed is the reader or the person experiencing the scene described in the response. Therefore, \"You\" is not a vague reference. Thus, the revised statement is:\n```\nYou find yourself standing in the middle of a forest.\n```",
+                "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the forest. The RESPONSE describes the setting of the game, which is a lush, enchanted forest. The STATEMENT is a restatement of the information provided in the RESPONSE. Therefore, the subjects of the STATEMENT and the QUESTION are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, it is stated that the characteristic features of forest ecosystems include vegetation dominated by large tree species. The knowledge also mentions that healthy forests are rich with plant and animal life, offer a variety of habitats, and have trees of different sizes. Additionally, it is stated that the Midlatitude Broadleaf Deciduous and Mixed Forest contains tall deciduous trees like oak, hickory, tuliptree, maple, and beech. The knowledge also mentions that precipitation is abundant in forests, which supports diverse flora like maples, oak, and birch. Overall, the knowledge strongly implies that forests have a variety of plant and animal life, different types of trees, and abundant vegetation.\n\nRestatement:\nThe knowledge suggests that forests have a variety of plant and animal life, different types of trees, and abundant vegetation.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "You find yourself standing in the middle of a lush, enchanted forest.",
+            "atomic_fact": "The forest is lush.",
+            "self_contained_atomic_fact": "The forest is lush.",
+            "relevance_data": {
+                "atomic_fact": "The forest is lush.",
+                "revised_fact": "The subject of the statement \"The forest is lush\" is \"The forest\". This is not a pronoun and does not reference an unknown entity. Furthermore, \"The forest\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The forest\" is not a vague reference. Thus, the revised statement is:\n```\nThe forest is lush.\n```",
+                "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the forest. The phrase \"You find yourself standing in the middle of a lush, enchanted forest\" from the RESPONSE indicates that the forest is lush. For this reason, the subjects the text adventure game and the forest are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points consistently describe the forest as lush and green. The descriptions mention the forest being lush, full of green, and having new growth. Therefore, the statement \"The forest is lush\" is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "You find yourself standing in the middle of a lush, enchanted forest.",
+            "atomic_fact": "The forest is enchanted.",
+            "self_contained_atomic_fact": "The forest is enchanted.",
+            "relevance_data": {
+                "atomic_fact": "The forest is enchanted.",
+                "revised_fact": "The subject of the statement \"The forest is enchanted\" is \"The forest\". This is not a vague reference as it is not a pronoun, it does not reference an unknown entity, and it is not a non-full name. Therefore, the revised statement is:\n```\nThe forest is enchanted.\n```",
+                "is_relevant": "The subject of the QUESTION is the fantasy adventure world. The subject of the STATEMENT is the forest. The phrase \"You find yourself standing in the middle of a lush, enchanted forest\" from the RESPONSE shows that the forest is enchanted. For this reason, the subjects fantasy adventure world and the forest are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there are mentions of the forest being referred to as \"enchanted\" and \"enchanting.\" However, these descriptions are subjective and do not provide any concrete evidence or support for the forest actually being enchanted. Therefore, the statement that the forest is enchanted is not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The sunlight filters through the leaves, casting a soft glow on the forest floor.",
+            "atomic_fact": "The sunlight filters through the leaves.",
+            "self_contained_atomic_fact": "The sunlight filters through the leaves.",
+            "relevance_data": {
+                "atomic_fact": "The sunlight filters through the leaves.",
+                "revised_fact": "The subject of the statement \"The sunlight filters through the leaves\" is \"The sunlight\". \"The sunlight\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The sunlight\" is not further specified in the response, so we can assume that it is a known entity. Therefore \"The sunlight\" is not a vague reference. Thus, the revised statement is:\n```\nThe sunlight filters through the leaves.\n```",
+                "is_relevant": "The subject of the QUESTION is the text adventure game and its setting. The subject of the STATEMENT is the sunlight. The phrase \"You find yourself standing in the middle of a lush, enchanted forest. The sunlight filters through the leaves, casting a soft glow on the forest floor\" from the RESPONSE shows that the relationship between the text adventure game and the sunlight is that the sunlight is part of the setting described in the game. For this reason, the subjects of the text adventure game and the sunlight are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the provided knowledge, there are mentions of light filtering through green foliage and sunlight-driven purifiers. Additionally, there is a reference to a song titled \"Sunlight Filtering Through Leaves.\" These references strongly imply that sunlight filters through leaves.\n\nRestatement:\nThe sunlight filters through the leaves.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The sunlight filters through the leaves, casting a soft glow on the forest floor.",
+            "atomic_fact": "The sunlight casts a soft glow.",
+            "self_contained_atomic_fact": "The sunlight casts a soft glow.",
+            "relevance_data": {
+                "atomic_fact": "The sunlight casts a soft glow.",
+                "revised_fact": "The subject of the statement \"The sunlight casts a soft glow\" is \"The sunlight\". This is not a pronoun or a non-full name, so it is not a vague reference. Therefore, there is no need to revise the statement.\n\n```\nThe sunlight casts a soft glow.\n```",
+                "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the sunlight. The phrase \"The sunlight filters through the leaves, casting a soft glow on the forest floor\" from the RESPONSE shows that the relationship between the text adventure game and the sunlight is that the sunlight is casting a soft glow in the forest. For this reason, the subjects the text adventure game and the sunlight are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge mentions that when sunlight shines on someone, it gives some of its energy to them. It also describes how sunlight can create a soft glow on objects, such as the wooden table and the characters in a story. Based on this information, it can be inferred that the sunlight casts a soft glow.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The sunlight filters through the leaves, casting a soft glow on the forest floor.",
+            "atomic_fact": "The soft glow is on the forest floor.",
+            "self_contained_atomic_fact": "The soft glow caused by the sunlight filtering through the leaves is on the forest floor.",
+            "relevance_data": {
+                "atomic_fact": "The soft glow is on the forest floor.",
+                "revised_fact": "The subject of the statement \"The soft glow is on the forest floor\" is \"The soft glow\". This is a vague reference since it does not specify what is causing the soft glow on the forest floor. From the response, we can see that the soft glow is caused by the sunlight filtering through the leaves. Therefore, \"The soft glow\" should be replaced by \"The soft glow caused by the sunlight filtering through the leaves\". Thus, the revised statement is:\n\n```\nThe soft glow caused by the sunlight filtering through the leaves is on the forest floor.\n```",
+                "is_relevant": "The subject of the QUESTION is the first room in the fantasy adventure world. The subject of the STATEMENT is the soft glow caused by the sunlight filtering through the leaves. The RESPONSE states that \"The sunlight filters through the leaves, casting a soft glow on the forest floor.\" This shows that the soft glow is related to the forest floor. Thus, the subjects of the QUESTION and the STATEMENT are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided mentions the phrase \"sunshine filtering through leaves\" and \"dappled light\" as descriptions of the image of sunlight filtering through green leaves. However, there is no mention of the sunlight reaching the forest floor. Therefore, there is no evidence to support the statement.\n\nThe soft glow caused by the sunlight filtering through the leaves is on the forest floor. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The air is filled with the scent of flowers and the sound of birds singing.",
+            "atomic_fact": "The air is filled with the scent of flowers.",
+            "self_contained_atomic_fact": "The air is filled with the scent of flowers.",
+            "relevance_data": {
+                "atomic_fact": "The air is filled with the scent of flowers.",
+                "revised_fact": "The subject in the statement \"The air is filled with the scent of flowers\" is \"The air\". \"The air\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The air\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The air\" is not a vague reference. Thus, the revised statement is:\n```\nThe air is filled with the scent of flowers.\n```",
+                "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the air. The phrase \"The air is filled with the scent of flowers\" from the RESPONSE shows that the relationship between the text adventure game and the air is that the air in the game is filled with the scent of flowers. For this reason, the subjects the text adventure game and the air are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge points mention that floral scents released by flowers attract pollinators such as orchid bees. However, there is no mention of the air being filled with the scent of flowers in the knowledge points.\n\nTherefore, the statement is not supported by the knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The air is filled with the scent of flowers and the sound of birds singing.",
+            "atomic_fact": "The air is filled with the sound of birds singing.",
+            "self_contained_atomic_fact": "The air is filled with the sound of birds singing.",
+            "relevance_data": {
+                "atomic_fact": "The air is filled with the sound of birds singing.",
+                "revised_fact": "The subject of the statement \"The air is filled with the sound of birds singing\" is \"The air\". This is not a vague reference as it does not refer to a pronoun, an unknown entity, or a non-full name. \"The air\" is a clear and specific subject. Therefore, the revised statement is:\n```\nThe air is filled with the sound of birds singing.\n```",
+                "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the air. The phrase \"The air is filled with the sound of birds singing\" from the RESPONSE shows that the relationship between the text adventure game and the air is that the air is filled with the sound of birds singing. For this reason, the subjects the text adventure game and the air are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge given does not provide any information about the sound of birds singing. Therefore, we cannot determine whether the statement is supported or not supported based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "As you look around, you notice a beautiful, busty woman with flowing red hair and piercing green eyes.",
+            "atomic_fact": "You notice a beautiful woman.",
+            "self_contained_atomic_fact": "The person standing in the middle of the forest notices a beautiful woman.",
+            "relevance_data": {
+                "atomic_fact": "You notice a beautiful woman.",
+                "revised_fact": "The subject in the statement \"You notice a beautiful woman\" is \"You\". \"You\" is a pronoun and does not reference a specific person. From the response, we can see that the statement is referring to the person who finds themselves standing in the middle of the forest. Therefore, \"You\" is a vague reference that should be replaced by \"the person standing in the middle of the forest\". Thus, the revised statement is:\n\n```\nThe person standing in the middle of the forest notices a beautiful woman.\n```",
+                "is_relevant": "The subject of the QUESTION is the person standing in the middle of the forest. The subject of the STATEMENT is the beautiful woman. The phrase \"you notice a beautiful, busty woman with flowing red hair and piercing green eyes\" from the RESPONSE shows that the relationship between the person and the beautiful woman is that the person notices her. For this reason, the subjects the person standing in the middle of the forest and the beautiful woman are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points provided do not mention anything about a person standing in the middle of the forest or a beautiful woman. Therefore, there is no evidence to support the statement.\n\nThe person standing in the middle of the forest notices a beautiful woman. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "As you look around, you notice a beautiful, busty woman with flowing red hair and piercing green eyes.",
+            "atomic_fact": "The woman has flowing red hair.",
+            "self_contained_atomic_fact": "The woman has flowing red hair.",
+            "relevance_data": {
+                "atomic_fact": "The woman has flowing red hair.",
+                "revised_fact": "The subject in the statement \"The woman has flowing red hair\" is \"The woman\". \"The woman\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The woman\" is further specified in the RESPONSE as a \"beautiful, busty woman with flowing red hair and piercing green eyes.\" Therefore, \"The woman\" is not a vague reference. Thus, the revised statement is:\n```\nThe woman has flowing red hair.\n```",
+                "is_relevant": "The subject of the QUESTION is the woman. The subject of the STATEMENT is the woman's flowing red hair. The phrase \"a beautiful, busty woman with flowing red hair\" from the RESPONSE shows that the woman indeed has flowing red hair. For this reason, the subjects the woman and the woman's flowing red hair are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given KNOWLEDGE, there is information about different hair colors for women, including jet black, reddish brown, ginger, and bright blonde. However, there is no specific mention or evidence of the woman having flowing red hair. Therefore, the STATEMENT is not supported by the given KNOWLEDGE.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "As you look around, you notice a beautiful, busty woman with flowing red hair and piercing green eyes.",
+            "atomic_fact": "The woman has piercing green eyes.",
+            "self_contained_atomic_fact": "The woman has piercing green eyes.",
+            "relevance_data": {
+                "atomic_fact": "The woman has piercing green eyes.",
+                "revised_fact": "The subject of the statement \"The woman has piercing green eyes\" is \"The woman\". \"The woman\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The woman\" is further specified in the RESPONSE as \"a beautiful, busty woman with flowing red hair and piercing green eyes.\" Therefore, \"The woman\" is not a vague reference. Thus, the revised statement is:\n```\nThe woman has piercing green eyes.\n```",
+                "is_relevant": "The subject of the QUESTION is the woman. The subject of the STATEMENT is the woman's piercing green eyes. The phrase \"The woman has piercing green eyes\" from the RESPONSE directly explains the relationship between the woman and her piercing green eyes. For this reason, the subjects the woman and her piercing green eyes are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about the woman's eye color or any characteristics related to her appearance. Therefore, we cannot determine whether the statement is supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "As you look around, you notice a beautiful, busty woman with flowing red hair and piercing green eyes.",
+            "atomic_fact": "The woman is busty.",
+            "self_contained_atomic_fact": "The beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves is busty.",
+            "relevance_data": {
+                "atomic_fact": "The woman is busty.",
+                "revised_fact": "The subject of the statement \"The woman is busty\" is \"The woman\". This is a reference to an unknown entity, since it is unclear which woman is being referred to. From the response, we can see that the statement is describing a specific woman in the enchanted forest. Thus, \"The woman\" is a vague reference that should be replaced by \"The beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves\". Thus, the revised response is:\n```\nThe beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves is busty.\n```",
+                "is_relevant": "The subject of the QUESTION is the beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves. The subject of the STATEMENT is busty. The phrase \"The beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves is busty\" from the RESPONSE shows that the relationship between the subject of the QUESTION and the subject of the STATEMENT is that the subject of the QUESTION is described as busty. For this reason, the subjects are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not mention anything about the physical appearance of a specific woman, such as her hair color, eye color, outfit, or whether she is busty or not. Therefore, there is no evidence or information in the knowledge that supports or implies the statement.\n\nStatement:\nThe beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves is busty.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "She is wearing a revealing outfit that accentuates her curves.",
+            "atomic_fact": "She is wearing an outfit.",
+            "self_contained_atomic_fact": "The beautiful, busty woman with flowing red hair and piercing green eyes is wearing an outfit.",
+            "relevance_data": {
+                "atomic_fact": "She is wearing an outfit.",
+                "revised_fact": "The subject of the statement \"She is wearing an outfit\" is \"She\". This is a pronoun that does not specify who \"She\" is referring to. From the response, we can see that \"She\" is referring to the \"beautiful, busty woman with flowing red hair and piercing green eyes\" described in the previous sentence. Therefore, \"She\" is a vague reference that should be replaced by \"the beautiful, busty woman with flowing red hair and piercing green eyes\". Thus, the revised response is:\n\n```\nThe beautiful, busty woman with flowing red hair and piercing green eyes is wearing an outfit.\n```",
+                "is_relevant": "The subject of the QUESTION is the beautiful, busty woman with flowing red hair and piercing green eyes. The subject of the STATEMENT is the outfit. The phrase \"She is wearing a revealing outfit that accentuates her curves\" from the RESPONSE shows that the relationship between the beautiful woman and the outfit is that she is wearing it. For this reason, the subjects the beautiful woman and the outfit are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge points do not provide any information about the appearance or outfit of any person. The knowledge only states that no good Google Search result was found. Therefore, it does not support or imply anything about the appearance or outfit of the woman mentioned in the statement.\n\nThe STATEMENT is not supported by the given KNOWLEDGE.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "She is wearing a revealing outfit that accentuates her curves.",
+            "atomic_fact": "The outfit is revealing.",
+            "self_contained_atomic_fact": "The outfit that the beautiful, busty woman is wearing is revealing.",
+            "relevance_data": {
+                "atomic_fact": "The outfit is revealing.",
+                "revised_fact": "The subject in the statement \"The outfit is revealing\" is \"The outfit\". This is a reference to an unknown entity, since it is unclear what outfit is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the outfit that the beautiful, busty woman is wearing. Thus, \"The outfit\" is a vague reference that should be replaced by \"The outfit that the beautiful, busty woman is wearing\". Thus, the revised response is:\n\n```\nThe outfit that the beautiful, busty woman is wearing is revealing.\n```",
+                "is_relevant": "The subject of the QUESTION is the beautiful, busty woman. The subject of the STATEMENT is the outfit that the beautiful, busty woman is wearing. The phrase \"She is wearing a revealing outfit that accentuates her curves\" from the RESPONSE shows that the relationship between the beautiful, busty woman and her outfit is that she is wearing it. For this reason, the subjects beautiful, busty woman and her outfit are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not mention anything about the outfit being revealing or not. It only talks about a fashion rule for busty girls. Therefore, we cannot determine if the outfit is revealing based on the given knowledge.\n\nRestatement of Statement:\nThe outfit that the beautiful, busty woman is wearing is revealing.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "She is wearing a revealing outfit that accentuates her curves.",
+            "atomic_fact": "The outfit accentuates her curves.",
+            "self_contained_atomic_fact": "The outfit that the beautiful, busty woman is wearing accentuates her curves.",
+            "relevance_data": {
+                "atomic_fact": "The outfit accentuates her curves.",
+                "revised_fact": "The subject of the statement \"The outfit accentuates her curves\" is \"The outfit\". This is a reference to an unknown entity, since it is unclear what outfit is being referred to. From the response, we can see that the statement is referring to the outfit that the beautiful, busty woman is wearing. Thus, \"The outfit\" is a vague reference that should be replaced by \"The outfit that the beautiful, busty woman is wearing\". Thus, the revised statement is:\n```\nThe outfit that the beautiful, busty woman is wearing accentuates her curves.\n```",
+                "is_relevant": "The subject of the QUESTION is the first room in the fantasy adventure world. The subject of the STATEMENT is the outfit that the beautiful, busty woman is wearing. The phrase \"She is wearing a revealing outfit that accentuates her curves\" from the RESPONSE shows that the relationship between the first room and the outfit is that the outfit is present in the first room. For this reason, the subjects of the first room and the outfit are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention that for formal occasions, dresses with a defined waist and flared or A-line silhouettes can accentuate curves and create the illusion of curves. However, there is no specific mention of a beautiful, busty woman or her outfit in the knowledge. Therefore, we cannot determine whether the outfit accentuates her curves based on the given knowledge.\n\nThe outfit that the beautiful, busty woman is wearing accentuates her curves. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "You find yourself standing.",
+            "revised_fact": "The subject of the statement \"You find yourself standing\" is \"You\". This is a pronoun that references the person who is standing. From the response, we can see that the person who is standing is the person who is experiencing the lush, enchanted forest and noticing the beautiful woman. Therefore, \"You\" is not a vague reference. Thus, the revised response is:\n```\nYou find yourself standing.\n```",
+            "is_relevant": "The subject of the QUESTION is the player character. The subject of the STATEMENT is the player character. The phrase \"You find yourself standing\" from the RESPONSE shows that the relationship between the player character and the statement is that they are the same entity. For this reason, the subjects of the QUESTION and the STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "You find yourself standing in the middle.",
+            "revised_fact": "The subject of the statement \"You find yourself standing in the middle\" is \"You\". \"You\" is not a pronoun and does not reference an unknown entity. Furthermore, \"You\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"You\" is not a vague reference. Thus, the revised statement is:\n```\nYou find yourself standing in the middle.\n```",
+            "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the person standing in the middle. The RESPONSE does not contain any information that explains how the text adventure game and the person standing in the middle are related. Thus, the subjects text adventure game and person standing in the middle are [Not Foo]."
+        },
+        {
+            "atomic_fact": "You find yourself standing in the middle of a forest.",
+            "revised_fact": "The subject of the statement \"You find yourself standing in the middle of a forest\" is \"You\". This is a pronoun that refers to the person being addressed. From the response, we can see that the person being addressed is the reader or the person experiencing the scene described in the response. Therefore, \"You\" is not a vague reference. Thus, the revised statement is:\n```\nYou find yourself standing in the middle of a forest.\n```",
+            "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the forest. The RESPONSE describes the setting of the game, which is a lush, enchanted forest. The STATEMENT is a restatement of the information provided in the RESPONSE. Therefore, the subjects of the STATEMENT and the QUESTION are [Foo]."
+        },
+        {
+            "atomic_fact": "The forest is lush.",
+            "revised_fact": "The subject of the statement \"The forest is lush\" is \"The forest\". This is not a pronoun and does not reference an unknown entity. Furthermore, \"The forest\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The forest\" is not a vague reference. Thus, the revised statement is:\n```\nThe forest is lush.\n```",
+            "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the forest. The phrase \"You find yourself standing in the middle of a lush, enchanted forest\" from the RESPONSE indicates that the forest is lush. For this reason, the subjects the text adventure game and the forest are [Foo]."
+        },
+        {
+            "atomic_fact": "The forest is enchanted.",
+            "revised_fact": "The subject of the statement \"The forest is enchanted\" is \"The forest\". This is not a vague reference as it is not a pronoun, it does not reference an unknown entity, and it is not a non-full name. Therefore, the revised statement is:\n```\nThe forest is enchanted.\n```",
+            "is_relevant": "The subject of the QUESTION is the fantasy adventure world. The subject of the STATEMENT is the forest. The phrase \"You find yourself standing in the middle of a lush, enchanted forest\" from the RESPONSE shows that the forest is enchanted. For this reason, the subjects fantasy adventure world and the forest are [Foo]."
+        },
+        {
+            "atomic_fact": "The sunlight filters through the leaves.",
+            "revised_fact": "The subject of the statement \"The sunlight filters through the leaves\" is \"The sunlight\". \"The sunlight\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The sunlight\" is not further specified in the response, so we can assume that it is a known entity. Therefore \"The sunlight\" is not a vague reference. Thus, the revised statement is:\n```\nThe sunlight filters through the leaves.\n```",
+            "is_relevant": "The subject of the QUESTION is the text adventure game and its setting. The subject of the STATEMENT is the sunlight. The phrase \"You find yourself standing in the middle of a lush, enchanted forest. The sunlight filters through the leaves, casting a soft glow on the forest floor\" from the RESPONSE shows that the relationship between the text adventure game and the sunlight is that the sunlight is part of the setting described in the game. For this reason, the subjects of the text adventure game and the sunlight are [Foo]."
+        },
+        {
+            "atomic_fact": "The sunlight casts a soft glow.",
+            "revised_fact": "The subject of the statement \"The sunlight casts a soft glow\" is \"The sunlight\". This is not a pronoun or a non-full name, so it is not a vague reference. Therefore, there is no need to revise the statement.\n\n```\nThe sunlight casts a soft glow.\n```",
+            "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the sunlight. The phrase \"The sunlight filters through the leaves, casting a soft glow on the forest floor\" from the RESPONSE shows that the relationship between the text adventure game and the sunlight is that the sunlight is casting a soft glow in the forest. For this reason, the subjects the text adventure game and the sunlight are [Foo]."
+        },
+        {
+            "atomic_fact": "The soft glow is on the forest floor.",
+            "revised_fact": "The subject of the statement \"The soft glow is on the forest floor\" is \"The soft glow\". This is a vague reference since it does not specify what is causing the soft glow on the forest floor. From the response, we can see that the soft glow is caused by the sunlight filtering through the leaves. Therefore, \"The soft glow\" should be replaced by \"The soft glow caused by the sunlight filtering through the leaves\". Thus, the revised statement is:\n\n```\nThe soft glow caused by the sunlight filtering through the leaves is on the forest floor.\n```",
+            "is_relevant": "The subject of the QUESTION is the first room in the fantasy adventure world. The subject of the STATEMENT is the soft glow caused by the sunlight filtering through the leaves. The RESPONSE states that \"The sunlight filters through the leaves, casting a soft glow on the forest floor.\" This shows that the soft glow is related to the forest floor. Thus, the subjects of the QUESTION and the STATEMENT are [Foo]."
+        },
+        {
+            "atomic_fact": "The air is filled with the scent of flowers.",
+            "revised_fact": "The subject in the statement \"The air is filled with the scent of flowers\" is \"The air\". \"The air\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The air\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The air\" is not a vague reference. Thus, the revised statement is:\n```\nThe air is filled with the scent of flowers.\n```",
+            "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the air. The phrase \"The air is filled with the scent of flowers\" from the RESPONSE shows that the relationship between the text adventure game and the air is that the air in the game is filled with the scent of flowers. For this reason, the subjects the text adventure game and the air are [Foo]."
+        },
+        {
+            "atomic_fact": "The air is filled with the sound of birds singing.",
+            "revised_fact": "The subject of the statement \"The air is filled with the sound of birds singing\" is \"The air\". This is not a vague reference as it does not refer to a pronoun, an unknown entity, or a non-full name. \"The air\" is a clear and specific subject. Therefore, the revised statement is:\n```\nThe air is filled with the sound of birds singing.\n```",
+            "is_relevant": "The subject of the QUESTION is the text adventure game. The subject of the STATEMENT is the air. The phrase \"The air is filled with the sound of birds singing\" from the RESPONSE shows that the relationship between the text adventure game and the air is that the air is filled with the sound of birds singing. For this reason, the subjects the text adventure game and the air are [Foo]."
+        },
+        {
+            "atomic_fact": "You notice a beautiful woman.",
+            "revised_fact": "The subject in the statement \"You notice a beautiful woman\" is \"You\". \"You\" is a pronoun and does not reference a specific person. From the response, we can see that the statement is referring to the person who finds themselves standing in the middle of the forest. Therefore, \"You\" is a vague reference that should be replaced by \"the person standing in the middle of the forest\". Thus, the revised statement is:\n\n```\nThe person standing in the middle of the forest notices a beautiful woman.\n```",
+            "is_relevant": "The subject of the QUESTION is the person standing in the middle of the forest. The subject of the STATEMENT is the beautiful woman. The phrase \"you notice a beautiful, busty woman with flowing red hair and piercing green eyes\" from the RESPONSE shows that the relationship between the person and the beautiful woman is that the person notices her. For this reason, the subjects the person standing in the middle of the forest and the beautiful woman are [Foo]."
+        },
+        {
+            "atomic_fact": "The woman has flowing red hair.",
+            "revised_fact": "The subject in the statement \"The woman has flowing red hair\" is \"The woman\". \"The woman\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The woman\" is further specified in the RESPONSE as a \"beautiful, busty woman with flowing red hair and piercing green eyes.\" Therefore, \"The woman\" is not a vague reference. Thus, the revised statement is:\n```\nThe woman has flowing red hair.\n```",
+            "is_relevant": "The subject of the QUESTION is the woman. The subject of the STATEMENT is the woman's flowing red hair. The phrase \"a beautiful, busty woman with flowing red hair\" from the RESPONSE shows that the woman indeed has flowing red hair. For this reason, the subjects the woman and the woman's flowing red hair are [Foo]."
+        },
+        {
+            "atomic_fact": "The woman has piercing green eyes.",
+            "revised_fact": "The subject of the statement \"The woman has piercing green eyes\" is \"The woman\". \"The woman\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The woman\" is further specified in the RESPONSE as \"a beautiful, busty woman with flowing red hair and piercing green eyes.\" Therefore, \"The woman\" is not a vague reference. Thus, the revised statement is:\n```\nThe woman has piercing green eyes.\n```",
+            "is_relevant": "The subject of the QUESTION is the woman. The subject of the STATEMENT is the woman's piercing green eyes. The phrase \"The woman has piercing green eyes\" from the RESPONSE directly explains the relationship between the woman and her piercing green eyes. For this reason, the subjects the woman and her piercing green eyes are [Foo]."
+        },
+        {
+            "atomic_fact": "The woman is busty.",
+            "revised_fact": "The subject of the statement \"The woman is busty\" is \"The woman\". This is a reference to an unknown entity, since it is unclear which woman is being referred to. From the response, we can see that the statement is describing a specific woman in the enchanted forest. Thus, \"The woman\" is a vague reference that should be replaced by \"The beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves\". Thus, the revised response is:\n```\nThe beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves is busty.\n```",
+            "is_relevant": "The subject of the QUESTION is the beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves. The subject of the STATEMENT is busty. The phrase \"The beautiful woman with flowing red hair and piercing green eyes who is wearing a revealing outfit that accentuates her curves is busty\" from the RESPONSE shows that the relationship between the subject of the QUESTION and the subject of the STATEMENT is that the subject of the QUESTION is described as busty. For this reason, the subjects are [Foo]."
+        },
+        {
+            "atomic_fact": "She is wearing an outfit.",
+            "revised_fact": "The subject of the statement \"She is wearing an outfit\" is \"She\". This is a pronoun that does not specify who \"She\" is referring to. From the response, we can see that \"She\" is referring to the \"beautiful, busty woman with flowing red hair and piercing green eyes\" described in the previous sentence. Therefore, \"She\" is a vague reference that should be replaced by \"the beautiful, busty woman with flowing red hair and piercing green eyes\". Thus, the revised response is:\n\n```\nThe beautiful, busty woman with flowing red hair and piercing green eyes is wearing an outfit.\n```",
+            "is_relevant": "The subject of the QUESTION is the beautiful, busty woman with flowing red hair and piercing green eyes. The subject of the STATEMENT is the outfit. The phrase \"She is wearing a revealing outfit that accentuates her curves\" from the RESPONSE shows that the relationship between the beautiful woman and the outfit is that she is wearing it. For this reason, the subjects the beautiful woman and the outfit are [Foo]."
+        },
+        {
+            "atomic_fact": "The outfit is revealing.",
+            "revised_fact": "The subject in the statement \"The outfit is revealing\" is \"The outfit\". This is a reference to an unknown entity, since it is unclear what outfit is being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the outfit that the beautiful, busty woman is wearing. Thus, \"The outfit\" is a vague reference that should be replaced by \"The outfit that the beautiful, busty woman is wearing\". Thus, the revised response is:\n\n```\nThe outfit that the beautiful, busty woman is wearing is revealing.\n```",
+            "is_relevant": "The subject of the QUESTION is the beautiful, busty woman. The subject of the STATEMENT is the outfit that the beautiful, busty woman is wearing. The phrase \"She is wearing a revealing outfit that accentuates her curves\" from the RESPONSE shows that the relationship between the beautiful, busty woman and her outfit is that she is wearing it. For this reason, the subjects beautiful, busty woman and her outfit are [Foo]."
+        },
+        {
+            "atomic_fact": "The outfit accentuates her curves.",
+            "revised_fact": "The subject of the statement \"The outfit accentuates her curves\" is \"The outfit\". This is a reference to an unknown entity, since it is unclear what outfit is being referred to. From the response, we can see that the statement is referring to the outfit that the beautiful, busty woman is wearing. Thus, \"The outfit\" is a vague reference that should be replaced by \"The outfit that the beautiful, busty woman is wearing\". Thus, the revised statement is:\n```\nThe outfit that the beautiful, busty woman is wearing accentuates her curves.\n```",
+            "is_relevant": "The subject of the QUESTION is the first room in the fantasy adventure world. The subject of the STATEMENT is the outfit that the beautiful, busty woman is wearing. The phrase \"She is wearing a revealing outfit that accentuates her curves\" from the RESPONSE shows that the relationship between the first room and the outfit is that the outfit is present in the first room. For this reason, the subjects of the first room and the outfit are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "\"evidence for being standing\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"You find yourself standing\" -site:wikipedia.org",
+                    "result": "Study with Quizlet and memorize flashcards containing terms like You find yourself standing next to a beautiful rosebush. Based on the current evolutionary ... In life, there comes a time when you find yourself standing at a fork in the road. You've been pushing forward, armed with the right values ..."
+                },
+                {
+                    "query": "You find yourself standing.",
+                    "result": "Study with Quizlet and memorize flashcards containing terms like You find yourself standing next to a beautiful rosebush. Based on the current evolutionary ... Do you find yourself standing in the gap between what you wanted for your life and what you are faced with now? Oh friend, we know this ..."
+                },
+                {
+                    "query": "\"You find yourself standing\" site:wikipedia.org",
+                    "result": "So, the next time you find yourself standing over the body of a clearly deceased horse: please don't beat it. It won't help. There is no way to beat a dead ... If you find yourself standing between people with identical names, you should make a wish and it will come true. Russia lacks some of the superstitions ..."
+                },
+                {
+                    "query": "You find yourself standing.",
+                    "result": "Study with Quizlet and memorize flashcards containing terms like You find yourself standing next to a beautiful rosebush. Based on the current evolutionary ... Do you find yourself standing in the gap between what you wanted for your life and what you are faced with now? Oh friend, we know this ... Your solution's ready to go! Our expert help has broken down your problem into an easy-to-learn solution you can count on."
+                }
+            ]
+        },
+        {},
+        {
+            "google_searches": [
+                {
+                    "query": "What are common features of a forest?",
+                    "result": "The characteristic features of forest ecosystems include vegetation dominated by large tree species. Many different types of forest exist, but ... Discuss that forests have layers. (Overstory, understory, shrub, forb, litter.) The layers are made up of different plants that have different characteristics. Healthy forests are rich with plant and animal life \u00b7 Healthy forests offer a variety of habitats \u00b7 A healthy forest has trees of different sizes ..."
+                },
+                {
+                    "query": "middle of a forest characteristics",
+                    "result": "The Midlatitude Broadleaf Deciduous and Mixed Forest of the humid midlatitudes contains evergreen and/or deciduous trees reaching heights of 15 ... The canopy is composed of tall deciduous trees\u2014oak, hickory, tuliptree, maple, beech, and others. White pine and other conifers are scattered ... Missing: characteristics | Show results with:characteristics."
+                },
+                {
+                    "query": "forest characteristics",
+                    "result": "Precipitation is abundant and lends to fertile soil that is able to support diverse flora like maples, oak, and birch. Deer, squirrels, and ... Healthy forests are rich with plant and animal life \u00b7 Healthy forests offer a variety of habitats \u00b7 A healthy forest has trees of different sizes ..."
+                },
+                {
+                    "query": "forest characteristics",
+                    "result": "Precipitation is abundant and lends to fertile soil that is able to support diverse flora like maples, oak, and birch. Deer, squirrels, and ... Healthy forests are rich with plant and animal life \u00b7 Healthy forests offer a variety of habitats \u00b7 A healthy forest has trees of different sizes ..."
+                },
+                {
+                    "query": "\"Characteristics of forest ecosystems\"",
+                    "result": "Characteristics of forest ecosystems are the species abundance, diversity and richness together with integrity with other flora and fauna. The characteristics of forest ecosystems range from the obvious -- enormous trees -- to the invisible -- essential microorganisms and ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"The forest is lush\" site:.gov",
+                    "result": "Moving inland, the Forest is lush, wet and green. Visitors can hike, camp, picnic or ride their off-highway vehicle. Highway 101, the Pacific Coast Scenic ... At about 2.5 miles the forest is lush, the river is seldom seen and the trail becomes very muddy with several broken bridges. In four miles descend to end ..."
+                },
+                {
+                    "query": "\"The forest is lush\" site:nationalparks.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The forest is lush\" -site:nationalparks.gov",
+                    "result": "The forest is lush and green with new growth! The mountains are calling, plan your visit today ... Duration: 0:37. Posted: 6 days ago. Cinematic stock video clip of The forest is lush and full of green by Dom West. Licence this premium stock video on Filmsupply. Footage reference 442215. Cinematic stock video clip of The forest is lush and green by Evan Schneider. Licence this premium stock video on Filmsupply. Footage reference 680172."
+                },
+                {
+                    "query": "forest lush evidence",
+                    "result": "A discovery that shows life 90 million years ago near the South Pole may also point to what lies ahead. Palms at the Poles: Fossil Plants Reveal Lush Southern Hemisphere Forests in Ancient Hothouse Climate ... evidence to see what more they could ..."
+                },
+                {
+                    "query": "forest is lush evidence",
+                    "result": "While it has long been known that parts of Antarctica were forested and warm during the age of the dinosaurs, a new discovery reported in the ... Arid today, Australia was once covered by lush forests, according to new research (Adobe Stock). Copy Link. For decades, paleobotanist David ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "evidence that supports the existence of enchanted forests",
+                    "result": "An underwater forest discovered in the Gulf of Mexico contains trees that lived for hundreds or maybe thousands of years, and died over 50,000 ... Missing: evidence existence. Studies have shown that being in the presence of forests can have many health benefits. Missing: evidence | Show results with:evidence. I find the discoveries of this enchanted forest (as this is how it feels when you read through the truly hidden life of trees) are such an amazement that you ... Missing: evidence | Show results with:evidence."
+                },
+                {
+                    "query": "\"underwater forest\" enchanted evidence",
+                    "result": "An ancient underwater forest in the Gulf of Mexico ... Scientists are exploring a submerged forest of bald cypress trees off the coast of Alabama ... Missing: enchanted | Show results with:enchanted. underwater forest 81612 still 2.jpg View ... enchanting. The way the story goes, a fisherman ... \u201cMost evidence of this is usually covered ... Missing: enchanted | Show results with:enchanted."
+                },
+                {
+                    "query": "\"evidence of enchanted forest in Gulf of Mexico\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"evidence of enchanted forests in the Gulf of Mexico\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Enchanted\" underwater forest in the Gulf of Mexico evidence",
+                    "result": "... enchanted little environment where people can enjoy it. CURWOOD: We first aired this story back in 2012 and the fight to protect Alabama's ... The Enchanted Garden at Winterthur is full of magical spots\u2014like an elf house. 6 ... Missing: evidence | Show results with:evidence."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "How does sunlight filter through leaves?",
+                    "result": "(There are a few subtler mentions of light through green foliage signaling brighter moments.) Dagny's struggle climaxes in a desperate ... Blue light is absorbed (not transmitted) when the light passed through only one layer of leaf material. More blue and some red are absorbed by two layers of ..."
+                },
+                {
+                    "query": "sunlight filtering through leaves research",
+                    "result": "Inspired by this, we report a sunlight-driven purifier for high-efficiency water purification and production. In this study, we measured 19 traits in paired sun and shade leaves along a 3,500-m elevation gradient in southern Peru to test whether the ..."
+                },
+                {
+                    "query": "\"Sunlight filtering through leaves\"",
+                    "result": "Sunlight Filtering Through Leaves by Mai Sugimoto, released 02 February 2024 1. Departure 2. Komorebi 3. Little Dance 4. What Are You 5. Interlude 6. There is another character in The Fountainhead who contemplates sunlight filtering through leaves at a key moment in her life: Dominique lay ..."
+                },
+                {
+                    "query": "\"Does sunlight filtering through leaves indicate brighter moments?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Does sunlight filtering through leaves indicate brighter moments?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "What is the effect of sunlight on the appearance of objects?",
+                    "result": "The sun gives off light and heat. On a cool day, you might enjoy standing in the sun. When sunlight shines on you, it gives some of its energy to you. Artificial light and the sunlight are yellow light colour as we see but the sunlight more like white wavelength so the artificial light gave us ... When the Sun is low on the horizon, the shadows are long. When the Sun is high in the sky, the shadows are much shorter. We can create the same ..."
+                },
+                {
+                    "query": "\"Characteristics of sunlight glow\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Does sunlight cast a soft glow?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The sunlight casts a soft glow\" -site:wikipedia.org",
+                    "result": "On a wooden table sits a book opened with its pages slightly flipped, beside it a vase containing fresh flowers. The sunlight casts a soft glow, highlighting ... ... the sunlight casts a soft glow on Jake's handsome features. Anne looks up at him, dumbstruck and her heart thuds at the emotion. A small smile appears at ..."
+                },
+                {
+                    "query": "\"scientific explanation for why sunlight casts a soft glow\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "evidence of sunlight filtering through leaves on the forest floor",
+                    "result": "The image of sunlight filtering through green leaves figures in a number of significant passages from Rand's novels. I'm going to survey them, ... Missing: evidence floor. Because no simple English translation exists, phrases such as 'sunshine filtering through leaves' or 'dappled light' sometimes are used, ... Missing: evidence | Show results with:evidence. Is there an English equivalent of komorebi (\u6728\u6f0f\u308c\u65e5), which means the sunshine filtering through the leaves of a tree (or trees)?. It is ... Missing: floor | Show results with:floor."
+                },
+                {
+                    "query": "\"evidence of sunlight filtering through leaves on forest floor\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"evidence of sunlight filtering through leaves on forest floor\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"evidence of sunlight filtering through leaves on forest floor\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"evidence of sunlight filtering through leaves on forest floor\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Factors that can fill the air with the scent of flowers\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The air is filled with the scent of flowers\" site:nationalgeographic.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The air is filled with the scent of flowers\" +evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "air scent of flowers evidence",
+                    "result": "Researchers at the University of Virginia in Charlottesville report that three common constituents of smog destroy floral scents released by flowers to attract ... There is experimental evidence that floral volatiles attract pollinators such as orchid bees (Williams and Dodson, 1972). The best machines that we have can really detect these floral scents maybe a few meters away ... Duration: 3:09. Posted: Sep 14, 2018."
+                },
+                {
+                    "query": "\"Can floral scents travel long distances in the air?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Scientific research on bird songs and their prevalence in the air\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"The person standing in the middle of the forest notices a beautiful woman\" folklore or myth",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Forest sightings of beautiful women\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The person standing in the middle of the forest notices a beautiful woman\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The person standing in the middle of the forest notices a beautiful woman\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The person standing in the middle of the forest notices a beautiful woman\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "What are the different hair colors that women can have?",
+                    "result": "Some popular natural hair colors for women include: \u00b7 Jet Black: If you have dark hair, going for a jet black shade can give you a sleek and ... 50 Best Hair Colors and Hair Color Trends for 2024 - Hair Adviser. 2. Brunette Hair with Auburn Highlights. Warm up your dark hair by going for reddish brown ... I like colours that stand out, like ginger, bright blonde and jet black. Other colours are less interesting. Hair colour is a small factor in ..."
+                },
+                {
+                    "query": "woman flowing red hair evidence",
+                    "result": "There is an anecdotal impression that redheads experience more perioperative bleeding complications than those with other hair colors. The origin of red hair can be traced to Central Asia, caused by a mutation in the MC1R gene. Jacky Colliss Harvey untangles the stereotypes associated with being a redhead."
+                },
+                {
+                    "query": "woman flowing red hair evidence",
+                    "result": "There is an anecdotal impression that redheads experience more perioperative bleeding complications than those with other hair colors. The origin of red hair can be traced to Central Asia, caused by a mutation in the MC1R gene. Jacky Colliss Harvey untangles the stereotypes associated with being a redhead."
+                },
+                {
+                    "query": "red hair gene mutation prevalence",
+                    "result": "While their precision of 96% and 97.5%, respectively, for R homozygous or compound heterozygous genotypes predicting red hair is high, it is ... Though about 1-2% of the general world population has the red hair gene, that percentage rises to 2 to 6 percentTrusted Source north of the ... \"Red hair is caused by changes in a single gene, and exists in the overall global population at about 4 to 5 percent, making it beautifully ..."
+                },
+                {
+                    "query": "\"Percentage of women with red hair worldwide\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"The woman has piercing green eyes\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The woman has piercing green eyes\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The woman has piercing green eyes\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The woman has piercing green eyes\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The woman has piercing green eyes\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Average bust size of women\"",
+                    "result": "The average bust size of women in the UK has been revealed (Image: Getty Images ... First off, Mercer said that as the average bust size of women is growing (34B to a 36D/36DD in the last decade), \"it's become more important ... The average bust size for a size 18 woman is 109 cm/43 in. What is average bust size of women of Pakistan? 34 \u00b7 Bust size 97cm equals what bust size? size 12 ..."
+                },
+                {
+                    "query": "\"Average bust size of women in the UK\"",
+                    "result": "The average bust size of women in the UK has been revealed (Image: Getty Images ... First off, Mercer said that as the average bust size of women in the UK is growing (34B to a 36D/36DD in the last decade), \"it's become more ..."
+                },
+                {
+                    "query": "\"Statistics on average bust size of women in the UK\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "site:wikipedia.org \"average bust size of women in the UK\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Is bust size determined by hair color and eye color?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"beautiful busty woman with flowing red hair and piercing green eyes\" outfit evidence",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Beautiful busty woman with flowing red hair and piercing green eyes\" outfit",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Outfit of the beautiful, busty woman with flowing red hair and piercing green eyes\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Beautiful busty woman with flowing red hair and piercing green eyes\" outfit",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Beautiful busty woman with flowing red hair and piercing green eyes\" outfit",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Outfit revealing beautiful busty woman\" -site:knowledgesource.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "evidence revealing outfit busty woman",
+                    "result": "... outfit. A fashion rule that usually only busty girls are aware of is that the larger your shoulders/chest, the more you want to stay away ... Missing: evidence | Show results with:evidence. If you're full through the chest and wondering how to dress for your body type, this video is ... Duration: 2:23. Posted: Aug 16, 2022."
+                },
+                {
+                    "query": "\"Outfit revealing busty woman\" -site:knowledge.com",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Does the outfit someone is wearing accentuate their curves?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "outfit that accentuates curves busty woman",
+                    "result": "For formal occasions, consider dresses with a defined waist to accentuate your curves and avoid looking overwhelmed. A V-neckline or ... Choose skirts and dresses with flared or A-line silhouettes. These styles will help to create the illusion of curves where there may be none. 3. Missing: busty | Show results with:busty."
+                },
+                {
+                    "query": "outfit that accentuates curves busty woman",
+                    "result": "For formal occasions, consider dresses with a defined waist to accentuate your curves and avoid looking overwhelmed. A V-neckline or ... Choose skirts and dresses with flared or A-line silhouettes. These styles will help to create the illusion of curves where there may be none. 3. Missing: busty | Show results with:busty."
+                },
+                {
+                    "query": "outfit that accentuates curves busty woman",
+                    "result": "Now, I will show you the ideal way to dress for a woman with an hourglass body shape. ... You have beautiful curves and that makes you look very ... Choose skirts and dresses with flared or A-line silhouettes. These styles will help to create the illusion of curves where there may be none. 3. Missing: busty | Show results with:busty."
+                },
+                {
+                    "query": "\"outfit that accentuates curves busty woman\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        }
+    ],
+    "Supported": 5,
+    "Irrelevant": 1,
+    "Not Supported": 11
+}

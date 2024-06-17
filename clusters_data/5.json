@@ -1,0 +1,792 @@
+{
+    "prompt": "Give me an introduction over 200 words for B D Aromatics Pvt. Ltd, a chemical company in INDIA India",
+    "response": " BDA Aromatics Pvt. Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives. The company was established in 1990 and has since become a prominent player in the Indian chemical industry. With a focus on quality, innovation, and customer satisfaction, BDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries.\n\n The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals. BDA Aromatics Pvt.",
+    "num_claims": 20,
+    "sentences_and_atomic_facts": [
+        [
+            "BDA Aromatics Pvt.",
+            []
+        ],
+        [
+            "Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives.",
+            [
+                "Ltd. is a chemical company.",
+                "Ltd. is based in India.",
+                "Ltd. is a leading chemical company.",
+                "Ltd. specializes in the production of aromatic chemicals.",
+                "Ltd. specializes in the production of derivatives."
+            ]
+        ],
+        [
+            "The company was established in 1990 and has since become a prominent player in the Indian chemical industry.",
+            [
+                "The company was established in 1990.",
+                "The company has become a prominent player.",
+                "The company has become a prominent player in the Indian chemical industry."
+            ]
+        ],
+        [
+            "With a focus on quality, innovation, and customer satisfaction, BDA Aromatics Pvt.",
+            [
+                "BDA Aromatics Pvt. is a company.",
+                "BDA Aromatics Pvt. focuses on quality.",
+                "BDA Aromatics Pvt. focuses on innovation.",
+                "BDA Aromatics Pvt. focuses on customer satisfaction."
+            ]
+        ],
+        [
+            "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            [
+                "Ltd. has established itself.",
+                "Ltd. has established itself as a trusted partner.",
+                "Ltd. has established itself as a trusted partner to a diverse range of industries."
+            ]
+        ],
+        [
+            "The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals.",
+            [
+                "The company's portfolio of products includes aromatic chemicals.",
+                "The company's portfolio of products includes aromatic chemicals derived from natural sources.",
+                "The company's portfolio of products includes aromatic chemicals derived from synthetic sources.",
+                "The company's portfolio of products includes intermediates.",
+                "The company's portfolio of products includes specialty chemicals."
+            ]
+        ],
+        [
+            "BDA Aromatics Pvt.",
+            []
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "BDA Aromatics Pvt.",
+            "atomic_facts": []
+        },
+        {
+            "sentence": "Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives.",
+            "atomic_facts": [
+                "Ltd. is a chemical company.",
+                "Ltd. is based in India.",
+                "Ltd. is a leading chemical company.",
+                "Ltd. specializes in the production of aromatic chemicals.",
+                "Ltd. specializes in the production of derivatives."
+            ]
+        },
+        {
+            "sentence": "The company was established in 1990 and has since become a prominent player in the Indian chemical industry.",
+            "atomic_facts": [
+                "The company was established in 1990.",
+                "The company has become a prominent player.",
+                "The company has become a prominent player in the Indian chemical industry."
+            ]
+        },
+        {
+            "sentence": "With a focus on quality, innovation, and customer satisfaction, BDA Aromatics Pvt.",
+            "atomic_facts": [
+                "BDA Aromatics Pvt. is a company.",
+                "BDA Aromatics Pvt. focuses on quality.",
+                "BDA Aromatics Pvt. focuses on innovation.",
+                "BDA Aromatics Pvt. focuses on customer satisfaction."
+            ]
+        },
+        {
+            "sentence": "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            "atomic_facts": [
+                "Ltd. has established itself.",
+                "Ltd. has established itself as a trusted partner.",
+                "Ltd. has established itself as a trusted partner to a diverse range of industries."
+            ]
+        },
+        {
+            "sentence": "The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals.",
+            "atomic_facts": [
+                "The company's portfolio of products includes aromatic chemicals.",
+                "The company's portfolio of products includes aromatic chemicals derived from natural sources.",
+                "The company's portfolio of products includes aromatic chemicals derived from synthetic sources.",
+                "The company's portfolio of products includes intermediates.",
+                "The company's portfolio of products includes specialty chemicals."
+            ]
+        },
+        {
+            "sentence": "BDA Aromatics Pvt.",
+            "atomic_facts": []
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives.",
+            "atomic_fact": "Ltd. is a chemical company.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. is a chemical company.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. is a chemical company.",
+                "revised_fact": "The subject in the statement \"Ltd. is a chemical company\" is \"Ltd.\". \"Ltd.\" is not a pronoun and does not reference an unknown entity. However, \"Ltd.\" is a non-full name and should be replaced by the full name of the company, which is \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n```\nBDA Aromatics Pvt. Ltd. is a chemical company.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is also B D Aromatics Pvt. Ltd, specifically that it is a chemical company. The RESPONSE provides information about B D Aromatics Pvt. Ltd, stating that it is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives. Therefore, the subjects B D Aromatics Pvt. Ltd and B D Aromatics Pvt. Ltd being a chemical company are [Foo]."
+            },
+            "rate_data": {
+                "response": "To determine whether the statement is supported by the given knowledge, we need to analyze the information provided.\n\nThe knowledge points do not provide any specific information about BDA Aromatics Pvt. Ltd. or its nature of business. Therefore, we cannot directly conclude that BDA Aromatics Pvt. Ltd. is a chemical company based on the given knowledge.\n\nHowever, it is important to note that the statement does not conflict with the knowledge either. It is possible that BDA Aromatics Pvt. Ltd. is a chemical company, but we cannot confirm it based on the given knowledge alone.\n\nTherefore, based on the information provided, we cannot determine whether BDA Aromatics Pvt. Ltd. is a chemical company or not. \n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives.",
+            "atomic_fact": "Ltd. is based in India.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. is based in India.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. is based in India.",
+                "revised_fact": "The subject of the statement \"Ltd. is based in India\" is \"Ltd.\". This is a non-full name and does not specify the entity it is referring to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\" which is a leading chemical company based in India. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. is based in India.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd., is a leading chemical company based in India\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and India is that the company is based in India. For this reason, the subjects B D Aromatics Pvt. Ltd and India are [Foo]."
+            },
+            "rate_data": {
+                "response": "There is no specific knowledge given about BDA Aromatics Pvt. Ltd. or its location in the given information. Therefore, we cannot determine whether the statement is supported or not supported. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives.",
+            "atomic_fact": "Ltd. is a leading chemical company.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. is a leading chemical company.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. is a leading chemical company.",
+                "revised_fact": "The subject in the statement \"Ltd. is a leading chemical company\" is \"Ltd.\". \"Ltd.\" is a non-full name and does not reference a known entity in the RESPONSE. From the RESPONSE, we can see that the company being referred to is \"BDA Aromatics Pvt. Ltd.\". Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. is a leading chemical company.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd., is a leading chemical company based in India\" from the RESPONSE directly states that BDA Aromatics Pvt. Ltd. is a leading chemical company. Therefore, the subjects B D Aromatics Pvt. Ltd and BDA Aromatics Pvt. Ltd. are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge provides information about B D Aromatics Pvt. Ltd., stating that they are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India. However, there is no information provided that directly supports the statement that BDA Aromatics Pvt. Ltd. is a leading chemical company. Therefore, the statement is not supported by the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives.",
+            "atomic_fact": "Ltd. specializes in the production of aromatic chemicals.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. specializes in the production of aromatic chemicals.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. specializes in the production of aromatic chemicals.",
+                "revised_fact": "The subject in the statement \"Ltd. specializes in the production of aromatic chemicals\" is \"Ltd.\". \"Ltd.\" is a vague reference as it does not provide any specific information about the company. From the response, we can see that the company being referred to is \"BDA Aromatics Pvt. Ltd.\". Therefore, \"Ltd.\" should be replaced with \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n```\nBDA Aromatics Pvt. Ltd. specializes in the production of aromatic chemicals.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in INDIA. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and the production of aromatic chemicals is that B D Aromatics Pvt. Ltd specializes in the production of aromatic chemicals. For this reason, the subjects B D Aromatics Pvt. Ltd and the production of aromatic chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge states that BDA Aromatics Pvt. Ltd. specializes in the production of aromatic chemicals. To determine if the statement is supported by the knowledge, we need to confirm if BDA Aromatics Pvt. Ltd. is indeed a company that specializes in producing aromatic chemicals.\n\nThe knowledge explicitly states that BDA Aromatics Pvt. Ltd. specializes in the production of aromatic chemicals. This means that their main focus and expertise lie in the production of these chemicals.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives.",
+            "atomic_fact": "Ltd. specializes in the production of derivatives.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. specializes in the production of derivatives.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. specializes in the production of derivatives.",
+                "revised_fact": "The subject of the statement \"Ltd. specializes in the production of derivatives\" is \"Ltd.\". This is a non-full name and does not reference a specific entity. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\", which is the full name of the company. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. specializes in the production of derivatives.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is derivatives. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals\" from the RESPONSE shows that B D Aromatics Pvt. Ltd specializes in the production of derivatives. For this reason, the subjects B D Aromatics Pvt. Ltd and derivatives are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n\nThe given statement is that BDA Aromatics Pvt. Ltd. specializes in the production of derivatives. To determine if this statement is supported by the given knowledge, we need to analyze the main points of the knowledge.\n\nThe knowledge does not provide any specific information about the production specialization of BDA Aromatics Pvt. Ltd. It only mentions the company name, \"BDA Aromatics Pvt. Ltd.\".\n\nBased on the given knowledge, we cannot determine whether BDA Aromatics Pvt. Ltd. specializes in the production of derivatives or not.\n\nTherefore, the statement is not supported by the given knowledge.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company was established in 1990 and has since become a prominent player in the Indian chemical industry.",
+            "atomic_fact": "The company was established in 1990.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. was established in 1990.",
+            "relevance_data": {
+                "atomic_fact": "The company was established in 1990.",
+                "revised_fact": "The subject in the statement \"The company was established in 1990\" is \"The company\". \"The company\" is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\" Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. was established in 1990.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The RESPONSE states that \"The company was established in 1990,\" which directly matches the subject of the STATEMENT. Therefore, the subjects B D Aromatics Pvt. Ltd and B D Aromatics Pvt. Ltd should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "There is no information or evidence provided in the KNOWLEDGE that supports or contradicts the given statement. Therefore, the statement cannot be determined as supported or not supported based on the given information. [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company was established in 1990 and has since become a prominent player in the Indian chemical industry.",
+            "atomic_fact": "The company has become a prominent player.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. has become a prominent player.",
+            "relevance_data": {
+                "atomic_fact": "The company has become a prominent player.",
+                "revised_fact": "The subject in the statement \"The company has become a prominent player\" is \"The company\". \"The company\" is a vague reference because it does not specify which company it is referring to. From the RESPONSE, we can see that the STATEMENT is referring to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has become a prominent player.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"The company was established in 1990 and has since become a prominent player in the Indian chemical industry\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry. This establishes a relationship between the subject of the QUESTION and the subject of the STATEMENT, as both refer to B D Aromatics Pvt. Ltd. and its prominence in the chemical industry. Therefore, the subjects B D Aromatics Pvt. Ltd. and BDA Aromatics Pvt. Ltd. are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is a mention of BDA Aromatics Pvt. Ltd. being a leading player in the Global Fragrance and Flavors industry since 1935. This suggests that BDA Aromatics Pvt. Ltd. has become a prominent player.\n\nStatement: BDA Aromatics Pvt. Ltd. has become a prominent player.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company was established in 1990 and has since become a prominent player in the Indian chemical industry.",
+            "atomic_fact": "The company has become a prominent player in the Indian chemical industry.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry.",
+            "relevance_data": {
+                "atomic_fact": "The company has become a prominent player in the Indian chemical industry.",
+                "revised_fact": "The subject of the statement \"The company has become a prominent player in the Indian chemical industry\" is \"The company\". This is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The phrase \"The company was established in 1990 and has since become a prominent player in the Indian chemical industry\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry. For this reason, the subjects B D Aromatics Pvt. Ltd. and B D Aromatics Pvt. Ltd. are [Foo]."
+            },
+            "rate_data": {
+                "response": "To determine whether the statement is supported by the given knowledge, we need to analyze the information provided.\n\nThe knowledge provided does not mention anything specific about BDA Aromatics Pvt. Ltd. Therefore, we cannot directly conclude that they have become a prominent player in the Indian chemical industry based on the given knowledge.\n\nHowever, it is possible that BDA Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry, but this information is not provided in the given knowledge.\n\nBased on the given knowledge, we cannot determine whether the statement is supported or not.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With a focus on quality, innovation, and customer satisfaction, BDA Aromatics Pvt.",
+            "atomic_fact": "BDA Aromatics Pvt. is a company.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. is a company.",
+            "relevance_data": {
+                "atomic_fact": "BDA Aromatics Pvt. is a company.",
+                "revised_fact": "The subject in the statement \"BDA Aromatics Pvt. is a company\" is \"BDA Aromatics Pvt.\". \"BDA Aromatics Pvt.\" is not a pronoun and does not reference an unknown entity. Furthermore, \"BDA Aromatics Pvt.\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. is a company.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd. The subject of the STATEMENT is BDA Aromatics Pvt. The RESPONSE states that BDA Aromatics Pvt. Ltd. is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives. This information confirms that BDA Aromatics Pvt. Ltd. is indeed a company. Therefore, the subjects B D Aromatics Pvt. Ltd. and BDA Aromatics Pvt. should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge states that no good Google Search result was found. This knowledge does not provide any information about BDA Aromatics Pvt. being a company or not. Therefore, we cannot determine whether the statement is supported or not based on the given knowledge.\n\nRestatement:\nBDA Aromatics Pvt. is a company.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With a focus on quality, innovation, and customer satisfaction, BDA Aromatics Pvt.",
+            "atomic_fact": "BDA Aromatics Pvt. focuses on quality.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. focuses on quality.",
+            "relevance_data": {
+                "atomic_fact": "BDA Aromatics Pvt. focuses on quality.",
+                "revised_fact": "The subject of the statement \"BDA Aromatics Pvt. focuses on quality\" is \"BDA Aromatics Pvt.\". From the response, we can see that \"BDA Aromatics Pvt.\" is a full name and does not reference an unknown entity. Therefore, \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. focuses on quality.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd. The subject of the STATEMENT is quality. The phrase \"With a focus on quality, innovation, and customer satisfaction\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. focuses on quality. For this reason, the subjects B D Aromatics Pvt. Ltd. and quality are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe statement mentions BDA Aromatics Pvt. focusing on quality. The knowledge provided supports this statement by mentioning that B D Aromatics's manufacturing facilities maintain the highest standards of quality control and assurance, adhere to efficient processes, and are certified with ISO 9001:2015. Additionally, the knowledge states that the QC department works tirelessly to reduce risks in production, attain rapid product release, and eliminate defects, impurities, and contamination. \n\nTherefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "With a focus on quality, innovation, and customer satisfaction, BDA Aromatics Pvt.",
+            "atomic_fact": "BDA Aromatics Pvt. focuses on innovation.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. focuses on innovation.",
+            "relevance_data": {
+                "atomic_fact": "BDA Aromatics Pvt. focuses on innovation.",
+                "revised_fact": "The subject of the statement \"BDA Aromatics Pvt. focuses on innovation\" is \"BDA Aromatics Pvt.\". From the response, we can see that \"BDA Aromatics Pvt.\" is a full name and does not reference an unknown entity. Therefore, \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. focuses on innovation.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the focus of BDA Aromatics Pvt. Ltd, which is innovation. The phrase \"With a focus on quality, innovation, and customer satisfaction\" from the RESPONSE shows that BDA Aromatics Pvt. Ltd. focuses on innovation. For this reason, the subjects B D Aromatics Pvt. Ltd and innovation are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is a mention of BDA Aromatics Pvt. Ltd. in the context of being manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals. However, there is no explicit mention of their focus on innovation.\n\nTherefore, we cannot conclude that BDA Aromatics Pvt. Ltd. focuses on innovation based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "With a focus on quality, innovation, and customer satisfaction, BDA Aromatics Pvt.",
+            "atomic_fact": "BDA Aromatics Pvt. focuses on customer satisfaction.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. focuses on customer satisfaction.",
+            "relevance_data": {
+                "atomic_fact": "BDA Aromatics Pvt. focuses on customer satisfaction.",
+                "revised_fact": "The subject of the statement \"BDA Aromatics Pvt. focuses on customer satisfaction\" is \"BDA Aromatics Pvt.\". From the response, we can see that \"BDA Aromatics Pvt.\" is a full name and does not reference an unknown entity. Therefore, \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. focuses on customer satisfaction.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd. The subject of the STATEMENT is customer satisfaction. The phrase \"With a focus on quality, innovation, and customer satisfaction\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. focuses on customer satisfaction. For this reason, the subjects B D Aromatics Pvt. Ltd. and customer satisfaction are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge does not provide any information about BDA Aromatics Pvt. or its focus on customer satisfaction. Therefore, we cannot determine whether the statement is supported or not supported based on the given knowledge.\n\nRestatement of Statement:\nBDA Aromatics Pvt. focuses on customer satisfaction.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            "atomic_fact": "Ltd. has established itself.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. has established itself.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. has established itself.",
+                "revised_fact": "The subject of the statement \"Ltd. has established itself\" is \"Ltd.\". This is a non-full name and does not provide enough information to identify the entity it is referring to. From the RESPONSE, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\", which is a chemical company based in India. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has established itself.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd. has established itself\" from the RESPONSE shows that the company has established itself in the industry. This indicates that the subject of the STATEMENT and the subject of the QUESTION are related, as they both refer to BDA Aromatics Pvt. Ltd. and its establishment. Therefore, the subjects B D Aromatics Pvt. Ltd and BDA Aromatics Pvt. Ltd. are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, there is no direct mention of BDA Aromatics Pvt. Ltd. Therefore, we cannot conclude that BDA Aromatics Pvt. Ltd. has established itself.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            "atomic_fact": "Ltd. has established itself as a trusted partner.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. has established itself as a trusted partner.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. has established itself as a trusted partner.",
+                "revised_fact": "The subject of the statement \"Ltd. has established itself as a trusted partner\" is \"Ltd.\". \"Ltd.\" is a non-full name that refers to \"BDA Aromatics Pvt. Ltd.\" based on the response. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has established itself as a trusted partner.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd. has established itself as a trusted partner\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and being a trusted partner has been established. For this reason, the subjects B D Aromatics Pvt. Ltd and being a trusted partner are [Foo]."
+            },
+            "rate_data": {
+                "response": "To determine whether the statement is supported by the given knowledge, let's analyze the main points from the knowledge:\n\n1. The knowledge mentions BDA Aromatics Pvt. Ltd.\n2. The knowledge does not provide specific information about BDA Aromatics Pvt. Ltd. being a trusted partner.\n\nBased on the provided knowledge, there is no explicit evidence or information that supports the statement that BDA Aromatics Pvt. Ltd. has established itself as a trusted partner. Therefore, the statement is not supported. \n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            "atomic_fact": "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            "relevance_data": {
+                "atomic_fact": "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+                "revised_fact": "The subject of the statement \"Ltd. has established itself as a trusted partner to a diverse range of industries\" is \"Ltd.\". This is a non-full name and does not specify the entity it is referring to. From the response, we can see that \"Ltd.\" is referring to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n```\nBDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries. This demonstrates the relationship between the subject of the QUESTION and the subject of the STATEMENT, indicating that they are both referring to B D Aromatics Pvt. Ltd. as a trusted partner. For this reason, the subjects B D Aromatics Pvt. Ltd. and B D Aromatics Pvt. Ltd. are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge provides information about Aromatics and its products, customer reviews, and certifications. However, there is no specific mention of BDA Aromatics Pvt. Ltd. Therefore, we cannot determine whether BDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals.",
+            "atomic_fact": "The company's portfolio of products includes aromatic chemicals.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals.",
+            "relevance_data": {
+                "atomic_fact": "The company's portfolio of products includes aromatic chemicals.",
+                "revised_fact": "The subject of the statement \"The company's portfolio of products includes aromatic chemicals\" is \"The company\". From the response, we can see that \"The company\" refers to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"The company\" is a non-full name that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised response is:\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the portfolio of products of B D Aromatics Pvt. Ltd. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and aromatic chemicals is that the company produces and includes aromatic chemicals in its portfolio of products. For this reason, the subjects B D Aromatics Pvt. Ltd and aromatic chemicals are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not explicitly mention BDA Aromatics Pvt. Ltd.'s portfolio of products. However, the statement implies that their portfolio includes aromatic chemicals.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals.",
+            "atomic_fact": "The company's portfolio of products includes aromatic chemicals derived from natural sources.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from natural sources.",
+            "relevance_data": {
+                "atomic_fact": "The company's portfolio of products includes aromatic chemicals derived from natural sources.",
+                "revised_fact": "The subject of the statement \"The company's portfolio of products includes aromatic chemicals derived from natural sources\" is \"The company's portfolio of products\". This is a reference to an unknown entity, as it is unclear which company's portfolio of products is being referred to. From the response, we can see that the statement is referring to the portfolio of products of BDA Aromatics Pvt. Ltd. Therefore, \"The company's portfolio of products\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.'s portfolio of products\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from natural sources.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the portfolio of products of B D Aromatics Pvt. Ltd, specifically the aromatic chemicals derived from natural sources. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and the aromatic chemicals derived from natural sources is that the company includes these chemicals in its product portfolio. For this reason, the subjects B D Aromatics Pvt. Ltd and the aromatic chemicals derived from natural sources are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention that B D Aromatics Pvt. Ltd. is a manufacturer and supplier of natural essential oils and aroma chemicals. They specifically mention that they produce natural essential oils and aroma chemicals from India. Therefore, it can be inferred that B D Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from natural sources.\n\nStatement: BDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from natural sources.\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals.",
+            "atomic_fact": "The company's portfolio of products includes aromatic chemicals derived from synthetic sources.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from synthetic sources.",
+            "relevance_data": {
+                "atomic_fact": "The company's portfolio of products includes aromatic chemicals derived from synthetic sources.",
+                "revised_fact": "The subject of the statement \"The company's portfolio of products includes aromatic chemicals derived from synthetic sources\" is \"The company's portfolio of products\". This is a reference to an unknown entity, as it is unclear which company's portfolio of products is being referred to. From the response, we can see that the statement is referring to the portfolio of products of BDA Aromatics Pvt. Ltd. Thus, \"The company's portfolio of products\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.'s portfolio of products\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from synthetic sources.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd.'s portfolio of products. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and their portfolio of products is that the portfolio includes aromatic chemicals derived from synthetic sources. For this reason, the subjects B D Aromatics Pvt. Ltd and BDA Aromatics Pvt. Ltd.'s portfolio of products are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe statement claims that BDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from synthetic sources. To determine if this statement is supported by the given knowledge, we need to examine the main points of the knowledge.\n\nThe knowledge does not provide any specific information about BDA Aromatics Pvt. Ltd.'s portfolio of products or the sources of their aromatic chemicals. Therefore, we cannot directly conclude whether the statement is supported or not.\n\nRestated statement: BDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from synthetic sources.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals.",
+            "atomic_fact": "The company's portfolio of products includes intermediates.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd.'s portfolio of products includes intermediates.",
+            "relevance_data": {
+                "atomic_fact": "The company's portfolio of products includes intermediates.",
+                "revised_fact": "The subject in the statement \"The company's portfolio of products includes intermediates\" is \"The company's portfolio of products\". This is a vague reference because it does not specify which company's portfolio of products is being referred to. From the response, we can see that the statement is referring to the portfolio of products of \"BDA Aromatics Pvt. Ltd.\". Thus, \"The company's portfolio of products\" should be replaced by \"BDA Aromatics Pvt. Ltd.'s portfolio of products\". \n\nThe revised statement is:\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes intermediates.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the portfolio of products of B D Aromatics Pvt. Ltd. The phrase \"The company's portfolio of products includes intermediates\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and intermediates is that intermediates are included in their portfolio of products. For this reason, the subjects B D Aromatics Pvt. Ltd and intermediates are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points mention that BDA has assisted clients in the chemical sector, including intermediates. Additionally, the knowledge points mention the development, manufacturing, and marketing of chemical intermediates by BDA. Therefore, it can be inferred that BDA Aromatics Pvt. Ltd.'s portfolio of products includes intermediates.\n\nRestatement:\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes intermediates.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals.",
+            "atomic_fact": "The company's portfolio of products includes specialty chemicals.",
+            "self_contained_atomic_fact": "BDA Aromatics Pvt. Ltd.'s portfolio of products includes specialty chemicals.",
+            "relevance_data": {
+                "atomic_fact": "The company's portfolio of products includes specialty chemicals.",
+                "revised_fact": "The subject of the statement \"The company's portfolio of products includes specialty chemicals\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\", which is a chemical company based in India. Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes specialty chemicals.\n```",
+                "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd's portfolio of products. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals\" from the RESPONSE shows that B D Aromatics Pvt. Ltd's portfolio of products includes specialty chemicals. For this reason, the subjects B D Aromatics Pvt. Ltd and its portfolio of products are [Foo]."
+            },
+            "rate_data": {
+                "response": "The given KNOWLEDGE does not provide any information about BDA Aromatics Pvt. Ltd.'s portfolio of products. Therefore, we cannot determine whether their portfolio includes specialty chemicals or not.\n\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "Ltd. is a chemical company.",
+            "revised_fact": "The subject in the statement \"Ltd. is a chemical company\" is \"Ltd.\". \"Ltd.\" is not a pronoun and does not reference an unknown entity. However, \"Ltd.\" is a non-full name and should be replaced by the full name of the company, which is \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n```\nBDA Aromatics Pvt. Ltd. is a chemical company.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is also B D Aromatics Pvt. Ltd, specifically that it is a chemical company. The RESPONSE provides information about B D Aromatics Pvt. Ltd, stating that it is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives. Therefore, the subjects B D Aromatics Pvt. Ltd and B D Aromatics Pvt. Ltd being a chemical company are [Foo]."
+        },
+        {
+            "atomic_fact": "Ltd. is based in India.",
+            "revised_fact": "The subject of the statement \"Ltd. is based in India\" is \"Ltd.\". This is a non-full name and does not specify the entity it is referring to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\" which is a leading chemical company based in India. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. is based in India.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd., is a leading chemical company based in India\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and India is that the company is based in India. For this reason, the subjects B D Aromatics Pvt. Ltd and India are [Foo]."
+        },
+        {
+            "atomic_fact": "Ltd. is a leading chemical company.",
+            "revised_fact": "The subject in the statement \"Ltd. is a leading chemical company\" is \"Ltd.\". \"Ltd.\" is a non-full name and does not reference a known entity in the RESPONSE. From the RESPONSE, we can see that the company being referred to is \"BDA Aromatics Pvt. Ltd.\". Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. is a leading chemical company.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd., is a leading chemical company based in India\" from the RESPONSE directly states that BDA Aromatics Pvt. Ltd. is a leading chemical company. Therefore, the subjects B D Aromatics Pvt. Ltd and BDA Aromatics Pvt. Ltd. are [Foo]."
+        },
+        {
+            "atomic_fact": "Ltd. specializes in the production of aromatic chemicals.",
+            "revised_fact": "The subject in the statement \"Ltd. specializes in the production of aromatic chemicals\" is \"Ltd.\". \"Ltd.\" is a vague reference as it does not provide any specific information about the company. From the response, we can see that the company being referred to is \"BDA Aromatics Pvt. Ltd.\". Therefore, \"Ltd.\" should be replaced with \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n```\nBDA Aromatics Pvt. Ltd. specializes in the production of aromatic chemicals.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in INDIA. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd., is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and the production of aromatic chemicals is that B D Aromatics Pvt. Ltd specializes in the production of aromatic chemicals. For this reason, the subjects B D Aromatics Pvt. Ltd and the production of aromatic chemicals are [Foo]."
+        },
+        {
+            "atomic_fact": "Ltd. specializes in the production of derivatives.",
+            "revised_fact": "The subject of the statement \"Ltd. specializes in the production of derivatives\" is \"Ltd.\". This is a non-full name and does not reference a specific entity. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\", which is the full name of the company. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. specializes in the production of derivatives.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is derivatives. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals\" from the RESPONSE shows that B D Aromatics Pvt. Ltd specializes in the production of derivatives. For this reason, the subjects B D Aromatics Pvt. Ltd and derivatives are [Foo]."
+        },
+        {
+            "atomic_fact": "The company was established in 1990.",
+            "revised_fact": "The subject in the statement \"The company was established in 1990\" is \"The company\". \"The company\" is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\" Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. was established in 1990.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The RESPONSE states that \"The company was established in 1990,\" which directly matches the subject of the STATEMENT. Therefore, the subjects B D Aromatics Pvt. Ltd and B D Aromatics Pvt. Ltd should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "The company has become a prominent player.",
+            "revised_fact": "The subject in the statement \"The company has become a prominent player\" is \"The company\". \"The company\" is a vague reference because it does not specify which company it is referring to. From the RESPONSE, we can see that the STATEMENT is referring to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has become a prominent player.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"The company was established in 1990 and has since become a prominent player in the Indian chemical industry\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry. This establishes a relationship between the subject of the QUESTION and the subject of the STATEMENT, as both refer to B D Aromatics Pvt. Ltd. and its prominence in the chemical industry. Therefore, the subjects B D Aromatics Pvt. Ltd. and BDA Aromatics Pvt. Ltd. are [Foo]."
+        },
+        {
+            "atomic_fact": "The company has become a prominent player in the Indian chemical industry.",
+            "revised_fact": "The subject of the statement \"The company has become a prominent player in the Indian chemical industry\" is \"The company\". This is a vague reference because it does not specify which company it is referring to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The phrase \"The company was established in 1990 and has since become a prominent player in the Indian chemical industry\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. has become a prominent player in the Indian chemical industry. For this reason, the subjects B D Aromatics Pvt. Ltd. and B D Aromatics Pvt. Ltd. are [Foo]."
+        },
+        {
+            "atomic_fact": "BDA Aromatics Pvt. is a company.",
+            "revised_fact": "The subject in the statement \"BDA Aromatics Pvt. is a company\" is \"BDA Aromatics Pvt.\". \"BDA Aromatics Pvt.\" is not a pronoun and does not reference an unknown entity. Furthermore, \"BDA Aromatics Pvt.\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. is a company.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd. The subject of the STATEMENT is BDA Aromatics Pvt. The RESPONSE states that BDA Aromatics Pvt. Ltd. is a leading chemical company based in India, specializing in the production of aromatic chemicals and derivatives. This information confirms that BDA Aromatics Pvt. Ltd. is indeed a company. Therefore, the subjects B D Aromatics Pvt. Ltd. and BDA Aromatics Pvt. should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "BDA Aromatics Pvt. focuses on quality.",
+            "revised_fact": "The subject of the statement \"BDA Aromatics Pvt. focuses on quality\" is \"BDA Aromatics Pvt.\". From the response, we can see that \"BDA Aromatics Pvt.\" is a full name and does not reference an unknown entity. Therefore, \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. focuses on quality.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd. The subject of the STATEMENT is quality. The phrase \"With a focus on quality, innovation, and customer satisfaction\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. focuses on quality. For this reason, the subjects B D Aromatics Pvt. Ltd. and quality are [Foo]."
+        },
+        {
+            "atomic_fact": "BDA Aromatics Pvt. focuses on innovation.",
+            "revised_fact": "The subject of the statement \"BDA Aromatics Pvt. focuses on innovation\" is \"BDA Aromatics Pvt.\". From the response, we can see that \"BDA Aromatics Pvt.\" is a full name and does not reference an unknown entity. Therefore, \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. focuses on innovation.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the focus of BDA Aromatics Pvt. Ltd, which is innovation. The phrase \"With a focus on quality, innovation, and customer satisfaction\" from the RESPONSE shows that BDA Aromatics Pvt. Ltd. focuses on innovation. For this reason, the subjects B D Aromatics Pvt. Ltd and innovation are [Foo]."
+        },
+        {
+            "atomic_fact": "BDA Aromatics Pvt. focuses on customer satisfaction.",
+            "revised_fact": "The subject of the statement \"BDA Aromatics Pvt. focuses on customer satisfaction\" is \"BDA Aromatics Pvt.\". From the response, we can see that \"BDA Aromatics Pvt.\" is a full name and does not reference an unknown entity. Therefore, \"BDA Aromatics Pvt.\" is not a vague reference. Thus, the revised statement is:\n```\nBDA Aromatics Pvt. focuses on customer satisfaction.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd. The subject of the STATEMENT is customer satisfaction. The phrase \"With a focus on quality, innovation, and customer satisfaction\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. focuses on customer satisfaction. For this reason, the subjects B D Aromatics Pvt. Ltd. and customer satisfaction are [Foo]."
+        },
+        {
+            "atomic_fact": "Ltd. has established itself.",
+            "revised_fact": "The subject of the statement \"Ltd. has established itself\" is \"Ltd.\". This is a non-full name and does not provide enough information to identify the entity it is referring to. From the RESPONSE, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\", which is a chemical company based in India. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has established itself.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd. has established itself\" from the RESPONSE shows that the company has established itself in the industry. This indicates that the subject of the STATEMENT and the subject of the QUESTION are related, as they both refer to BDA Aromatics Pvt. Ltd. and its establishment. Therefore, the subjects B D Aromatics Pvt. Ltd and BDA Aromatics Pvt. Ltd. are [Foo]."
+        },
+        {
+            "atomic_fact": "Ltd. has established itself as a trusted partner.",
+            "revised_fact": "The subject of the statement \"Ltd. has established itself as a trusted partner\" is \"Ltd.\". \"Ltd.\" is a non-full name that refers to \"BDA Aromatics Pvt. Ltd.\" based on the response. Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd. has established itself as a trusted partner.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd. has established itself as a trusted partner\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and being a trusted partner has been established. For this reason, the subjects B D Aromatics Pvt. Ltd and being a trusted partner are [Foo]."
+        },
+        {
+            "atomic_fact": "Ltd. has established itself as a trusted partner to a diverse range of industries.",
+            "revised_fact": "The subject of the statement \"Ltd. has established itself as a trusted partner to a diverse range of industries\" is \"Ltd.\". This is a non-full name and does not specify the entity it is referring to. From the response, we can see that \"Ltd.\" is referring to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"Ltd.\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n```\nBDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd. The phrase \"BDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries\" from the RESPONSE shows that B D Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries. This demonstrates the relationship between the subject of the QUESTION and the subject of the STATEMENT, indicating that they are both referring to B D Aromatics Pvt. Ltd. as a trusted partner. For this reason, the subjects B D Aromatics Pvt. Ltd. and B D Aromatics Pvt. Ltd. are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's portfolio of products includes aromatic chemicals.",
+            "revised_fact": "The subject of the statement \"The company's portfolio of products includes aromatic chemicals\" is \"The company\". From the response, we can see that \"The company\" refers to \"BDA Aromatics Pvt. Ltd.\". Therefore, \"The company\" is a non-full name that should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised response is:\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the portfolio of products of B D Aromatics Pvt. Ltd. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and aromatic chemicals is that the company produces and includes aromatic chemicals in its portfolio of products. For this reason, the subjects B D Aromatics Pvt. Ltd and aromatic chemicals are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's portfolio of products includes aromatic chemicals derived from natural sources.",
+            "revised_fact": "The subject of the statement \"The company's portfolio of products includes aromatic chemicals derived from natural sources\" is \"The company's portfolio of products\". This is a reference to an unknown entity, as it is unclear which company's portfolio of products is being referred to. From the response, we can see that the statement is referring to the portfolio of products of BDA Aromatics Pvt. Ltd. Therefore, \"The company's portfolio of products\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.'s portfolio of products\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from natural sources.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the portfolio of products of B D Aromatics Pvt. Ltd, specifically the aromatic chemicals derived from natural sources. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and the aromatic chemicals derived from natural sources is that the company includes these chemicals in its product portfolio. For this reason, the subjects B D Aromatics Pvt. Ltd and the aromatic chemicals derived from natural sources are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's portfolio of products includes aromatic chemicals derived from synthetic sources.",
+            "revised_fact": "The subject of the statement \"The company's portfolio of products includes aromatic chemicals derived from synthetic sources\" is \"The company's portfolio of products\". This is a reference to an unknown entity, as it is unclear which company's portfolio of products is being referred to. From the response, we can see that the statement is referring to the portfolio of products of BDA Aromatics Pvt. Ltd. Thus, \"The company's portfolio of products\" is a vague reference that should be replaced by \"BDA Aromatics Pvt. Ltd.'s portfolio of products\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes aromatic chemicals derived from synthetic sources.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is BDA Aromatics Pvt. Ltd.'s portfolio of products. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and their portfolio of products is that the portfolio includes aromatic chemicals derived from synthetic sources. For this reason, the subjects B D Aromatics Pvt. Ltd and BDA Aromatics Pvt. Ltd.'s portfolio of products are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's portfolio of products includes intermediates.",
+            "revised_fact": "The subject in the statement \"The company's portfolio of products includes intermediates\" is \"The company's portfolio of products\". This is a vague reference because it does not specify which company's portfolio of products is being referred to. From the response, we can see that the statement is referring to the portfolio of products of \"BDA Aromatics Pvt. Ltd.\". Thus, \"The company's portfolio of products\" should be replaced by \"BDA Aromatics Pvt. Ltd.'s portfolio of products\". \n\nThe revised statement is:\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes intermediates.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is the portfolio of products of B D Aromatics Pvt. Ltd. The phrase \"The company's portfolio of products includes intermediates\" from the RESPONSE shows that the relationship between B D Aromatics Pvt. Ltd and intermediates is that intermediates are included in their portfolio of products. For this reason, the subjects B D Aromatics Pvt. Ltd and intermediates are [Foo]."
+        },
+        {
+            "atomic_fact": "The company's portfolio of products includes specialty chemicals.",
+            "revised_fact": "The subject of the statement \"The company's portfolio of products includes specialty chemicals\" is \"The company\". This is a vague reference because it does not specify which company is being referred to. From the response, we can see that the statement is referring to \"BDA Aromatics Pvt. Ltd.\", which is a chemical company based in India. Therefore, \"The company\" should be replaced by \"BDA Aromatics Pvt. Ltd.\". Thus, the revised statement is:\n\n```\nBDA Aromatics Pvt. Ltd.'s portfolio of products includes specialty chemicals.\n```",
+            "is_relevant": "The subject of the QUESTION is B D Aromatics Pvt. Ltd, a chemical company in India. The subject of the STATEMENT is B D Aromatics Pvt. Ltd's portfolio of products. The phrase \"The company's portfolio of products includes aromatic chemicals derived from natural and synthetic sources, as well as intermediates and specialty chemicals\" from the RESPONSE shows that B D Aromatics Pvt. Ltd's portfolio of products includes specialty chemicals. For this reason, the subjects B D Aromatics Pvt. Ltd and its portfolio of products are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. financial performance",
+                    "result": "B D Aromatics's operating revenues range is INR 1 cr - 100 cr for the financial year ending on 31 March, 2016. It's EBITDA has increased by 3.74 % over the ... Missing: BDA | Show results with:BDA. Financial Report - AROMATICS INDIA PRIVATE LIMITED ; Return on Equity, 8.91 % ; Total Assets, 1.09 % ; Fixed Assets, 4.85 % ; Current Assets, -0.16 % ; Current ... Missing: BDA | Show results with:BDA. Find company research, competitor information, contact details & financial data for AROMATICS INDIA PRIVATE LIMITED of New Delhi, Delhi. Missing: BDA | Show results with:BDA."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. leading chemical company",
+                    "result": "We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA | Show results with:BDA. We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA | Show results with:BDA. Leading Manufacturer Of Linear Alkyl Benzene Sulphonic Acid (90%) In India \u00b7 Company Overview \u00b7 Our Values \u00b7 Quality Policy \u00b7 Research And Development."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. financial performance",
+                    "result": "B D Aromatics's operating revenues range is INR 1 cr - 100 cr for the financial year ending on 31 March, 2016. It's EBITDA has increased by 3.74 % over the ... Missing: BDA | Show results with:BDA. Financial Report - AROMATICS INDIA PRIVATE LIMITED ; Return on Equity, 8.91 % ; Total Assets, 1.09 % ; Fixed Assets, 4.85 % ; Current Assets, -0.16 % ; Current ... Missing: BDA | Show results with:BDA. Find company research, competitor information, contact details & financial data for AROMATICS INDIA PRIVATE LIMITED of New Delhi, Delhi. Missing: BDA | Show results with:BDA."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. leading chemical company",
+                    "result": "We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA | Show results with:BDA. We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA | Show results with:BDA. Leading Manufacturer Of Linear Alkyl Benzene Sulphonic Acid (90%) In India \u00b7 Company Overview \u00b7 Our Values \u00b7 Quality Policy \u00b7 Research And Development."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. financial performance",
+                    "result": "B D Aromatics's operating revenues range is INR 1 cr - 100 cr for the financial year ending on 31 March, 2016. It's EBITDA has increased by 3.74 % over the ... Missing: BDA | Show results with:BDA. Financial Report - AROMATICS INDIA PRIVATE LIMITED ; Return on Equity, 8.91 % ; Total Assets, 1.09 % ; Fixed Assets, 4.85 % ; Current Assets, -0.16 % ; Current ... Missing: BDA | Show results with:BDA. Find company research, competitor information, contact details & financial data for AROMATICS INDIA PRIVATE LIMITED of New Delhi, Delhi. Missing: BDA | Show results with:BDA."
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"BDA Aromatics Pvt. Ltd.\" prominent player evidence",
+                    "result": "... Famous \u00b7 Comics & Graphic Novels \u00b7 History \u00b7 Ancient \u00b7 Modern \u00b7 Philosophy ... B.D.A. Aromatics Pvt. Ltd. Bareilly. B.S. ... Player and Technology provider. As a ... Missing: prominent evidence."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. prominent player evidence",
+                    "result": "I intend to do this using 3 pillars: Unrestricted creativity in perfume briefs and aromatic explorations. Selecting great ingredients without ... Missing: prominent evidence. Organica Aromatics pvt ltd, head office is located in Peenya, Bangalore and manufacturing unit is located at, 5'B', KIADB Industrial area, Yedehalli village ... Following these steps will help build strong evidence that aromatherapy can be a valid addition to regular healthcare. This way, it can be accepted and used ..."
+                },
+                {
+                    "query": "\"BDA Aromatics Pvt. Ltd.\" prominent player evidence",
+                    "result": "... Famous \u00b7 Comics & Graphic Novels \u00b7 History \u00b7 Ancient \u00b7 Modern \u00b7 Philosophy ... B.D.A. Aromatics Pvt. Ltd. Bareilly. B.S. ... Player and Technology provider. As a ... Missing: prominent evidence."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. prominent player evidence",
+                    "result": "I intend to do this using 3 pillars: Unrestricted creativity in perfume briefs and aromatic explorations. Selecting great ingredients without ... Missing: prominent evidence. Organica Aromatics pvt ltd, head office is located in Peenya, Bangalore and manufacturing unit is located at, 5'B', KIADB Industrial area, Yedehalli village ... Following these steps will help build strong evidence that aromatherapy can be a valid addition to regular healthcare. This way, it can be accepted and used ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. has become a prominent player.",
+                    "result": "... AROMATICS PVT. LTD. has been a leading player in the Global Fragrance and Flavors industry since 1935. We are proud to have them as the main sponsor of the ... Missing: become prominent. \u2022 To become excellent competitive company. QUALITY POLICY: d. Quality has been a traditional with Organica Aromatics Pvt. Ltd. The aim is to satisfy the. Missing: prominent | Show results with:prominent. A dynamic personality with vast experience of more than 3 decades in fragrance, flavours and chemical industry. \u2022 Has specialized training on ..."
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Is BDA Aromatics Pvt. a company?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "BDA Aromatics Pvt. quality standards",
+                    "result": "Since its establishment, B D Aromatics's manufacturing facilities have maintained the highest standards of quality control and assurance adhering to efficient ... Missing: BDA | Show results with:BDA. From farm to end product, we're committed to sustainability, quality, and empowering farmers. Certified to NPOP/NOP/EU standards ... We at B D Aromatics Pvt. Ltd. Missing: BDA | Show results with:BDA. Our manufacturing process is constantly monitored by a special team as per standardised norms. All our units are certified with ISO 9001:2015, Aromatics India ... Missing: BDA | Show results with:BDA."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. quality control measures",
+                    "result": "Our QC department works tirelessly to reduce risks in production, attain rapid product release, and eliminate defects, impurities and contamination, from raw ... Missing: Aromatics | Show results with:Aromatics. Organica Aromatics Pvt. Ltd. Emergency Management Plan including Risk Assessment and damage control."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. quality control measures",
+                    "result": "Our QC department works tirelessly to reduce risks in production, attain rapid product release, and eliminate defects, impurities and contamination, from raw ... Missing: Aromatics | Show results with:Aromatics. Our processing unit is professionally managed and controlled by qualified people, which enable us to deliver any rectification needs of our esteemed customers. Missing: measures | Show results with:measures."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. quality measures",
+                    "result": "Experience the purity of Organic Production with B D Aromatics. From farm to end product, we're committed to sustainability, quality, and empowering farmers. Missing: BDA measures. We have the best organic oils products at Bd Aromatics, We Processed 100% pure organic oil like Mint Products, Papermint, Cornmint, Spearmint. Enquiry now! Missing: measures | Show results with:measures."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. quality measures",
+                    "result": "Experience the purity of Organic Production with B D Aromatics. From farm to end product, we're committed to sustainability, quality, and empowering farmers. Missing: BDA measures. Organica Aromatics Pvt Ltd., have engaged M/s. SAMRAKSHAN, Swastik. Manandi Arcade, 1st Floor, S.C. Road, Seshadripuram, Bangalore 560 020 as our. Environmental ... We have the best organic oils products at Bd Aromatics, We Processed 100% pure organic oil like Mint Products, Papermint, Cornmint, Spearmint. Enquiry now! Missing: measures | Show results with:measures."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "BDA Aromatics Pvt. innovation achievements",
+                    "result": "Tadimety Aromatics was established to develop and deliver innovative, high quality specialty aroma chemicals that match customer expectations. \u201cQuality Product Innovation\u201d is our axiom. Upheld by a committed best in class R and D facility, Organica Aromatics presents its products with exquisite ... Missing: achievements | Show results with:achievements."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. innovation achievements",
+                    "result": "Tadimety Aromatics was established to develop and deliver innovative, high quality specialty aroma chemicals that match customer expectations. \u201cQuality Product Innovation\u201d is our axiom. Upheld by a committed best in class R and D facility, Organica Aromatics presents its products with exquisite ... Missing: achievements | Show results with:achievements."
+                },
+                {
+                    "query": "\"BDA Aromatics Pvt.\" focus on innovation",
+                    "result": "... Innovation Communications Systems Ltd. Hyderabad ... Focus Technologies New Delhi. Forex Capital Services (P) Ltd ... B.D.A. Aromatics Pvt. Ltd. Bareilly. B.S. ... ... Innovation Communications Systems Ltd. Innovtive ... Focus Technologies Forex Capital Services (P) Ltd Fortune ... B.D.A. Aromatics Pvt. Ltd. B.S.Agriculture ... ... B.D.A. Aromatics Pvt. L. Off: 35/A-7, CIVil Lines Fact:Bhojipura,. B.S.Agriculture Industrie. 12/15 AA, Nawalgani. Baba Gyani Glass Indu. C-13, Industrial ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. focuses on innovation.",
+                    "result": "We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA innovation.. Innovation And Excellence. Our growth in the competitive world is based on the pillars of innovation and expansion. We are penetrating in the markets and ... As per the report published by The Brainy Insights, the global flavors and fragrances market is expected to grow from USD 29.98 Billion in ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. innovation evidence",
+                    "result": "Our Vision. To assure best quality product by continuous research and experimentation, striving to achieve customer satisfaction through collaboration and joint ... Missing: BDA | Show results with:BDA. Anandateertha Aromatics is backed by a full-fledged research ... We work with various government and private research ... Bangalore - 560064, Karnataka, India Phone ... Missing: Pvt. | Show results with:Pvt.. Backed up by an energetic and skilled research group, the organization continually endeavours to refresh its innovative framework. Organica Aromatics utilizes ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"BDA Aromatics Pvt. customer satisfaction\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"BDA Aromatics Pvt.\" customer satisfaction",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. established itself",
+                    "result": "We have the best organic oils products at Bd Aromatics, We Processed 100% pure organic oil like Mint Products, Papermint, Cornmint, Spearmint. Enquiry now! Missing: itself | Show results with:itself. Keshavlal Bodani founded Oriental Aromatics (Fragrance and Flavours business) in the year 1955. 1964."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. has established itself.",
+                    "result": "BDA prides itself on close partnership with customers and suppliers and the ability to offer best products/services to customers. Our headquarters and ... Missing: Pvt. | Show results with:Pvt.. Since our inception in 1991, we have assembled a team of over 50 seasoned professionals and young talents who are the driving force behind our success. Our ... CARE Ratings commenced operations in April 1993 and over two decades, it has established itself as one of the leading credit rating agencies ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. has established itself.",
+                    "result": "BDA prides itself on close partnership with customers and suppliers and the ability to offer best products/services to customers. Our headquarters and ... Missing: Pvt. | Show results with:Pvt.. Since our inception in 1991, we have assembled a team of over 50 seasoned professionals and young talents who are the driving force behind our success. Our ... CARE Ratings commenced operations in April 1993 and over two decades, it has established itself as one of the leading credit rating agencies ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. has established itself.",
+                    "result": "BDA prides itself on close partnership with customers and suppliers and the ability to offer best products/services to customers. Our headquarters and ... Missing: Pvt. | Show results with:Pvt.. Since our inception in 1991, we have assembled a team of over 50 seasoned professionals and young talents who are the driving force behind our success. Our ... CARE Ratings commenced operations in April 1993 and over two decades, it has established itself as one of the leading credit rating agencies ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. has established itself.",
+                    "result": "BDA prides itself on close partnership with customers and suppliers and the ability to offer best products/services to customers. Our headquarters and ... Missing: Pvt. | Show results with:Pvt.. Since our inception in 1991, we have assembled a team of over 50 seasoned professionals and young talents who are the driving force behind our success. Our ... CARE Ratings commenced operations in April 1993 and over two decades, it has established itself as one of the leading credit rating agencies ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. reviews",
+                    "result": "Good work environment and culture. Teammates are supportive and the management is transparent. Dislikes. Salary is good but Career growth is very slow. Work ... Missing: BDA | Show results with:BDA. Low salaries, poor benefits, and miserable morale ... BDA might be a great place to work if you are fresh out of college. But for anyone with more than a couple ... Missing: Aromatics Pvt.. Not yet rated (0 Reviews) ... BD Aromatic's 100% Pure, Natural, and Organic Cornmint Oil is highly effective for treating rheumatic pain, ... Missing: BDA | Show results with:BDA."
+                },
+                {
+                    "query": "\"BDA Aromatics Pvt. Ltd.\" trusted partner evidence",
+                    "result": "... Documents. Foreign Language Studies \u00b7 Chinese \u00b7 ESL ... Partners Pvt Ltd New Delhi. Avs International New Delhi. Axess ... B.D.A. Aromatics Pvt. Ltd. Bareilly. B.S. ... Missing: evidence | Show results with:evidence. ... Trust Mantec Consultants Pvt Ltd Mars & Partners Marshal Industries ... Proof Systems India Private Limited ... B.D.A. Aromatics Pvt. Ltd. B.S.Agriculture ... Missing: evidence | Show results with:evidence."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. established itself as a trusted partner evidence",
+                    "result": "Aromatherapy, a holistic healing practice utilizing the aromatic essences of plant-derived essential oils, has gained significant attention for its therapeutic ... Missing: trusted | Show results with:trusted. Limited, a Hong Kong based private company ... There is no evidence that the Hong Kong. Court regarded itself as misled\u201d. ... full testing of the ... FairWild articulates stringent protocols and requirements with respect to biodiversity conservation, sustainable harvesting methods, monetary ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. trusted partner evidence",
+                    "result": "Secondary data was collected through company's documents, record, website, magazines. The secondary data will be collected from Internet, Books, and Company ... Missing: trusted partner evidence. EcoVadis is the world's most trusted provider of business sustainability ratings, intelligence and collaborative performance improvement tools. Brickwork Ratings had last reviewed the rating of Arora Aromatics Pvt. Ltd. ( the company) at. BWR BBB+/Stable/A2, on 07 July 2020 for the ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. trusted partner evidence",
+                    "result": "Secondary data was collected through company's documents, record, website, magazines. The secondary data will be collected from Internet, Books, and Company ... Missing: trusted partner evidence. EcoVadis is the world's most trusted provider of business sustainability ratings, intelligence and collaborative performance improvement tools. Brickwork Ratings had last reviewed the rating of Arora Aromatics Pvt. Ltd. ( the company) at. BWR BBB+/Stable/A2, on 07 July 2020 for the ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. customer reviews",
+                    "result": "Not yet rated (0 Reviews) ... BD Aromatic's 100% Pure, Natural, and Organic Cornmint Oil is highly effective for treating rheumatic pain, ... Missing: BDA | Show results with:BDA. \"My experience with Aromatics is always wonderful. Great packaging, timely arrivals. \u00b7 \"I always love dealing with company. Efficient, Friendly, Knowledgeable, ... Missing: Pvt. | Show results with:Pvt.. Aromatics is rated 4.3 out of 5, based on 17 reviews by employees on AmbitionBox. Aromatics is known for Salary & Benefits which is rated at the top and given a ... Missing: BDA | Show results with:BDA."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries.",
+                    "result": "Certified for excellence, our products cater to diverse industries, bringing the aromatic charm of nature to your fingertips. Missing: itself trusted partner. In the intricate realm of agarbatti manufacturing, Sanjay Agarbatti Company Pvt Ltd emerges as a reliable partner, a symbol of dependability, and a guarantor of ... Ltd. is leading the industry due to best quality raw material sourcing, cutting-edge technology, and strong financial performance. Each of its production units ... Missing: itself trusted partner diverse range."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. has established itself as a trusted partner to a diverse range of industries.",
+                    "result": "Certified for excellence, our products cater to diverse industries, bringing the aromatic charm of nature to your fingertips. Missing: itself trusted partner. Our pursuit of excellence has led us to achieve and maintain a range of esteemed certifications, affirming our position as a trusted and reliable partner. Missing: itself | Show results with:itself. At Arora Aromatics, we specialize in manufacturing pure aromatic specialties and industrial chemicals, catering to a diverse range of industries and ... Missing: trusted | Show results with:trusted."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. established itself as a trusted partner to a diverse range of industries evidence",
+                    "result": "We have the best organic oils products at Bd Aromatics, We Processed 100% pure organic oil like Mint Products, Papermint, Cornmint, Spearmint. Enquiry now! Missing: itself partner evidence. I trust this document will provide insights to policy makers, industry bodies, academicians, students, and citizens about the performance of ... The development in IoTs offers a wide range of services for different industries such as manufacturing, healthcare, and education. Depending on the field ..."
+                },
+                {
+                    "query": "\"BDA Aromatics Pvt. Ltd.\" trusted partner diverse range industries evidence",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"BDA Aromatics Pvt. Ltd.\" portfolio of products derived from natural sources",
+                    "result": "... Products Pvt. Ltd Vijayawada. Ahalya Rice & Floor ... Natural Products Emporium New Delhi. Handicrafts & Textiles ... B.D.A. Aromatics Pvt. Ltd. Bareilly. B.S. ..."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products aromatic chemicals derived from natural sources site:bdaromatics.com",
+                    "result": "We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. We ... Missing: BDA portfolio. We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA portfolio."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products includes aromatic chemicals derived from natural sources.",
+                    "result": "We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: portfolio sources.. We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: portfolio sources.. As a monoterpene, it is used in aromatherapy but equally used as flavorings in food or fragrance manufacturing. Sabinene has been studied for ... Missing: portfolio sources.."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products natural aromatic chemicals",
+                    "result": "We have the best organic oils products at Bd Aromatics, We Processed 100% pure organic oil like Mint Products, Papermint, Cornmint, Spearmint. Enquiry now! Missing: BDA portfolio. We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA portfolio. Global supplier of sustainable aroma ingredients \u2606 Discover our portfolio for creations such as perfumes, home fragrances, fine fragrances and more ... Missing: Aromatics Pvt.."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products natural aromatic chemicals",
+                    "result": "We have the best organic oils products at Bd Aromatics, We Processed 100% pure organic oil like Mint Products, Papermint, Cornmint, Spearmint. Enquiry now! Missing: BDA portfolio. We at B D Aromatics Pvt. Ltd. are manufacturers and suppliers of Natural Essential Oils and Aroma Chemicals from India since our inception in the year 1997. Missing: BDA portfolio. Global supplier of sustainable aroma ingredients \u2606 Discover our portfolio for creations such as perfumes, home fragrances, fine fragrances and more ... Missing: Aromatics Pvt.."
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products includes intermediates site:bdaaromatics.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. products portfolio includes intermediates site:bdaaromatics.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products includes intermediates site:bdaromatics.com",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products includes intermediates",
+                    "result": "BDA has assisted numerous clients in the chemical sector ranging from petrochemicals, through intermediates, polymers and plastics, to specialty chemicals, ... Missing: Aromatics Pvt.. We have the best organic oils products at Bd Aromatics, We Processed 100% pure organic oil like Mint Products, Papermint, Cornmint, Spearmint. Enquiry now! Missing: portfolio intermediates. Our core business is the development, manufacturing and marketing of chemical intermediates, additives, specialty chemicals and consumer protection products. Missing: BDA | Show results with:BDA."
+                },
+                {
+                    "query": "BDA Aromatics Pvt. Ltd. portfolio of products includes intermediates site:bdaromatics.com",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"BDA Aromatics Pvt. Ltd.\" specialty chemicals portfolio",
+                    "result": "... Chemicals Ltd. Krishna. Dhana Energy P.Ltd ... Specialty Fasteners Ankleshwar. Sudha Industrial Corporation ... B.D.A. Aromatics Pvt. Ltd. Bareilly. B.S. ..."
+                }
+            ]
+        }
+    ],
+    "Supported": 6,
+    "Irrelevant": 0,
+    "Not Supported": 14
+}

@@ -1,0 +1,827 @@
+{
+    "prompt": "What are the planets in the solar system?",
+    "response": " The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury. The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it. The other planets are all small and are not capable of supporting life as we know it. The planets are further spread out from the Sun than the NAME_1 is from the Earth, and they are all located in a specific orbit around the Sun.",
+    "num_claims": 19,
+    "sentences_and_atomic_facts": [
+        [
+            "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            [
+                "The planets in the solar system are celestial bodies.",
+                "The planets in the solar system make up the solar system.",
+                "The Sun is a planet in the solar system.",
+                "The Earth is a planet in the solar system.",
+                "The NAME_1 is a planet in the solar system.",
+                "Mars is a planet in the solar system.",
+                "Mercury is a planet in the solar system."
+            ]
+        ],
+        [
+            "The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it.",
+            [
+                "The Sun is the center of the solar system.",
+                "The Sun is made up of five planets.",
+                "The Earth is one of the planets.",
+                "The Earth is the largest planet.",
+                "The Earth is home to life as we know it."
+            ]
+        ],
+        [
+            "The other planets are all small and are not capable of supporting life as we know it.",
+            [
+                "The other planets are small.",
+                "The other planets are not capable of supporting life.",
+                "The other planets are not capable of supporting life as we know it."
+            ]
+        ],
+        [
+            "The planets are further spread out from the Sun than the NAME_1 is from the Earth, and they are all located in a specific orbit around the Sun.",
+            [
+                "The planets are spread out from the Sun.",
+                "The planets are spread out further from the Sun than NAME_1 is from the Earth.",
+                "NAME_1 is from the Earth.",
+                "The planets are located in a specific orbit around the Sun."
+            ]
+        ]
+    ],
+    "all_atomic_facts": [
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_facts": [
+                "The planets in the solar system are celestial bodies.",
+                "The planets in the solar system make up the solar system.",
+                "The Sun is a planet in the solar system.",
+                "The Earth is a planet in the solar system.",
+                "The NAME_1 is a planet in the solar system.",
+                "Mars is a planet in the solar system.",
+                "Mercury is a planet in the solar system."
+            ]
+        },
+        {
+            "sentence": "The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it.",
+            "atomic_facts": [
+                "The Sun is the center of the solar system.",
+                "The Sun is made up of five planets.",
+                "The Earth is one of the planets.",
+                "The Earth is the largest planet.",
+                "The Earth is home to life as we know it."
+            ]
+        },
+        {
+            "sentence": "The other planets are all small and are not capable of supporting life as we know it.",
+            "atomic_facts": [
+                "The other planets are small.",
+                "The other planets are not capable of supporting life.",
+                "The other planets are not capable of supporting life as we know it."
+            ]
+        },
+        {
+            "sentence": "The planets are further spread out from the Sun than the NAME_1 is from the Earth, and they are all located in a specific orbit around the Sun.",
+            "atomic_facts": [
+                "The planets are spread out from the Sun.",
+                "The planets are spread out further from the Sun than NAME_1 is from the Earth.",
+                "NAME_1 is from the Earth.",
+                "The planets are located in a specific orbit around the Sun."
+            ]
+        }
+    ],
+    "checked_statements": [
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_fact": "The planets in the solar system are celestial bodies.",
+            "self_contained_atomic_fact": "The five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury, are celestial bodies.",
+            "relevance_data": {
+                "atomic_fact": "The planets in the solar system are celestial bodies.",
+                "revised_fact": "The subject of the statement \"The planets in the solar system are celestial bodies\" is \"The planets in the solar system\". This is a reference to an unknown entity, since it is unclear which planets in the solar system are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the five specific planets mentioned: the Sun, the Earth, the NAME_1, Mars, and Mercury. Thus, \"The planets in the solar system\" is a vague reference that should be replaced by \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Thus, the revised response is:\n\n```\nThe five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury, are celestial bodies.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" The RESPONSE provides information about the relationship between the subjects. It states that \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" This shows that the subjects \"the planets in the solar system\" and \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" are related and should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "To determine whether the given statement is supported by the knowledge, we need to compare the statement with the information provided.\n\nThe knowledge states that the solar system consists of the Sun and the objects that orbit it. It also lists the planets in the solar system, which include Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Additionally, the knowledge mentions that the small bodies in the solar system include comets, asteroids, and objects in the Kuiper Belt and the Oort cloud.\n\nThe statement mentions the Sun, Earth, Mars, and Mercury as the five large celestial bodies that make up the solar system. It also refers to \"the NAME_1,\" which is not mentioned in the knowledge.\n\nBased on the knowledge, the statement is not supported because it includes an unidentified celestial body, \"the NAME_1,\" which is not mentioned in the knowledge. The knowledge only lists the known planets in the solar system.\n\nTherefore, the final answer is [Not Supported].",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_fact": "The planets in the solar system make up the solar system.",
+            "self_contained_atomic_fact": "The five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury make up the solar system.",
+            "relevance_data": {
+                "atomic_fact": "The planets in the solar system make up the solar system.",
+                "revised_fact": "The subject of the statement \"The planets in the solar system make up the solar system\" is \"The planets in the solar system\". This is a reference to an unknown entity, since it is unclear which planets in the solar system are being referred to. From the response, we can see that the statement is referring to the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury. Therefore, \"The planets in the solar system\" is a vague reference that should be replaced by \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\". Thus, the revised statement is:\n```\nThe five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury make up the solar system.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" The RESPONSE provides information that explains the relationship between the two subjects by stating that \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Therefore, the subjects \"the planets in the solar system\" and \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe KNOWLEDGE states that our solar system is made up of a star (the Sun), eight planets, and countless smaller bodies such as dwarf planets, asteroids, and comets. However, it does not explicitly mention the specific celestial bodies mentioned in the STATEMENT (the Earth, NAME_1, Mars, and Mercury). Therefore, we cannot determine if the STATEMENT is supported by the KNOWLEDGE.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_fact": "The Sun is a planet in the solar system.",
+            "self_contained_atomic_fact": "The Sun is a planet in the solar system.",
+            "relevance_data": {
+                "atomic_fact": "The Sun is a planet in the solar system.",
+                "revised_fact": "The subject of the statement \"The Sun is a planet in the solar system\" is \"The Sun\". \"The Sun\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Sun\" is further specified in the RESPONSE as the center of the solar system. Therefore, \"The Sun\" is not a vague reference. Thus, the revised statement is:\n```\nThe Sun is a planet in the solar system.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun\" from the RESPONSE shows that the relationship between the Sun and the planets in the solar system is that the Sun is one of the planets. For this reason, the subjects the Sun and the planets in the solar system are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points state that the Sun is the center of our solar system and its gravity holds the solar system together. It also mentions the order of the planets in the solar system, starting with Mercury and working outward. However, there is no explicit mention of the Sun being a planet in the solar system. \n\nTherefore, based on the given knowledge, it can be concluded that the Sun is not a planet in the solar system.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_fact": "The Earth is a planet in the solar system.",
+            "self_contained_atomic_fact": "The Earth is a planet in the solar system.",
+            "relevance_data": {
+                "atomic_fact": "The Earth is a planet in the solar system.",
+                "revised_fact": "The subject of the statement \"The Earth is a planet in the solar system\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is a planet in the solar system.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system\". The subject of the STATEMENT is \"the Earth\". The RESPONSE provides information that explains how the Earth is related to the planets in the solar system. It states that \"the Earth is the largest of the planets and is home to life as we know it.\" This shows that the Earth is one of the planets in the solar system. Therefore, the subjects \"the Earth\" and \"the planets in the solar system\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not explicitly mention the Earth or its status as a planet in the solar system. However, based on general knowledge, the Earth is indeed a planet in the solar system. The solar system consists of the Sun and all the celestial bodies that orbit it, including planets like Earth.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_fact": "The NAME_1 is a planet in the solar system.",
+            "self_contained_atomic_fact": "Mars is a planet in the solar system.",
+            "relevance_data": {
+                "atomic_fact": "The NAME_1 is a planet in the solar system.",
+                "revised_fact": "The subject in the statement \"The NAME_1 is a planet in the solar system\" is \"The NAME_1\". This is a vague reference, as it does not specify the actual name of the planet. From the RESPONSE, we can see that the statement is referring to one of the planets in the solar system, but it does not provide the specific name. Therefore, \"The NAME_1\" is a vague reference that needs to be replaced with the actual name of the planet. \n\nThus, the revised statement is:\n```\nMars is a planet in the solar system.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is Mars. The phrase \"the planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mars is one of the planets in the solar system. For this reason, the subjects Mars and the planets in the solar system are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points consistently refer to Mars as a planet in the solar system. It is described as the fourth planet from the Sun, one of the terrestrial planets, and one of the most explored bodies in our solar system. Therefore, the statement that Mars is a planet in the solar system is supported by the given knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_fact": "Mars is a planet in the solar system.",
+            "self_contained_atomic_fact": "Mars is a planet in the solar system.",
+            "relevance_data": {
+                "atomic_fact": "Mars is a planet in the solar system.",
+                "revised_fact": "The subject in the statement \"Mars is a planet in the solar system\" is \"Mars\". \"Mars\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Mars\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Mars\" is not a vague reference. Thus, the revised statement is:\n```\nMars is a planet in the solar system.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system\". The subject of the STATEMENT is \"Mars\". The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mars is one of the planets in the solar system. For this reason, the subjects \"Mars\" and \"the planets in the solar system\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points provided mention Mars multiple times as one of the most explored bodies in our solar system, the fourth planet from the Sun, and a terrestrial planet. This strongly implies that Mars is indeed a planet in the solar system.\n\nSupporting Evidence:\n- \"Mars is one of the most explored bodies in our solar system\"\n- \"Mars is the fourth planet from the sun\"\n- \"Mars is a terrestrial planet\"\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.",
+            "atomic_fact": "Mercury is a planet in the solar system.",
+            "self_contained_atomic_fact": "Mercury is a planet in the solar system.",
+            "relevance_data": {
+                "atomic_fact": "Mercury is a planet in the solar system.",
+                "revised_fact": "The subject in the statement \"Mercury is a planet in the solar system\" is \"Mercury\". \"Mercury\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Mercury\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Mercury\" is not a vague reference. Thus, the revised statement is:\n```\nMercury is a planet in the solar system.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system\". The subject of the STATEMENT is \"Mercury\". The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mercury is one of the planets in the solar system. For this reason, the subjects \"Mercury\" and \"the planets in the solar system\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge does not provide any information about Mercury specifically. However, general knowledge about the solar system includes the fact that Mercury is indeed a planet in the solar system.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it.",
+            "atomic_fact": "The Sun is the center of the solar system.",
+            "self_contained_atomic_fact": "The Sun is the center of the solar system.",
+            "relevance_data": {
+                "atomic_fact": "The Sun is the center of the solar system.",
+                "revised_fact": "The subject of the statement \"The Sun is the center of the solar system\" is \"The Sun\". \"The Sun\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Sun\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Sun\" is not a vague reference. Thus, the revised statement is:\n```\nThe Sun is the center of the solar system.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun\" from the RESPONSE shows that the relationship between the planets in the solar system and the Sun is that the Sun is the center of the solar system. For this reason, the subjects the planets in the solar system and the Sun are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge points do not explicitly state that the Sun is the center of the solar system, but it is a well-known scientific fact that the Sun is indeed the center of the solar system. The main points of the knowledge are not directly related to the statement, but they provide general information about the solar system.\n\nFinal Answer:\nThe statement is supported by the knowledge. [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it.",
+            "atomic_fact": "The Sun is made up of five planets.",
+            "self_contained_atomic_fact": "The Sun is made up of five planets.",
+            "relevance_data": {
+                "atomic_fact": "The Sun is made up of five planets.",
+                "revised_fact": "The subject of the statement \"The Sun is made up of five planets\" is \"The Sun\". \"The Sun\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Sun\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Sun\" is not a vague reference. Thus, the revised statement is:\n```\nThe Sun is made up of five planets.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun. The phrase \"The Sun is the center of the solar system and is made up of five planets\" from the RESPONSE shows that the relationship between the planets in the solar system and the Sun is that the Sun is made up of five planets. For this reason, the subjects the planets in the solar system and the Sun are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given knowledge points provide information about the chemical composition of the Sun, stating that it is primarily composed of hydrogen (71%), helium (27%), and other heavier elements (2%). There is no mention of the Sun being made up of five planets in the knowledge.\n\nTherefore, based on the given knowledge, the statement that \"The Sun is made up of five planets\" is not supported.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it.",
+            "atomic_fact": "The Earth is one of the planets.",
+            "self_contained_atomic_fact": "The Earth is one of the planets.",
+            "relevance_data": {
+                "atomic_fact": "The Earth is one of the planets.",
+                "revised_fact": "The subject of the statement \"The Earth is one of the planets\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is further specified in the RESPONSE as being the largest of the planets and the one that is home to life as we know it. Therefore, \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is one of the planets.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Earth. The phrase \"the planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that the Earth is one of the planets in the solar system. For this reason, the subjects Earth and the planets in the solar system are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\n\nThe knowledge provided does not explicitly mention the Earth or any specific planets. However, based on general knowledge, we know that the Earth is indeed one of the planets in our solar system.\n\nTherefore, the statement is supported by the knowledge.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it.",
+            "atomic_fact": "The Earth is the largest planet.",
+            "self_contained_atomic_fact": "The Earth is the largest planet.",
+            "relevance_data": {
+                "atomic_fact": "The Earth is the largest planet.",
+                "revised_fact": "The subject of the statement \"The Earth is the largest planet\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is the largest planet.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the Earth.\" The phrase \"the Earth is the largest of the planets\" from the RESPONSE shows that the relationship between the Earth and the planets in the solar system is that the Earth is one of the planets. For this reason, the subjects \"the Earth\" and \"the planets in the solar system\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe statement claims that the Earth is the largest planet. To determine whether this statement is supported by the given knowledge, we need to review the main points of the knowledge.\n\nThe knowledge does not provide any information about the size of the Earth in comparison to other planets. It does not mention any measurements or comparisons of planet sizes. Therefore, we cannot conclude that the Earth is the largest planet based on the given knowledge.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The Sun is the center of the solar system and is made up of five planets, while the Earth is the largest of the planets and is home to life as we know it.",
+            "atomic_fact": "The Earth is home to life as we know it.",
+            "self_contained_atomic_fact": "The Earth is home to life as we know it.",
+            "relevance_data": {
+                "atomic_fact": "The Earth is home to life as we know it.",
+                "revised_fact": "The subject in the statement \"The Earth is home to life as we know it\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is home to life as we know it.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Earth. The phrase \"The Earth is the largest of the planets and is home to life as we know it\" from the RESPONSE shows that the relationship between the Earth and the planets in the solar system is that the Earth is one of the planets in the solar system. For this reason, the subjects the Earth and the planets in the solar system are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, it is mentioned that there is no concrete evidence of life on other planets besides Earth. However, the search for life beyond Earth is ongoing and scientists are looking for signs of current life on planets beyond Earth. Therefore, it can be implied that Earth is home to life as we know it.\n\nRestatement of Statement:\nEarth is home to life as we know it.\n\nFinal Answer:\n[Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The other planets are all small and are not capable of supporting life as we know it.",
+            "atomic_fact": "The other planets are small.",
+            "self_contained_atomic_fact": "The planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury are small.",
+            "relevance_data": {
+                "atomic_fact": "The other planets are small.",
+                "revised_fact": "The subject of the statement \"The other planets are small\" is \"the other planets\". This is a reference to an unknown entity, since it is unclear which planets are being referred to as \"the other planets\". From the RESPONSE, we can see that the STATEMENT is referring to the planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury. Thus, \"the other planets\" is a vague reference that should be replaced by \"the planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury\". Thus, the revised response is:\n\n```\nThe planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury are small.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury.\" The RESPONSE provides information about the planets in the solar system, including their characteristics and their relationship to the Sun and the Earth. The phrase \"The other planets are all small\" from the RESPONSE explains the relationship between the subjects in the STATEMENT and the RESPONSE, indicating that the subjects should be considered [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided does not mention the specific size of the planets other than Earth, Mars, and Mercury. Therefore, we cannot determine the size of the planets that are not mentioned.\n\nThe statement implies that the planets not mentioned (excluding the Sun, Earth, NAME_1, Mars, and Mercury) are small. However, since there is no information provided about the size of these planets, we cannot conclude whether they are small or not.\n\nTherefore, the statement is not supported by the knowledge.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The other planets are all small and are not capable of supporting life as we know it.",
+            "atomic_fact": "The other planets are not capable of supporting life.",
+            "self_contained_atomic_fact": "The planets in the solar system that are not the Earth are not capable of supporting life.",
+            "relevance_data": {
+                "atomic_fact": "The other planets are not capable of supporting life.",
+                "revised_fact": "The subject in the statement \"The other planets are not capable of supporting life\" is \"the other planets\". This is a reference to unknown entities, as it is unclear which planets are being referred to as \"the other planets\". From the RESPONSE, we can see that the STATEMENT is referring to the planets in the solar system that are not the Earth. Thus, \"the other planets\" is a vague reference that should be replaced by \"the planets in the solar system that are not the Earth\". Thus, the revised response is:\n```\nThe planets in the solar system that are not the Earth are not capable of supporting life.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the planets in the solar system that are not the Earth.\" The phrase \"The other planets are all small and are not capable of supporting life as we know it\" from the RESPONSE shows that the relationship between the two subjects is that the planets in the solar system that are not the Earth are not capable of supporting life. For this reason, the subjects \"the planets in the solar system\" and \"the planets in the solar system that are not the Earth\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided states that among the variety of worlds in our solar system, only Earth is known to host life. It also mentions that no other planets besides Earth have air that we can breathe, implying that they are not habitable. Additionally, it mentions that Mars was once habitable billions of years ago, but does not mention any other planets being habitable. Therefore, based on the knowledge provided, it can be inferred that the planets in the solar system that are not Earth are not capable of supporting life.\n\nRestatement: Based on the knowledge provided, it can be inferred that the planets in the solar system that are not the Earth are not capable of supporting life.\n\nFinal Answer: [Supported]",
+                "answer": "Supported"
+            },
+            "annotation": "Supported"
+        },
+        {
+            "sentence": "The other planets are all small and are not capable of supporting life as we know it.",
+            "atomic_fact": "The other planets are not capable of supporting life as we know it.",
+            "self_contained_atomic_fact": "The planets in the solar system that are not the Earth are not capable of supporting life as we know it.",
+            "relevance_data": {
+                "atomic_fact": "The other planets are not capable of supporting life as we know it.",
+                "revised_fact": "The subject in the statement \"The other planets are not capable of supporting life as we know it\" is \"The other planets\". This is a reference to an unknown entity, since it is unclear which planets are being referred to as \"the other planets\". From the RESPONSE, we can see that the STATEMENT is referring to the planets in the solar system that are not the Earth. Thus, \"the other planets\" is a vague reference that should be replaced by \"the planets in the solar system that are not the Earth\". Thus, the revised response is:\n```\nThe planets in the solar system that are not the Earth are not capable of supporting life as we know it.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the planets in the solar system that are not the Earth.\" The phrase \"The other planets are all small and are not capable of supporting life as we know it\" from the RESPONSE shows that the relationship between the two subjects is that the planets in the solar system that are not the Earth are not capable of supporting life as we know it. Therefore, the subjects \"the planets in the solar system\" and \"the planets in the solar system that are not the Earth\" are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge provided talks about the search for exoplanets capable of supporting life and mentions the diversity of worlds in our solar system. It also mentions that TRAPPIST-1e is thought to be the most likely to support life. However, there is no specific information given about the other planets in our solar system and their capability to support life. Therefore, we cannot conclude that the planets in our solar system, other than Earth, are not capable of supporting life as we know it.\n\nRestated Statement:\nThe planets in the solar system that are not the Earth are not capable of supporting life as we know it.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The planets are further spread out from the Sun than the NAME_1 is from the Earth, and they are all located in a specific orbit around the Sun.",
+            "atomic_fact": "The planets are spread out from the Sun.",
+            "self_contained_atomic_fact": "The five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury are spread out from the Sun.",
+            "relevance_data": {
+                "atomic_fact": "The planets are spread out from the Sun.",
+                "revised_fact": "The subject in the statement \"The planets are spread out from the Sun\" is \"The planets\". This is a reference to an unknown entity, since it is unclear which planets are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury. Therefore \"The planets\" is a vague reference that should be replaced by \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Thus, the revised response is:\n```\nThe five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury are spread out from the Sun.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury. The phrase \"The planets are further spread out from the Sun than the NAME_1 is from the Earth\" from the RESPONSE shows that the relationship between the five large celestial bodies and the Sun is that they are spread out from the Sun. For this reason, the subjects the five large celestial bodies and the Sun are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, the order of the planets in the solar system is mentioned as Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. However, there is no specific mention of the celestial bodies \"the Sun\" and \"the NAME_1\". Therefore, we cannot conclude that the statement is supported by the given knowledge.\n\nStatement: The five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury are spread out from the Sun.\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The planets are further spread out from the Sun than the NAME_1 is from the Earth, and they are all located in a specific orbit around the Sun.",
+            "atomic_fact": "The planets are spread out further from the Sun than NAME_1 is from the Earth.",
+            "self_contained_atomic_fact": "The planets are spread out further from the Sun than Mars and Mercury are from the Earth.",
+            "relevance_data": {
+                "atomic_fact": "The planets are spread out further from the Sun than NAME_1 is from the Earth.",
+                "revised_fact": "The subject in the statement \"The planets are spread out further from the Sun than NAME_1 is from the Earth\" is \"The planets\" and \"NAME_1\". \"The planets\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The planets\" is further specified in the RESPONSE as \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Therefore \"The planets\" is not a vague reference. However, \"NAME_1\" is a vague reference and should be replaced with the proper entity from the RESPONSE. From the RESPONSE, we can see that the planets mentioned are \"Mars\" and \"Mercury\". Therefore, \"NAME_1\" should be replaced with \"Mars and Mercury\". Thus, the revised statement is:\n```\nThe planets are spread out further from the Sun than Mars and Mercury are from the Earth.\n```",
+                "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is the relationship between the planets in the solar system, Mars, and Mercury with the Earth. The phrase \"The planets are spread out further from the Sun than Mars and Mercury are from the Earth\" from the RESPONSE explains the relationship between the planets in the solar system, Mars, and Mercury with the Earth. For this reason, the subjects \"the planets in the solar system,\" Mars, and Mercury are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe knowledge states that as the average distance of planets from the Sun increases, their average orbital speed tends to decrease. However, it does not provide specific information about the distances between individual planets. Therefore, we cannot determine whether the planets are spread out further from the Sun than Mars and Mercury are from the Earth based on the given knowledge.\n\nRestatement:\nThe knowledge does not provide specific information about the distances between individual planets, so we cannot determine whether the planets are spread out further from the Sun than Mars and Mercury are from the Earth.\n\nFinal Answer:\n[Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The planets are further spread out from the Sun than the NAME_1 is from the Earth, and they are all located in a specific orbit around the Sun.",
+            "atomic_fact": "NAME_1 is from the Earth.",
+            "self_contained_atomic_fact": "Mars is from the Earth.",
+            "relevance_data": {
+                "atomic_fact": "NAME_1 is from the Earth.",
+                "revised_fact": "The subject of the statement \"NAME_1 is from the Earth\" is \"NAME_1\". From the response, we can see that \"NAME_1\" is a reference to an unknown entity, as it is not further specified in the response. However, the response does mention several planets in the solar system, including \"Mars\" and \"Mercury\". Since \"NAME_1\" is mentioned in the same context as these planets, we can infer that \"NAME_1\" is also a planet. Therefore, \"NAME_1\" is a vague reference that should be replaced by \"Mars\". Thus, the revised statement is:\n\n```\nMars is from the Earth.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is Mars. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mars is one of the planets in the solar system. The relationship between Mars and the Earth is that Mars is one of the planets in the solar system, so the subjects Mars and the Earth are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nBased on the given knowledge, we know that Mars is the fourth planet from the Sun and that its average distance from Earth is 140 million miles. Additionally, we know that the distance between Mars and Earth can vary depending on their positions in their respective orbits around the Sun. Therefore, the statement \"Mars is from the Earth\" is not clear and can be interpreted in different ways. It could mean that Mars is physically located away from Earth or that there is a distance between Mars and Earth. However, without further clarification, it is difficult to determine the exact meaning of the statement.\n\nFinal answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        },
+        {
+            "sentence": "The planets are further spread out from the Sun than the NAME_1 is from the Earth, and they are all located in a specific orbit around the Sun.",
+            "atomic_fact": "The planets are located in a specific orbit around the Sun.",
+            "self_contained_atomic_fact": "The Sun, the Earth, NAME_1, Mars, and Mercury are located in a specific orbit around the Sun.",
+            "relevance_data": {
+                "atomic_fact": "The planets are located in a specific orbit around the Sun.",
+                "revised_fact": "The subject of the statement \"The planets are located in a specific orbit around the Sun\" is \"The planets\". This is a vague reference because it does not specify which planets are being referred to. From the response, we can see that the planets mentioned are \"the Sun, the Earth, the NAME_1, Mars, and Mercury\". Therefore, \"The planets\" should be replaced with \"the Sun, the Earth, NAME_1, Mars, and Mercury\" to be more specific. Thus, the revised statement is:\n\n```\nThe Sun, the Earth, NAME_1, Mars, and Mercury are located in a specific orbit around the Sun.\n```",
+                "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun, the Earth, NAME_1, Mars, and Mercury. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that the relationship between the subjects in the STATEMENT and the subject in the QUESTION is that the Sun, the Earth, NAME_1, Mars, and Mercury are the planets in the solar system. For this reason, the subjects the Sun, the Earth, NAME_1, Mars, and Mercury are [Foo]."
+            },
+            "rate_data": {
+                "response": "Reasoning:\nThe given KNOWLEDGE provides information about the path of the planets around the Sun, the orbital plane of Earth around the Sun, and the direction of Earth's orbit. However, it does not mention anything about specific planets or their locations in the orbit.\n\nTherefore, based on the given KNOWLEDGE, we cannot determine whether the Sun, the Earth, NAME_1, Mars, and Mercury are located in a specific orbit around the Sun.\n\nFinal Answer: [Not Supported]",
+                "answer": "Not Supported"
+            },
+            "annotation": "Not Supported"
+        }
+    ],
+    "revised_fact_jsonified_all": [
+        {
+            "atomic_fact": "The planets in the solar system are celestial bodies.",
+            "revised_fact": "The subject of the statement \"The planets in the solar system are celestial bodies\" is \"The planets in the solar system\". This is a reference to an unknown entity, since it is unclear which planets in the solar system are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the five specific planets mentioned: the Sun, the Earth, the NAME_1, Mars, and Mercury. Thus, \"The planets in the solar system\" is a vague reference that should be replaced by \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Thus, the revised response is:\n\n```\nThe five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury, are celestial bodies.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" The RESPONSE provides information about the relationship between the subjects. It states that \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" This shows that the subjects \"the planets in the solar system\" and \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" are related and should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "The planets in the solar system make up the solar system.",
+            "revised_fact": "The subject of the statement \"The planets in the solar system make up the solar system\" is \"The planets in the solar system\". This is a reference to an unknown entity, since it is unclear which planets in the solar system are being referred to. From the response, we can see that the statement is referring to the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury. Therefore, \"The planets in the solar system\" is a vague reference that should be replaced by \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\". Thus, the revised statement is:\n```\nThe five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury make up the solar system.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" The RESPONSE provides information that explains the relationship between the two subjects by stating that \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Therefore, the subjects \"the planets in the solar system\" and \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The Sun is a planet in the solar system.",
+            "revised_fact": "The subject of the statement \"The Sun is a planet in the solar system\" is \"The Sun\". \"The Sun\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Sun\" is further specified in the RESPONSE as the center of the solar system. Therefore, \"The Sun\" is not a vague reference. Thus, the revised statement is:\n```\nThe Sun is a planet in the solar system.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun\" from the RESPONSE shows that the relationship between the Sun and the planets in the solar system is that the Sun is one of the planets. For this reason, the subjects the Sun and the planets in the solar system are [Foo]."
+        },
+        {
+            "atomic_fact": "The Earth is a planet in the solar system.",
+            "revised_fact": "The subject of the statement \"The Earth is a planet in the solar system\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is a planet in the solar system.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system\". The subject of the STATEMENT is \"the Earth\". The RESPONSE provides information that explains how the Earth is related to the planets in the solar system. It states that \"the Earth is the largest of the planets and is home to life as we know it.\" This shows that the Earth is one of the planets in the solar system. Therefore, the subjects \"the Earth\" and \"the planets in the solar system\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The NAME_1 is a planet in the solar system.",
+            "revised_fact": "The subject in the statement \"The NAME_1 is a planet in the solar system\" is \"The NAME_1\". This is a vague reference, as it does not specify the actual name of the planet. From the RESPONSE, we can see that the statement is referring to one of the planets in the solar system, but it does not provide the specific name. Therefore, \"The NAME_1\" is a vague reference that needs to be replaced with the actual name of the planet. \n\nThus, the revised statement is:\n```\nMars is a planet in the solar system.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is Mars. The phrase \"the planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mars is one of the planets in the solar system. For this reason, the subjects Mars and the planets in the solar system are [Foo]."
+        },
+        {
+            "atomic_fact": "Mars is a planet in the solar system.",
+            "revised_fact": "The subject in the statement \"Mars is a planet in the solar system\" is \"Mars\". \"Mars\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Mars\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Mars\" is not a vague reference. Thus, the revised statement is:\n```\nMars is a planet in the solar system.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system\". The subject of the STATEMENT is \"Mars\". The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mars is one of the planets in the solar system. For this reason, the subjects \"Mars\" and \"the planets in the solar system\" are [Foo]."
+        },
+        {
+            "atomic_fact": "Mercury is a planet in the solar system.",
+            "revised_fact": "The subject in the statement \"Mercury is a planet in the solar system\" is \"Mercury\". \"Mercury\" is not a pronoun and does not reference an unknown entity. Furthermore, \"Mercury\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"Mercury\" is not a vague reference. Thus, the revised statement is:\n```\nMercury is a planet in the solar system.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system\". The subject of the STATEMENT is \"Mercury\". The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mercury is one of the planets in the solar system. For this reason, the subjects \"Mercury\" and \"the planets in the solar system\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The Sun is the center of the solar system.",
+            "revised_fact": "The subject of the statement \"The Sun is the center of the solar system\" is \"The Sun\". \"The Sun\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Sun\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Sun\" is not a vague reference. Thus, the revised statement is:\n```\nThe Sun is the center of the solar system.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun\" from the RESPONSE shows that the relationship between the planets in the solar system and the Sun is that the Sun is the center of the solar system. For this reason, the subjects the planets in the solar system and the Sun are [Foo]."
+        },
+        {
+            "atomic_fact": "The Sun is made up of five planets.",
+            "revised_fact": "The subject of the statement \"The Sun is made up of five planets\" is \"The Sun\". \"The Sun\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Sun\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Sun\" is not a vague reference. Thus, the revised statement is:\n```\nThe Sun is made up of five planets.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun. The phrase \"The Sun is the center of the solar system and is made up of five planets\" from the RESPONSE shows that the relationship between the planets in the solar system and the Sun is that the Sun is made up of five planets. For this reason, the subjects the planets in the solar system and the Sun are [Foo]."
+        },
+        {
+            "atomic_fact": "The Earth is one of the planets.",
+            "revised_fact": "The subject of the statement \"The Earth is one of the planets\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is further specified in the RESPONSE as being the largest of the planets and the one that is home to life as we know it. Therefore, \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is one of the planets.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Earth. The phrase \"the planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that the Earth is one of the planets in the solar system. For this reason, the subjects Earth and the planets in the solar system are [Foo]."
+        },
+        {
+            "atomic_fact": "The Earth is the largest planet.",
+            "revised_fact": "The subject of the statement \"The Earth is the largest planet\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is the largest planet.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the Earth.\" The phrase \"the Earth is the largest of the planets\" from the RESPONSE shows that the relationship between the Earth and the planets in the solar system is that the Earth is one of the planets. For this reason, the subjects \"the Earth\" and \"the planets in the solar system\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The Earth is home to life as we know it.",
+            "revised_fact": "The subject in the statement \"The Earth is home to life as we know it\" is \"The Earth\". \"The Earth\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The Earth\" is not further specified in the RESPONSE, so we can assume that it is a full name. Therefore \"The Earth\" is not a vague reference. Thus, the revised statement is:\n```\nThe Earth is home to life as we know it.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Earth. The phrase \"The Earth is the largest of the planets and is home to life as we know it\" from the RESPONSE shows that the relationship between the Earth and the planets in the solar system is that the Earth is one of the planets in the solar system. For this reason, the subjects the Earth and the planets in the solar system are [Foo]."
+        },
+        {
+            "atomic_fact": "The other planets are small.",
+            "revised_fact": "The subject of the statement \"The other planets are small\" is \"the other planets\". This is a reference to an unknown entity, since it is unclear which planets are being referred to as \"the other planets\". From the RESPONSE, we can see that the STATEMENT is referring to the planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury. Thus, \"the other planets\" is a vague reference that should be replaced by \"the planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury\". Thus, the revised response is:\n\n```\nThe planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury are small.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury.\" The RESPONSE provides information about the planets in the solar system, including their characteristics and their relationship to the Sun and the Earth. The phrase \"The other planets are all small\" from the RESPONSE explains the relationship between the subjects in the STATEMENT and the RESPONSE, indicating that the subjects should be considered [Foo]."
+        },
+        {
+            "atomic_fact": "The other planets are not capable of supporting life.",
+            "revised_fact": "The subject in the statement \"The other planets are not capable of supporting life\" is \"the other planets\". This is a reference to unknown entities, as it is unclear which planets are being referred to as \"the other planets\". From the RESPONSE, we can see that the STATEMENT is referring to the planets in the solar system that are not the Earth. Thus, \"the other planets\" is a vague reference that should be replaced by \"the planets in the solar system that are not the Earth\". Thus, the revised response is:\n```\nThe planets in the solar system that are not the Earth are not capable of supporting life.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the planets in the solar system that are not the Earth.\" The phrase \"The other planets are all small and are not capable of supporting life as we know it\" from the RESPONSE shows that the relationship between the two subjects is that the planets in the solar system that are not the Earth are not capable of supporting life. For this reason, the subjects \"the planets in the solar system\" and \"the planets in the solar system that are not the Earth\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The other planets are not capable of supporting life as we know it.",
+            "revised_fact": "The subject in the statement \"The other planets are not capable of supporting life as we know it\" is \"The other planets\". This is a reference to an unknown entity, since it is unclear which planets are being referred to as \"the other planets\". From the RESPONSE, we can see that the STATEMENT is referring to the planets in the solar system that are not the Earth. Thus, \"the other planets\" is a vague reference that should be replaced by \"the planets in the solar system that are not the Earth\". Thus, the revised response is:\n```\nThe planets in the solar system that are not the Earth are not capable of supporting life as we know it.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is \"the planets in the solar system that are not the Earth.\" The phrase \"The other planets are all small and are not capable of supporting life as we know it\" from the RESPONSE shows that the relationship between the two subjects is that the planets in the solar system that are not the Earth are not capable of supporting life as we know it. Therefore, the subjects \"the planets in the solar system\" and \"the planets in the solar system that are not the Earth\" are [Foo]."
+        },
+        {
+            "atomic_fact": "The planets are spread out from the Sun.",
+            "revised_fact": "The subject in the statement \"The planets are spread out from the Sun\" is \"The planets\". This is a reference to an unknown entity, since it is unclear which planets are being referred to. From the RESPONSE, we can see that the STATEMENT is referring to the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury. Therefore \"The planets\" is a vague reference that should be replaced by \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Thus, the revised response is:\n```\nThe five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury are spread out from the Sun.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury. The phrase \"The planets are further spread out from the Sun than the NAME_1 is from the Earth\" from the RESPONSE shows that the relationship between the five large celestial bodies and the Sun is that they are spread out from the Sun. For this reason, the subjects the five large celestial bodies and the Sun are [Foo]."
+        },
+        {
+            "atomic_fact": "The planets are spread out further from the Sun than NAME_1 is from the Earth.",
+            "revised_fact": "The subject in the statement \"The planets are spread out further from the Sun than NAME_1 is from the Earth\" is \"The planets\" and \"NAME_1\". \"The planets\" is not a pronoun and does not reference an unknown entity. Furthermore, \"The planets\" is further specified in the RESPONSE as \"the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury.\" Therefore \"The planets\" is not a vague reference. However, \"NAME_1\" is a vague reference and should be replaced with the proper entity from the RESPONSE. From the RESPONSE, we can see that the planets mentioned are \"Mars\" and \"Mercury\". Therefore, \"NAME_1\" should be replaced with \"Mars and Mercury\". Thus, the revised statement is:\n```\nThe planets are spread out further from the Sun than Mars and Mercury are from the Earth.\n```",
+            "is_relevant": "The subject of the QUESTION is \"the planets in the solar system.\" The subject of the STATEMENT is the relationship between the planets in the solar system, Mars, and Mercury with the Earth. The phrase \"The planets are spread out further from the Sun than Mars and Mercury are from the Earth\" from the RESPONSE explains the relationship between the planets in the solar system, Mars, and Mercury with the Earth. For this reason, the subjects \"the planets in the solar system,\" Mars, and Mercury are [Foo]."
+        },
+        {
+            "atomic_fact": "NAME_1 is from the Earth.",
+            "revised_fact": "The subject of the statement \"NAME_1 is from the Earth\" is \"NAME_1\". From the response, we can see that \"NAME_1\" is a reference to an unknown entity, as it is not further specified in the response. However, the response does mention several planets in the solar system, including \"Mars\" and \"Mercury\". Since \"NAME_1\" is mentioned in the same context as these planets, we can infer that \"NAME_1\" is also a planet. Therefore, \"NAME_1\" is a vague reference that should be replaced by \"Mars\". Thus, the revised statement is:\n\n```\nMars is from the Earth.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is Mars. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that Mars is one of the planets in the solar system. The relationship between Mars and the Earth is that Mars is one of the planets in the solar system, so the subjects Mars and the Earth are [Foo]."
+        },
+        {
+            "atomic_fact": "The planets are located in a specific orbit around the Sun.",
+            "revised_fact": "The subject of the statement \"The planets are located in a specific orbit around the Sun\" is \"The planets\". This is a vague reference because it does not specify which planets are being referred to. From the response, we can see that the planets mentioned are \"the Sun, the Earth, the NAME_1, Mars, and Mercury\". Therefore, \"The planets\" should be replaced with \"the Sun, the Earth, NAME_1, Mars, and Mercury\" to be more specific. Thus, the revised statement is:\n\n```\nThe Sun, the Earth, NAME_1, Mars, and Mercury are located in a specific orbit around the Sun.\n```",
+            "is_relevant": "The subject of the QUESTION is the planets in the solar system. The subject of the STATEMENT is the Sun, the Earth, NAME_1, Mars, and Mercury. The phrase \"The planets in the solar system are the five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" from the RESPONSE shows that the relationship between the subjects in the STATEMENT and the subject in the QUESTION is that the Sun, the Earth, NAME_1, Mars, and Mercury are the planets in the solar system. For this reason, the subjects the Sun, the Earth, NAME_1, Mars, and Mercury are [Foo]."
+        }
+    ],
+    "past_steps_jsonified_all": [
+        {
+            "google_searches": [
+                {
+                    "query": "solar system celestial bodies",
+                    "result": "Solar System: Star system. The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. It was formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, forming the Sun and a protoplanetary disc. Solar System Age: 4.571\u00a0billion\u00a0years. Solar System Frost line: ~5 AU. Solar System Heliopause: detected at 120 AU. Solar System Known comets: 4,591. Solar System Known natural satellites: 758. Solar System Location: Local Interstellar Cloud; Local Bubble; Orion\u2013Cygnus Arm; Milky Way;. Solar System Planets: Mercury; Venus; Earth; Mars; Jupiter; Saturn; Uranus; Neptune. List of Solar System objects \u00b7 Meteoroids \u00b7 Interplanetary dust \u00b7 Helium focusing cone, around the Sun \u00b7 Human-made objects orbiting the Sun, Mercury, Venus, Earth ... The small bodies in the solar system include comets, asteroids, the objects in the Kuiper Belt and the Oort cloud, small planetary satellites, Triton, ... Our solar system consists of our star, the Sun, and everything bound to it by gravity \u2014 the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and ..."
+                },
+                {
+                    "query": "solar system celestial bodies",
+                    "result": "Solar System: Star system. The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. It was formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, forming the Sun and a protoplanetary disc. Solar System Age: 4.571\u00a0billion\u00a0years. Solar System Frost line: ~5 AU. Solar System Heliopause: detected at 120 AU. Solar System Known comets: 4,591. Solar System Known natural satellites: 758. Solar System Location: Local Interstellar Cloud; Local Bubble; Orion\u2013Cygnus Arm; Milky Way;. Solar System Planets: Mercury; Venus; Earth; Mars; Jupiter; Saturn; Uranus; Neptune. List of Solar System objects \u00b7 Meteoroids \u00b7 Interplanetary dust \u00b7 Helium focusing cone, around the Sun \u00b7 Human-made objects orbiting the Sun, Mercury, Venus, Earth ... The small bodies in the solar system include comets, asteroids, the objects in the Kuiper Belt and the Oort cloud, small planetary satellites, Triton, ... Our solar system consists of our star, the Sun, and everything bound to it by gravity \u2014 the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and ..."
+                },
+                {
+                    "query": "\"Five large celestial bodies that make up the solar system\" site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"NAME_1\" celestial body",
+                    "result": "I tried this. Import packages import numpy as np import hvplot.pandas. Set up dataframe d = {'name_1': ['a', 'b', 'c'], 'classification' ... Missing: body | Show results with:body. ... name_1 field to CrossName. Do the same for the segment ID field if there is one, and remove other fields (like length) from the field ... Missing: body | Show results with:body. the only thing in the body of an email and send to: ... the classes of celestial objects. All of the ... Magnitude_1 Name_1 Magnitude_2 Name_2 ..."
+                },
+                {
+                    "query": "\"Large celestial bodies in the solar system\"",
+                    "result": "Any of the 8 large celestial bodies in the solar system that revolve around the sun. Major Planets! (Order from closest to the sun to the furthest away). Any of the eight large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury,Venus,Earth,Mars,Jupiter ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "What are the five large celestial bodies that make up the solar system?",
+                    "result": "These lists contain the Sun, the planets, dwarf planets, many of the larger small Solar System bodies (which includes the asteroids), all named natural ... Missing: five | Show results with:five. The sun; Mercury; Venus; Earth; Mars; The asteroid belt; Jupiter; Saturn; Uranus; Neptune; Trans-Neptunian region; Pluto; Planet Nine ... Our solar system is made up of a star, eight planets, and countless smaller bodies such as dwarf planets, asteroids, and comets. Artistic collage of solar ..."
+                },
+                {
+                    "query": "\"NAME_1\" celestial body",
+                    "result": "I tried this. Import packages import numpy as np import hvplot.pandas. Set up dataframe d = {'name_1': ['a', 'b', 'c'], 'classification' ... Missing: body | Show results with:body. ... name_1 field to CrossName. Do the same for the segment ID field if there is one, and remove other fields (like length) from the field ... Missing: body | Show results with:body. the only thing in the body of an email and send to: ... the classes of celestial objects. All of the ... Magnitude_1 Name_1 Magnitude_2 Name_2 ..."
+                },
+                {
+                    "query": "\"The five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury make up the solar system\" -\"Sun\" -\"Earth\" -\"Mars\" -\"Mercury\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"List of large celestial bodies in the solar system\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"List of five large celestial bodies in the solar system\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Is the Sun a planet in the solar system?",
+                    "result": "The order of the planets in the solar system, starting nearest the sun and working outward is the following: Mercury, Venus, Earth, Mars, ... The Sun is the only star in our solar system. It is the center of our solar system, and its gravity holds the solar system together. Everything in our solar ..."
+                },
+                {
+                    "query": "Is the Sun a planet in the solar system?",
+                    "result": "The order of the planets in the solar system, starting nearest the sun and working outward is the following: Mercury, Venus, Earth, Mars, ... The Sun is the only star in our solar system. It is the center of our solar system, and its gravity holds the solar system together. Everything in our solar ... In order from the Sun, they are four terrestrial planets (Mercury, Venus, Earth and Mars); two gas giants (Jupiter and Saturn); and two ice giants (Uranus and ..."
+                },
+                {
+                    "query": "Is the Sun a planet in the solar system?",
+                    "result": "The order of the planets in the solar system, starting nearest the sun and working outward is the following: Mercury, Venus, Earth, Mars, ... The Sun is the only star in our solar system. It is the center of our solar system, and its gravity holds the solar system together. Everything in our solar ..."
+                },
+                {
+                    "query": "\"Is the Sun a planet in the solar system?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Is the Sun a planet in the solar system?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Mars is a planet in the solar system.",
+                    "result": "Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. NASA missions have ... Mars is the fourth planet from the Sun, and the seventh largest. It's the only planet we know of inhabited entirely by robots. It is classified as a terrestrial planet and is the second smallest of the Solar System's planets with a diameter of 6,779 km (4,212 mi). In terms of orbital ..."
+                },
+                {
+                    "query": "\"Is Mars a planet?\"",
+                    "result": "Mars: Planet. Mars is the fourth planet from the Sun. The surface of Mars is orange-red because it is covered in iron(III) oxide dust, giving it the nickname \"the Red Planet\". Mars is among the brightest objects in Earth's sky, and its high-contrast albedo... Mars Moons: Phobos and Deimos. Mars Orbital period: 687\u00a0days. Mars Length of day: 1d 0h 37m. Mars Gravity: 3.71\u00a0m/s\u00b2. Mars Distance from Sun: 141.6\u00a0million\u00a0mi. Mars Radius: 2,106.1\u00a0mi. Mars Coordinates: RA 2h 3m 10s | Dec +11\u00b0 19\u2032 19\u2033. Why is Mars a planet of great interest? It's always been one that comes up in topics, movies, etc. more than any other planet? Is there ... Question: Why is Mars a planet? Mars: The fourth planet from our sun, Mars is known as the red planet due ... Is Mars a planet or a dwarf planet? Is Mars the only red planet? Is Mars the only planet with soil? Is there a planet beyond the Kuiper belt? Was there a ..."
+                },
+                {
+                    "query": "Is Mars considered a planet in the solar system?",
+                    "result": "Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. The inner four planets closest to the sun \u2014 Mercury, Venus, Earth and Mars \u2014 are often called the \"terrestrial planets\" because their surfaces ... Mars is known as the Red Planet. It's one of our closest neighbors in the solar system. Learn all about the planet in this blog post!"
+                },
+                {
+                    "query": "\"Mars is a planet in the solar system\" evidence",
+                    "result": "Mars is a planet in the solar system that is often referred to as the \"Red Planet\" due to its reddish appearance. Mars is a planet in the solar system that has long captivated the human imagination. It is the fourth planet from the sun, and it is often ... In addition to having a core formed of iron and nickel, Mars is a planet in the solar system with a thin atmosphere and a crust mostly made ..."
+                },
+                {
+                    "query": "Mars is a planet in the solar system.",
+                    "result": "Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. NASA missions have ... Mars is the fourth planet from the Sun, and the seventh largest. It's the only planet we know of inhabited entirely by robots. It is classified as a terrestrial planet and is the second smallest of the Solar System's planets with a diameter of 6,779 km (4,212 mi). In terms of orbital ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Mars is a planet in the solar system\" site:wikipedia.org",
+                    "result": "The statement 'Mars is a planet in the solar system' does not require verification, but it is certainly verifiable. Statements that are currently unverified ..."
+                },
+                {
+                    "query": "\"Mars\" \"planet\" \"solar system\" evidence",
+                    "result": "Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. NASA missions have ... Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to explore the alien landscape. NASA missions have ... The dust storms on Mars are the largest in the solar system, capable of blanketing the entire Red Planet and lasting for months. One theory ..."
+                },
+                {
+                    "query": "Mars is a planet in the solar system evidence",
+                    "result": "Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. NASA missions ... Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to explore the alien landscape. NASA missions have ... Mars is the fourth planet from the sun and has a distinct rusty red appearance and two unusual moons. The Red Planet is a cold, desert world ..."
+                },
+                {
+                    "query": "Did Mars ever have liquid water on its surface?",
+                    "result": "New findings from NASA's Mars Reconnaissance Orbiter (MRO) provide the strongest evidence yet that liquid water flows intermittently on present- ... No evidence of present-day liquid water has been discovered on the planet's surface because under typical Martian conditions (water vapor pressure <1 Pa and ... It's commonly believed that Mars' water evaporated about 3 billion years ago. But two scientists studying data that MRO has accumulated at Mars ..."
+                },
+                {
+                    "query": "Mars is a planet in the solar system site:wikipedia.org",
+                    "result": "It is classified as a terrestrial planet and is the second smallest of the Solar System's planets with a diameter of 6,779 km (4,212 mi). In terms of orbital ... Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System. ... Mars is a terrestrial planet with caps of water and carbon dioxide. In order from the Sun, they are four terrestrial planets (Mercury, Venus, Earth and Mars); two gas giants (Jupiter and Saturn); and two ice giants (Uranus and ..."
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Composition of the Sun\"",
+                    "result": "\"The chemical composition of the Sun and the solar system\". Proceedings of the Astronomical Society of Australia. 1 (4): 133. Bibcode:1968PASA....1..133A ... Standard composition of the Sun. A&A, Forthcoming article. Source \u00b7 DOI. Downloads. mpia-pr_haeufigkeiten_sonne_magg_bergemann_2022_fig1 360.28 ... The composition of the sun can be described in several ways. By modern estimates, the composition by mass is: 71% H, 27% He, and 2% other heavier elements ..."
+                },
+                {
+                    "query": "\"The Sun is made up of five planets\" -site:wikipedia.org",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The Sun is made up of five planets\" site:nasa.gov",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Composition of the Sun in terms of planets\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Composition of the Sun in terms of planets\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": []
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Is there any evidence of life on other planets?\"",
+                    "result": "Is there any evidence of life on other planets? Are we alone in the universe or has alien life been discovered? 197 Views \u00b7 How likely is it ... 1. Is there any evidence of life on other planets? ... As of now, there is no concrete evidence of life on other planets. However, scientists ... Is there any evidence of life on other planets besides Earth? Are all planets like ours just a coincidence? 106 Views \u00b7 How do we know that ..."
+                },
+                {
+                    "query": "Is there any evidence that life exists on other planets?",
+                    "result": "The search for life beyond Earth is really just getting started, but science has an encouraging early answer: there are plenty of planets in the galaxy, ... Is There Life on Other Planets? ... The ultimate goal of NASA's exoplanet program is to find unmistakable signs of current life on a planet beyond Earth. How soon ... Since humans first looked to the cosmos, we have wondered if life exists elsewhere in the Universe. Scientists and engineers at the Center for Astrophysics ..."
+                },
+                {
+                    "query": "Is there any evidence that life exists on other planets besides Earth?",
+                    "result": "The search for life beyond Earth is really just getting started, but science has an encouraging early answer: there are plenty of planets in the galaxy, ... The ultimate goal of NASA's exoplanet program is to find unmistakable signs of current life on a planet beyond Earth. How soon that can happen depends on ... Since humans first looked to the cosmos, we have wondered if life exists elsewhere in the Universe. Scientists and engineers at the Center for Astrophysics ..."
+                },
+                {
+                    "query": "\"Is there any evidence that life exists on other planets besides Earth?\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "evidence of life on other planets besides Earth",
+                    "result": "The ultimate goal of NASA's exoplanet program is to find unmistakable signs of current life on a planet beyond Earth. How soon that can happen depends on ... The search for life beyond Earth is really just getting started, but science has an encouraging early answer: there are plenty of planets in the galaxy, ... Despite a lot of research in outer space, scientists have not yet been able to find evidence of life forms on any other planet other than Earth. Earth is very ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Size of planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "planets in the solar system size comparison",
+                    "result": "The Solar System: Planet Sizes \u00b7 Mercury \u2013 1,516mi (2,440km) radius; about 1/3 the size of Earth \u00b7 Venus \u2013 3,760mi (6,052km) radius; only slightly ... This is a simple guide to the sizes of planets based on the equatorial diameter \u2013 or width \u2013 at the equator of each planet."
+                },
+                {
+                    "query": "planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury sizes",
+                    "result": "Outward from the Sun, the planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune, followed by the dwarf planet Pluto. Missing: NAME_1, | Show results with:NAME_1,. Jupiter \u00b7 Saturn \u00b7 Uranus \u00b7 Neptune \u00b7 Earth \u00b7 Venus \u00b7 Mars \u00b7 Mercury. Missing: NAME_1, | Show results with:NAME_1,. Largest to smallest are pictured left to right, top to bottom: Jupiter, Saturn, Uranus, Neptune, Earth, Venus, Mars, Mercury. Via Wikimedia ... Missing: NAME_1, | Show results with:NAME_1,."
+                },
+                {
+                    "query": "planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury sizes",
+                    "result": "Outward from the Sun, the planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune, followed by the dwarf planet Pluto. Missing: NAME_1, | Show results with:NAME_1,. Jupiter \u00b7 Saturn \u00b7 Uranus \u00b7 Neptune \u00b7 Earth \u00b7 Venus \u00b7 Mars \u00b7 Mercury. Missing: NAME_1, | Show results with:NAME_1,. Largest to smallest are pictured left to right, top to bottom: Jupiter, Saturn, Uranus, Neptune, Earth, Venus, Mars, Mercury. Via Wikimedia ... Missing: NAME_1, | Show results with:NAME_1,."
+                },
+                {
+                    "query": "planets in the solar system that are not the Sun, Earth, NAME_1, Mars, or Mercury sizes",
+                    "result": "Outward from the Sun, the planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune, followed by the dwarf planet Pluto. Missing: NAME_1, | Show results with:NAME_1,. Jupiter \u00b7 Saturn \u00b7 Uranus \u00b7 Neptune \u00b7 Earth \u00b7 Venus \u00b7 Mars \u00b7 Mercury. Missing: NAME_1, | Show results with:NAME_1,. Largest to smallest are pictured left to right, top to bottom: Jupiter, Saturn, Uranus, Neptune, Earth, Venus, Mars, Mercury. Via Wikimedia ... Missing: NAME_1, | Show results with:NAME_1,."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Potential for life on planets in the solar system\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Potential for life on other planets in the solar system\"",
+                    "result": "The potential for life on other planets in the Solar System, such as Mars and Europa, is being explored through missions that utilize the ... potential for life on other planets in the solar system, and (3) the search for habitable worlds and life throughout the Galaxy. To place ..."
+                },
+                {
+                    "query": "planets in the solar system that can support life",
+                    "result": "Our solar system's majestic giants \u2013 Jupiter, Saturn, Uranus, Neptune \u2013 and their trains of moons might almost be considered solar systems in ... 1. Mars. Mars takes the top spot for several reasons. We know it was once habitable billions of years ago, when it had lakes and rivers of ... Planetary habitability in the Solar System \u00b7 Outer space \u00b7 Mercury \u00b7 Venus \u00b7 Earth \u00b7 Mars \u00b7 Asteroid belt \u00b7 Jupiter \u00b7 Saturn ..."
+                },
+                {
+                    "query": "Do any planets in the solar system other than Earth have the potential to support life?",
+                    "result": "Among the stunning variety of worlds in our solar system, only Earth is known to host life. But other moons and planets show signs of potential No planets besides Earth have air that we can breathe, so in that sense, no other planets are inhabitable. Of the eight planets, only Mars, ... From nearby planets like Venus and Mars, to distant moons like Europa and Titan, these are worlds where we're most likely to find alien ..."
+                },
+                {
+                    "query": "Are there any planets in the solar system besides Earth that are capable of supporting life?",
+                    "result": "Among the stunning variety of worlds in our solar system, only Earth is known to host life. But other moons and planets show signs of potential Two dozen so-called superhabitable alien worlds may be as good as or better than Earth for life as we know it. The ultimate goal of NASA's exoplanet program is to find unmistakable signs of current life on a planet beyond Earth. How soon that can happen depends on ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "query: \"potential for life on other planets in the solar system\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Exoplanets capable of supporting life\"",
+                    "result": "In the search for exoplanets capable of supporting life, astronomers could be helped by looking for 7 key features. 7 features that make a ... A \u201cfingerprint\u201d for Earth could help identify exoplanets capable of supporting life, researchers report. The researchers used over a decade ... By assessing iron in the mantle of exoplanets, will it be possible to narrow the search for exoplanets capable of supporting life? ... This idea that the iron ..."
+                },
+                {
+                    "query": "Are there any planets in the solar system that are capable of supporting life as we know it?",
+                    "result": "A tour of our solar system reveals a stunning diversity of worlds, from charbroiled Mercury and Venus to the frozen outer reaches of the ... One of the worlds, called TRAPPIST-1e, is thought to be the most likely to support life as we know it. Additional resources. For the latest ... Missing: capable | Show results with:capable. Scientists estimate there could be 60 billion planets in the Milky Way alone within habitable zones capable of supporting life."
+                },
+                {
+                    "query": "\"Exoplanets capable of supporting life\" -Earth -\"solar system\"",
+                    "result": "... exoplanets capable of supporting life. A low surface temperature unfortunately also allows the formation of various molecules, which ... From the Large Hadron Collider to the search for exoplanets capable of supporting life, scientists are pushing the boundaries of knowledge ..."
+                },
+                {
+                    "query": "\"Are planets in the solar system capable of supporting life as we know it?\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "Order of celestial bodies in the solar system from the Sun",
+                    "result": "The order of the planets in the solar system, starting nearest the sun and working outward is the following: Mercury, Venus, Earth, Mars, ... List of Solar System objects \u00b7 The Sun, a spectral class G2V main-sequence star \u00b7 The inner Solar System and the terrestrial planets \u00b7 Mercury \u00b7 The outer Solar ... Here are the planets listed in order of their distance from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune."
+                },
+                {
+                    "query": "\"NAME_1\" distance from the Sun",
+                    "result": "Your goal is to reshape this dataset so that for each launch, each dog has a row. The challenge is that in the column headers (name_1, name_2, gender_1, and ... I've set the minimum height to be the distance between the floor to the start of the window, this is correct? ... name_1=[],list_2=[],name_2=[]) ..."
+                },
+                {
+                    "query": "\"celestial bodies\" solar system distance from Sun",
+                    "result": "\u201d Said the IAU, \u201cPlutoids are celestial bodies in orbit around the Sun at a distance greater than that of Neptune that have sufficient mass ... The solar system is a captivating expansion of celestial bodies, each with its unique characteristics and perplexity waiting to be unraveled. There are 174 known moons out there, spinning around the celestial bodies of our Solar System, so we've decided to pick out our favourites. more."
+                },
+                {
+                    "query": "\"The five large celestial bodies that make up the solar system: the Sun, the Earth, the NAME_1, Mars, and Mercury\" distance from the Sun",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"celestial bodies that make up the solar system\" Sun Earth NAME_1 Mars Mercury spread out from the Sun",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Average distance of planets from the Sun\"",
+                    "result": "The average distance of planets from the Sun in millions of km: Mercury - 57.9, Venus - 108.2, Earth - 149.6, Mars - 227.9, Jupiter - 778.6 ... As the average distance of planets from the Sun increases their average orbital speed tends to decrease. This is why the orbital speeds of Mars, Jupiter and ..."
+                },
+                {
+                    "query": "\"Average distance of Mars from the Sun in millions of km\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"distance of planets from the Sun compared to Mars and Mercury distance from Earth\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"distance between Mars and Earth compared to distance between planets and Sun\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Distance of planets from the Sun compared to Mars and Mercury from Earth\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Mars is from the Earth\" -site:wikipedia.org",
+                    "result": "It can vary between six and eight months. Due to the vast difference in how far Mars is from the Earth at any given time, there are periods of times called ' ... Anywhere from ~3 minutes to ~22 minutes, depending on how far Mars is from the Earth at that moment ... Mars is from the Earth at that moment."
+                },
+                {
+                    "query": "\"Mars is from the Earth\" + \"average distance between Mars and Earth\"",
+                    "result": "169.33 million mi Mars: Planet. Mars is the fourth planet from the Sun. The surface of Mars is orange-red because it is covered in iron(III) oxide dust, giving it the nickname \"the Red Planet\". Mars is among the brightest objects in Earth's sky, and its high-contrast albedo... Mars Age: 4.603\u00a0billion\u00a0years. Mars Density: 3.93\u00a0g/cm\u00b3. Mars Distance to Earth: 33.93\u00a0million\u00a0mi. Mars Escape velocity: 3.124\u00a0miles/s. Mars Apparent magnitude (V): -2.91. Mars Shape: Oblate spheroid. Mars Coordinates: RA 2h 3m 11s | Dec +11\u00b0 19\u2032 21\u2033."
+                },
+                {
+                    "query": "\"Mars is from the Earth\" query",
+                    "result": "Due to the vast different in how far Mars is from the Earth at any given time, there are periods of times called 'launch windows', when it is most feasible to ... Missing: query | Show results with:query. ... Mars is from the Earth at that time (the distance does vary and is longest when the Earth and Mars are on the opposite side of the Sun). And ... Want to know how far away Mars is from the Earth? All you have to do is ask your voice assistant. This new way of finding information will ..."
+                },
+                {
+                    "query": "How far is the average distance between Mars and Earth?",
+                    "result": "Mars: Planet. Mars is the fourth planet from the Sun. The surface of Mars is orange-red because it is covered in iron(III) oxide dust, giving it the nickname \"the Red Planet\". Mars is among the brightest objects in Earth's sky, and its high-contrast albedo... Mars Age: 4.603\u00a0billion\u00a0years. Mars Density: 3.93\u00a0g/cm\u00b3. Mars Distance to Earth: 33.93\u00a0million\u00a0mi. Mars Escape velocity: 3.124\u00a0miles/s. Mars Apparent magnitude (V): -2.91. Mars Shape: Oblate spheroid. Mars Coordinates: RA 2h 3m 11s | Dec +11\u00b0 19\u2032 21\u2033. The average distance between Earth and Mars is 140 million miles (225 million km). Mars orbit, opposition and viewing opportunities. To ... Mars is, on average, 140 million miles from Earth. Rather than a three-day lunar trip, astronauts bound for Mars would be leaving our planet ... On average, Mars is 140 million miles (225 million km) away from Earth. The distance can be greater or less than that depending on where the ..."
+                },
+                {
+                    "query": "Mars is from the Earth.",
+                    "result": "Mars: Planet. Mars is the fourth planet from the Sun. The surface of Mars is orange-red because it is covered in iron(III) oxide dust, giving it the nickname \"the Red Planet\". Mars is among the brightest objects in Earth's sky, and its high-contrast albedo... Mars Age: 4.603\u00a0billion\u00a0years. Mars Density: 3.93\u00a0g/cm\u00b3. Mars Distance to Earth: 33.93\u00a0million\u00a0mi. Mars Escape velocity: 3.124\u00a0miles/s. Mars Apparent magnitude (V): -2.91. Mars Shape: Oblate spheroid. Mars Coordinates: RA 2h 3m 11s | Dec +11\u00b0 19\u2032 21\u2033. Mars \u2013 the fourth planet from the Sun \u2013 is a dusty, cold, desert world with a very thin atmosphere. This dynamic planet has seasons, polar ice caps, ... Mars is the fourth planet from the Sun, and the seventh largest. It's the only planet we know of inhabited entirely by robots. It is classified as a terrestrial planet and is the second smallest of the Solar System's planets with a diameter of 6,779 km (4,212 mi). In terms of orbital ..."
+                }
+            ]
+        },
+        {
+            "google_searches": [
+                {
+                    "query": "\"Orbit of NAME_1\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "Orbit of NAME_1 around the Sun",
+                    "result": "The path of the planets around the Sun is called an ORBIT. That's why they say planets orbit the Sun. Missing: NAME_1 | Show results with:NAME_1. The ecliptic or ecliptic plane is the orbital plane of Earth around the Sun. ... From the perspective of an observer on Earth, the Sun's movement around the ... Earth orbits the Sun at an average distance of 149.60 million km (8.317 light minutes, 92.96 million mi) in a counterclockwise direction as viewed from ... Missing: NAME_1 | Show results with:NAME_1."
+                },
+                {
+                    "query": "\"orbit of NAME_1, Sun, Earth, Mars, Mercury\"",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"The Sun, the Earth, NAME_1, Mars, and Mercury\" orbit the Sun in a specific orbit.",
+                    "result": "No good Google Search result was found"
+                },
+                {
+                    "query": "\"Specific orbit of the Sun, Earth, NAME_1, Mars, and Mercury\"",
+                    "result": "No good Google Search result was found"
+                }
+            ]
+        }
+    ],
+    "Supported": 8,
+    "Irrelevant": 0,
+    "Not Supported": 11
+}
