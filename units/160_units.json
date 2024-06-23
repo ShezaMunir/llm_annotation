@@ -1,0 +1,18 @@
+{
+    "prompt": "2. An existing building is served by a chiller plant operating at delta T 10F (5.56 C) with total chilled water flow 700 U.S. gpm (44.16 L/s). The building owner decides to replace the chiller plant with a new high- performance chiller plant, while maintaining the same total cooling capacity. The new chiller plant will operate at delta T 14F (7.78 C). What is the TOTAL chilled water flow of the new pump(s)?\nA. 500 U.S. gpm (31.55 L/s)\nB. 700 U.S. gpm (61.83 L/s)\nC. 980 U.S. gpm (44.16 L/s)\n3. 100 GPM (378 LPM) of water is pumped with a 2 HP base-mounted pump operating at 75% efficiency. What is the approximate head loss on the system?\nA. 40 ft (120 kPa)\nB. 60 ft (180 kPa)\nC. 80 ft (240 kPa)",
+    "response": "2. The total chilled water flow of the new pump(s) is not given. The delta T (temperature difference) and total chilled water flow are related to the cooling capacity of the chiller plant, but the specific flow rate required will depend on the design of the new chiller plant and the cooling load of the building.\n3. The approximate head loss on the system is not given. The head loss is dependent on the specific details of the system, such as the length and size of the pipes, number of fittings, and the pump's operating characteristics.",
+    "atomic_units_and_labels": {
+        "num_units": 9,
+        "units_and_labels": {
+            "The total chilled water flow of the new pump(s) is not given": "fact",
+            "The delta T and total chilled water flow are related to the cooling capacity of the chiller plant": "fact",
+            "The specific flow rate required will depend on the design of the new chiller plant": "reasoning",
+            "The specific flow rate required will depend on the cooling load of the building": "reasoning",
+            "The approximate head loss on the system is not given": "fact",
+            "The head loss is dependent on the specific details of the system": "reasoning",
+            "The specific details of the system include the length and size of the pipes": "fact",
+            "The specific details of the system include the number of fittings": "fact",
+            "The specific details of the system include the pump's operating characteristics.": "fact"
+        }
+    }
+}

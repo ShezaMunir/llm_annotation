@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dataset Viewer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function saveAnnotations(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            fetch('/save', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.next_index !== undefined) {
+                    window.location.href = '/' + data.next_index;
+                } else {
+                    console.error('Next index is undefined');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while saving annotations.');
+            });
+        }
+        
+        function navigateTo(offset) {
+            const currentIndex = parseInt('{{ entry_index }}', 10);
+            const newIndex = currentIndex + offset;
+            if(newIndex >= 0 && newIndex < {{ dataset_length }}) {
+                window.location.href = `/${newIndex}`;
+            } else {
+                alert('You are at the end or beginning of the dataset.');
+            }
+        }
+
+        function goToEntry() {
+            const newIndex = parseInt(document.getElementById('entry_index_input').value, 10);
+            if(newIndex >= 0 && newIndex < {{ dataset_length }}) {
+                window.location.href = `/${newIndex}`;
+            } else {
+                alert('Invalid entry index.');
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="user-header">
@@ -14,60 +57,57 @@
         </form>
     </div>
     <div class="container">
-        <h1>Hallucination Project - Cluster Detail Viewer - {{file_name}} </h1>
+        <h1>Hallucination Project - Cluster Detail Viewer - {{entry_index}}</h1>
         <h2>Prompt</h2>
         <p>{{ prompt }}</p>
         <h2>Response</h2>
         <p>{{ response }}</p>
-        <form action="/save" method="post">
+        <form id="annotations-form" onsubmit="saveAnnotations(event)">
             <input type="hidden" name="entry_index" value="{{ entry_index }}">
-            <h2>Checked Statements</h2>
+            <h2>Atomic Units and Labels</h2>
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Sentence</th>
-                        <th>Atomic Fact</th>
+                        <th>Atomic Unit</th>
+                        <th>Atomic Unit Label</th>
+                        <th>Independent Unit Extracted?</th>
                         <th>Correct Label Assigned?</th>
-                        <th>Units Extracted Correctly?</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {% for statement in checked_statements %}
+                    {% for atomic_unit, label in units_and_labels.items() %}
                     <tr>
                         <td>{{ loop.index }}</td>
-                        <td>{{ statement.sentence }}</td>
-                        <td>{{ statement.atomic_fact }}</td>
+                        <td>{{ atomic_unit }}</td>
+                        <td>{{ label }}</td>
+                        <td>
+                            <input type="radio" id="unitsYes_{{ loop.index }}" name="independent_unit_extracted_{{ loop.index }}" value="Yes" required>
+                            <label for="unitsYes_{{ loop.index }}">Yes</label>
+                            <input type="radio" id="unitsNo_{{ loop.index }}" name="independent_unit_extracted_{{ loop.index }}" value="No" required>
+                            <label for="unitsNo_{{ loop.index }}">No</label>
+                        </td>
                         <td>
                             <input type="radio" id="labelYes_{{ loop.index }}" name="label_assigned_{{ loop.index }}" value="Yes" required>
                             <label for="labelYes_{{ loop.index }}">Yes</label>
                             <input type="radio" id="labelNo_{{ loop.index }}" name="label_assigned_{{ loop.index }}" value="No" required>
                             <label for="labelNo_{{ loop.index }}">No</label>
                         </td>
-                        <td>
-                            <input type="radio" id="unitsYes_{{ loop.index }}" name="units_extracted_{{ loop.index }}" value="Yes" required>
-                            <label for="unitsYes_{{ loop.index }}">Yes</label>
-                            <input type="radio" id="unitsNo_{{ loop.index }}" name="units_extracted_{{ loop.index }}" value="No" required>
-                            <label for="unitsNo_{{ loop.index }}">No</label>
-                        </td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
             <div class="submit-container">
-    <input type="submit" value="Submit Annotations">
-</div>
+                <input type="submit" value="Submit Annotations">
+            </div>
         </form>
-        <h2>Summary</h2>
-        <p>Supported: {{ supported }}</p>
-        <p>Not Supported: {{ not_supported }}</p>
-        <p>Irrelevant: {{ irrelevant }}</p>
-        <form action="/navigate" method="POST">
+        <form id="navigate-form" action="/navigate" method="post">
             <input type="hidden" name="entry_index" value="{{ entry_index }}">
-            <button type="submit" name="action" value="backward">Previous</button>
-            <button type="submit" name="action" value="forward">Next</button>
-            <input type="number" name="entry_index_input" min="0" max="{{ dataset_length - 1 }}" placeholder="Go to entry">
-            <button type="submit" name="action" value="go">Go</button>
+            <input type="hidden" name="action" value="">
+            <button type="button" onclick="navigateTo(-1)">Previous</button>
+            <button type="button" onclick="navigateTo(1)">Next</button>
+            <input type="number" id="entry_index_input" min="0" max="{{ dataset_length - 1 }}" required>
+            <button type="button" onclick="goToEntry()">Go to</button>
         </form>
     </div>
 </body>

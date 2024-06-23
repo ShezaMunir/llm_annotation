@@ -1,0 +1,24 @@
+{
+    "prompt": "Implement a python script that does the following:\n1. Prompts the user to select two folders. The first folder is the input folder, and the second is the output folder.\n2. After the user selects the input and output folders, save each to a global variable.\n3. The folder selection prompt is a single dialogue box with which the user selects the folders using a GUI.\n4. Iterate through the input folder and output to the output folder a csv named blurbs.csv with the file's name, the file's md5, and the first 50 characters of text inside each file.",
+    "response": "This can be done with the following code:\ninput_folder = input('Input Folder: ')\noutput_folder = input('Output Folder: ')\n\nblurbs = []\nfor root, dirs, files in os.walk(input_folder):\n    for file in files:\n        full_path = os.path.join(root, file)\n        file_md5 = hashlib.md5(full_path).hexdigest()\n        file_str = open(full_path, 'r').read().split('\\n')[0]\n        file_str = file_str[:50]\n        blurbs.append({'filename': file,'md5': file_md5, 'text': file_str})\n\nwith open('blurbs.csv', 'w') as f:\n    writer = csv.writer(f)\n    writer.writerows(blurbs)",
+    "atomic_units_and_labels": {
+        "num_units": 15,
+        "units_and_labels": {
+            "The provided text is a Python code snippet": "fact",
+            "The code snippet involves user input for an 'Input Folder'": "fact",
+            "The code snippet involves user input for an 'Output Folder'": "fact",
+            "The code snippet uses a loop to traverse directories and files in the input_folder": "fact",
+            "The variable 'blurbs' is initialized as an empty list": "fact",
+            "The code uses 'os.walk' to traverse directories and files": "fact",
+            "'os.walk' is called with 'input_folder' as an argument": "fact",
+            "The code snippet processes each file in the directories": "fact",
+            "'full_path' is created by joining 'root' and 'file'": "fact",
+            "'file_md5' is calculated using 'hashlib.md5' on 'full_path'": "fact",
+            "The file is opened and read, and the first line is extracted and truncated to 50 characters": "fact",
+            "Each file's details are stored in the 'blurbs' list as a dictionary": "fact",
+            "The dictionaries in 'blurbs' list contain 'filename', 'md5', and 'text'": "fact",
+            "A CSV file named 'blurbs.csv' is created": "fact",
+            "The 'blurbs' list is written to 'blurbs.csv' using a CSV writer.": "fact"
+        }
+    }
+}

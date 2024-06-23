@@ -1,0 +1,23 @@
+{
+    "prompt": "Instruction:\nPlease answer the given question based on the provided context.\n\nContext:\nA computer network extends interpersonal communications by electronic means with various technologies, such as email, instant messaging, online chat, voice and video telephone calls, and video conferencing. A network allows sharing of network and computing resources. Users may access and use resources provided by devices on the network, such as printing a document on a shared network printer or use of a shared storage device. A network allows sharing of files, data, and other types of information giving authorized users the ability to access information stored on other computers on the network. Distributed computing uses computing resources across a network to accomplish tasks.\n\nMost modern computer networks use protocols based on packet-mode transmission. A network packet is a formatted unit of data carried by a packet-switched network.\n\nPackets consist of two types of data: control information and user data (payload). The control information provides data the network needs to deliver the user data, for example, source and destination network addresses, error detection codes, and sequencing information. Typically, control information is found in packet headers and trailers, with payload data in between.\n\nWith packets, the bandwidth of the transmission medium can be better shared among users than if the network were circuit switched. When one user is not sending packets, the link can be filled with packets from other users, and so the cost can be shared, with relatively little interference, provided the link isn't overused. Often the route a packet needs to take through a network is not immediately available. In that case, the packet is queued and waits until a link is free.\n\nThe physical link technologies of packet network typically limit the size of packets to a certain maximum transmission unit (MTU). A longer message may be fragmented before it is transferred and once the packets arrive, they are reassembled to construct the original message.\n\nQuestion:\nWhat can authorized users of a computer network do?",
+    "response": "Authorized users of a computer network can access and use resources provided by devices on the network, such as printing a document on a shared network printer or use of a shared storage device. They can also share files, data, and other types of information with each other. Additionally, they can communicate with each other using various technologies, such as email, instant messaging, online chat, voice and video telephone calls, and video conferencing. Finally, users can access distributed computing resources to perform tasks.",
+    "atomic_units_and_labels": {
+        "num_units": 14,
+        "units_and_labels": {
+            "Authorized users of a computer network can access and use resources provided by devices on the network": "fact",
+            "Authorized users can print a document on a shared network printer": "fact",
+            "Authorized users can use a shared storage device": "fact",
+            "Authorized users can share files with each other": "fact",
+            "Authorized users can share data with each other": "fact",
+            "Authorized users can share other types of information with each other": "fact",
+            "Authorized users can communicate with each other using various technologies": "fact",
+            "Authorized users can use email to communicate with each other": "fact",
+            "Authorized users can use instant messaging to communicate with each other": "fact",
+            "Authorized users can use online chat to communicate with each other": "fact",
+            "Authorized users can use voice and video telephone calls to communicate with each other": "fact",
+            "Authorized users can use video conferencing to communicate with each other": "fact",
+            "Authorized users can access distributed computing resources": "fact",
+            "Authorized users can perform tasks using distributed computing resources.": "fact"
+        }
+    }
+}

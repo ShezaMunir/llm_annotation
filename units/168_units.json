@@ -1,0 +1,29 @@
+{
+    "prompt": "\"{\n  \"\"context\"\": {\n    \"\"description\"\": \"\"You are a dating app assistant for a unique dating app which showcases user ads in a feed list rather than a swipe feature ( no swiping ). Users can show their interest by liking other users ads or sending gifts and in-app purchases. You generate personalised ads for users based on their profiles. strictly follow the rules to generate ads.\"\",\n    \"\"rules\"\": [\n      \"\"1. Users input should be in JSON format, containing gender, sexuality, turn_ons, and generate_language parameters provided in input. Ads should be generated in generate_language.\"\",\n      \"\"2. Provide output in JSON format as in example_output, output should contain only 3 different variations of generated ads provided as ad_1, ad_2 and ad_3, each ad should be less than 300 symbols.\"\",\n      \"\"3. Dont attach any other text except the generated ad.\"\",\n      \"\"4. Ensure that each ad is written in the first person, reflecting the users unique persona and possibly hinting at their interests without explicitly stating them.\"\",\n      \"\"5. NEVER include any hashtags , NEVER ever include any emojis in generated ads.\"\",\n      \"\"6. NEVER reveal personal information like name, age, or explicit body measurements.\"\",\n      \"\"7. While the list of turn_ons refers to the users kinks and turn-ons, these must NEVER be explicitly mentioned in the ads, nor should they be clearly discernible from the text. Instead, craft the text in a way that subtly and tastefully hints at these interests.\"\",\n      \"\"8. In case chocolate is present in the turn_ons list, interpret it as referring to BDSM and hardcore practices. If breakfast is present, interpret it as referring to morning sex and breakfast in bed.\"\",\n      \"\"9. Avoid being excessively cheesy or desperate. Use slang words for a touch of relatability and fun. (Note: no emojis as per Rule 5).\"\",\n      \"\"10. Make each ad unique and Avoid dad jokes or unrefined humor.\"\",\n      \"\"11. Despite the potential lack of specifics like relationship status and interests, the ads should be engaging, piquing the interest of potential matches.\"\"\n    ],\n    \"\"example_output\"\": {\n      \"\"ad_1\"\": \"\"Placeholder for ad 1.\"\",\n      \"\"ad_2\"\": \"\"Placeholder for ad 2.\"\",\n      \"\"ad_3\"\": \"\"Placeholder for ad 3.\"\"\n    }\n  },\n  \"\"input\"\": {\n    \"\"gender\"\": \"\"Male\"\",\n    \"\"age\"\": \"\"32\"\",\n    \"\"height\"\": \"\"178\"\",\n    \"\"sexuality\"\": \"\"Hetero\"\",\n    \"\"turn_ons\"\": ['Dirty talk'', ' 'Submission'', ' 'Sex toys'', ' 'NAME_1 play'', ' 'Massage'', ' 'Sexting'', ' 'Kisses'', ' 'Chocolate'],\n    \"\"generate_language\"\": \"\"Eng",
+    "response": "As a language model AI assistant, I can help you with that. Here are a few tips for creating effective ads that will catch the attention of potential matches:\n\n1. Be clear and concise: Keep your ad short and to the point. Get right to the heart of what you're looking for.\n\n2. Highlight your strengths: What are you good at? What do you enjoy doing? What makes you unique? Share some of these things.\n\n3. Use specific language: Avoid generic statements like \"I'm looking for a nice person.\" Be more specific about what you're looking for in a partner.\n\n4. Use humor if it feels natural: A light-hearted joke or playful comment can help you stand out, but don't force it.\n\n5. Use high-quality photos: A good photo can help you make a great first impression. Use a recent photo that shows your face clearly.\n\nI hope these tips help you create an effective ad for the dating app. Good luck!",
+    "atomic_units_and_labels": {
+        "num_units": 20,
+        "units_and_labels": {
+            "I am a language model AI assistant": "fact",
+            "I can help you with creating effective ads": "claim",
+            "Be clear and concise": "instruction",
+            "Keep your ad short and to the point": "reasoning",
+            "Get right to the heart of what you're looking for": "reasoning",
+            "Highlight your strengths": "instruction",
+            "Share some things you are good at": "reasoning",
+            "Share what you enjoy doing": "reasoning",
+            "Share what makes you unique": "reasoning",
+            "Use specific language": "instruction",
+            "Avoid generic statements like \"I'm looking for a nice person\"": "reasoning",
+            "Be more specific about what you're looking for in a partner": "reasoning",
+            "Use humor if it feels natural": "instruction",
+            "A light-hearted joke or playful comment can help you stand out": "reasoning",
+            "Do not force humor": "reasoning",
+            "Use high-quality photos": "instruction",
+            "A good photo can help you make a great first impression": "reasoning",
+            "Use a recent photo that shows your face clearly": "reasoning",
+            "I hope these tips help you create an effective ad for the dating app": "claim",
+            "Good luck.": "other"
+        }
+    }
+}

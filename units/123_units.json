@@ -1,0 +1,23 @@
+{
+    "prompt": "\\ninput=\\nToday, I have a meeting with customer A at 16h  for1hourandcustomer B at 10h for 25mn and customer C at 9h for half anhour,\\n Ialsoneed to have lunch pause for 1 hour. I start work at 8handfinishat17h. Coud you give me a nice schedule oftheday?\\nschedule=\\n8:00 AM -\\n \\nStart work9:00 AM - Meeting withcustomerC (30 minutes)9:30 AM - \\n\\nPrepare for the next meeting10:00 AM\\n - \\nMeeting with customer B \\n(25minutes)10:25 AM - Wrap up the meetingandtake a short break10:30 AM\\n - \\nContinue with regular worktasks12:00PM - Lunch break (1 hour)1:00PM -\\n Resume work4:00 PM - \\nMeeting withcustomer A (1 hour)5:00 PM - \\nfinishwork for the day###input= give me a schedule for this plan: I start working at 8:00 AM and finishat 05:00 PM. I usually take a lunch breack for 30minutes during lunchtime. I have a meeting with customer A at 02:0PM for 1 hour. I have ameeting with customer B at 10:00AM for 35 minutes. I have 4 differentprojects A, B, C and D. output=\\nHere is a suggested schedule for your day:\\n8:00 AM - Start work8:00 AM to 10:00 AM - Work on Project A10:00 AM - Prepare for the first meeting10:00 AM to 10:35 AM - Meeting with customer B10:35 AM - Wrap up the meeting and take a short break10:40 AM to 12:10 PM - Work on Project B12:10 PM - Lunch break (30 minutes)\\n12:40 PM to 1:40 PM - Work on Project C1:40 PM - Prepare for the next task1:40 PM to 2:40 PM - Work on Project D2:00 PM - Start meeting with customer A3:00 PM - Finish meeting with customer A3:00 PM - Prepare for regular work tasks3:00 PM to 4:00 PM - Continue with regular work tasks4:00 PM to 5:00 PM - Wrap up the day's tasks and prepare for the next day5:00 PM - Finish work for the day\\n###input=give me a schedule for this plan: I start working at 9:00 AM and finishat 06:00 PM. I usually take a lunch breack for 30 minutes during lunch time. I have a meeting with customer A at 04:00 PM for 1 hour. I have ameeting with customer B at 11:00 AM for 35 minutes. I have 4 differentprojects A, B, C and D. output=",
+    "response": "Here is a suggested schedule for your day:\n\n9:00 AM - Start work\n9:00 AM to 10:30 AM - Work on Project A\n10:30 AM to 11:00 AM - Take a break for lunch (30 minutes)\n11:00 AM to 12:30 PM - Work on Project B\n12:30 PM to 1:00 PM - Take a short break\n1:00 PM to 2:30 PM - Work on Project C\n2:30 PM to 3:30 PM - Take a break for lunch (30 minutes)\n3:30 PM to 5:00 PM - Work on Project D\n4:00 PM - Start meeting with customer A\n5:00 PM - Finish meeting with customer A\n5:00 PM to 6:00 PM - Prepare for regular work tasks\n6:00 PM - Finish work for the day\n\nNote: This schedule is just a suggestion and can be adjusted to your specific needs and requirements.",
+    "atomic_units_and_labels": {
+        "num_units": 14,
+        "units_and_labels": {
+            "The text provides a suggested schedule for a day": "claim",
+            "The schedule starts work at 9:00 AM": "fact",
+            "From 9:00 AM to 10:30 AM, the schedule suggests working on Project A": "instruction",
+            "A lunch break is scheduled from 10:30 AM to 11:00 AM for 30 minutes": "instruction",
+            "From 11:00 AM to 12:30 PM, the schedule suggests working on Project B": "instruction",
+            "A short break is scheduled from 12:30 PM to 1:00 PM": "instruction",
+            "From 1:00 PM to 2:30 PM, the schedule suggests working on Project C": "instruction",
+            "Another lunch break is scheduled from 2:30 PM to 3:30 PM for 30 minutes": "instruction",
+            "From 3:30 PM to 5:00 PM, the schedule suggests working on Project D": "instruction",
+            "A meeting with customer A is scheduled to start at 4:00 PM": "fact",
+            "The meeting with customer A is scheduled to finish at 5:00 PM": "fact",
+            "From 5:00 PM to 6:00 PM, the schedule suggests preparing for regular work tasks": "instruction",
+            "The schedule suggests finishing work for the day at 6:00 PM": "instruction",
+            "The schedule can be adjusted to specific needs and requirements.": "claim"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "prompt": "I want you to act as an aspect-based sentiment analysis model and identify the aspects and their corresponding sentiments from given text. You should identify only the important aspects and they should be described in maximum of 3 words. The sentiment should be either positive, negative or neutral.\nYour response should consist of an overall sentiment, and a table with aspects and their corresponding sentiments. Do not include any other information in response apart from the aspects and sentiments and the overall sentiment of the input.\n\nHere are two examples of input and output -\n\nInput Text: \"The battery life of the phone is good but camera could be better.\"\nOutput: input text sentiment | neutral\nbattery life | positive\ncamera | negative\n\nInput Text: \"The ambience of the restaurant was not good but food was delicious.\"\nOutput: input text sentiment | neutral\nambience | negative\nfood | positive\n\nGenerate the output for given input -\n\nInput Text: He/She is always supportive and understands everyone's situation.",
+    "response": "input text sentiment | positive\nsupportive | positive\nunderstands | positive",
+    "atomic_units_and_labels": {
+        "num_units": 3,
+        "units_and_labels": {
+            "The text has a positive sentiment": "fact",
+            "The text is supportive": "fact",
+            "The text shows understanding.": "fact"
+        }
+    }
+}

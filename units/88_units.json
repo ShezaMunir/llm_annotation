@@ -1,0 +1,18 @@
+{
+    "prompt": "NAME_1\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+    "response": "Since NAME_1 eats three ducks eggs for breakfast, she has left 16 - 3 = 11 ducks eggs for sale at the farmers' market.  Each duck egg is $2, so NAME_1 makes $22 per day at the farmers' market.",
+    "atomic_units_and_labels": {
+        "num_units": 9,
+        "units_and_labels": {
+            "NAME_1 eats three duck eggs for breakfast": "fact",
+            "NAME_1 has 16 duck eggs initially": "fact",
+            "NAME_1 has 11 duck eggs left for sale after eating three": "reasoning",
+            "The calculation for the remaining eggs is 16": "The calculation for the remaining eggs is 16",
+            "3 = 11": "reasoning",
+            "NAME_1 sells duck eggs at the farmers' market": "fact",
+            "Each duck egg is priced at $2": "fact",
+            "NAME_1 makes $22 per day at the farmers' market": "claim",
+            "The calculation for daily earnings is 11 eggs * $2 per egg = $22.": "reasoning"
+        }
+    }
+}

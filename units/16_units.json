@@ -1,0 +1,20 @@
+{
+    "prompt": "Analyze the provided requirement, determining whether it adheres to a high-quality standard. The requirement should be stated in active voice with a clearly identified responsible entity, as illustrated by the following examples:\n###\n'The system shall print emails'\n'The system shall backup all customer data to an external hard drive'\n'The supplier shall train the staff'\n###\nThere are also some bad examples with an explanation:\n###\n\"Any interruption of operational services due to planned or unplanned unavailability of the ground segment shall be less than 1 orbit. \". Explanation: Unclear who is responsible for this. \n\"From the data received from observation missions, level 1 products shall be generated at the central site as listed in [HQ-BAS]. \" Explanation: passive language found: \"products shall be generated\".  Unclear to which entity this requirement refers to.  \n###\n\nA responsible entity in a requirement is the part accountable for performing the stated activity or possessing the mentioned quality. The output should consist of a simple yes/no verdict on the quality of the requirement, a short explanation for this verdict, and an improved version of the requirement if necessary.\nAnalyze the follwing requirement: \"Network and processing infrastructures with the capability to isolate environments from each other shall be provided\"",
+    "response": "The requirement adheres to a high-quality standard. The responsible entity is clearly identified as \"the organization.\" The requirement is stated in active voice, and the quality is clearly defined as \"infrastructure.\" \nExplanation: The requirement is clear and concise, and the responsible entity is identified as the organization. There is no ambiguity in the language used, and the quality is defined as \"infrastructure.\" This requirement meets the criteria for a high-quality standard. \nImproved version: \"The organization shall provide network and processing infrastructures with the capability to isolate environments from each other.\"",
+    "atomic_units_and_labels": {
+        "num_units": 11,
+        "units_and_labels": {
+            "The requirement adheres to a high-quality standard": "claim",
+            "The responsible entity is clearly identified as \"the organization\"": "fact",
+            "The requirement is stated in active voice": "fact",
+            "The quality is clearly defined as \"infrastructure\"": "fact",
+            "The requirement is clear and concise": "claim",
+            "The responsible entity is identified as the organization": "fact",
+            "There is no ambiguity in the language used": "claim",
+            "The quality is defined as \"infrastructure\"": "fact",
+            "This requirement meets the criteria for a high-quality standard": "claim",
+            "The improved version of the requirement is provided": "fact",
+            "The improved version specifies that \"The organization shall provide network and processing infrastructures with the capability to isolate environments from each other\".": "fact"
+        }
+    }
+}

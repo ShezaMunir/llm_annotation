@@ -1,0 +1,29 @@
+{
+    "prompt": "Consider the following topic : \"NAME_1\" generate a brief few word sentence in the first person for it as if as a part of a resume.\n         generate a json response with the following format:\n         {\n         \"NAME_1\": \"general brief self-description in the first person\",\n         \"entails\": [5 skills that are entailed by the description, explained as if in a job description],\n         \"neutral\":[5 general skills that are neutral to the entailed skills or just common skills in many jobs],\n         \"unrelated_skills\":[5 skills that are not possessed by \"NAME_1\"]\n         }\n         please output JSON format only and all sentences should be inside quotation marks \"\"",
+    "response": "{\n\"NAME_1\": \"Experienced NAME_1 with a strong background in constructing and repairing buildings. Skilled in using a variety of tools and materials to create high-quality finished products. Proficient in following blueprints and plans to ensure accuracy and precision in construction. \",\n\"entails\": [\n\"woodworking\",\n\"measurement and calculation\",\n\"problem-solving\",\n\"attention to detail\",\n\"physical strength and endurance\"\n],\n\"neutral\": [\n\"communication\",\n\"teamwork\",\n\"time management\",\n\"leadership\",\n\"organization\"\n],\n\"unrelated\\_skills\": [\n\"plumbing\",\n\"electrical work\",\n\"painting\",\n\"landscaping\",\n\"civil engineering\"\n]\n}",
+    "atomic_units_and_labels": {
+        "num_units": 20,
+        "units_and_labels": {
+            "NAME_1 has a strong background in constructing and repairing buildings": "fact",
+            "NAME_1 is skilled in using a variety of tools and materials": "fact",
+            "NAME_1 uses tools and materials to create high-quality finished products": "fact",
+            "NAME_1 is proficient in following blueprints and plans": "fact",
+            "NAME_1 ensures accuracy and precision in construction by following blueprints and plans": "reasoning",
+            "Woodworking is an entailment skill for NAME_1": "fact",
+            "Measurement and calculation is an entailment skill for NAME_1": "fact",
+            "Problem-solving is an entailment skill for NAME_1": "fact",
+            "Attention to detail is an entailment skill for NAME_1": "fact",
+            "Physical strength and endurance is an entailment skill for NAME_1": "fact",
+            "Communication is a neutral skill for NAME_1": "fact",
+            "Teamwork is a neutral skill for NAME_1": "fact",
+            "Time management is a neutral skill for NAME_1": "fact",
+            "Leadership is a neutral skill for NAME_1": "fact",
+            "Organization is a neutral skill for NAME_1": "fact",
+            "Plumbing is an unrelated skill for NAME_1": "fact",
+            "Electrical work is an unrelated skill for NAME_1": "fact",
+            "Painting is an unrelated skill for NAME_1": "fact",
+            "Landscaping is an unrelated skill for NAME_1": "fact",
+            "Civil engineering is an unrelated skill for NAME_1.": "fact"
+        }
+    }
+}

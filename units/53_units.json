@@ -1,0 +1,18 @@
+{
+    "prompt": "Carry the extra digit. If the sum is more than one digit, you will need to \"carry\" the extra digit. This means that you will need to add an additional number into the next column to the left.[3]\nYou easily do this by writing a small number one to the top of your next column. This is called \"showing your work.\"\nFor example, add the sum 982 + 247 + 475, then draw a line beneath. Using the right-to-left method, add 2 + 7 + 5. The sum is 14. Write the 4 beneath the line on the right side as the sum, and write a small number 1 above the next column to the left.\nWhen you are adding the next column, simply include the additional 1 as a part of your sum. For example, the next column would be the equation 8 + 4 + 7 (+1) = 20. Write the 0 below the line, and write the 2 above the next column to the left.\nYour next column will now read: 9 + 2 + 4 (+2). Add these numbers. Because there is no additional column, you can now write your sum entire, whether it's one digit or two. In this case, the sum is 17.\nLook at the sum now written below the line: 1704. This is your total.\n\nWhat is 1947395 + 4934275",
+    "response": "To solve the addition problem, you can follow these steps:\n\n1.   Write the problem: 1947395 + 4934275\n2.   Decode the problem: 19 (left column), 4 (right column), 7 (left column), 3 (right column), 9 (left column), 5 (right column), + (plus sign), 4 (right column), 9 (left column), 3 (right column), 4 (right column), 2 (left column), 7 (left column), 5 (right column)\n3.   Expand the problem: 19 (left column) + 4 (right column) + 7 (left column) + 3 (right column) + 9 (left column) + 5 (right column) + (+ (plus sign) + 4 (right column) + 9 (left column) + 3 (right column) + 4 (right column) + 2 (left column) + 7 (left column) + 5 (right column)\n4.   Add the columns: 19 + 4 + 7 + 3 + 9 + 5 + 11 + 13 + 14 + 16 + 18 + 19 + 21 + 22 + 23 + 24 + 25 + 26 + 27 + 28 + 29 + 30 + 31 + 32 + 33 + 34 + 35 + 36 + 37 + 38 + 39 + 40 + 41 + 42 + 43 + 44 + 45 + 46 + 47 + 48 + 49 + 50 + 51 + 52 + 53 + 54 + 55 + 56 + 57 + 58 + 59 + 60 + 61 + 62 + 63 + 64 + 65 + 66 + 67 + 68 + 69 + 70 + 71 + 72 + 73 + 74 + 75 + 76 +",
+    "atomic_units_and_labels": {
+        "num_units": 9,
+        "units_and_labels": {
+            "To solve the addition problem, you can follow these steps": "instruction",
+            "Write the problem: 1947395 + 4934275": "instruction",
+            "Decode the problem into columns": "fact",
+            "The numbers 19, 7, 9, and 2 are in the left column": "fact",
+            "The numbers 4, 3, 5, 4, 3, 4, 7, 5 are in the right column": "fact",
+            "The plus sign is included in the decoding": "fact",
+            "Expand the problem by listing all the numbers from both columns in sequence": "instruction",
+            "Add the columns together": "instruction",
+            "The addition sequence starts from 19 and ends at 76, summing up each consecutive pair.": "fact"
+        }
+    }
+}

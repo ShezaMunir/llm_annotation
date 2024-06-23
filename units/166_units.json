@@ -1,0 +1,18 @@
+{
+    "prompt": "Solve this equation for x: x*x + 5 = 7",
+    "response": "To solve this equation for x, we need to isolate x on one side of the equation. One way to do this is by subtracting 5 from both sides of the equation:\n\nx*x + 5 = 7\nx*x = 7 - 5\nx*x = 2\n\nNow we can divide both sides of the equation by x:\n\nx*x = 2\nx = 2\n\nSo the solution to the equation x*x + 5 = 7 is x = 2.",
+    "atomic_units_and_labels": {
+        "num_units": 9,
+        "units_and_labels": {
+            "To solve this equation for x, we need to isolate x on one side of the equation": "instruction",
+            "One way to isolate x is by subtracting 5 from both sides of the equation": "reasoning",
+            "The original equation is x*x + 5 = 7": "fact",
+            "Subtracting 5 from both sides results in x*x = 7": "Subtracting 5 from both sides results in x*x = 7",
+            "5": "reasoning",
+            "After subtraction, the equation simplifies to x*x = 2": "fact",
+            "To further isolate x, we can divide both sides of the equation by x": "instruction",
+            "Dividing x*x = 2 by x results in x = 2": "reasoning",
+            "The solution to the equation x*x + 5 = 7 is x = 2.": "claim"
+        }
+    }
+}

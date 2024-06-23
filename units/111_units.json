@@ -1,0 +1,27 @@
+{
+    "prompt": "How can I speed-up Terraform development ?",
+    "response": "Here are some tips to speed up Terraform development:\n\n1. Define clear naming conventions and directory structure for your Terraform code. This will make it easier to navigate and find the code you need.\n2. Use modules to encapsulate reusable code and reduce duplication.\n3. Use vars to store configuration values that can be reused across modules.\n4. Use Terraform workspaces to manage multiple Terraform projects in a single workspace.\n5. Use a version control system (such as Git) to track changes to your Terraform code and collaborate with others.\n6. Use the Terraform Registry to find and use approved community-contributed modules.\n7. Use Terraform Cloud to manage your Terraform code and collaborate with others.\n8. Use Terraform's remote state backend to store your infrastructure state in a remote location, which can improve performance.\n9. Use Terraform's built-in logging and debugging tools to troubleshoot issues and optimize your code.\n10. Use Terraform's built-in integration with other tools, such as AWS CloudFormation, Azure ARM templates, and Google Cloud templates, to automate the deployment of your infrastructure across multiple cloud providers.",
+    "atomic_units_and_labels": {
+        "num_units": 18,
+        "units_and_labels": {
+            "Define clear naming conventions and directory structure for your Terraform code": "instruction",
+            "This will make it easier to navigate and find the code you need": "reasoning",
+            "Use modules to encapsulate reusable code": "instruction",
+            "Using modules reduces duplication": "reasoning",
+            "Use vars to store configuration values that can be reused across modules": "instruction",
+            "Use Terraform workspaces to manage multiple Terraform projects in a single workspace": "instruction",
+            "Use a version control system to track changes to your Terraform code": "instruction",
+            "Collaborate with others using a version control system": "instruction",
+            "Use the Terraform Registry to find and use approved community-contributed modules": "instruction",
+            "Use Terraform Cloud to manage your Terraform code": "instruction",
+            "Collaborate with others using Terraform Cloud": "instruction",
+            "Use Terraform's remote state backend to store your infrastructure state in a remote location": "instruction",
+            "Storing your infrastructure state in a remote location can improve performance": "reasoning",
+            "Use Terraform's built-in logging and debugging tools to troubleshoot issues": "instruction",
+            "Use Terraform's built-in logging and debugging tools to optimize your code": "instruction",
+            "Use Terraform's built-in integration with other tools to automate the deployment of your infrastructure across multiple cloud providers": "instruction",
+            "The version control system mentioned is Git": "fact",
+            "The other tools integrated with Terraform include AWS CloudFormation, Azure ARM templates, and Google Cloud templates.": "fact"
+        }
+    }
+}

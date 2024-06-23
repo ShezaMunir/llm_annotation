@@ -1,0 +1,28 @@
+{
+    "prompt": "Generate a script for a how-to youtube video along with corresponding images. The video should be about 'how to make a pizza'. The following example shows the desired format:\n\nExample Script:\nHost: \"Welcome to our tutorial on how to dance like a robot! In this video, we'll show you some basic moves that will make you look like a dancing machine. So let's get started!\"\n\nImage 1: Close-up of a robot arm, rotating at the elbow \nImage 2: Close-up of robot feet, tapping back and forth \n\nHost: \"The first move we'll learn is the robot arm. Start by raising your arm up and then rotating it at the elbow. It should look like a robot arm moving.\"\n\nImage 3: Full body shot of a person doing a robot move, with an outline of the robot's joints highlighted \nImage 4: Close-up of robot hand jointing\n\nHost: \"Now move your hand up and down!\"\n\nImage 5: Image of a hand moving\n\nPrompt: \nGenerate a script in the style described above for a how-to youtube video along with corresponding images. Make sure there are enough images to cover the length of a speaking line. The video should be about 'how to make a pizza'.",
+    "response": "Host: \"Welcome to our tutorial on how to make a pizza! In this video, we'll show you some basic steps that will help you create the ultimate pizza at home. So let's get started!\"`Image 1: Close-up of a pizza dough rising\nImage 2: Close-up of a pizza crust being laid out in the oven\nImage 3: Full body shot of a person placing a pizza into the oven\nImage 4: Close-up of the pizza plate filled with a pizza crust\nHost: \"Next, spread out your tomato sauce evenly over the crust. Use a spoon or spatula to make sure it's covered evenly.\"\nImage 5: Image of the pizza crust baking on the pan\nHost: \"Now sprinkle on your cheese and your toppings of choice. You can use any combination of cheeses and toppings you like.\"\nImage 6: Full body shot of the pizza being cooked on the stovetop\nImage 7: Image of the pizza being removed from the oven\nHost: \"OK, now take your pizza out of the oven and cut it into slices.\"\nImage 8: Image of the pizza being served hot and fresh\nImage 9: Image of the pizza being enjoyed\nHost: \"It's time to enjoy your homemade pizza! Enjoy!\"",
+    "atomic_units_and_labels": {
+        "num_units": 19,
+        "units_and_labels": {
+            "Host welcomes viewers to the tutorial on making pizza": "fact",
+            "The tutorial video will show basic steps for creating pizza at home": "fact",
+            "The host encourages viewers to get started on making pizza": "instruction",
+            "Image 1 shows a close-up of pizza dough rising": "fact",
+            "Image 2 shows a close-up of a pizza crust being laid out in the oven": "fact",
+            "Image 3 shows a full body shot of a person placing a pizza into the oven": "fact",
+            "Image 4 shows a close-up of the pizza plate filled with a pizza crust": "fact",
+            "The host instructs to spread tomato sauce evenly over the crust": "instruction",
+            "The host suggests using a spoon or spatula to ensure even coverage of sauce": "instruction",
+            "Image 5 shows the pizza crust baking on the pan": "fact",
+            "The host instructs to sprinkle cheese and toppings of choice on the pizza": "instruction",
+            "Viewers can use any combination of cheeses and toppings they like": "claim",
+            "Image 6 shows a full body shot of the pizza being cooked on the stovetop": "fact",
+            "Image 7 shows the pizza being removed from the oven": "fact",
+            "The host instructs to take the pizza out of the oven and cut it into slices": "instruction",
+            "Image 8 shows the pizza being served hot and fresh": "fact",
+            "Image 9 shows the pizza being enjoyed": "fact",
+            "The host tells viewers it's time to enjoy the homemade pizza": "instruction",
+            "The host wishes viewers to enjoy their homemade pizza.": "instruction"
+        }
+    }
+}

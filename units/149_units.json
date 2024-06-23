@@ -1,0 +1,22 @@
+{
+    "prompt": "Summarize it in one sentence: First the converter tries to connect to a postgres database. -> Method not secure atm. If no connection could be established the program ends. The files in the _IN directory are read one by one. For each file there should be a table in the database. If there is none it creates one. Then it reads the .xml file, replaces unwanted html tags in the content with xml conform characters  and parses the created string with an xml parser. Then it runs through the xml nodes and looks for attached information. If the node has text content or attributes, the table should have a column for the data. The script checks if there is one and if not it creates one. Then the script adds the current data for the column and all parents (so a whole row up to the current column) in the table.",
+    "response": "The converter tries to connect to a postgres database first, and if no connection can be established the program ends. For each file in the IN directory, it looks to see if there is a corresponding table in the database, and if not it creates one. It then reads the XML file, replaces any unwanted HTML tags with XML conform characters, and parses the string with an XML parser. It then runs through the XML nodes, looking for attached information. If the node has text content or attributes, the table should have a column for the data. The script checks if there is one and if not it creates one. Finally, it adds the current data for the column and all parents (so a whole row up to the current column) in the table.",
+    "atomic_units_and_labels": {
+        "num_units": 13,
+        "units_and_labels": {
+            "The converter tries to connect to a postgres database first": "fact",
+            "If no connection can be established, the program ends": "fact",
+            "For each file in the IN directory, the converter checks for a corresponding table in the database": "fact",
+            "If there is no corresponding table in the database, the converter creates one": "fact",
+            "The converter reads the XML file": "fact",
+            "The converter replaces any unwanted HTML tags with XML conform characters": "fact",
+            "The converter parses the string with an XML parser": "fact",
+            "The converter runs through the XML nodes": "fact",
+            "The converter looks for attached information in the XML nodes": "fact",
+            "If the node has text content or attributes, the table should have a column for the data": "reasoning",
+            "The script checks if there is a column for the data": "fact",
+            "If there is no column for the data, the script creates one": "fact",
+            "The script adds the current data for the column and all parents in the table.": "fact"
+        }
+    }
+}

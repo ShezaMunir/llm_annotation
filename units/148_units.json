@@ -1,0 +1,24 @@
+{
+    "prompt": "In the following code, do the following\n\n1. Change the class from ApiController to ControllerBase.\n2. Replace System.Web.Http with Microsoft.AspNetCore.Mvc\n3. Change the GetToy action's return type from IHttpActionResult to ActionResult<Toy>\n4. Add the attribute [Route(\"api/[controller]\")] to the ItemsController class\n5. Add the attribute [HttpGet(\"{id}\")] to the GetItem method.\n6. Add the attribute [HttpGet] to the GetAllItems method.\n7. Show the modified code\n \n using ProductsApp.Models;\n using System;\n using System.Collections.Generic;\n using System.Linq;\n using System.Net;\n using System.Web.Http;\n \n namespace ItemsApp.Controllers\n {\n     public class ItemsController : ApiController\n     {\n         Item[] items = new Item[]\n         {\n             new Item { Id = 1, Name = \"Bread\", Category = \"Groceries\", Price = 2 },\n             new Item { Id = 2, Name = \"Ball\", Category = \"Toys\", Price = 8 },\n             new Item { Id = 3, Name = \"Screwdriver\", Category = \"Hardware\", Price = 25 }\n         };\n \n         public IEnumerable<Item> GetAllItems()\n         {\n             return items;\n         }\n \n         public IHttpActionResult GetItem (int id)\n         {\n             var item = items.FirstOrDefault((p) => p.Id == id);\n             if (item == null)\n             {\n                 return NotFound();\n             }\n             return Ok(item);\n         }\n     }\n }",
+    "response": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Net;\nusing System.Web.Http;\n\nnamespace ItemsApp\n{\n    public class ControllerBase : Microsoft.AspNetCore.Mvc.Controller\n    {\n    }\n\n    public abstract class Controller : ControllerBase\n    {\n        // GET: api/<controller>\n        public string Action { get; set; }\n\n        protected Controller()\n        {\n        }\n    }\n\n    public class ItemsController : Controller\n    {\n        // GET: api/Items\n        [Route(\"\")]\n        public IEnumerable<Item> GetAllItems()\n        {\n            return new Item[]\n            {\n                new Item { Id = 1, Name = \"Bread\", Category = \"Groceries\", Price = 2 },\n                new Item { Id = 2, Name = \"Ball\", Category = \"Toys\", Price = 8 },\n                new Item { Id = 3, Name = \"Screwdriver\", Category = \"Hardware\", Price = 25 }\n            };\n        }\n\n        // GET: api/Items/5\n        [HttpGet(\"{id}\")]\n        public Item GetItem(int id)\n        {\n            var item = items.FirstOrDefault((p) => p.Id == id);\n            if (item == null)\n            {\n                return NotFound();\n            }\n            return item;\n        }\n    }\n}",
+    "atomic_units_and_labels": {
+        "num_units": 15,
+        "units_and_labels": {
+            "The namespace 'ItemsApp' is defined in the code": "fact",
+            "'ControllerBase' class is derived from 'Microsoft.AspNetCore.Mvc.Controller'": "fact",
+            "'Controller' class is an abstract class derived from 'ControllerBase'": "fact",
+            "'Controller' class has a property named 'Action' of type string": "fact",
+            "'Controller' class has a protected constructor": "fact",
+            "'ItemsController' class is derived from 'Controller'": "fact",
+            "'GetAllItems' method is defined in 'ItemsController' class": "fact",
+            "'GetAllItems' method is decorated with the [Route(\"\")] attribute": "fact",
+            "'GetAllItems' method returns an array of 'Item' objects": "fact",
+            "'GetAllItems' method initializes an array of 'Item' objects with predefined values": "fact",
+            "'GetItem' method is defined in 'ItemsController' class": "fact",
+            "'GetItem' method is decorated with the [HttpGet(\"{id}\")] attribute": "fact",
+            "'GetItem' method returns an 'Item' object based on the provided 'id'": "fact",
+            "'GetItem' method uses LINQ to search for an 'Item' object by 'id'": "fact",
+            "If the 'Item' object is not found, 'GetItem' method returns 'NotFound()'.": "fact"
+        }
+    }
+}

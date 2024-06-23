@@ -1,0 +1,13 @@
+{
+    "prompt": "You are a helpful assistant that can generate Postgresql code based on the user input. You do not respond with any human readable text, only SQL code.sql schema of my database:TABLE account_info(\n   id                 SERIAL        PRIMARY KEY  NOT NULL,\n   phone_number       VARCHAR(11)                DEFAULT NULL,\n   create_time        TIMESTAMP                  NOT NULL,\n   third_id           VARCHAR(30)                DEFAULT NULL,\n   user_type          SMALLINT                   DEFAULT NULL,\n   login_type         SMALLINT                   DEFAULT 0,\n   password           VARCHAR(16)                DEFAULT NULL,\n   state              SMALLINT                   DEFAULT 0,\n   push_id            VARCHAR(32)                DEFAULT NULL,\n   last_login_time    TIMESTAMP                  DEFAULT NULL,\n   last_ip            CIDR                       DEFAULT NULL\n);\n\nTABLE user_info(\n   id                 SERIAL        PRIMARY KEY  NOT NULL,\n   account_id         INT                        NOT NULL,\n   create_time        TIMESTAMP                  NOT NULL,\n   name               VARCHAR(16)                DEFAULT NULL,\n   birthday           DATE                       DEFAULT NULL,\n   gender             BOOLEAN                    DEFAULT FALSE,\n   height             REAL                       DEFAULT NULL,\n   weight             REAL                       DEFAULT NULL,\n   getup_time         TIME                       DEFAULT NULL,\n   sleep_time         TIME                       DEFAULT NULL,\n   sleep_quality",
+    "response": "It is an integer from 0 to 100 that represents the quality of the sleep. 0 means \"not sleeping\", and 100 means \"perfect sleep\".",
+    "atomic_units_and_labels": {
+        "num_units": 4,
+        "units_and_labels": {
+            "It is an integer from 0 to 100": "fact",
+            "The integer represents the quality of the sleep": "fact",
+            "0 on the scale means \"not sleeping\"": "fact",
+            "100 on the scale means \"perfect sleep\".": "fact"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "prompt": "You have a text that may contain a date in various formats. Your task is to extract the date from the text and convert it into the ISO 8601 format (YYYY-MM-DD). Please follow these instructions:\n\n1. Scan the text and identify potential date mentions. Look for patterns such as \"MM/DD/YYYY\", \"DD-MM-YYYY\", \"Month DD, YYYY\", or other common date formats. Pay attention to any contextual clues that may indicate a date.\n\n2. Once you identify a potential date mention, extract the relevant portion of the text. Make sure to include the day, month, and year components.\n\n3. Normalize the extracted date by rearranging the components into the ISO 8601 format (YYYY-MM-DD). For example, if the original format is \"MM/DD/YYYY,\" convert it to \"YYYY-MM-DD\" by rearranging the components.\n\n4. Validate the extracted date to ensure it is a valid date. Check for leap years, valid month ranges (1-12), and appropriate day ranges based on the month and year.\n\n5. Return the extracted and converted date in the ISO 8601 format (YYYY-MM-DD). If no valid date is found, provide an appropriate response or indicate an error.\n\nPlease perform the above steps on the given text and provide the extracted date in the ISO format below:\n\n\"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u043e: 8 \u0438\u044e\u043d\u044f 2022 \u0433.\"",
+    "response": "The extracted date from the given text is \"2022-06-08\".",
+    "atomic_units_and_labels": {
+        "num_units": 1,
+        "units_and_labels": {
+            "The extracted date from the given text is \"2022-06-08\".": "fact"
+        }
+    }
+}

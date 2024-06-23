@@ -1,0 +1,23 @@
+{
+    "prompt": "Extract the part of the code described below:\n    Here is a simple tic-tac-toe game that you can use as a starting point:\n```\nimport pygame\n\nInitialize pygame\n\npygame.init()\n\nSet up the window\n```",
+    "response": "```python\nimport pygame\n\n# Initialize pygame\npygame.init()\n\n# Set up the window\nwindow_width = 600\nwindow_height = 600\nwindow_surface = pygame.display.set_mode((window_width, window_height))\n\npygame.display.set_caption(\"Tic-Tac-Toe\")\n\n# Main game loop\nwhile True:\n    # Handle events\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:\n            pygame.quit()\n            sys.exit()\n\n    # Draw the board\n    # ...\n\n    # Check if it's the player's turn\n    # ...\n\n    # Check if the board is full\n    # ...\n```",
+    "atomic_units_and_labels": {
+        "num_units": 14,
+        "units_and_labels": {
+            "`pygame` is imported": "fact",
+            "`pygame` is initialized with `pygame.init()`": "fact",
+            "The window width is set to 600": "fact",
+            "The window height is set to 600": "fact",
+            "`window_surface` is set up with `pygame.display.set_mode((window_width, window_height))`": "fact",
+            "The window caption is set to \"Tic-Tac-Toe\" with `pygame.display.set_caption(\"Tic-Tac-Toe\")`": "fact",
+            "The main game loop starts with `while True`": "fact",
+            "Events are handled in a loop with `for event in pygame.event.get()`": "fact",
+            "The program checks if the event type is `pygame.QUIT`": "fact",
+            "If the event type is `pygame.QUIT`, `pygame.quit()` is called": "fact",
+            "If the event type is `pygame.QUIT`, `sys.exit()` is called": "fact",
+            "The board is drawn with a comment indicating a placeholder": "fact",
+            "It is checked if it's the player's turn with a comment indicating a placeholder": "fact",
+            "It is checked if the board is full with a comment indicating a placeholder.": "fact"
+        }
+    }
+}

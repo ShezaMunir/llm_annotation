@@ -1,0 +1,11 @@
+{
+    "prompt": "Perform named entity recognition on the given sentence below:\nNAME_1 was the 44th President of the United States.\nIn this sentence, \"NAME_1\" is a person name entity, and \"United States\" is a geopolitical entity.\n\nPerform named entity recognition on the given sentence below:\nI just bought a new MacBook Pro from Apple.\nIn this sentence, \"Apple\" is an organization name entity, and \"MacBook Pro\" is a product name entity.\n\nPerform named entity recognition on the given sentence below:\nThe Eiffel Tower is a famous landmark in Paris, France.\nIn this sentence, \"Eiffel Tower\" is a landmark name entity, and \"Paris\" and \"France\" are geopolitical entities.\n\nPerform named entity recognition on the given sentence below:\nHarvard University is one of the most prestigious schools in the world.\nIn this sentence, \"Harvard University\" is an organization name entity.\n\nPerform named entity recognition on the given sentence below:\nThe population of Tokyo is over 13 million people.\nIn this sentence, \"Tokyo\" is a geographic entity, and \"13 million\" is a numerical entity representing the population of Tokyo.\n\nPerform named entity recognition on the given sentence below:\nI'm reading 'To Kill a Mockingbird' by NAME_2.",
+    "response": "In this sentence, \"To Kill a Mockingbird\" is a book name entity and \" NAME_2 \" is a person name entity.",
+    "atomic_units_and_labels": {
+        "num_units": 2,
+        "units_and_labels": {
+            "\"To Kill a Mockingbird\" is a book name entity": "fact",
+            "\"NAME_2\" is a person name entity.": "fact"
+        }
+    }
+}

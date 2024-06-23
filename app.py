@@ -1,5 +1,4 @@
-from flask import Flask, render_template, request, redirect, session
-import pandas as pd
+from flask import Flask, render_template, request, session, redirect, jsonify
 import json
 import os
 import csv
@@ -8,12 +7,21 @@ app = Flask(__name__)
 app.secret_key = 'randomsecretkey12345'  # Change this to a random secret key
 
 # Load the JSON files
-data_folder = 'clusters_data'
-json_files = [f for f in os.listdir(data_folder) if f.endswith('.json')]
+DATA_FOLDER = 'units'
+json_files = sorted([f for f in os.listdir(DATA_FOLDER) if f.endswith(
+    '_units.json')], key=lambda x: int(x.split('_')[0]))
+
 data = []
 for file in json_files:
-    with open(os.path.join(data_folder, file), 'r') as f:
-        data.append(json.load(f))
+    with open(os.path.join(DATA_FOLDER, file), 'r') as f:
+        entry = json.load(f)
+        entry['units_and_labels'] = entry.get(
+            'atomic_units_and_labels', {}).get('units_and_labels', {})
+        entry['num_units'] = entry.get(
+            'atomic_units_and_labels', {}).get('num_units', 0)
+        data.append(entry)
+
+dataset_length = len(data)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -38,19 +46,10 @@ def view_entry(entry_index=0):
 
     entry = data[entry_index]
 
-    prompt = entry['prompt']
-    response = entry['response']
-    checked_statements = entry['checked_statements']
-    supported = entry['Supported']
-    not_supported = entry['Not Supported']
-    irrelevant = entry['Irrelevant']
-    dataset_length = len(data)
-    file_name = entry_index
-
-    return render_template('index.html', entry_index=entry_index, username=session.get('username', 'Unknown'), prompt=prompt,
-                           response=response, checked_statements=checked_statements,
-                           supported=supported, not_supported=not_supported,
-                           irrelevant=irrelevant, dataset_length=dataset_length, file_name=file_name)
+    return render_template('index.html', entry_index=entry_index, username=session.get('username', 'Unknown'),
+                           prompt=entry['prompt'], response=entry['response'],
+                           units_and_labels=entry['units_and_labels'], num_units=entry['num_units'],
+                           dataset_length=dataset_length)
 
 
 @app.route('/change_user', methods=['POST'])
@@ -72,7 +71,7 @@ def save_annotations():
             index = key.split('_')[-1]
             annotations.append([entry_index, index,
                                 request.form.get(f'label_assigned_{index}'),
-                                request.form.get(f'units_extracted_{index}')])
+                                request.form.get(f'independent_unit_extracted_{index}')])
 
     directory = os.path.join(username)
     if not os.path.exists(directory):
@@ -88,7 +87,7 @@ def save_annotations():
                 ['cluster_id', 'sentence_id', 'correct_label', 'units_extracted'])
         writer.writerows(annotations)
 
-    return redirect(f'/{entry_index}')
+    return jsonify({'message': 'Annotations saved successfully!', 'next_index': int(entry_index) + 1})
 
 
 @app.route('/navigate', methods=['POST'])
@@ -101,9 +100,8 @@ def navigate():
         entry_index -= 1
     elif action == 'go':
         entry_index_input = request.form['entry_index_input']
-        entry_index = int(
-            entry_index_input) if entry_index_input.isdigit() else entry_index
-    return view_entry(entry_index)
+        entry_index = int(entry_index_input) if entry_index_input.isdigit() else entry_index
+    return redirect(f'/{entry_index}')
 
 
 if __name__ == '__main__':

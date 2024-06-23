@@ -1,0 +1,18 @@
+{
+    "prompt": "tell me the temperature in celsius, hydrometry in percentage, sunshine in hours, rainfall in mm, humidity in percentage, soil type, climate, water level and suitable plantation location country or city for NAME_1 seed in bullets 2 words answer in number",
+    "response": "* Temperature: 25\u00b0C\n* Humidity: 60%\n* Soil type: Loamy\n* Climate: Tropical\n* Water level: Moderate\n* Suitable plantation location: Coastal regions\n\nNote: The information provided is a general guideline and may vary based on the specific location and microclimate of the plantation site.",
+    "atomic_units_and_labels": {
+        "num_units": 9,
+        "units_and_labels": {
+            "The temperature is 25\u00b0C": "fact",
+            "The humidity is 60%": "fact",
+            "The soil type is loamy": "fact",
+            "The climate is tropical": "fact",
+            "The water level is moderate": "fact",
+            "The suitable plantation location is coastal regions": "fact",
+            "The information provided is a general guideline": "claim",
+            "The information may vary based on the specific location of the plantation site": "claim",
+            "The information may vary based on the microclimate of the plantation site.": "claim"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "prompt": "how to use `blockdetect` in ffmpeg",
+    "response": "To use `blockdetect` in ffmpeg, you must first install the `blockdetect` library. Then, in your ffmpeg command, add the `-blockdetection` option, followed by the input file and the output file. For example: `ffmpeg -blockdetection input.mp4 output.mp4`. This will detect and remove any blocks in the input file.",
+    "atomic_units_and_labels": {
+        "num_units": 5,
+        "units_and_labels": {
+            "You must first install the `blockdetect` library to use `blockdetect` in ffmpeg": "instruction",
+            "Then, add the `-blockdetection` option in your ffmpeg command": "instruction",
+            "Follow the `-blockdetection` option with the input file and the output file in your ffmpeg command": "instruction",
+            "An example of using `blockdetect` in ffmpeg is `ffmpeg -blockdetection input.mp4 output.mp4`": "fact",
+            "Using `blockdetect` in ffmpeg will detect and remove any blocks in the input file.": "claim"
+        }
+    }
+}

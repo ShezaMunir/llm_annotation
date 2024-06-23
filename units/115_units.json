@@ -1,0 +1,21 @@
+{
+    "prompt": "\"Identify the following items from the text in short summary:\n\u00a0- Subjective with following keys - chief complaint, history, allergy\n\u00a0- Objective with following keys- vitals, physical examination, past investigation\n\u00a0- Assessment with following keys- diagnosis\n\u00a0- Plan with following keys- medications, laboratory tests, plan-of-care.\n\u00a0If the information isn't present, use \"Unknown\" as the value\"\nDoctor: Good morning. I'm Dr. _____. How are you doing?\nPatient: Okay, well, just lazy now. \nDoctor: Just lazy? Okay. So you had a\nDoctor: fall at home, is that right? \nPatient: Well, that's what they said. I don't know. My brother and sisters. I did. I tried to sleep on my edge of the bed and stayed in the middle. \nDoctor: Okay. \nPatient: So I guess I did fall out of bed. Yeah. Thought you'd look through my head and check it. Okay. I couldn't. I couldn't.\nDoctor: I\nPatient: can't understand. That's all my sisters. Yeah. I tried\nDoctor: to sleep. I couldn't. Well, we are looking at a few things. Have you had any chest pain or anything?\nPatient: \nDoctor: No chest pain. No shortness?\nPatient: You know when it gets real hot. Right. My hand. Okay. My hand.\nDoctor: Okay. One of your heart markers was a little bit high, but I think that's from the fall and from everything with that. Probably. So we're going to check the heart out today. We'll get an echocardiogram to look at that. We'll keep looking at your labs. And work on getting your heart rate a little bit better today, okay?\nPatient: Okay.\nDoctor: And then we're going to",
+    "response": "Subjective: Patient reports feeling \"just lazy\" and describes falling out of bed at home.\n\nObjective: Doctor examines patient's vital signs and physical appearance, and reviews past investigations.\n\nAssessment: Doctor suspects patient's high heart marker is from the fall and instructs echocardiogram and continues to monitor lab results.\n\nPlan: Doctor plans to check heart and get an echocardiogram, work on lowering heart rate, and continue monitoring lab results.",
+    "atomic_units_and_labels": {
+        "num_units": 12,
+        "units_and_labels": {
+            "Patient reports feeling \"just lazy\"": "fact",
+            "Patient describes falling out of bed at home": "fact",
+            "Doctor examines patient's vital signs": "fact",
+            "Doctor examines patient's physical appearance": "fact",
+            "Doctor reviews past investigations": "fact",
+            "Doctor suspects patient's high heart marker is from the fall": "reasoning",
+            "Doctor instructs an echocardiogram": "instruction",
+            "Doctor continues to monitor lab results": "instruction",
+            "Doctor plans to check heart": "plan",
+            "Doctor plans to get an echocardiogram": "plan",
+            "Doctor plans to work on lowering heart rate": "plan",
+            "Doctor plans to continue monitoring lab results.": "plan"
+        }
+    }
+}
