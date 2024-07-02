@@ -100,7 +100,8 @@ def navigate():
         entry_index -= 1
     elif action == 'go':
         entry_index_input = request.form['entry_index_input']
-        entry_index = int(entry_index_input) if entry_index_input.isdigit() else entry_index
+        entry_index = int(
+            entry_index_input) if entry_index_input.isdigit() else entry_index
     return redirect(f'/{entry_index}')
 
 

@@ -72,7 +72,7 @@
                         <th>Atomic Unit</th>
                         <th>Atomic Unit Label</th>
                         <th>Independent Unit Extracted?</th>
-                        <th>Correct Label Assigned?</th>
+                        <th>Label assigned</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -88,10 +88,15 @@
                             <label for="unitsNo_{{ loop.index }}">No</label>
                         </td>
                         <td>
-                            <input type="radio" id="labelYes_{{ loop.index }}" name="label_assigned_{{ loop.index }}" value="Yes" required>
-                            <label for="labelYes_{{ loop.index }}">Yes</label>
-                            <input type="radio" id="labelNo_{{ loop.index }}" name="label_assigned_{{ loop.index }}" value="No" required>
-                            <label for="labelNo_{{ loop.index }}">No</label>
+                            <select name="label_assigned_{{ loop.index }}" required>
+                                <option value="">Choose</option>
+                                <option value="Fact">Fact</option>
+                                <option value="Claim">Claim</option>
+                                <option value="Reasoning">Reasoning</option>
+                                <option value="Instruction">Instruction</option>
+                                <option value="Question">Question</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </td>
                     </tr>
                     {% endfor %}
