@@ -70,7 +70,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Atomic Unit</th>
-                        <th>Atomic Unit Label</th>
+                        
                         <th>Independent Unit Extracted?</th>
                         <th>Label assigned</th>
                     </tr>
@@ -80,7 +80,7 @@
                     <tr>
                         <td>{{ loop.index }}</td>
                         <td>{{ atomic_unit }}</td>
-                        <td>{{ label }}</td>
+                     
                         <td>
                             <input type="radio" id="unitsYes_{{ loop.index }}" name="independent_unit_extracted_{{ loop.index }}" value="Yes" required>
                             <label for="unitsYes_{{ loop.index }}">Yes</label>
