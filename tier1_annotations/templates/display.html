@@ -12,7 +12,10 @@
         function changeModel() {
             const model = document.getElementById('model_select').value;
             const instance_id = document.getElementById('instance_id').value;
-            window.location.href = `/display/${model}/${instance_id}`;
+            if (model) {
+                // Redirect to the URL with the new model and current instance_id
+                window.location.href = `/display/${model}/${instance_id}`;
+            }
         }
     </script>
 </head>
@@ -30,40 +33,38 @@
     <p>{{ data.prompt }}</p>
     <h2>Response</h2>
     <p>{{ data.response }}</p>
-    <h2>Atomic Units</h2>
+    <h2>Revised Units</h2>
 
-    {% if error %}
-    <p style="color: red;">{{ error }}</p>
-    {% endif %}
+    {% if no_facts %}
+        <p>No facts to annotate</p>
+    {% else %}
+        <form method="post" action="" onsubmit="showSuccessMessage()">
+            <input type="hidden" id="instance_id" name="instance_id" value="{{ instance_id }}">
+            <input type="hidden" name="model_name" value="{{ model_name }}">
 
-    <form method="post" action="" onsubmit="showSuccessMessage()">
-        <input type="hidden" id="instance_id" name="instance_id" value="{{ instance_id }}">
-        <input type="hidden" name="model_name" value="{{ model_name }}">
-
-        <table border="1">
-            <tr>
-                <th>Label</th>
-                <th>Atomic Unit</th>
-                <th>Unit extracted correctly?</th>
-                <th>Factually?</th>
-            </tr>
-            {% for unit in data.all_atomic_units %}
+            <table border="1">
                 <tr>
-                    <td>{{ unit.label }}</td>
-                    <td>{{ unit.atomic_unit }}</td>
-                    <td>
-                        <input type="radio" name="is_correct_{{ loop.index0 }}" value="true" required> Yes
-                        <input type="radio" name="is_correct_{{ loop.index0 }}" value="false" required> No
-                    </td>
-                    <td>
-                        <input type="radio" name="is_fact_{{ loop.index0 }}" value="true" required> True
-                        <input type="radio" name="is_fact_{{ loop.index0 }}" value="false" required> False
-                    </td>
+                    <th>Revised Unit</th>
+                    <th>Unit extracted correctly?</th>
+                    <th>Factually?</th>
                 </tr>
-            {% endfor %}
-        </table>
+                {% for unit in data.revised_fact_jsonified_all %}
+                    <tr>
+                        <td>{{ unit.revised_unit }}</td>
+                        <td>
+                            <input type="radio" name="is_correct_{{ loop.index0 }}" value="true" required> Yes
+                            <input type="radio" name="is_correct_{{ loop.index0 }}" value="false" required> No
+                        </td>
+                        <td>
+                            <input type="radio" name="is_fact_{{ loop.index0 }}" value="true" required> True
+                            <input type="radio" name="is_fact_{{ loop.index0 }}" value="false" required> False
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
 
-        <input type="submit" value="Submit">
-    </form>
+            <input type="submit" value="Submit">
+        </form>
+    {% endif %}
 </body>
 </html>

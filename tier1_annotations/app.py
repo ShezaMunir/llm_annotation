@@ -37,7 +37,6 @@ def index():
         annotator_name = request.form['annotator_name']
         session['annotator'] = annotator_name
         return redirect(url_for('first_instance'))
-
     return render_template('start.html')
 
 
@@ -67,7 +66,7 @@ def display(model_name, instance_id):
             annotations = []
             annotator_name = session.get('annotator', 'unknown')
 
-            for i, unit in enumerate(data.get('all_atomic_units', [])):
+            for i, unit in enumerate(data.get('revised_fact_jsonified_all', [])):
                 is_correct = request.form.get(f'is_correct_{i}')
                 is_fact = request.form.get(f'is_fact_{i}')
 
@@ -107,6 +106,11 @@ def display(model_name, instance_id):
                 flash(f'Error saving annotations: {e}', 'error')
 
             return redirect(url_for('display', model_name=model_name, instance_id=instance_id))
+
+        # Check if there are revised facts to annotate
+        revised_facts = data.get('revised_fact_jsonified_all', [])
+        # if not revised_facts:
+        #     return render_template('display.html', data=data, model_name=model_name, instance_id=instance_id, models=MODELS, no_facts=True)
 
         # Include the list of models for dropdown
         return render_template('display.html', data=data, model_name=model_name, instance_id=instance_id, models=MODELS)
