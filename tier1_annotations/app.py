@@ -3,9 +3,9 @@ import os
 import json
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'
+app.secret_key = 'xxx'
 
-DATA_DIR = 'analysis_data_units'
+DATA_DIR = 'analysis_data_for_annotation'
 MODELS = [d for d in os.listdir(
     DATA_DIR) if os.path.isdir(os.path.join(DATA_DIR, d))]
 
