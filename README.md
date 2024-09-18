@@ -1,9 +1,10 @@
 # llm_annotation
-Human annotation for unit extraction quality (completeness) and correctness (right label).  
+
 
 ## Annotation process:
 
 ### for tier 1 annotations:
+Human annotation for unit extraction quality and factuality. 
 1. install flask ```pip install flask```
 2. run ```python app.py``` to start the server
 3. go to the localhost URL (most likely: http://127.0.0.1:5000)
@@ -14,6 +15,7 @@ Human annotation for unit extraction quality (completeness) and correctness (rig
 
 
 ### for safe annotations:
+Human annotation for unit extraction quality (completeness) and correctness (right label).  
 1. install flask ```pip install flask```
 2. run ```python app.py``` to start the server
 3. go to the localhost URL (most likely: http://127.0.0.1:5000)
