@@ -46,7 +46,7 @@
                 <tr>
                     <th>Revised Unit</th>
                     <th>Unit extracted correctly?</th>
-                    <th>Factually?</th>
+                    <th>Is Factual?</th>
                 </tr>
                 {% for unit in data.revised_fact_jsonified_all %}
                     <tr>
@@ -56,8 +56,8 @@
                             <input type="radio" name="is_correct_{{ loop.index0 }}" value="false" required> No
                         </td>
                         <td>
-                            <input type="radio" name="is_fact_{{ loop.index0 }}" value="true" required> True
-                            <input type="radio" name="is_fact_{{ loop.index0 }}" value="false" required> False
+                            <input type="radio" name="is_fact_{{ loop.index0 }}" value="true" required> Yes
+                            <input type="radio" name="is_fact_{{ loop.index0 }}" value="false" required> No
                         </td>
                     </tr>
                 {% endfor %}

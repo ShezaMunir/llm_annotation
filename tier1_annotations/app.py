@@ -77,7 +77,7 @@ def display(model_name, instance_id):
                         'annotator': annotator_name,
                         'fact_id': i,
                         'extracted_correctly': is_correct == 'true',
-                        'factually': is_fact == 'true'
+                        'is_factual': is_fact == 'true'
                     })
 
             # Save annotations in the root directory
