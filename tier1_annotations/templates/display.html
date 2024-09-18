@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier 1 Annotations</title>
+    <script>
+        function showSuccessMessage() {
+            alert('Annotations saved successfully!');
+        }
+
+        function changeModel() {
+            const model = document.getElementById('model_select').value;
+            const instance_id = document.getElementById('instance_id').value;
+            window.location.href = `/display/${model}/${instance_id}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Tier 1 Annotations - Instance ID: {{ instance_id }}</h1>
+    
+    <label for="model_select">Select Model:</label>
+    <select id="model_select" onchange="changeModel()">
+        {% for model in models %}
+            <option value="{{ model }}" {% if model == model_name %}selected{% endif %}>{{ model }}</option>
+        {% endfor %}
+    </select>
+
+    <h2>Prompt</h2>
+    <p>{{ data.prompt }}</p>
+    <h2>Response</h2>
+    <p>{{ data.response }}</p>
+    <h2>Atomic Units</h2>
+
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="post" action="" onsubmit="showSuccessMessage()">
+        <input type="hidden" id="instance_id" name="instance_id" value="{{ instance_id }}">
+        <input type="hidden" name="model_name" value="{{ model_name }}">
+
+        <table border="1">
+            <tr>
+                <th>Label</th>
+                <th>Atomic Unit</th>
+                <th>Unit extracted correctly?</th>
+                <th>Factually?</th>
+            </tr>
+            {% for unit in data.all_atomic_units %}
+                <tr>
+                    <td>{{ unit.label }}</td>
+                    <td>{{ unit.atomic_unit }}</td>
+                    <td>
+                        <input type="radio" name="is_correct_{{ loop.index0 }}" value="true" required> Yes
+                        <input type="radio" name="is_correct_{{ loop.index0 }}" value="false" required> No
+                    </td>
+                    <td>
+                        <input type="radio" name="is_fact_{{ loop.index0 }}" value="true" required> True
+                        <input type="radio" name="is_fact_{{ loop.index0 }}" value="false" required> False
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
