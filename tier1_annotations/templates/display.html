@@ -32,7 +32,7 @@
     <h2>Prompt</h2>
     <p>{{ data.prompt }}</p>
     <h2>Response</h2>
-    <p>{{ data.response }}</p>
+    <p></p>{{ data.response | safe }}</p>
     <h2>Revised Units</h2>
 
     {% if no_facts %}

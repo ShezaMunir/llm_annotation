@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify, session, flash
 import os
 import json
+import markdown
 
 app = Flask(__name__)
 app.secret_key = 'xxx'
@@ -15,7 +16,9 @@ def get_data(model_name, instance_id):
                              f'result_{instance_id}.json')
     if os.path.exists(file_path):
         with open(file_path, 'r') as f:
-            return json.load(f)
+            data = json.load(f)
+            data["response"] = markdown.markdown(data["response"], extensions=['extra', 'fenced_code', 'nl2br'])
+            return data
     return None
 
 
