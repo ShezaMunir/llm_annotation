@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Form Factuality</title>
+    <script>
+        function showSuccessMessage() {
+            alert('Annotations saved successfully!');
+        }
+
+        function changeModel() {
+            const model = document.getElementById('model_select').value;
+            const instance_id = document.getElementById('instance_id').value;
+            if (model) {
+                // Redirect to the URL with the new model and current instance_id
+                window.location.href = `/display/${model}/${instance_id}`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1> Long Form Factuality - Instance ID: {{ instance_id }}</h1>
+    
+    <label for="model_select">Select Model:</label>
+    <select id="model_select" onchange="changeModel()">
+        {% for model in models %}
+            <option value="{{ model }}" {% if model == model_name %}selected{% endif %}>{{ model }}</option>
+        {% endfor %}
+    </select>
+
+    <h2>Prompt</h2>
+    <p>{{ data.prompt }}</p>
+    <h2>Response</h2>
+    <p></p>{{ data.response | safe }}</p>
+    <h2>Revised Units</h2>
+
+    {% if no_facts %}
+        <p>No facts to annotate</p>
+    {% else %}
+        <form method="post" action="" onsubmit="showSuccessMessage()">
+            <input type="hidden" id="instance_id" name="instance_id" value="{{ instance_id }}">
+            <input type="hidden" name="model_name" value="{{ model_name }}">
+
+            <table border="1">
+                <tr>
+                    <th>Revised Unit</th>
+                    <th>Is Dependent?</th>
+                    <th>Missing Relationship?</th>
+                    <th>Comments</th>
+                </tr>
+                {% for unit in data.revised_fact_jsonified_all %}
+                    <tr>
+                        <td>{{ unit.revised_unit }}</td>
+                        <td>
+                            <input type="radio" name="is_dependent{{ loop.index0 }}" value="true" required> Yes
+                            <input type="radio" name="is_dependent{{ loop.index0 }}" value="false" required> No
+                        </td>
+                        <td>
+                            <input type="radio" name="is_missing{{ loop.index0 }}" value="true" required> Yes
+                            <input type="radio" name="is_missing{{ loop.index0 }}" value="false" required> No
+                        </td>
+                        <td>
+                            <textarea name="comment{{ loop.index0 }}" rows="2" cols="20" placeholder="Enter comments here"></textarea>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+            <input type="submit" value="Submit">
+        </form>
+    {% endif %}
+</body>
+</html>
