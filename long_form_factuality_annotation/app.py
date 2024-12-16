@@ -70,21 +70,30 @@ def display(model_name, instance_id):
             annotations = []
             annotator_name = session.get('annotator', 'unknown')
 
+            # Collect global "Missing Relationship" and comments
+            is_missing_relationship = request.form.get('is_missing_relationship')
+            global_comments = request.form.get('global_comments')
+
+            # Collect "Is Dependent?" annotations for each revised unit
             for i, unit in enumerate(data.get('revised_fact_jsonified_all', [])):
                 is_dependent = request.form.get(f'is_dependent{i}')
-                is_missing = request.form.get(f'is_missing{i}')
-                comment = request.form.get(f'comment{i}')
-
-                if is_dependent is not None and is_missing is not None:
+                if is_dependent is not None:
                     annotations.append({
                         'instance_id': instance_id,
                         'model_name': model_name,
                         'annotator': annotator_name,
                         'fact_id': i,
                         'is_dependent': is_dependent == 'true',
-                        'is_missing': is_missing == 'true',
-                        'comment': comment
                     })
+
+            # Add global Missing Relationship and Comments to annotations
+            annotations.append({
+                'instance_id': instance_id,
+                'model_name': model_name,
+                'annotator': annotator_name,
+                'is_missing_relationship': is_missing_relationship == 'true',
+                'global_comments': global_comments
+            })
 
             # Save annotations in the root directory
             annotator_name = session.get('annotator', 'unknown')
@@ -112,11 +121,6 @@ def display(model_name, instance_id):
                 flash(f'Error saving annotations: {e}', 'error')
 
             return redirect(url_for('display', model_name=model_name, instance_id=instance_id))
-
-        # Check if there are revised facts to annotate
-        revised_facts = data.get('revised_fact_jsonified_all', [])
-        # if not revised_facts:
-        #     return render_template('display.html', data=data, model_name=model_name, instance_id=instance_id, models=MODELS, no_facts=True)
 
         # Include the list of models for dropdown
         return render_template('display.html', data=data, model_name=model_name, instance_id=instance_id, models=MODELS)

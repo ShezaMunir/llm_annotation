@@ -13,7 +13,6 @@
             const model = document.getElementById('model_select').value;
             const instance_id = document.getElementById('instance_id').value;
             if (model) {
-                // Redirect to the URL with the new model and current instance_id
                 window.location.href = `/display/${model}/${instance_id}`;
             }
         }
@@ -32,7 +31,7 @@
     <h2>Prompt</h2>
     <p>{{ data.prompt }}</p>
     <h2>Response</h2>
-    <p></p>{{ data.response | safe }}</p>
+    <p>{{ data.response | safe }}</p>
     <h2>Revised Units</h2>
 
     {% if no_facts %}
@@ -42,12 +41,11 @@
             <input type="hidden" id="instance_id" name="instance_id" value="{{ instance_id }}">
             <input type="hidden" name="model_name" value="{{ model_name }}">
 
+            <!-- Table for Revised Units -->
             <table border="1">
                 <tr>
                     <th>Revised Unit</th>
                     <th>Is Dependent?</th>
-                    <th>Missing Relationship?</th>
-                    <th>Comments</th>
                 </tr>
                 {% for unit in data.revised_fact_jsonified_all %}
                     <tr>
@@ -56,17 +54,19 @@
                             <input type="radio" name="is_dependent{{ loop.index0 }}" value="true" required> Yes
                             <input type="radio" name="is_dependent{{ loop.index0 }}" value="false" required> No
                         </td>
-                        <td>
-                            <input type="radio" name="is_missing{{ loop.index0 }}" value="true" required> Yes
-                            <input type="radio" name="is_missing{{ loop.index0 }}" value="false" required> No
-                        </td>
-                        <td>
-                            <textarea name="comment{{ loop.index0 }}" rows="2" cols="20" placeholder="Enter comments here"></textarea>
-                        </td>
                     </tr>
                 {% endfor %}
             </table>
 
+            <!-- Missing Relationship and Comments: One for the Whole Page -->
+            <h3>Missing Relationship?</h3>
+            <input type="radio" name="is_missing_relationship" value="true" required> Yes
+            <input type="radio" name="is_missing_relationship" value="false" required> No
+
+            <h3>Comments</h3>
+            <textarea name="global_comments" rows="4" cols="50" placeholder="Enter comments here"></textarea>
+
+            <br><br>
             <input type="submit" value="Submit">
         </form>
     {% endif %}
