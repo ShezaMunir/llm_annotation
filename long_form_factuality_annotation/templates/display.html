@@ -16,6 +16,14 @@
                 window.location.href = `/display/${model}/${instance_id}`;
             }
         }
+
+        function changeInstance() {
+            const model = document.getElementById('model_name').value;
+            const instance_id = document.getElementById('instance_id_select').value;
+            if (model) {
+                window.location.href = `/display/${model}/${instance_id}`;
+            }
+        }
     </script>
 </head>
 <body>
@@ -25,6 +33,15 @@
     <select id="model_select" onchange="changeModel()">
         {% for model in models %}
             <option value="{{ model }}" {% if model == model_name %}selected{% endif %}>{{ model }}</option>
+        {% endfor %}
+    </select>
+    
+    &nbsp;&nbsp;&nbsp;
+
+    <label for="instance_id_select">Select Instances:</label>
+    <select id="instance_id_select" onchange="changeInstance()">
+        {% for instance_id_option in instance_id_list %}
+            <option value="{{ instance_id_option }}" {% if instance_id_option == instance_id %}selected{% endif %}>{{ instance_id_option }}</option>
         {% endfor %}
     </select>
 
@@ -39,7 +56,7 @@
     {% else %}
         <form method="post" action="" onsubmit="showSuccessMessage()">
             <input type="hidden" id="instance_id" name="instance_id" value="{{ instance_id }}">
-            <input type="hidden" name="model_name" value="{{ model_name }}">
+            <input type="hidden" id="model_name" name="model_name" value="{{ model_name }}">
 
             <!-- Table for Revised Units -->
             <table border="1">

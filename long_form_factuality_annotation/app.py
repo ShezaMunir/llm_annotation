@@ -133,7 +133,7 @@ def display(model_name, instance_id):
             return redirect(url_for('display', model_name=model_name, instance_id=instance_id))
 
         # Include the list of models for dropdown
-        return render_template('display.html', data=data, model_name=model_name, instance_id=instance_id, models=MODELS)
+        return render_template('display.html', data=data, model_name=model_name, instance_id=instance_id, models=MODELS, instance_id_list=list(map(str, get_instance_ids(model_name))))
 
     return redirect(url_for('index'))
 
