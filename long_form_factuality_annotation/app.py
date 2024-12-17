@@ -29,6 +29,15 @@ def get_instance_ids(model_name):
         'result_') and f.endswith('.json')]
     return sorted([int(f.split('_')[1].split('.')[0]) for f in files])
 
+def get_next_instance_id(model_name, curr_id):
+    curr_id = int(curr_id)
+    instance_ids = get_instance_ids(model_name)
+    if curr_id in instance_ids:
+        curr_id_index = instance_ids.index(curr_id)
+        if curr_id_index + 1 < len(instance_ids):
+            return instance_ids[curr_id_index + 1]
+    return curr_id
+
 
 def ensure_directory_exists(directory):
     if not os.path.exists(directory):
@@ -117,6 +126,7 @@ def display(model_name, instance_id):
                 with open(json_file, 'w') as f:
                     json.dump(existing_annotations, f, indent=4)
                 flash('Annotations saved successfully!', 'success')
+                return redirect(url_for('display', model_name=model_name, instance_id=str(get_next_instance_id(model_name, instance_id))))
             except Exception as e:
                 flash(f'Error saving annotations: {e}', 'error')
 
