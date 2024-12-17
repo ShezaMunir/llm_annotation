@@ -62,14 +62,14 @@
             <table border="1">
                 <tr>
                     <th>Revised Unit</th>
-                    <th>Is Dependent?</th>
+                    <th>Is Independent?</th>
                 </tr>
                 {% for unit in data.revised_fact_jsonified_all %}
                     <tr>
                         <td>{{ unit.revised_unit }}</td>
                         <td>
-                            <input type="radio" name="is_dependent{{ loop.index0 }}" value="true" required> Yes
-                            <input type="radio" name="is_dependent{{ loop.index0 }}" value="false" required> No
+                            <input type="radio" name="is_independent{{ loop.index0 }}" value="true" required> Yes
+                            <input type="radio" name="is_independent{{ loop.index0 }}" value="false" required> No
                         </td>
                     </tr>
                 {% endfor %}

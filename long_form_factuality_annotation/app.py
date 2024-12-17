@@ -83,16 +83,16 @@ def display(model_name, instance_id):
             is_missing_relationship = request.form.get('is_missing_relationship')
             global_comments = request.form.get('global_comments')
 
-            # Collect "Is Dependent?" annotations for each revised unit
+            # Collect "Is Independent?" annotations for each revised unit
             for i, unit in enumerate(data.get('revised_fact_jsonified_all', [])):
-                is_dependent = request.form.get(f'is_dependent{i}')
-                if is_dependent is not None:
+                is_independent = request.form.get(f'is_independent{i}')
+                if is_independent is not None:
                     annotations.append({
                         'instance_id': instance_id,
                         'model_name': model_name,
                         'annotator': annotator_name,
                         'fact_id': i,
-                        'is_dependent': is_dependent == 'true',
+                        'is_independent': is_independent == 'true',
                     })
 
             # Add global Missing Relationship and Comments to annotations
