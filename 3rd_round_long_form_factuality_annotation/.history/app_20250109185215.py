@@ -99,7 +99,6 @@ def display(model_name, instance_id):
                 error_type = request.form.get(f'error_type{i}')
                 dependent_type = request.form.get(f'dependent_type{i}') if error_type == 'dependent' else None
                 notes = request.form.get(f'notes{i}') if error_type == 'others' else None
-                confidence = request.form.get(f'confidence{i}', 'low')  # Capture confidence value
 
                 if error_type is not None:
                     annotations.append({
@@ -109,8 +108,7 @@ def display(model_name, instance_id):
                         'fact_id': i,
                         'error_type': error_type,
                         'dependent_type': dependent_type,
-                        'notes': notes,
-                        'confidence': confidence  # Add confidence value to annotation
+                        'notes': notes
                     })
 
             # Collect "Missing Relationship?" annotations for highlighted spans

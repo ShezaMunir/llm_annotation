@@ -88,13 +88,11 @@
             <input type="hidden" id="model_name" name="model_name" value="{{ model_name }}">
 
             <!-- Table for Revised Units -->
-            <!-- Add a "Confidence" column -->
             <table border="1">
                 <tr>
                     <th>#</th>
                     <th>Revised Unit</th>
                     <th>Any Errors?</th>
-                    <th>Confidence</th> <!-- New column -->
                     <th>Dependent Type (if applicable)</th>
                     <th>Notes</th>
                 </tr>
@@ -113,13 +111,6 @@
                                 <option value="hallucinated" title="The unit contains information not supported by the response.">Hallucinated</option>
                                 <option value="self—duplicated" title="The unit repeats information from another part of the text within itself.">Self-Duplicated</option>
                                 <option value="others" title="Other errors that do not fit into the above categories. Please write notes for details.">Others</option>
-                            </select>
-                        </td>
-                        <!-- New Confidence Dropdown -->
-                        <td>
-                            <select name="confidence{{ loop.index0 }}" required>
-                                <option value="low" selected>Low</option>
-                                <option value="high">High</option>
                             </select>
                         </td>
                         <td>
