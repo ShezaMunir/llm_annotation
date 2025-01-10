@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Form Factuality</title>
+    <style>
+        /* Tooltip styling */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 450px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the text */
+            left: 50%;
+            margin-left: -150px; /* Center the tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        function showSuccessMessage() {
+            alert('Annotations saved successfully!');
+        }
+
+        function changeModel() {
+            const model = document.getElementById('model_select').value;
+            const instance_id = document.getElementById('instance_id').value;
+            if (model) {
+                window.location.href = `/display/${model}/${instance_id}`;
+            }
+        }
+
+        function changeInstance() {
+            const model = document.getElementById('model_name').value;
+            const instance_id = document.getElementById('instance_id_select').value;
+            if (model) {
+                window.location.href = `/display/${model}/${instance_id}`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1> Long Form Factuality - Instance ID: {{ instance_id }}</h1>
+    
+    <label for="model_select">Select Model:</label>
+    <select id="model_select" onchange="changeModel()">
+        {% for model in models %}
+            <option value="{{ model }}" {% if model == model_name %}selected{% endif %}>{{ model }}</option>
+        {% endfor %}
+    </select>
+    
+    &nbsp;&nbsp;&nbsp;
+
+    <label for="instance_id_select">Select Instances:</label>
+    <select id="instance_id_select" onchange="changeInstance()">
+        {% for instance_id_option in instance_id_list %}
+            <option value="{{ instance_id_option }}" {% if instance_id_option == instance_id %}selected{% endif %}>{{ instance_id_option }}</option>
+        {% endfor %}
+    </select>
+
+    <h2>Prompt</h2>
+    <p>{{ data.prompt }}</p>
+    <h2>Response</h2>
+    <p>{{ data.response | safe }}</p>
+    <h2>Revised Units</h2>
+
+    {% if no_facts %}
+        <p>No facts to annotate</p>
+    {% else %}
+        <form method="post" action="" onsubmit="showSuccessMessage()">
+            <input type="hidden" id="instance_id" name="instance_id" value="{{ instance_id }}">
+            <input type="hidden" id="model_name" name="model_name" value="{{ model_name }}">
+
+            <!-- Table for Revised Units -->
+            <table border="1">
+                <tr>
+                    <th>#</th>
+                    <th>Revised Unit</th>
+                    <th>Any Errors?</th>
+                    <th>Dependent Type (if applicable)</th>
+                    <th>Notes (if "Others")</th>
+                </tr>
+                {% for unit in data.revised_fact_jsonified_all %}
+                    <tr>
+                        <td>{{ loop.index0 }}</td>
+                        <!-- Display Revised Unit with Tooltip -->
+                        <td class="tooltip">
+                            {{ unit.revised_unit }}
+                            <span class="tooltip-text">{{ unit.orig_sentence }}</span>
+                        </td>
+                        <td>
+                            <select name="error_type{{ loop.index0 }}" onchange="toggleFields(this, {{ loop.index0 }})" required>
+                                <option value="none" title="No issues with this unit.">None</option>
+                                <option value="dependent" title="The unit is dependent on other information and lacks clarity.">Dependent</option>
+                                <option value="hallucinated" title="The unit contains information not supported by the response.">Hallucinated</option>
+                                <option value="self—duplicated" title="The unit repeats information from another part of the text within itself.">Self-Duplicated</option>
+                                <option value="others" title="Other errors that do not fit into the above categories. Please write notes for details.">Others</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="dependent_type{{ loop.index0 }}" id="dependent_type{{ loop.index0 }}" style="display:none;" required>
+                                <option value="ambiguous" title="The unit contains ambiguous concepts or pronouns, requiring additional context for clarity. For example, the concepts could be interpreted in multiple ways.">Ambiguous Concepts/Pronouns</option>
+                                <option value="missing_comparison" title="The unit lacks a necessary comparison for context. Select this option only if the unit explicitly expresses a contrast, such as ‘more,’ ‘harder,’ etc., and the comparison is mentioned in the response. If the comparison can be inferred from the unit itself and is not directly stated in the response, it is not considered a dependent unit.">Missing Comparison</option>
+                                <option value="lack_condition" title="The unit lacks conditions or sources to provide clarity. For instance, it may be based on a hypothesis, an imagined scenario, or a quoted reference.">Lack of Condition/Sources</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="notes{{ loop.index0 }}" id="notes{{ loop.index0 }}" placeholder="Enter notes" style="display:none;">
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <!-- Definitions for Error Types -->
+            <p><strong>Definitions:</strong></p>
+            <ul>
+                <li><strong>None:</strong> No issues with this unit.</li>
+                <li><strong>Dependent:</strong> Unit requires additional context for clarity.</li>
+                <ul>
+                    <li><strong>Ambiguous Concepts/Pronouns:</strong> The unit contains unclear references or terms that can be interpreted in multiple ways.</li>
+                    <li><strong>Missing Comparison:</strong> The unit lacks an explicit comparison context, especially when comparative terms like "more" or "harder" are used.</li>
+                    <li><strong>Lack of Condition/Sources:</strong> The unit depends on conditions, hypotheses, or references that are missing.</li>
+                </ul>
+                <li><strong>Hallucinated:</strong> Unit includes unsupported information.</li>
+                <li><strong>Self-Duplicated:</strong> Unit repeats its own content unnecessarily.</li>
+                <li><strong>Others:</strong> Errors not covered by other categories. Notes required.</li>
+            </ul>
+            <script>
+                function toggleFields(select, index) {
+                    const dependentDropdown = document.getElementById(`dependent_type${index}`);
+                    const notesField = document.getElementById(`notes${index}`);
+                    
+                    if (select.value === 'dependent') {
+                        dependentDropdown.style.display = 'inline';
+                        dependentDropdown.required = true;
+                    } else {
+                        dependentDropdown.style.display = 'none';
+                        dependentDropdown.required = false;
+                    }
+            
+                    if (select.value === 'others') {
+                        notesField.style.display = 'inline';
+                        notesField.required = true;
+                    } else {
+                        notesField.style.display = 'none';
+                        notesField.required = false;
+                    }
+                }
+            </script>
+
+            <h3>Missing Relationship?</h3>
+            <table border="1">
+                <tr>
+                    <th>#</th>
+                    <th>Missing Spans</th>
+                    <th>Missing Relationship?</th>
+                    <th>Second-Level Relationship</th>
+                </tr>
+                {% for span in data.highlighted_spans %}
+                    <tr>
+                        <td>{{ loop.index0 }}</td>
+                        <td>{{ span }}</td>
+                        <td>
+                            <select name="missing_relationship{{ loop.index0 }}" id="missing_relationship{{ loop.index0 }}" onchange="updateSecondLevelMenu(this, {{ loop.index0 }})" required>
+                                <option value="none" title="The missing span does not indicate any relationship.">None</option>
+                                <option value="not_missing" title="The missing span indicates a relationship, but it's mentioned in one of the extracted units.">Not Missing</option>
+                                <option value="temporal" title="The situations described in the arguments are intended to be related temporally.">Temporal</option>
+                                <option value="contingency" title="The situation described by one argument provides the reason, explanation, or justification for the other.">Contingency</option>
+                                <option value="comparison" title="The discourse relation highlights differences or similarities between two arguments.">Comparison</option>
+                                <option value="expansion" title="The relation expands the discourse and moves its narrative or exposition forward.">Expansion</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="second_level_relationship{{ loop.index0 }}" id="second_level_relationship{{ loop.index0 }}">
+                                <option value="" selected hidden>Not applicable</option>
+                            </select>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <!-- Definitions for Relationships -->
+            <p><strong>Definitions:</strong></p>
+            <ul>
+                <li><strong>None:</strong> No relationship exists.</li>
+                <li><strong>Not Missing:</strong> The missing span indicates a relationship, but it's mentioned in one of the extracted units.</li>
+                <li><strong>Temporal:</strong> Events are related by time.</li>
+                <li><strong>Contingency:</strong> One event is a reason or explanation for the other.</li>
+                <li><strong>Comparison:</strong> Highlights similarities or differences.</li>
+                <li><strong>Expansion:</strong> Adds to or elaborates on the discourse.</li>
+            </ul>
+
+            <script>
+                const secondLevelOptions = {
+                    temporal: [
+                        {
+                            value: 'unsure',
+                            text: 'Unsure',
+                            description: ''
+                        },
+                        {
+                            value: 'synchronous',
+                            text: 'Temporal.Synchronous',
+                            description: 'This tag is used when there is some degree of temporal overlap between the events described by the arguments.'
+                        },
+                        {
+                            value: 'asynchronous',
+                            text: 'Temporal.Asynchronous',
+                            description: 'This tag is used when one event is described as preceding the other.'
+                        }
+                    ],
+                    contingency: [
+                        {
+                            value: 'unsure',
+                            text: 'Unsure',
+                            description: ''
+                        },
+                        {
+                            value: 'cause',
+                            text: 'Contingency.Cause',
+                            description: 'This tag is used when the situations described in Arg1 and Arg2 are causally influenced but are not in a conditional relation.'
+                        },
+                        {
+                            value: 'cause_belief',
+                            text: 'Contingency.Cause+Belief',
+                            description: 'This tag is used when evidence is provided to cause the hearer to believe a claim. The belief is implicit.'
+                        },
+                        {
+                            value: 'cause_speechact',
+                            text: 'Contingency.Cause+SpeechAct',
+                            description: 'This tag is used when a reason is provided for the speaker uttering a speech act. The speech act is implicit.'
+                        },
+                        {
+                            value: 'purpose',
+                            text: 'Contingency.Purpose',
+                            description: 'This tag is used when one argument presents an action that an AGENT undertakes with the purpose of the GOAL conveyed by the other argument being achieved. Usually (but not always), the agent undertaking the action is the same agent aiming to achieve the goal.'
+                        },
+                        {
+                            value: 'condition',
+                            text: 'Contingency.Condition',
+                            description: 'This tag is used when one argument presents a situation as unrealized (the antecedent), which (when realized) would lead to the situation described by the other argument (the consequent).'
+                        },
+                        {
+                            value: 'negative_condition',
+                            text: 'Contingency.Negative-condition',
+                            description: 'This tag is used when one argument (the antecedent) describes a situation presented as unrealized, which if it doesn’t occur, would lead to the situation described by the other argument (the consequent).'
+                        },
+                        {
+                            value: 'negative_condition_speechact',
+                            text: 'Contingency.Negative-condition+SpeechAct',
+                            description: 'This tag is used when the consequent is an implicit speech act.'
+                        }
+                    ],
+                    comparison: [
+                        {
+                            value: 'unsure',
+                            text: 'Unsure',
+                            description: ''
+                        },
+                        {
+                            value: 'concession',
+                            text: 'Comparison.Concession',
+                            description: 'This tag is used when an expected causal relation is canceled or denied by the situation described in one of the arguments.'
+                        },
+                        {
+                            value: 'concession_speechact',
+                            text: 'Comparison.Concession+SpeechAct',
+                            description: 'This tag is used when the speech act (SA) associated with one argument is canceled or denied by the other argument or its SA.'
+                        },
+                        {
+                            value: 'contrast',
+                            text: 'Comparison.Contrast',
+                            description: 'This tag is used when at least two differences between Arg1 and Arg2 are highlighted.'
+                        },
+                        {
+                            value: 'similarity',
+                            text: 'Comparison.Similarity',
+                            description: 'This tag is used when one or more similarities between Arg1 and Arg2 are highlighted with respect to what each argument predicates as a whole or to some entities it mentions.'
+                        }
+                    ],
+                    expansion: [
+                        {
+                            value: 'unsure',
+                            text: 'Unsure',
+                            description: ''
+                        },
+                        {
+                            value: 'conjunction',
+                            text: 'Expansion.Conjunction',
+                            description: 'This tag is used when both arguments bear the same relation to some other situation evoked in the discourse.'
+                        },
+                        {
+                            value: 'disjunction',
+                            text: 'Expansion.Disjunction',
+                            description: 'This tag is used when the two arguments are presented as alternatives, with either one or both holding.'
+                        },
+                        {
+                            value: 'equivalence',
+                            text: 'Expansion.Equivalence',
+                            description: 'This tag is used when both arguments are taken to describe the same situation, but from different perspectives.'
+                        },
+                        {
+                            value: 'exception',
+                            text: 'Expansion.Exception',
+                            description: 'This tag is used when one argument evokes a set of circumstances in which the described situation holds, and the other argument indicates one or more instances where it doesn’t.'
+                        },
+                        {
+                            value: 'instantiation',
+                            text: 'Expansion.Instantiation',
+                            description: 'This tag is used when one argument describes a situation as holding in a set of circumstances, while the other argument describes one or more of those circumstances.'
+                        },
+                        {
+                            value: 'level_of_detail',
+                            text: 'Expansion.Level-of-Detail',
+                            description: 'This tag is used when both arguments describe the same situation, but in less or more detail.'
+                        },
+                        {
+                            value: 'manner',
+                            text: 'Expansion.Manner',
+                            description: 'This tag is used when the situation described by one argument presents the manner in which the situation described by the other argument has happened or been done.'
+                        },
+                        {
+                            value: 'substitution',
+                            text: 'Expansion.Substitution',
+                            description: 'This tag is used when arguments are presented as exclusive alternatives, with one being ruled out.'
+                        }
+                    ]
+                };
+
+                function updateSecondLevelMenu(select, index) {
+                    const secondLevelMenu = document.getElementById(`second_level_relationship${index}`);
+                    const selectedValue = select.value;
+
+                    // Clear the existing options
+                    secondLevelMenu.innerHTML = '';
+                    secondLevelMenu.style.display = 'none';
+                    secondLevelMenu.required = false; // Disable required when hidden
+
+                    // Populate and show if needed
+                    if (secondLevelOptions[selectedValue]) {
+                        secondLevelOptions[selectedValue].forEach(option => {
+                            const opt = document.createElement('option');
+                            opt.value = option.value;
+                            opt.textContent = option.text;
+                            opt.title = option.description;
+                            secondLevelMenu.appendChild(opt);
+                        });
+                        secondLevelMenu.style.display = 'inline';
+                        secondLevelMenu.required = true; // Enable required when visible
+                    }
+                }
+            </script>
+
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    {% endif %}
+</body>
+</html>
